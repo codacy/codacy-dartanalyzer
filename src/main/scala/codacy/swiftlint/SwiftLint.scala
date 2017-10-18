@@ -9,18 +9,6 @@ import play.api.libs.json._
 import scala.util.{Failure, Properties, Success, Try}
 import scala.collection.mutable.ListBuffer
 
-case class SwiftLintViolationLocation(line: Int, column: Option[Int])
-
-case class SwiftLintViolation(severity: String, rule: String, location: SwiftLintViolationLocation, message: String)
-
-case class SwiftLintFile(path: String, violations: List[SwiftLintViolation], parsed: Boolean)
-
-object SwiftLintFile {
-  implicit val SwiftLintViolationLocationFmt = Json.format[SwiftLintViolationLocation]
-  implicit val SwiftLintViolationFmt = Json.format[SwiftLintViolation]
-  implicit val SwiftLintFileFmt = Json.format[SwiftLintFile]
-}
-
 object SwiftLint extends Tool {
 
   override def apply(path: Path, conf: Option[List[PatternDef]], files: Option[Set[Path]])(implicit spec: Spec): Try[List[Result]] = {
@@ -63,7 +51,7 @@ object SwiftLint extends Tool {
 
   private def parseToolResult(output: String): Result = {
     /* Example:
-     * {PATH}:{LINE}:{SEVERITY}:{TITLE}:{MESSAGE}({KEY})
+     * {PATH}:{LINE}[:COLUMN]:{SEVERITY}:{TITLE}:{MESSAGE}({KEY})
      * /src/VulcanBt/VulcanBt_iOS/Source/Generic/KeychainItemAccessibility.swift:60:11: warning: Colon Violation: Colons should be next to the identifier when specifying a type and next to the key in dictionary literals. (colon)
      */
     val columns = output.split(":")

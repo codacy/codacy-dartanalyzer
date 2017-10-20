@@ -1,10 +1,10 @@
 import com.typesafe.sbt.packager.docker.{Cmd, ExecCmd}
 
-name := """codacy-engine-swiftlint"""
+name := """codacy-swiftlint"""
 
-version := "1.0-SNAPSHOT"
+version := "1.0.0-SNAPSHOT"
 
-val languageVersion = "2.11.7"
+val languageVersion = "2.11.11"
 
 scalaVersion := languageVersion
 
@@ -14,22 +14,23 @@ resolvers ++= Seq(
 )
 
 libraryDependencies ++= Seq(
-  "com.typesafe.play" %% "play-json" % "2.3.8",
-  "com.codacy" %% "codacy-engine-scala-seed" % "2.7.1" withSources()
+  "com.typesafe.play" %% "play-json" % "2.4.8",
+  "com.codacy" %% "codacy-engine-scala-seed" % "2.7.9" withSources()
 )
 
 enablePlugins(JavaAppPackaging)
 
 enablePlugins(DockerPlugin)
 
-version in Docker := "1.0"
+version in Docker := "1.0.0-SNAPSHOT"
 
 organization := "com.codacy"
 
 val swiftlintVersion = "0.23.1"
 
-val installAll = s"""apt-get update &&
-      |apt-get install default-jre --assume-yes""".stripMargin.replaceAll(System.lineSeparator(), " ")
+val installAll =
+  s"""apt-get update &&
+     |apt-get install default-jre --assume-yes""".stripMargin.replaceAll(System.lineSeparator(), " ")
 
 mappings in Universal <++= (resourceDirectory in Compile) map { (resourceDir: File) =>
   val src = resourceDir / "docs"

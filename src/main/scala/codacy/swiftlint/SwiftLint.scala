@@ -24,19 +24,17 @@ object SwiftLint extends Tool {
       val filesToLint: Set[String] = ToolHelper.filesToLint(source, files)
       val patternsToLintOpt: Option[List[codacy.docker.api.Pattern.Definition]] = ToolHelper.patternsToLint(configuration)
 
-
-      val config = patternsToLintOpt.fold(Option.empty[Path]) {
+      val config = patternsToLintOpt.fold(Option.empty[String]) {
           case patternsToLint if patternsToLint.nonEmpty =>
-            print("patternsToLint")
-            print(patternsToLint)
-            Some(writeConfigFile(patternsToLint))
+            Some(writeConfigFile(patternsToLint).toString)
         }
 
-      val cfgOpt = config.orElse(nativeConfig).getOrElse(List.empty)
-      print("cfgOpt")
-      print(cfgOpt)
+      val cfgOpt = nativeConfig.orElse(config)
 
-      val command = List("swiftlint")
+      val command = cfgOpt match {
+        case Some(opt) => List("swiftlint", "--config", opt) ++ filesToLint
+        case None    => List("swiftlint") ++ filesToLint
+      }
 
       CommandRunner.exec(command, Some(path.toFile)) match {
         case Right(resultFromTool) =>
@@ -60,16 +58,13 @@ object SwiftLint extends Tool {
   }
 
   private def writeConfigFile(patternsToLint: List[Pattern.Definition]): Path = {
-      val rules = patternsToLint.map(_.toString)
-      print(rules)
-      print("rules")
+      val rules = patternsToLint.map(_.patternId.toString)
       val separator = s"""
-    - """
+  - """
       val content =
-      s"""opt_in_rules: # some rules are only opt-in
+      s"""whitelist_rules:
   - ${rules.mkString(separator)}""".stripMargin
-print("content")
-print(content)
+
     FileHelper.createTmpFile(content, ".swiftlint-ci", ".yml")
   }
 

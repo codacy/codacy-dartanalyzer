@@ -1,23 +1,44 @@
 package codacy.swiftlint
 
-import java.nio.file.Path
+import java.nio.file.{Path, Paths}
 
-import codacy.dockerApi._
-import codacy.dockerApi.utils.{CommandRunner, ToolHelper}
-import play.api.libs.json._
+import codacy.docker.api._
+import codacy.docker.api.utils.ToolHelper
+import codacy.docker.api.{Pattern, Result, Source, Tool}
+import codacy.dockerApi.utils.{CommandRunner, FileHelper}
 
 import scala.util.{Failure, Properties, Success, Try}
 import scala.collection.mutable.ListBuffer
 
 object SwiftLint extends Tool {
 
-  override def apply(path: Path, conf: Option[List[PatternDef]], files: Option[Set[Path]])(implicit spec: Spec): Try[List[Result]] = {
+ private lazy val configFileNames = Set(".swiftlint.yml")
+
+ override def apply(source: Source.Directory, configuration: Option[List[Pattern.Definition]],
+                      files: Option[Set[Source.File]], options: Map[Configuration.Key, Configuration.Value])
+                     (implicit specification: Tool.Specification): Try[List[Result]] = {
     Try {
 
-      val rootDirectory = path.toFile
+      val path = Paths.get(source.path)
+      lazy val nativeConfig = FileHelper.findConfigurationFile(configFileNames, path).map(_.toString)
+      val filesToLint: Set[String] = ToolHelper.filesToLint(source, files)
+      val patternsToLintOpt: Option[List[codacy.docker.api.Pattern.Definition]] = ToolHelper.patternsToLint(configuration)
+
+
+      val config = patternsToLintOpt.fold(Option.empty[Path]) {
+          case patternsToLint if patternsToLint.nonEmpty =>
+            print("patternsToLint")
+            print(patternsToLint)
+            Some(writeConfigFile(patternsToLint))
+        }
+
+      val cfgOpt = config.orElse(nativeConfig).getOrElse(List.empty)
+      print("cfgOpt")
+      print(cfgOpt)
+
       val command = List("swiftlint")
 
-      CommandRunner.exec(command, Some(rootDirectory)) match {
+      CommandRunner.exec(command, Some(path.toFile)) match {
         case Right(resultFromTool) =>
         parseToolResult(path, resultFromTool.stdout) match {
          case s@Success(_) => s
@@ -36,6 +57,20 @@ object SwiftLint extends Tool {
           Failure(e)
       }
     }.flatten
+  }
+
+  private def writeConfigFile(patternsToLint: List[Pattern.Definition]): Path = {
+      val rules = patternsToLint.map(_.toString)
+      print(rules)
+      print("rules")
+      val separator = s"""
+    - """
+      val content =
+      s"""opt_in_rules: # some rules are only opt-in
+  - ${rules.mkString(separator)}""".stripMargin
+print("content")
+print(content)
+    FileHelper.createTmpFile(content, ".swiftlint-ci", ".yml")
   }
 
   private def parseToolResult(path: Path, output: List[String]): Try[List[Result]] = {
@@ -59,14 +94,14 @@ object SwiftLint extends Tool {
     if (columns.size == 5 || columns.size == 6) {
       val violation = columns(columns.size - 1).trim.split("\\(")
 
-        Issue(
-          SourcePath(columns(0)),
-          ResultMessage(violation(0).trim),
-          PatternId(violation(1).trim.dropRight(1)),
-          ResultLine(columns(1).toInt)
+        Result.Issue(
+          Source.File(columns(0)),
+          Result.Message(violation(0).trim),
+          Pattern.Id(violation(1).trim.dropRight(1)),
+          Source.Line(columns(1).toInt)
         )
     } else {
-      FileError(SourcePath(columns(0)), message = None)
+      Result.FileError(Source.File(columns(0)), message = None)
     }
   }
 }

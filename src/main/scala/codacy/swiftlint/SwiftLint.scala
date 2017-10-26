@@ -32,8 +32,8 @@ object SwiftLint extends Tool {
       val cfgOpt = nativeConfig.orElse(config)
 
       val command = cfgOpt match {
-        case Some(opt) => List("swiftlint", "--config", opt) ++ filesToLint
-        case None    => List("swiftlint") ++ filesToLint
+        case Some(opt) => List("swiftlint", "--config", opt, "--path") ++ filesToLint
+        case None    => List("swiftlint", "--path") ++ filesToLint
       }
 
       CommandRunner.exec(command, Some(path.toFile)) match {

@@ -1,7 +1,5 @@
 //#Patterns: void_return
 
-//#Issue: {"severity": "Info", "line": 14, "patternId": "void_return"}
-
     let abc: () -> () = {}
 
 

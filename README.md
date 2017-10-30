@@ -1,4 +1,6 @@
 
+[![Build Status](https://circleci.com/gh/fnxpt/codacy-swiftlint.svg?style=shield&circle-token=:circle-token)](https://circleci.com/gh/fnxpt/codacy-swiftlint)
+
 # Codacy Swiftlint
 
 This is the docker engine we use at Codacy to have [Swiftlint](https://github.com/realm/SwiftLint) support.

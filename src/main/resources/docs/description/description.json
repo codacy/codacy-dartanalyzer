@@ -51,7 +51,7 @@
     "patternId": "compiler_protocol_init",
     "title": "Compiler Protocol Init",
     "timeToFix": 5,
-    "description": "The initializers declared in compiler protocols such as `ExpressibleByArrayLiteral` shouldn't be called directly."
+    "description": "The initializers declared in compiler protocols such as ExpressibleByArrayLiteral shouldn't be called directly."
   },
   {
     "patternId": "conditional_returns_on_newline",
@@ -93,7 +93,7 @@
     "patternId": "empty_count",
     "title": "Empty Count",
     "timeToFix": 5,
-    "description": "Prefer checking `isEmpty` over comparing `count` to zero."
+    "description": "Prefer checking isEmpty over comparing count to zero."
   },
   {
     "patternId": "empty_enum_arguments",
@@ -105,7 +105,7 @@
     "patternId": "empty_parameters",
     "title": "Empty Parameters",
     "timeToFix": 5,
-    "description": "Prefer `() -> ` over `Void -> `."
+    "description": "Prefer () ->  over Void -> ."
   },
   {
     "patternId": "empty_parentheses_with_trailing_closure",
@@ -159,13 +159,13 @@
     "patternId": "first_where",
     "title": "First Where",
     "timeToFix": 5,
-    "description": "Prefer using `.first(where:)` over `.filter { }.first` in collections."
+    "description": "Prefer using .first(where:) over .filter { }.first in collections."
   },
   {
     "patternId": "for_where",
     "title": "For Where",
     "timeToFix": 5,
-    "description": "`where` clauses are preferred over a single `if` inside a `for`."
+    "description": "where clauses are preferred over a single if inside a for."
   },
   {
     "patternId": "force_cast",
@@ -303,7 +303,7 @@
     "patternId": "notification_center_detachment",
     "title": "Notification Center Detachment",
     "timeToFix": 5,
-    "description": "An object should only remove itself as an observer in `deinit`."
+    "description": "An object should only remove itself as an observer in deinit."
   },
   {
     "patternId": "number_separator",
@@ -363,13 +363,13 @@
     "patternId": "protocol_property_accessors_order",
     "title": "Protocol Property Accessors Order",
     "timeToFix": 5,
-    "description": "When declaring properties in protocols, the order of accessors should be `get set`."
+    "description": "When declaring properties in protocols, the order of accessors should be get set."
   },
   {
     "patternId": "redundant_discardable_let",
     "title": "Redundant Discardable Let",
     "timeToFix": 5,
-    "description": "Prefer `_ = foo()` over `let _ = foo()` when discarding a result from a function."
+    "description": "Prefer _ = foo() over let _ = foo() when discarding a result from a function."
   },
   {
     "patternId": "redundant_nil_coalescing",
@@ -483,13 +483,13 @@
     "patternId": "unused_enumerated",
     "title": "Unused Enumerated",
     "timeToFix": 5,
-    "description": "When the index or the item is not used, `.enumerated()` can be removed."
+    "description": "When the index or the item is not used, .enumerated() can be removed."
   },
   {
     "patternId": "unused_optional_binding",
     "title": "Unused Optional Binding",
     "timeToFix": 5,
-    "description": "Prefer `!= nil` over `let _ =`"
+    "description": "Prefer != nil over let _ ="
   },
   {
     "patternId": "valid_ibinspectable",
@@ -519,7 +519,7 @@
     "patternId": "void_return",
     "title": "Void Return",
     "timeToFix": 5,
-    "description": "Prefer `-> Void` over `-> ()`."
+    "description": "Prefer -> Void over -> ()."
   },
   {
     "patternId": "weak_delegate",

@@ -1,52 +1,78 @@
 package codacy.swiftlint
 
-import java.nio.file.Path
+import java.nio.file.{Path, Paths}
 
-import codacy.dockerApi._
-import codacy.dockerApi.utils.{CommandRunner, ToolHelper}
-import play.api.libs.json._
+import codacy.docker.api._
+import codacy.docker.api.utils.ToolHelper
+import codacy.docker.api.{Pattern, Result, Source, Tool}
+import codacy.dockerApi.utils.{CommandRunner, FileHelper}
 
 import scala.util.{Failure, Properties, Success, Try}
-import scala.collection.mutable.ListBuffer
 
 object SwiftLint extends Tool {
 
-  override def apply(path: Path, conf: Option[List[PatternDef]], files: Option[Set[Path]])(implicit spec: Spec): Try[List[Result]] = {
+  private lazy val configFileNames = Set(".swiftlint.yml")
+
+  override def apply(source: Source.Directory, configuration: Option[List[Pattern.Definition]],
+                     files: Option[Set[Source.File]], options: Map[Configuration.Key, Configuration.Value])
+                    (implicit specification: Tool.Specification): Try[List[Result]] = {
     Try {
 
-      val rootDirectory = path.toFile
-      val command = List("swiftlint")
+      val path = Paths.get(source.path)
+      lazy val nativeConfig = FileHelper.findConfigurationFile(configFileNames, path).map(_.toString)
+      val filesToLint: Set[String] = ToolHelper.filesToLint(source, files)
+      val patternsToLintOpt: Option[List[codacy.docker.api.Pattern.Definition]] = ToolHelper.patternsToLint(configuration)
 
-      CommandRunner.exec(command, Some(rootDirectory)) match {
+      val config = patternsToLintOpt.fold(Option.empty[String]) {
+        case patternsToLint if patternsToLint.nonEmpty =>
+          Some(writeConfigFile(patternsToLint).toString)
+      }
+
+      val cfgOpt = config.orElse(nativeConfig)
+
+      val baseCmd = List("swiftlint", "lint", "--quiet")
+
+      val command = cfgOpt match {
+        case Some(opt) =>
+          baseCmd ++ List("--config", opt, "--path") ++ filesToLint
+        case None => baseCmd ++ List("--path") ++ filesToLint
+      }
+
+      CommandRunner.exec(command, Some(path.toFile)) match {
         case Right(resultFromTool) =>
-        parseToolResult(path, resultFromTool.stdout) match {
-         case s@Success(_) => s
-         case Failure(e) =>
-           val msg =
-             s"""
-                |${this.getClass.getSimpleName} exited with code ${resultFromTool.exitCode}
-                |command: ${command.mkString(" ")}
-                |message: ${e.getMessage}
-                |stdout: ${resultFromTool.stdout.mkString(Properties.lineSeparator)}
-                |stderr: ${resultFromTool.stderr.mkString(Properties.lineSeparator)}
+          parseToolResult(path, resultFromTool.stdout) match {
+            case s@Success(_) => s
+            case Failure(e) =>
+              val msg =
+                s"""
+                   |${this.getClass.getSimpleName} exited with code ${resultFromTool.exitCode}
+                   |command: ${command.mkString(" ")}
+                   |message: ${e.getMessage}
+                   |stdout: ${resultFromTool.stdout.mkString(Properties.lineSeparator)}
+                   |stderr: ${resultFromTool.stderr.mkString(Properties.lineSeparator)}
              """.stripMargin
-           Failure(new Exception(msg))
-       }
+              Failure(new Exception(msg))
+          }
         case Left(e) =>
           Failure(e)
       }
     }.flatten
   }
 
-  private def parseToolResult(path: Path, output: List[String]): Try[List[Result]] = {
+  private def writeConfigFile(patternsToLint: List[Pattern.Definition]): Path = {
+    val rules = patternsToLint.map(_.patternId.toString)
+    val content =
+      s"""whitelist_rules:
+         |  - ${rules.mkString("\n  - ")}\n
+      """.stripMargin
 
-    var result = new ListBuffer[Result]()
+    FileHelper.createTmpFile(content, ".swiftlint-ci", ".yml")
+  }
 
-    output.foreach { line =>
-        result += parseToolResult(line)
+  private def parseToolResult(path: Path, output: List[String]): Try[List[Result]] = Try {
+    output.flatMap { line =>
+      Try(parseToolResult(line)).toOption
     }
-
-    Try(result.toList)
   }
 
   private def parseToolResult(output: String): Result = {
@@ -59,14 +85,15 @@ object SwiftLint extends Tool {
     if (columns.size == 5 || columns.size == 6) {
       val violation = columns(columns.size - 1).trim.split("\\(")
 
-        Issue(
-          SourcePath(columns(0)),
-          ResultMessage(violation(0).trim),
-          PatternId(violation(1).trim.dropRight(1)),
-          ResultLine(columns(1).toInt)
-        )
+      Result.Issue(
+        Source.File(columns(0)),
+        Result.Message(violation(0).trim),
+        Pattern.Id(violation(1).trim.dropRight(1)),
+        Source.Line(columns(1).toInt)
+      )
     } else {
-      FileError(SourcePath(columns(0)), message = None)
+      Result.FileError(Source.File(columns(0)), message = None)
     }
   }
+
 }

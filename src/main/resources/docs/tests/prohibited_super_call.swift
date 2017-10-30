@@ -1,5 +1,10 @@
 //#Patterns: prohibited_super_call
 
+//#Issue: {"severity": "Info", "line": 9, "patternId": "prohibited_super_call"}
+//#Issue: {"severity": "Info", "line": 16, "patternId": "prohibited_super_call"}
+//#Issue: {"severity": "Info", "line": 24, "patternId": "prohibited_super_call"}
+//#Issue: {"severity": "Info", "line": 33, "patternId": "prohibited_super_call"}
+
     class VC: UIViewController {
     	override func loadView() {
     		super.loadView()

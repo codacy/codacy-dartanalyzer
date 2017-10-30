@@ -1,5 +1,17 @@
 //#Patterns: identifier_name
 
+//#Issue: {"severity": "Info", "line": 15, "patternId": "identifier_name"}
+//#Issue: {"severity": "Info", "line": 17, "patternId": "identifier_name"}
+//#Issue: {"severity": "Info", "line": 19, "patternId": "identifier_name"}
+//#Issue: {"severity": "Info", "line": 21, "patternId": "identifier_name"}
+//#Issue: {"severity": "Info", "line": 23, "patternId": "identifier_name"}
+//#Issue: {"severity": "Info", "line": 25, "patternId": "identifier_name"}
+//#Issue: {"severity": "Info", "line": 27, "patternId": "identifier_name"}
+//#Issue: {"severity": "Info", "line": 29, "patternId": "identifier_name"}
+//#Issue: {"severity": "Info", "line": 31, "patternId": "identifier_name"}
+//#Issue: {"severity": "Info", "line": 33, "patternId": "identifier_name"}
+//#Issue: {"severity": "Info", "line": 35, "patternId": "identifier_name"}
+
     let MyLet = 0
 
     let _myLet = 0

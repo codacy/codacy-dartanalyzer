@@ -6,8 +6,24 @@ import codacy.docker.api._
 import codacy.docker.api.utils.ToolHelper
 import codacy.docker.api.{Pattern, Result, Source, Tool}
 import codacy.dockerApi.utils.{CommandRunner, FileHelper}
+import play.api.libs.json._
 
 import scala.util.{Failure, Properties, Success, Try}
+
+case class SwiftLintFile(rule_id: String, file: String, reason: String, line: Int)
+
+object SwiftLintFile {
+  implicit val readsSwiftLintFile: Reads[SwiftLintFile] = new Reads[SwiftLintFile] {
+    def reads(json: JsValue): JsResult[SwiftLintFile] = {
+      for {
+        rule_id <- (json \ "rule_id").validate[String]
+        file <- (json \ "file").validate[String]
+        reason <- (json \ "reason").validate[String]
+        line <- (json \ "line").validate[Int]
+      } yield SwiftLintFile(rule_id, file, reason, line)
+    }
+  }
+}
 
 object SwiftLint extends Tool {
 
@@ -30,7 +46,7 @@ object SwiftLint extends Tool {
 
       val cfgOpt = config.orElse(nativeConfig)
 
-      val baseCmd = List("swiftlint", "lint", "--quiet")
+      val baseCmd = List("swiftlint", "lint", "--quiet", "--reporter", "json")
 
       val command = cfgOpt match {
         case Some(opt) =>
@@ -69,31 +85,38 @@ object SwiftLint extends Tool {
     FileHelper.createTmpFile(content, ".swiftlint-ci", ".yml")
   }
 
-  private def parseToolResult(path: Path, output: List[String]): Try[List[Result]] = Try {
-    output.flatMap { line =>
-      Try(parseToolResult(line)).toOption
-    }
+  private def parseToolResult(path: Path, output: List[String]): Try[List[Result]] = {
+    Try(Json.parse(output.mkString)).flatMap(parseToolResult)
   }
 
-  private def parseToolResult(output: String): Result = {
+  private def parseToolResult(outputJson: JsValue): Try[List[Result]] = {
     /* Example:
-     * {PATH}:{LINE}[:COLUMN]:{SEVERITY}:{TITLE}:{MESSAGE}({KEY})
-     * /src/VulcanBt/VulcanBt_iOS/Source/Generic/KeychainItemAccessibility.swift:60:11: warning: Colon Violation: Colons should be next to the identifier when specifying a type and next to the key in dictionary literals. (colon)
-     */
-    val columns = output.split(":")
+    * [
+    *   {
+    *     "rule_id": "mark",
+    *     "reason": "MARK comment should be in valid format. e.g. '\/\/ MARK: ...' or '\/\/ MARK: - ...'",
+    *     "character": "5",
+    *     "file": "\/Users\/marlontojal\/Documents\/GitHub\/codacy-swiftlint\/src\/main\/resources\/docs\/tests\/mark.swift",
+    *     "severity": "Warning",
+    *     "type": "Mark",
+    *     "line": "3"
+    *   },
+    * ...
+    * ]
+    */
 
-    if (columns.size == 5 || columns.size == 6) {
-      val violation = columns(columns.size - 1).trim.split("\\(")
-
-      Result.Issue(
-        Source.File(columns(0)),
-        Result.Message(violation(0).trim),
-        Pattern.Id(violation(1).trim.dropRight(1)),
-        Source.Line(columns(1).toInt)
-      )
-    } else {
-      Result.FileError(Source.File(columns(0)), message = None)
-    }
-  }
-
+    Try((outputJson).as[List[SwiftLintFile]]).map { violations =>
+       violations.flatMap {
+         case violation =>
+          List(
+            Result.Issue(
+              Source.File(violation.file),
+              Result.Message(violation.reason),
+              Pattern.Id(violation.rule_id),
+              Source.Line(violation.line)
+         )
+       )
+       }
+     }
+   }
 }

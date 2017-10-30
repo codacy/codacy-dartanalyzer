@@ -1,5 +1,7 @@
 //#Patterns: cyclomatic_complexity
 
+//#Issue: {"severity": "Info", "line": 5, "patternId": "cyclomatic_complexity"}
+
     func f1() {
       if true {
         if true {

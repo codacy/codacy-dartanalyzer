@@ -1,5 +1,6 @@
 package codacy.swiftlint
 
+import java.io.File
 import java.nio.file.{Path, Paths}
 
 import codacy.docker.api._
@@ -66,6 +67,8 @@ object SwiftLint extends Tool {
                    |message: ${e.getMessage}
                    |stdout: ${resultFromTool.stdout.mkString(Properties.lineSeparator)}
                    |stderr: ${resultFromTool.stderr.mkString(Properties.lineSeparator)}
+                   |configFile:
+                   |${cfgOpt.fold("")(p => scala.io.Source.fromFile(new File(p)).getLines().mkString("\n"))}
              """.stripMargin
               Failure(new Exception(msg))
           }
@@ -105,18 +108,17 @@ object SwiftLint extends Tool {
     * ]
     */
 
-    Try((outputJson).as[List[SwiftLintFile]]).map { violations =>
-       violations.flatMap {
-         case violation =>
-          List(
-            Result.Issue(
-              Source.File(violation.file),
-              Result.Message(violation.reason),
-              Pattern.Id(violation.rule_id),
-              Source.Line(violation.line)
-         )
-       )
-       }
-     }
-   }
+    Try(outputJson.as[List[SwiftLintFile]]).map { violations =>
+      violations.flatMap { violation =>
+        List(
+          Result.Issue(
+            Source.File(violation.file),
+            Result.Message(violation.reason),
+            Pattern.Id(violation.rule_id),
+            Source.Line(violation.line)
+          )
+        )
+      }
+    }
+  }
 }

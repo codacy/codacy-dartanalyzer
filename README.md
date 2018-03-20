@@ -1,5 +1,5 @@
 
-[![Build Status](https://circleci.com/gh/fnxpt/codacy-swiftlint.svg?style=shield&circle-token=:circle-token)](https://circleci.com/gh/fnxpt/codacy-swiftlint)
+[![Build Status](https://circleci.com/gh/codacy/codacy-swiftlint.svg?style=shield&circle-token=:circle-token)](https://circleci.com/gh/codacy/codacy-swiftlint)
 
 # Codacy Swiftlint
 

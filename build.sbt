@@ -1,4 +1,6 @@
 import com.typesafe.sbt.packager.docker.{Cmd, ExecCmd}
+import scala.util.parsing.json.JSON
+import scala.io.Source
 
 name := """codacy-swiftlint"""
 
@@ -26,7 +28,15 @@ version in Docker := "1.0.0-SNAPSHOT"
 
 organization := "com.codacy"
 
-val swiftlintVersion = "0.25.0"
+lazy val toolVersion = SettingKey[String]("Retrieve the version of the underlying tool from patterns.json")
+
+toolVersion := {
+  val jsonFile = (resourceDirectory in Compile).value / "docs" / "patterns.json"
+  val toolMap = JSON.parseFull(Source.fromFile(jsonFile).getLines().mkString)
+    .getOrElse(throw new Exception("patterns.json is not a valid json"))
+    .asInstanceOf[Map[String, String]]
+  toolMap.getOrElse[String]("version", throw new Exception("Failed to retrieve 'version' from patterns.json"))
+}
 
 val installAll =
   s"""apt-get update &&
@@ -50,7 +60,7 @@ daemonUser in Docker := dockerUser
 
 daemonGroup in Docker := dockerGroup
 
-dockerBaseImage := "norionomura/swiftlint"
+dockerBaseImage := s"norionomura/swiftlint:${toolVersion.value}"
 
 dockerCommands := dockerCommands.value.flatMap {
   case cmd@Cmd("WORKDIR", _) => List(cmd,

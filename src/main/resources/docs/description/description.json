@@ -526,5 +526,215 @@
     "title": "Weak Delegate",
     "timeToFix": 5,
     "description": "Delegates should be weak to avoid reference cycles."
+  },
+  {
+    "patternId": "array_init",
+    "title": "Array Init",
+    "timeToFix": 5,
+    "description": "Prefer using Array(seq) than seq.map { $0 } to convert a sequence into an Array."
+  },
+  {
+    "patternId": "block_based_kvo",
+    "title": "Block Based KVO",
+    "timeToFix": 5,
+    "description": "Prefer the new block based KVO API with keypaths when using Swift 3.2 or later."
+  },
+  {
+    "patternId": "contains_over_first_not_nil",
+    "title": "Contains over first not nil",
+    "timeToFix": 5,
+    "description": "Prefer 'contains' over 'first(where:) != nil'"
+  },
+  {
+    "patternId": "discouraged_direct_init",
+    "title": "Discouraged Direct Initialization",
+    "timeToFix": 5,
+    "description": "Discouraged direct initialization of types that can be harmful."
+  },
+  {
+    "patternId": "discouraged_object_literal",
+    "title": "Discouraged Object Literal",
+    "timeToFix": 5,
+    "description": "Prefer initializers over object literals."
+  },
+  {
+    "patternId": "discouraged_optional_boolean",
+    "title": "Discouraged Optional Boolean",
+    "timeToFix": 5,
+    "description": "Prefer non-optional booleans over optional booleans."
+  },
+  {
+    "patternId": "explicit_acl",
+    "title": "Explicit ACL",
+    "timeToFix": 5,
+    "description": "All declarations should specify Access Control Level keywords explicitly."
+  },
+  {
+    "patternId": "explicit_enum_raw_value",
+    "title": "Explicit Enum Raw Value",
+    "timeToFix": 5,
+    "description": "Enums should be explicitly assigned their raw values."
+  },
+  {
+    "patternId": "fallthrough",
+    "title": "Fallthrough",
+    "timeToFix": 5,
+    "description": "Fallthrough should be avoided."
+  },
+  {
+    "patternId": "is_disjoint",
+    "title": "Is Disjoint",
+    "timeToFix": 5,
+    "description": "Prefer using 'Set.isDisjoint(with:)' over 'Set.intersection(_:).isEmpty'."
+  },
+  {
+    "patternId": "joined_default_parameter",
+    "title": "Joined Default Parameter",
+    "timeToFix": 5,
+    "description": "Discouraged explicit usage of the default separator."
+  },
+  {
+    "patternId": "let_var_whitespace",
+    "title": "Variable Declaration Whitespace",
+    "timeToFix": 5,
+    "description": "Let and var should be separated from other statements by a blank line."
+  },
+  {
+    "patternId": "literal_expression_end_indentation",
+    "title": "Literal Expression End Indentation",
+    "timeToFix": 5,
+    "description": "Array and dictionary literal end should have the same indentation as the line that started it."
+  },
+  {
+    "patternId": "multiline_arguments",
+    "title": "Multiline Arguments",
+    "timeToFix": 5,
+    "description": "Arguments should be either on the same line, or one per line."
+  },
+  {
+    "patternId": "multiple_closures_with_trailing_closure",
+    "title": "Multiple Closures with Trailing Closure",
+    "timeToFix": 5,
+    "description": "Trailing closure syntax should not be used when passing more than one closure argument."
+  },
+  {
+    "patternId": "no_grouping_extension",
+    "title": "No Grouping Extension",
+    "timeToFix": 5,
+    "description": "Extensions shouldn't be used to group code within the same source file."
+  },
+  {
+    "patternId": "override_in_extension",
+    "title": "Override in Extension",
+    "timeToFix": 5,
+    "description": "Extensions shouldn't override declarations."
+  },
+  {
+    "patternId": "pattern_matching_keywords",
+    "title": "Pattern Matching Keywords",
+    "timeToFix": 5,
+    "description": "Combine multiple pattern matching bindings by moving keywords out of tuples."
+  },
+  {
+    "patternId": "prefixed_toplevel_constant",
+    "title": "Prefixed Top-Level Constant",
+    "timeToFix": 5,
+    "description": "Top-level constants should be prefixed by 'k'."
+  },
+  {
+    "patternId": "private_action",
+    "title": "Private Actions",
+    "timeToFix": 5,
+    "description": "IBActions should be private."
+  },
+  {
+    "patternId": "private_over_fileprivate",
+    "title": "Private over fileprivate",
+    "timeToFix": 5,
+    "description": "Prefer 'private' over 'fileprivate' declarations."
+  },
+  {
+    "patternId": "quick_discouraged_call",
+    "title": "Quick Discouraged Call",
+    "timeToFix": 5,
+    "description": "Discouraged call inside 'describe' and/or 'context' block."
+  },
+  {
+    "patternId": "quick_discouraged_focused_test",
+    "title": "Quick Discouraged Focused Test",
+    "timeToFix": 5,
+    "description": "Discouraged focused test. Other tests won't run while this one is focused."
+  },
+  {
+    "patternId": "quick_discouraged_pending_test",
+    "title": "Quick Discouraged Pending Test",
+    "timeToFix": 5,
+    "description": "Discouraged pending test. This test won't run while it's marked as pending."
+  },
+  {
+    "patternId": "required_enum_case",
+    "title": "Required Enum Case",
+    "timeToFix": 5,
+    "description": "Enums conforming to a specified protocol must implement a specific case(s)."
+  },
+  {
+    "patternId": "single_test_class",
+    "title": "Single Test Class",
+    "timeToFix": 5,
+    "description": "Test files should contain a single QuickSpec or XCTestCase class."
+  },
+  {
+    "patternId": "sorted_first_last",
+    "title": "Min or Max over Sorted First or Last",
+    "timeToFix": 5,
+    "description": "Prefer using 'min()' or 'max()' over 'sorted().first' or 'sorted().last'"
+  },
+  {
+    "patternId": "strict_fileprivate",
+    "title": "Strict fileprivate",
+    "timeToFix": 5,
+    "description": "'fileprivate' should be avoided."
+  },
+  {
+    "patternId": "superfluous_disable_command",
+    "title": "Superfluous Disable Command",
+    "timeToFix": 5,
+    "description": "SwiftLint 'disable' commands are superfluous when the disabled rule would not have triggered a violation in the disabled region."
+  },
+  {
+    "patternId": "switch_case_alignment",
+    "title": "Switch and Case Statement Alignment",
+    "timeToFix": 5,
+    "description": "Case statements should vertically align with the enclosing switch statement."
+  },
+  {
+    "patternId": "trailing_closure",
+    "title": "Trailing Closure",
+    "timeToFix": 5,
+    "description": "Trailing closure syntax should be used whenever possible."
+  },
+  {
+    "patternId": "unneeded_break_in_switch",
+    "title": "Unneeded Break in Switch",
+    "timeToFix": 5,
+    "description": "Avoid using unneeded break statements."
+  },
+  {
+    "patternId": "unneeded_parentheses_in_closure_argument",
+    "title": "Unneeded Parentheses in Closure Argument",
+    "timeToFix": 5,
+    "description": "Parentheses are not needed when declaring closure arguments."
+  },
+  {
+    "patternId": "xctfail_message",
+    "title": "XCTFail Message",
+    "timeToFix": 5,
+    "description": "An XCTFail call should include a description of the assertion."
+  },
+  {
+    "patternId": "yoda_condition",
+    "title": "Yoda condition rule",
+    "timeToFix": 5,
+    "description": "The variable should be placed on the left, the constant on the right of a comparison operator."
   }
 ]

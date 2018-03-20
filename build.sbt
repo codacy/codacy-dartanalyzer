@@ -26,7 +26,7 @@ version in Docker := "1.0.0-SNAPSHOT"
 
 organization := "com.codacy"
 
-val swiftlintVersion = "0.23.1"
+val swiftlintVersion = "0.25.0"
 
 val installAll =
   s"""apt-get update &&
@@ -50,7 +50,7 @@ daemonUser in Docker := dockerUser
 
 daemonGroup in Docker := dockerGroup
 
-dockerBaseImage := "mkujalowicz/swiftlint:0.23.0"
+dockerBaseImage := "norionomura/swiftlint"
 
 dockerCommands := dockerCommands.value.flatMap {
   case cmd@Cmd("WORKDIR", _) => List(cmd,

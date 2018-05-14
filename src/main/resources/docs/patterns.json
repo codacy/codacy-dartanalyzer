@@ -1,6 +1,6 @@
 {
   "name": "swiftlint",
-  "version": "0.23.0",
+  "version": "0.25.0",
   "patterns": [
     {
       "patternId": "attributes",
@@ -439,6 +439,181 @@
     },
     {
       "patternId": "weak_delegate",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "array_init",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "block_based_kvo",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "contains_over_first_not_nil",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "discouraged_direct_init",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "discouraged_object_literal",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "discouraged_optional_boolean",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "explicit_acl",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "explicit_enum_raw_value",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "fallthrough",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "is_disjoint",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "joined_default_parameter",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "let_var_whitespace",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "literal_expression_end_indentation",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "multiline_arguments",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "multiple_closures_with_trailing_closure",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "no_grouping_extension",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "override_in_extension",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "pattern_matching_keywords",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "prefixed_toplevel_constant",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "private_action",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "private_over_fileprivate",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "quick_discouraged_call",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "quick_discouraged_focused_test",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "quick_discouraged_pending_test",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "required_enum_case",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "single_test_class",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "sorted_first_last",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "strict_fileprivate",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "superfluous_disable_command",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "switch_case_alignment",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "trailing_closure",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "unneeded_break_in_switch",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "unneeded_parentheses_in_closure_argument",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "xctfail_message",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "yoda_condition",
       "level": "Info",
       "category": "CodeStyle"
     }

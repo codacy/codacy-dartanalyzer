@@ -60,7 +60,7 @@ daemonUser in Docker := dockerUser
 
 daemonGroup in Docker := dockerGroup
 
-dockerBaseImage := s"mkujalowicz/swiftlint:${toolVersion.value}"
+dockerBaseImage := s"norionomura/swiftlint:${toolVersion.value}"
 
 dockerCommands := dockerCommands.value.flatMap {
   case cmd@Cmd("WORKDIR", _) => List(cmd,

@@ -38,10 +38,6 @@ toolVersion := {
   toolMap.getOrElse[String]("version", throw new Exception("Failed to retrieve 'version' from patterns.json"))
 }
 
-val installAll =
-  s"""apt-get update &&
-     |apt-get install default-jre --assume-yes""".stripMargin.replaceAll(System.lineSeparator(), " ")
-
 mappings in Universal <++= (resourceDirectory in Compile) map { (resourceDir: File) =>
   val src = resourceDir / "docs"
   val dest = "/docs"
@@ -60,16 +56,13 @@ daemonUser in Docker := dockerUser
 
 daemonGroup in Docker := dockerGroup
 
-dockerBaseImage := s"norionomura/swiftlint:${toolVersion.value}"
+dockerBaseImage := s"codacy/swiftlint"
 
 dockerCommands := dockerCommands.value.flatMap {
-  case cmd@Cmd("WORKDIR", _) => List(cmd,
-    Cmd("RUN", installAll)
-  )
-  case cmd@(Cmd("ADD", "opt /opt")) => List(cmd,
-    Cmd("RUN", "mv /opt/docker/docs /docs"),
+  case cmd@(Cmd("ADD", _)) => List(
     Cmd("RUN", s"""adduser --uid 2004 --disabled-password --gecos \"\" $dockerUser"""),
-    ExecCmd("RUN", Seq("chown", "-R", s"$dockerUser:$dockerGroup", "/docs"): _*)
+    cmd,
+    Cmd("RUN", "mv /opt/docker/docs /docs")
   )
   case other => List(other)
 }

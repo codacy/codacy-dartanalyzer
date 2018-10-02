@@ -13,6 +13,7 @@ machine:
 dependencies:
   override:
     - (cd $HOME/codacy-plugins-test && sbt compile)
+    - (cd $HOME/$CIRCLE_PROJECT_REPONAME && docker build -t codacy/swiftlint -f Dockerfile .)
     - (cd $HOME/$CIRCLE_PROJECT_REPONAME && sbt "set version in Docker := \"latest\"" "set name := \"$CIRCLE_PROJECT_REPONAME\"" docker:publishLocal)
   cache_directories:
     - "~/.ivy2"

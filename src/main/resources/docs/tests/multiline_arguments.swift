@@ -1,13 +1,11 @@
 //#Patterns: multiline_arguments
 
-//#Issue: {"severity": "Info", "line": 15, "patternId": "multiline_arguments"}
-//#Issue: {"severity": "Info", "line": 15, "patternId": "multiline_arguments"}
-//#Issue: {"severity": "Info", "line": 18, "patternId": "multiline_arguments"}
-//#Issue: {"severity": "Info", "line": 19, "patternId": "multiline_arguments"}
-//#Issue: {"severity": "Info", "line": 22, "patternId": "multiline_arguments"}
-//#Issue: {"severity": "Info", "line": 22, "patternId": "multiline_arguments"}
-//#Issue: {"severity": "Info", "line": 27, "patternId": "multiline_arguments"}
-//#Issue: {"severity": "Info", "line": 28, "patternId": "multiline_arguments"}
+//#Issue: {"severity": "Info", "line": 13, "patternId": "multiline_arguments"}
+//#Issue: {"severity": "Info", "line": 16, "patternId": "multiline_arguments"}
+//#Issue: {"severity": "Info", "line": 17, "patternId": "multiline_arguments"}
+//#Issue: {"severity": "Info", "line": 20, "patternId": "multiline_arguments"}
+//#Issue: {"severity": "Info", "line": 25, "patternId": "multiline_arguments"}
+//#Issue: {"severity": "Info", "line": 26, "patternId": "multiline_arguments"}
 
 
 

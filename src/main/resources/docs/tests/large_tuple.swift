@@ -1,18 +1,17 @@
 //#Patterns: large_tuple
 
-//#Issue: {"severity": "Info", "line": 17, "patternId": "large_tuple"}
-//#Issue: {"severity": "Info", "line": 20, "patternId": "large_tuple"}
-//#Issue: {"severity": "Info", "line": 23, "patternId": "large_tuple"}
-//#Issue: {"severity": "Info", "line": 26, "patternId": "large_tuple"}
-//#Issue: {"severity": "Info", "line": 29, "patternId": "large_tuple"}
-//#Issue: {"severity": "Info", "line": 32, "patternId": "large_tuple"}
-//#Issue: {"severity": "Info", "line": 35, "patternId": "large_tuple"}
-//#Issue: {"severity": "Info", "line": 38, "patternId": "large_tuple"}
-//#Issue: {"severity": "Info", "line": 41, "patternId": "large_tuple"}
-//#Issue: {"severity": "Info", "line": 44, "patternId": "large_tuple"}
-//#Issue: {"severity": "Info", "line": 47, "patternId": "large_tuple"}
-//#Issue: {"severity": "Info", "line": 47, "patternId": "large_tuple"}
-//#Issue: {"severity": "Info", "line": 50, "patternId": "large_tuple"}
+//#Issue: {"severity": "Info", "line": 16, "patternId": "large_tuple"}
+//#Issue: {"severity": "Info", "line": 19, "patternId": "large_tuple"}
+//#Issue: {"severity": "Info", "line": 22, "patternId": "large_tuple"}
+//#Issue: {"severity": "Info", "line": 25, "patternId": "large_tuple"}
+//#Issue: {"severity": "Info", "line": 28, "patternId": "large_tuple"}
+//#Issue: {"severity": "Info", "line": 31, "patternId": "large_tuple"}
+//#Issue: {"severity": "Info", "line": 34, "patternId": "large_tuple"}
+//#Issue: {"severity": "Info", "line": 37, "patternId": "large_tuple"}
+//#Issue: {"severity": "Info", "line": 40, "patternId": "large_tuple"}
+//#Issue: {"severity": "Info", "line": 43, "patternId": "large_tuple"}
+//#Issue: {"severity": "Info", "line": 46, "patternId": "large_tuple"}
+//#Issue: {"severity": "Info", "line": 49, "patternId": "large_tuple"}
 
     let foo: (Int, Int, Int)
 

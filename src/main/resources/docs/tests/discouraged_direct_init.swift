@@ -1,17 +1,15 @@
 //#Patterns: discouraged_direct_init
 
-//#Issue: {"severity": "Info", "line": 17, "patternId": "discouraged_direct_init"}
-//#Issue: {"severity": "Info", "line": 20, "patternId": "discouraged_direct_init"}
-//#Issue: {"severity": "Info", "line": 23, "patternId": "discouraged_direct_init"}
-//#Issue: {"severity": "Info", "line": 26, "patternId": "discouraged_direct_init"}
-//#Issue: {"severity": "Info", "line": 29, "patternId": "discouraged_direct_init"}
-//#Issue: {"severity": "Info", "line": 29, "patternId": "discouraged_direct_init"}
-//#Issue: {"severity": "Info", "line": 32, "patternId": "discouraged_direct_init"}
-//#Issue: {"severity": "Info", "line": 35, "patternId": "discouraged_direct_init"}
-//#Issue: {"severity": "Info", "line": 38, "patternId": "discouraged_direct_init"}
-//#Issue: {"severity": "Info", "line": 41, "patternId": "discouraged_direct_init"}
-//#Issue: {"severity": "Info", "line": 44, "patternId": "discouraged_direct_init"}
-//#Issue: {"severity": "Info", "line": 44, "patternId": "discouraged_direct_init"}
+//#Issue: {"severity": "Info", "line": 15, "patternId": "discouraged_direct_init"}
+//#Issue: {"severity": "Info", "line": 18, "patternId": "discouraged_direct_init"}
+//#Issue: {"severity": "Info", "line": 21, "patternId": "discouraged_direct_init"}
+//#Issue: {"severity": "Info", "line": 24, "patternId": "discouraged_direct_init"}
+//#Issue: {"severity": "Info", "line": 27, "patternId": "discouraged_direct_init"}
+//#Issue: {"severity": "Info", "line": 30, "patternId": "discouraged_direct_init"}
+//#Issue: {"severity": "Info", "line": 33, "patternId": "discouraged_direct_init"}
+//#Issue: {"severity": "Info", "line": 36, "patternId": "discouraged_direct_init"}
+//#Issue: {"severity": "Info", "line": 39, "patternId": "discouraged_direct_init"}
+//#Issue: {"severity": "Info", "line": 42, "patternId": "discouraged_direct_init"}
 
 
 UIDevice()

@@ -1,10 +1,9 @@
 //#Patterns: empty_enum_arguments
 
-//#Issue: {"severity": "Info", "line": 10, "patternId": "empty_enum_arguments"}
-//#Issue: {"severity": "Info", "line": 14, "patternId": "empty_enum_arguments"}
-//#Issue: {"severity": "Info", "line": 18, "patternId": "empty_enum_arguments"}
-//#Issue: {"severity": "Info", "line": 18, "patternId": "empty_enum_arguments"}
-//#Issue: {"severity": "Info", "line": 22, "patternId": "empty_enum_arguments"}
+//#Issue: {"severity": "Info", "line": 9, "patternId": "empty_enum_arguments"}
+//#Issue: {"severity": "Info", "line": 13, "patternId": "empty_enum_arguments"}
+//#Issue: {"severity": "Info", "line": 17, "patternId": "empty_enum_arguments"}
+//#Issue: {"severity": "Info", "line": 21, "patternId": "empty_enum_arguments"}
 
     switch foo {
         case .bar(_): break

@@ -1,5 +1,6 @@
 //#Patterns: generic_type_name
 
+//#Issue: {"severity": "Info", "line": 26, "patternId": "generic_type_name"}
 //#Issue: {"severity": "Info", "line": 29, "patternId": "generic_type_name"}
 //#Issue: {"severity": "Info", "line": 32, "patternId": "generic_type_name"}
 //#Issue: {"severity": "Info", "line": 35, "patternId": "generic_type_name"}
@@ -10,21 +11,17 @@
 //#Issue: {"severity": "Info", "line": 50, "patternId": "generic_type_name"}
 //#Issue: {"severity": "Info", "line": 53, "patternId": "generic_type_name"}
 //#Issue: {"severity": "Info", "line": 56, "patternId": "generic_type_name"}
-//#Issue: {"severity": "Info", "line": 56, "patternId": "generic_type_name"}
 //#Issue: {"severity": "Info", "line": 59, "patternId": "generic_type_name"}
 //#Issue: {"severity": "Info", "line": 62, "patternId": "generic_type_name"}
 //#Issue: {"severity": "Info", "line": 65, "patternId": "generic_type_name"}
 //#Issue: {"severity": "Info", "line": 68, "patternId": "generic_type_name"}
-//#Issue: {"severity": "Info", "line": 71, "patternId": "generic_type_name"}
 //#Issue: {"severity": "Info", "line": 71, "patternId": "generic_type_name"}
 //#Issue: {"severity": "Info", "line": 74, "patternId": "generic_type_name"}
 //#Issue: {"severity": "Info", "line": 77, "patternId": "generic_type_name"}
 //#Issue: {"severity": "Info", "line": 80, "patternId": "generic_type_name"}
 //#Issue: {"severity": "Info", "line": 83, "patternId": "generic_type_name"}
 //#Issue: {"severity": "Info", "line": 86, "patternId": "generic_type_name"}
-//#Issue: {"severity": "Info", "line": 86, "patternId": "generic_type_name"}
 //#Issue: {"severity": "Info", "line": 89, "patternId": "generic_type_name"}
-//#Issue: {"severity": "Info", "line": 92, "patternId": "generic_type_name"}
 
     func foo<T_Foo>() {}
 

@@ -10,9 +10,11 @@ RUN chmod a+x /usr/lib/libsourcekitdInProc.so /usr/lib/x86_64-linux-gnu/libBlock
 FROM openjdk:8-jre
 
 RUN apt-get -q update && \
-    apt-get -q install -y --no-install-recommends libatomic1 libcurl3 libbsd0 libxml2
-
-RUN wget http://security.ubuntu.com/ubuntu/pool/main/i/icu/libicu55_55.1-7ubuntu0.4_amd64.deb && dpkg -i libicu55_55.1-7ubuntu0.4_amd64.deb
+    apt-get -q install -y --no-install-recommends libatomic1 libcurl3 libbsd0 libxml2 && \
+    wget http://security.ubuntu.com/ubuntu/pool/main/i/icu/libicu55_55.1-7ubuntu0.4_amd64.deb && \
+    dpkg -i libicu55_55.1-7ubuntu0.4_amd64.deb && \
+    apt-get clean && \
+    rm -rf libicu55_55.1-7ubuntu0.4_amd64.deb /var/lib/apt/lists/*
 
 COPY --from=build /usr/lib/swift/linux /usr/lib/swift/linux/
 COPY --from=build /usr/bin/swiftlint /usr/bin/

@@ -1,12 +1,11 @@
 package codacy.swiftlint
 
-import java.io.File
 import java.nio.file.{Path, Paths}
 
-import codacy.docker.api._
-import codacy.docker.api.utils.ToolHelper
-import codacy.docker.api.{Pattern, Result, Source, Tool}
-import codacy.dockerApi.utils.{CommandRunner, FileHelper}
+import com.codacy.plugins.api.results.{Pattern, Result, Tool}
+import com.codacy.plugins.api.{Options, Source}
+import com.codacy.tools.scala.seed.utils.{CommandRunner, FileHelper}
+import com.codacy.tools.scala.seed.utils.ToolHelper._
 import play.api.libs.json._
 
 import scala.util.{Failure, Properties, Success, Try}
@@ -15,6 +14,7 @@ case class SwiftLintFile(rule_id: String, file: String, reason: String, line: In
 
 object SwiftLintFile {
   implicit val readsSwiftLintFile: Reads[SwiftLintFile] = new Reads[SwiftLintFile] {
+
     def reads(json: JsValue): JsResult[SwiftLintFile] = {
       for {
         rule_id <- (json \ "rule_id").validate[String]
@@ -28,17 +28,21 @@ object SwiftLintFile {
 
 object SwiftLint extends Tool {
 
-  private lazy val configFileNames = Set(".swiftlint.yml")
+  private lazy val nativeConfigFileNames = Set(".swiftlint.yml")
 
-  override def apply(source: Source.Directory, configuration: Option[List[Pattern.Definition]],
-                     files: Option[Set[Source.File]], options: Map[Configuration.Key, Configuration.Value])
-                    (implicit specification: Tool.Specification): Try[List[Result]] = {
+  override def apply(
+    source: Source.Directory,
+    configuration: Option[List[Pattern.Definition]],
+    files: Option[Set[Source.File]],
+    options: Map[Options.Key, Options.Value])(implicit specification: Tool.Specification): Try[List[Result]] = {
     Try {
 
-      val path = Paths.get(source.path)
-      lazy val nativeConfig = FileHelper.findConfigurationFile(configFileNames, path).map(_.toString)
-      val filesToLint: Set[String] = ToolHelper.filesToLint(source, files)
-      val patternsToLintOpt: Option[List[codacy.docker.api.Pattern.Definition]] = ToolHelper.patternsToLint(configuration)
+      lazy val nativeConfig =
+        FileHelper.findConfigurationFile(Paths.get(source.path), nativeConfigFileNames).map(_.toString)
+      val filesToLint = files.fold(List(source.path.toString)) { paths =>
+        paths.map(_.toString).toList
+      }
+      val patternsToLintOpt = configuration.withDefaultParameters
 
       val config = patternsToLintOpt.fold(Option.empty[String]) {
         case patternsToLint if patternsToLint.nonEmpty =>
@@ -49,16 +53,16 @@ object SwiftLint extends Tool {
 
       val baseCmd = List("swiftlint", "lint", "--quiet", "--reporter", "json")
 
-      val command = cfgOpt match {
+      val command: List[String] = cfgOpt match {
         case Some(opt) =>
           baseCmd ++ List("--config", opt, "--path") ++ filesToLint
         case None => baseCmd ++ List("--path") ++ filesToLint
       }
 
-      CommandRunner.exec(command, Some(path.toFile)) match {
+      CommandRunner.exec(command, Option(Paths.get(source.path).toFile)) match {
         case Right(resultFromTool) =>
-          parseToolResult(path, resultFromTool.stdout) match {
-            case s@Success(_) => s
+          parseToolResult(resultFromTool.stdout) match {
+            case s @ Success(_) => s
             case Failure(e) =>
               val msg =
                 s"""
@@ -68,7 +72,7 @@ object SwiftLint extends Tool {
                    |stdout: ${resultFromTool.stdout.mkString(Properties.lineSeparator)}
                    |stderr: ${resultFromTool.stderr.mkString(Properties.lineSeparator)}
                    |configFile:
-                   |${cfgOpt.fold("")(p => scala.io.Source.fromFile(new File(p)).getLines().mkString("\n"))}
+                   |${cfgOpt.fold("")(p => scala.io.Source.fromFile(p).getLines().mkString("\n"))}
              """.stripMargin
               Failure(new Exception(msg))
           }
@@ -88,25 +92,25 @@ object SwiftLint extends Tool {
     FileHelper.createTmpFile(content, ".swiftlint-ci", ".yml")
   }
 
-  private def parseToolResult(path: Path, output: List[String]): Try[List[Result]] = {
+  private def parseToolResult(output: List[String]): Try[List[Result]] = {
     Try(Json.parse(output.mkString)).flatMap(parseToolResult)
   }
 
   private def parseToolResult(outputJson: JsValue): Try[List[Result]] = {
     /* Example:
-    * [
-    *   {
-    *     "rule_id": "mark",
-    *     "reason": "MARK comment should be in valid format. e.g. '\/\/ MARK: ...' or '\/\/ MARK: - ...'",
-    *     "character": "5",
-    *     "file": "\/Users\/marlontojal\/Documents\/GitHub\/codacy-swiftlint\/src\/main\/resources\/docs\/tests\/mark.swift",
-    *     "severity": "Warning",
-    *     "type": "Mark",
-    *     "line": "3"
-    *   },
-    * ...
-    * ]
-    */
+     * [
+     *   {
+     *     "rule_id": "mark",
+     *     "reason": "MARK comment should be in valid format. e.g. '\/\/ MARK: ...' or '\/\/ MARK: - ...'",
+     *     "character": "5",
+     *     "file": "\/Users\/marlontojal\/Documents\/GitHub\/codacy-swiftlint\/src\/main\/resources\/docs\/tests\/mark.swift",
+     *     "severity": "Warning",
+     *     "type": "Mark",
+     *     "line": "3"
+     *   },
+     * ...
+     * ]
+     */
 
     Try(outputJson.as[List[SwiftLintFile]]).map { violations =>
       violations.flatMap { violation =>
@@ -115,9 +119,7 @@ object SwiftLint extends Tool {
             Source.File(violation.file),
             Result.Message(violation.reason),
             Pattern.Id(violation.rule_id),
-            Source.Line(violation.line)
-          )
-        )
+            Source.Line(violation.line)))
       }
     }
   }

@@ -17,7 +17,7 @@ jobs:
       - run:
           name: Compile test project
           working_directory: ~/codacy-plugins-test
-          command: cat /dev/null | sbt compile
+          command: cat /dev/null || sbt compile
       - run:
           name: Publish base docker image
           working_directory: ~/workdir

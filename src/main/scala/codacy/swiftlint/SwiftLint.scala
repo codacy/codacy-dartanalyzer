@@ -55,8 +55,8 @@ object SwiftLint extends Tool {
 
       val command: List[String] = cfgOpt match {
         case Some(opt) =>
-          baseCmd ++ List("--config", opt, "--path") ++ filesToLint
-        case None => baseCmd ++ List("--path") ++ filesToLint
+          baseCmd ++ List("--config", opt) ++ filesToLint
+        case None => baseCmd ++ filesToLint
       }
 
       CommandRunner.exec(command, Option(Paths.get(source.path).toFile)) match {

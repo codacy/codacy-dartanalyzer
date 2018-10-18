@@ -1,14 +1,15 @@
 //#Patterns: syntactic_sugar
 
-//#Issue: {"severity": "Info", "line": 13, "patternId": "syntactic_sugar"}
-//#Issue: {"severity": "Info", "line": 15, "patternId": "syntactic_sugar"}
-//#Issue: {"severity": "Info", "line": 17, "patternId": "syntactic_sugar"}
-//#Issue: {"severity": "Info", "line": 19, "patternId": "syntactic_sugar"}
-//#Issue: {"severity": "Info", "line": 21, "patternId": "syntactic_sugar"}
-//#Issue: {"severity": "Info", "line": 23, "patternId": "syntactic_sugar"}
-//#Issue: {"severity": "Info", "line": 25, "patternId": "syntactic_sugar"}
-//#Issue: {"severity": "Info", "line": 27, "patternId": "syntactic_sugar"}
-//#Issue: {"severity": "Info", "line": 29, "patternId": "syntactic_sugar"}
+//#Issue: {"severity": "Info", "line": 14, "patternId": "syntactic_sugar"}
+//#Issue: {"severity": "Info", "line": 16, "patternId": "syntactic_sugar"}
+//#Issue: {"severity": "Info", "line": 18, "patternId": "syntactic_sugar"}
+//#Issue: {"severity": "Info", "line": 20, "patternId": "syntactic_sugar"}
+//#Issue: {"severity": "Info", "line": 22, "patternId": "syntactic_sugar"}
+//#Issue: {"severity": "Info", "line": 24, "patternId": "syntactic_sugar"}
+//#Issue: {"severity": "Info", "line": 26, "patternId": "syntactic_sugar"}
+//#Issue: {"severity": "Info", "line": 26, "patternId": "syntactic_sugar"}
+//#Issue: {"severity": "Info", "line": 28, "patternId": "syntactic_sugar"}
+//#Issue: {"severity": "Info", "line": 30, "patternId": "syntactic_sugar"}
 
     let x: Array<String>
 

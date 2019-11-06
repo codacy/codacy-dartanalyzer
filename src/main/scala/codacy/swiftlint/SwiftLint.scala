@@ -31,10 +31,11 @@ object SwiftLint extends Tool {
   private lazy val nativeConfigFileNames = Set(".swiftlint.yml")
 
   override def apply(
-    source: Source.Directory,
-    configuration: Option[List[Pattern.Definition]],
-    files: Option[Set[Source.File]],
-    options: Map[Options.Key, Options.Value])(implicit specification: Tool.Specification): Try[List[Result]] = {
+      source: Source.Directory,
+      configuration: Option[List[Pattern.Definition]],
+      files: Option[Set[Source.File]],
+      options: Map[Options.Key, Options.Value]
+  )(implicit specification: Tool.Specification): Try[List[Result]] = {
     Try {
 
       lazy val nativeConfig =
@@ -119,7 +120,9 @@ object SwiftLint extends Tool {
             Source.File(violation.file),
             Result.Message(violation.reason),
             Pattern.Id(violation.rule_id),
-            Source.Line(violation.line)))
+            Source.Line(violation.line)
+          )
+        )
       }
     }
   }

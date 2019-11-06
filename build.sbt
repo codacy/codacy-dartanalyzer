@@ -1,41 +1,33 @@
 import com.typesafe.sbt.packager.docker.{Cmd, ExecCmd}
-import scala.util.parsing.json.JSON
-import scala.io.Source
+import sjsonnew._
+import sjsonnew.BasicJsonProtocol._
+import sjsonnew.support.scalajson.unsafe._
 
-name := """codacy-swiftlint"""
+organization := "com.codacy"
 
-version := "1.0.0-SNAPSHOT"
+name := "codacy-swiftlint"
 
-val languageVersion = "2.12.7"
+scalaVersion := "2.13.1"
 
-scalaVersion := languageVersion
-scalacOptions ++= Seq("-Ywarn-unused")
-
-scapegoatVersion in ThisBuild := "1.3.4"
-
-resolvers ++= Seq(
-  "Sonatype OSS Snapshots" at "https://oss.sonatype.org/content/repositories/releases",
-  "Typesafe Repo" at "http://repo.typesafe.com/typesafe/releases/")
-
-libraryDependencies ++= Seq("com.codacy" %% "codacy-engine-scala-seed" % "3.0.183" withSources ())
+libraryDependencies += "com.codacy" %% "codacy-engine-scala-seed" % "3.1.0"
 
 enablePlugins(AshScriptPlugin)
 
 enablePlugins(DockerPlugin)
 
-version in Docker := "1.0.0-SNAPSHOT"
+lazy val toolVersionKey = settingKey[String]("The version of the underlying tool retrieved from patterns.json")
 
-organization := "com.codacy"
+toolVersionKey := {
+  case class Patterns(name: String, version: String)
+  implicit val patternsIso: IsoLList[Patterns] =
+    LList.isoCurried((p: Patterns) => ("name", p.name) :*: ("version", p.version) :*: LNil) {
+      case (_, n) :*: (_, v) :*: LNil => Patterns(n, v)
+    }
 
-lazy val toolVersion = SettingKey[String]("retrieve the version of the underlying tool from patterns.json")
-
-toolVersion := {
   val jsonFile = (resourceDirectory in Compile).value / "docs" / "patterns.json"
-  val toolMap = JSON
-    .parseFull(Source.fromFile(jsonFile).getLines().mkString)
-    .getOrElse(throw new Exception("patterns.json is not a valid json"))
-    .asInstanceOf[Map[String, String]]
-  toolMap.getOrElse[String]("version", throw new Exception("Failed to retrieve 'version' from patterns.json"))
+  val json = Parser.parseFromFile(jsonFile)
+  val patterns = json.flatMap(Converter.fromJson[Patterns])
+  patterns.get.version
 }
 
 mappings in Universal ++= {
@@ -56,13 +48,14 @@ daemonUser in Docker := dockerUser
 
 daemonGroup in Docker := dockerGroup
 
-dockerBaseImage := s"codacy/swiftlint"
+dockerBaseImage := "codacy/swiftlint"
 
 dockerCommands := dockerCommands.value.flatMap {
   case cmd @ (Cmd("ADD", _)) =>
     List(
       Cmd("RUN", s"""adduser --uid 2004 --disabled-password --gecos \"\" $dockerUser"""),
       cmd,
-      Cmd("RUN", "mv /opt/docker/docs /docs"))
+      Cmd("RUN", "mv /opt/docker/docs /docs")
+    )
   case other => List(other)
 }

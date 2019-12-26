@@ -48,7 +48,7 @@ daemonUser in Docker := dockerUser
 
 daemonGroup in Docker := dockerGroup
 
-dockerBaseImage := "codacy/swiftlint"
+dockerBaseImage := "codacy-swiftlint-base"
 
 dockerCommands := dockerCommands.value.flatMap {
   case cmd @ (Cmd("ADD", _)) =>

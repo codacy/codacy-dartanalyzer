@@ -8,6 +8,8 @@ import com.codacy.tools.scala.seed.utils.{CommandRunner, FileHelper}
 import com.codacy.tools.scala.seed.utils.ToolHelper._
 import play.api.libs.json._
 
+import better.files._
+
 import scala.util.{Failure, Properties, Success, Try}
 
 case class SwiftLintFile(rule_id: String, file: String, reason: String, line: Int)
@@ -29,6 +31,13 @@ object SwiftLintFile {
 object SwiftLint extends Tool {
 
   private lazy val nativeConfigFileNames = Set(".swiftlint.yml")
+
+  def deleteNativeConfigurationFiles(source: Source.Directory): Unit = {
+    File(source.path)
+      .walk()
+      .find(file => nativeConfigFileNames.contains(file.name))
+      .foreach(_.delete())
+  }
 
   override def apply(
       source: Source.Directory,
@@ -56,6 +65,7 @@ object SwiftLint extends Tool {
 
       val command: List[String] = cfgOpt match {
         case Some(opt) =>
+          deleteNativeConfigurationFiles(source)
           baseCmd ++ List("--config", opt) ++ filesToLint
         case None => baseCmd ++ filesToLint
       }

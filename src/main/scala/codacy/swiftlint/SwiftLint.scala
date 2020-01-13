@@ -59,13 +59,18 @@ object SwiftLint extends Tool {
           Some(writeConfigFile(patternsToLint).toString)
       }
 
+      // Remove native configuration file if configuration is defined
+      // so that swiftlint does not use it when running
+      if (config.isDefined) {
+        deleteNativeConfigurationFiles(source)
+      }
+
       val cfgOpt = config.orElse(nativeConfig)
 
       val baseCmd = List("swiftlint", "lint", "--quiet", "--reporter", "json")
 
       val command: List[String] = cfgOpt match {
         case Some(opt) =>
-          deleteNativeConfigurationFiles(source)
           baseCmd ++ List("--config", opt) ++ filesToLint
         case None => baseCmd ++ filesToLint
       }

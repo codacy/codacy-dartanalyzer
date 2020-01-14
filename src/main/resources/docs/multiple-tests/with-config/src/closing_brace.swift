@@ -1,0 +1,1 @@
+../../../tests/closing_brace.swift

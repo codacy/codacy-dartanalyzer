@@ -1,0 +1,1 @@
+../../../tests/dynamic_inline.swift

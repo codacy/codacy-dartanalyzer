@@ -3,12 +3,12 @@ package codacy.swiftlint
 import java.nio.file.{Path, Paths}
 
 import com.codacy.plugins.api.results.{Pattern, Result, Tool}
-import com.codacy.plugins.api.{Options, Source}
+import com.codacy.plugins.api.{ErrorMessage, Options, Source}
 import com.codacy.tools.scala.seed.utils.{CommandRunner, FileHelper}
 import com.codacy.tools.scala.seed.utils.ToolHelper._
 import play.api.libs.json._
-
 import better.files._
+import com.codacy.plugins.api.results.Result.FileError
 
 import scala.util.{Failure, Properties, Success, Try}
 
@@ -32,11 +32,85 @@ object SwiftLint extends Tool {
 
   private lazy val nativeConfigFileNames = Set(".swiftlint.yml")
 
-  def deleteNativeConfigurationFiles(source: Source.Directory, newContent: String): Unit = {
+  def deleteNativeConfigurationFiles(source: Source.Directory): Unit = {
     File(source.path)
       .walk()
       .find(file => nativeConfigFileNames.contains(file.name))
-      .foreach(_.write(newContent))
+      .foreach(_.delete())
+  }
+
+  def listOfFilesToLint(files: Option[Set[Source.File]], source: Source.Directory): List[String] = {
+    val listOfFiles = files.fold(List(source.path.toString)) { paths =>
+      paths.map(_.toString).toList
+    }
+
+    if (listOfFiles.isEmpty) {
+      List(source.path)
+    }
+
+    listOfFiles
+  }
+
+  def nativeConfigurationFile(source: Source.Directory): Option[String] = {
+    FileHelper.findConfigurationFile(Paths.get(source.path), nativeConfigFileNames).map(_.toString)
+  }
+
+  def configsFromCodacyConfiguration(
+      configuration: Option[List[Pattern.Definition]]
+  )(implicit specification: Tool.Specification): Option[String] = {
+    val patternsToLintOpt = configuration.withDefaultParameters
+
+    patternsToLintOpt.fold(Option.empty[String]) {
+      case patternsToLint if patternsToLint.nonEmpty =>
+        Some(writeConfigFile(patternsToLint).toString)
+    }
+  }
+
+  def lintConfiguration(source: Source.Directory, configuration: Option[List[Pattern.Definition]])(
+      implicit specification: Tool.Specification
+  ): Option[String] = {
+    lazy val nativeConfig = nativeConfigurationFile(source)
+
+    val config = configsFromCodacyConfiguration(configuration)
+
+    config.orElse(nativeConfig)
+  }
+
+  private def commandToRun(configOpt: Option[String], files: List[String]): List[String] = {
+    val baseCmd = List("swiftlint", "lint", "--quiet", "--reporter", "json")
+
+    configOpt match {
+      case Some(opt) =>
+        baseCmd ++ List("--config", opt)
+      case None => baseCmd
+    }
+  }
+
+  private def runToolCommand(
+      command: List[String],
+      source: Source.Directory,
+      cfgOpt: Option[String]
+  ): Try[List[Result]] = {
+    CommandRunner.exec(command, Option(Paths.get(source.path).toFile)) match {
+      case Right(resultFromTool) =>
+        parseToolResult(resultFromTool.stdout) match {
+          case s @ Success(_) => s
+          case Failure(e) =>
+            val msg =
+              s"""
+                 |${this.getClass.getSimpleName} exited with code ${resultFromTool.exitCode}
+                 |command: ${command.mkString(" ")}
+                 |message: ${e.getMessage}
+                 |stdout: ${resultFromTool.stdout.mkString(Properties.lineSeparator)}
+                 |stderr: ${resultFromTool.stderr.mkString(Properties.lineSeparator)}
+                 |configFile:
+                 |${cfgOpt.fold("")(p => scala.io.Source.fromFile(p).getLines().mkString("\n"))}
+             """.stripMargin
+            Failure(new Exception(msg))
+        }
+      case Left(e) =>
+        Failure(e)
+    }
   }
 
   override def apply(
@@ -47,55 +121,23 @@ object SwiftLint extends Tool {
   )(implicit specification: Tool.Specification): Try[List[Result]] = {
     Try {
 
-      lazy val nativeConfig =
-        FileHelper.findConfigurationFile(Paths.get(source.path), nativeConfigFileNames).map(_.toString)
-      val filesToLint = files.fold(List(source.path.toString)) { paths =>
-        paths.map(_.toString).toList
+      val filesToLint = listOfFilesToLint(files, source)
+
+      val cfgOpt = lintConfiguration(source, configuration)
+
+      filesToLint.flatMap { file =>
+        val command: List[String] = commandToRun(cfgOpt, List(file))
+
+        val fileCommandAnalysisResult = runToolCommand(command, source, cfgOpt)
+        fileCommandAnalysisResult match {
+          case Success(res) => res
+          case Failure(exception) =>
+            List(
+              FileError(Source.File(file), Some(ErrorMessage(s"Failed to analyse file $file: ${exception.getMessage}")))
+            )
+        }
       }
-      val patternsToLintOpt = configuration.withDefaultParameters
-
-      val config = patternsToLintOpt.fold(Option.empty[String]) {
-        case patternsToLint if patternsToLint.nonEmpty =>
-          Some(writeConfigFile(patternsToLint).toString)
-      }
-
-      // Remove native configuration file if configuration is defined
-      // so that swiftlint does not use it when running
-      if (config.isDefined) {
-        deleteNativeConfigurationFiles(source, config.getOrElse(""))
-      }
-
-      val cfgOpt = config.orElse(nativeConfig)
-
-      val baseCmd = List("swiftlint", "lint", "--quiet", "--reporter", "json")
-
-      val command: List[String] = cfgOpt match {
-        case Some(opt) =>
-          baseCmd ++ List("--config", opt) ++ filesToLint
-        case None => baseCmd ++ filesToLint
-      }
-
-      CommandRunner.exec(command, Option(Paths.get(source.path).toFile)) match {
-        case Right(resultFromTool) =>
-          parseToolResult(resultFromTool.stdout) match {
-            case s @ Success(_) => s
-            case Failure(e) =>
-              val msg =
-                s"""
-                   |${this.getClass.getSimpleName} exited with code ${resultFromTool.exitCode}
-                   |command: ${command.mkString(" ")}
-                   |message: ${e.getMessage}
-                   |stdout: ${resultFromTool.stdout.mkString(Properties.lineSeparator)}
-                   |stderr: ${resultFromTool.stderr.mkString(Properties.lineSeparator)}
-                   |configFile:
-                   |${cfgOpt.fold("")(p => scala.io.Source.fromFile(p).getLines().mkString("\n"))}
-             """.stripMargin
-              Failure(new Exception(msg))
-          }
-        case Left(e) =>
-          Failure(e)
-      }
-    }.flatten
+    }
   }
 
   private def writeConfigFile(patternsToLint: List[Pattern.Definition]): Path = {

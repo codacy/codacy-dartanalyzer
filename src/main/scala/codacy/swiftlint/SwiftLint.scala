@@ -32,11 +32,11 @@ object SwiftLint extends Tool {
 
   private lazy val nativeConfigFileNames = Set(".swiftlint.yml")
 
-  def deleteNativeConfigurationFiles(source: Source.Directory): Unit = {
+  def deleteNativeConfigurationFiles(source: Source.Directory, newContent: String): Unit = {
     File(source.path)
       .walk()
       .find(file => nativeConfigFileNames.contains(file.name))
-      .foreach(_.delete())
+      .foreach(_.write(newContent))
   }
 
   override def apply(
@@ -62,7 +62,7 @@ object SwiftLint extends Tool {
       // Remove native configuration file if configuration is defined
       // so that swiftlint does not use it when running
       if (config.isDefined) {
-        deleteNativeConfigurationFiles(source)
+        deleteNativeConfigurationFiles(source, config.getOrElse(""))
       }
 
       val cfgOpt = config.orElse(nativeConfig)

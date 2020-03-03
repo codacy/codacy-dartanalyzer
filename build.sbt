@@ -9,7 +9,7 @@ name := "codacy-swiftlint"
 
 scalaVersion := "2.13.1"
 
-libraryDependencies += "com.codacy" %% "codacy-engine-scala-seed" % "3.1.0"
+libraryDependencies += "com.codacy" %% "codacy-engine-scala-seed" % "4.0.0"
 
 enablePlugins(AshScriptPlugin)
 

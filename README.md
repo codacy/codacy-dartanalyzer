@@ -1,4 +1,5 @@
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/c19f9b18251e4dc5bce89b0a70d0bc70)](https://app.codacy.com/gh/codacy/codacy-swiftlint?utm_source=github.com&utm_medium=referral&utm_content=codacy/codacy-swiftlint&utm_campaign=Badge_Grade_Settings)
 [![Build Status](https://circleci.com/gh/codacy/codacy-swiftlint.svg?style=shield&circle-token=:circle-token)](https://circleci.com/gh/codacy/codacy-swiftlint)
 
 # Codacy Swiftlint

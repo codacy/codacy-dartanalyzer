@@ -8,10 +8,10 @@ RUN chmod a+x /usr/lib/libsourcekitdInProc.so /usr/lib/libBlocksRuntime.so
 
 RUN apt-get -q update && \
     apt-get -q install -y --no-install-recommends openjdk-8-jre libatomic1 libcurl3 libbsd0 libxml2 wget && \
-    wget http://security.ubuntu.com/ubuntu/pool/main/i/icu/libicu55_55.1-7ubuntu0.4_amd64.deb && \
-    dpkg -i libicu55_55.1-7ubuntu0.4_amd64.deb && \
+    wget http://security.ubuntu.com/ubuntu/pool/main/i/icu/libicu55_55.1-7ubuntu0.5_amd64.deb && \
+    dpkg -i libicu55_55.1-7ubuntu0.5_amd64.deb && \
     apt-get remove --purge -y wget && \
     apt-get clean && \
-    rm -rf libicu55_55.1-7ubuntu0.4_amd64.deb /var/lib/apt/lists/*
+    rm -rf libicu55_55.1-7ubuntu0.5_amd64.deb /var/lib/apt/lists/*
 
 CMD swiftlint version

@@ -76,14 +76,15 @@ object SwiftLint extends Tool {
     config.orElse(nativeConfig)
   }
 
-  private def commandToRun(configOpt: Option[String], files: List[String]): List[String] = {
+  private def commandToRun(configOpt: Option[String], file: String): List[String] = {
     val baseCmd = List("swiftlint", "lint", "--quiet", "--reporter", "json")
 
-    configOpt match {
+    val configCmd = configOpt match {
       case Some(opt) =>
         baseCmd ++ List("--config", opt)
       case None => baseCmd
     }
+    configCmd :+ file
   }
 
   private def runToolCommand(
@@ -126,7 +127,7 @@ object SwiftLint extends Tool {
       val cfgOpt = lintConfiguration(source, configuration)
 
       filesToLint.flatMap { file =>
-        val command: List[String] = commandToRun(cfgOpt, List(file))
+        val command: List[String] = commandToRun(cfgOpt, file)
 
         val fileCommandAnalysisResult = runToolCommand(command, source, cfgOpt)
         fileCommandAnalysisResult match {

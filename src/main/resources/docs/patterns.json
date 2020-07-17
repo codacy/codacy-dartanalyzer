@@ -1,5 +1,5 @@
 {
-  "name": "SwiftLint",
+  "name": "swiftlint",
   "version": "0.36.0",
   "patterns": [
     {

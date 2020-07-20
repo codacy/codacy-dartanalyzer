@@ -12,13 +12,14 @@ See the [codacy-engine-scala-seed](https://github.com/codacy/codacy-engine-scala
 
 You can create the docker by doing:
 
-```
-sbt docker:publishLocal
+```bash
+sbt graalvm-native-image:packageBin
+docker build -t codacy-swiftlint .
 ```
 
 The docker is ran with the following command:
 
-```
+```bash
 docker run -it -v $srcDir:/src  <DOCKER_NAME>:<DOCKER_VERSION>
 ```
 

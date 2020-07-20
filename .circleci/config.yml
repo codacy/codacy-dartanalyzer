@@ -1,7 +1,7 @@
 version: 2.1
 
 orbs:
-  codacy: codacy/base@4.1.4
+  codacy: codacy/base@4.2.7
   codacy_plugins_test: codacy/plugins-test@0.13.0
 
 workflows:
@@ -13,14 +13,11 @@ workflows:
       - codacy/sbt:
           name: publish_docker_local
           cmd: |
-            docker build -t codacy-swiftlint-base .
-            sbt "set scalafmtUseIvy in ThisBuild := false;
-                 scalafmt::test;
+            sbt "scalafmt::test;
                  test:scalafmt::test;
                  sbt:scalafmt::test;
-                 set name := \"$CIRCLE_PROJECT_REPONAME\";
-                 set version in Docker := \"latest\";
-                 docker:publishLocal"
+                 graalvm-native-image:packageBin"
+            docker build -t $CIRCLE_PROJECT_REPONAME:latest .
             docker save --output docker-image.tar $CIRCLE_PROJECT_REPONAME:latest
           persist_to_workspace: true
           requires:
@@ -30,16 +27,8 @@ workflows:
           run_multiple_tests: true
           requires:
             - publish_docker_local
-      - codacy/sbt:
-          name: publish_dockerhub
+      - codacy/publish_docker:
           context: CodacyDocker
-          cmd: |
-            docker load --input docker-image.tar
-            docker login -u $DOCKER_USER -p $DOCKER_PASS
-            docker tag $CIRCLE_PROJECT_REPONAME codacy/$CIRCLE_PROJECT_REPONAME:$(cat .version)
-            docker tag $CIRCLE_PROJECT_REPONAME codacy/$CIRCLE_PROJECT_REPONAME:latest
-            docker push codacy/$CIRCLE_PROJECT_REPONAME:$(cat .version)
-            docker push codacy/$CIRCLE_PROJECT_REPONAME:latest
           requires:
             - plugins_test
           filters:
@@ -50,4 +39,4 @@ workflows:
           name: tag_version
           context: CodacyAWS
           requires:
-            - publish_dockerhub
+            - codacy/publish_docker

@@ -1,0 +1,11 @@
+FROM norionomura/swiftlint:0.39.2 as build
+
+RUN apt-get update && apt-get install -y openjdk-8-jre
+
+WORKDIR /src
+COPY docs /docs
+COPY target/universal/stage/ /workdir/
+RUN adduser --uid 2004 --disabled-password --gecos "" docker
+RUN chmod +x /workdir/bin/codacy-swiftlint
+USER docker
+ENTRYPOINT ["/workdir/bin/codacy-swiftlint"]

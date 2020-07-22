@@ -40,15 +40,11 @@ object SwiftLint extends Tool {
   }
 
   def listOfFilesToLint(files: Option[Set[Source.File]], source: Source.Directory): List[String] = {
-    val listOfFiles = files.fold(List(source.path.toString)) { paths =>
-      paths.map(_.toString).toList
+    files match {
+      case None => List(source.path)
+      case Some(paths) if paths.isEmpty => List(source.path)
+      case Some(paths) => paths.map(_.path).toList
     }
-
-    if (listOfFiles.isEmpty) {
-      List(source.path)
-    }
-
-    listOfFiles
   }
 
   def nativeConfigurationFile(source: Source.Directory): Option[String] = {

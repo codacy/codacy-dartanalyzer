@@ -1,63 +1,35 @@
-import com.typesafe.sbt.packager.docker.{Cmd, ExecCmd}
-import sjsonnew._
-import sjsonnew.BasicJsonProtocol._
-import sjsonnew.support.scalajson.unsafe._
-
 organization := "com.codacy"
 
 name := "codacy-swiftlint"
 
-scalaVersion := "2.13.1"
+scalaVersion := "2.13.3"
 
-libraryDependencies += "com.codacy" %% "codacy-engine-scala-seed" % "4.0.0"
+lazy val swiftlintVersion = Def.setting("1.10.0")
 
-enablePlugins(AshScriptPlugin)
+Compile / sourceGenerators += Def.task {
+  val file = (Compile / sourceManaged).value / "codacy" / "swiftlint" / "Versions.scala"
+  IO.write(file, s"""package codacy.swiftlint
+                    |object Versions {
+                    |  val swiftlintVersion: String = "${swiftlintVersion.value}"
+                    |}
+                    |""".stripMargin)
+  Seq(file)
+}.taskValue
 
-enablePlugins(DockerPlugin)
+libraryDependencies += "com.codacy" %% "codacy-engine-scala-seed" % "4.0.3"
 
-scalacOptions ++= Seq("-Ywarn-unused:_", "-Xfatal-warnings")
+enablePlugins(GraalVMNativeImagePlugin)
 
-lazy val toolVersionKey = settingKey[String]("The version of the underlying tool retrieved from patterns.json")
+val graalVersion = "20.1.0-java11"
 
-toolVersionKey := {
-  case class Patterns(name: String, version: String)
-  implicit val patternsIso: IsoLList[Patterns] =
-    LList.isoCurried((p: Patterns) => ("name", p.name) :*: ("version", p.version) :*: LNil) {
-      case (_, n) :*: (_, v) :*: LNil => Patterns(n, v)
-    }
-
-  val jsonFile = (resourceDirectory in Compile).value / "docs" / "patterns.json"
-  val json = Parser.parseFromFile(jsonFile)
-  val patterns = json.flatMap(Converter.fromJson[Patterns])
-  patterns.get.version
-}
-
-mappings in Universal ++= {
-  (resourceDirectory in Compile) map { (resourceDir: File) =>
-    val src = resourceDir / "docs"
-    val dest = "/docs"
-
-    for {
-      path <- src.allPaths.get if !path.isDirectory
-    } yield path -> path.toString.replaceFirst(src.toString, dest)
-  }
-}.value
-
-val dockerUser = "docker"
-val dockerGroup = "docker"
-
-daemonUser in Docker := dockerUser
-
-daemonGroup in Docker := dockerGroup
-
-dockerBaseImage := "codacy-swiftlint-base"
-
-dockerCommands := dockerCommands.value.flatMap {
-  case cmd @ (Cmd("ADD", _)) =>
-    List(
-      Cmd("RUN", s"""adduser --uid 2004 --disabled-password --gecos \"\" $dockerUser"""),
-      cmd,
-      Cmd("RUN", "mv /opt/docker/docs /docs")
-    )
-  case other => List(other)
-}
+graalVMNativeImageGraalVersion := Some(graalVersion)
+containerBuildImage := Some(s"oracle/graalvm-ce:$graalVersion")
+graalVMNativeImageOptions ++= Seq(
+  "-O1",
+  "-H:+ReportExceptionStackTraces",
+  "--no-fallback",
+  "--no-server",
+  "--initialize-at-build-time",
+  "--report-unsupported-elements-at-runtime",
+  "--static"
+)

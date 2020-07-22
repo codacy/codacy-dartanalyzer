@@ -1,9 +1,24 @@
 {
   "name": "swiftlint",
-  "version": "0.36.0",
+  "version": "0.39.2",
   "patterns": [
     {
+      "patternId": "anyobject_protocol",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "array_init",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
       "patternId": "attributes",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "block_based_kvo",
       "level": "Info",
       "category": "CodeStyle"
     },
@@ -14,6 +29,11 @@
     },
     {
       "patternId": "closing_brace",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "closure_body_length",
       "level": "Info",
       "category": "CodeStyle"
     },
@@ -29,6 +49,11 @@
     },
     {
       "patternId": "closure_spacing",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "collection_alignment",
       "level": "Info",
       "category": "CodeStyle"
     },
@@ -53,7 +78,32 @@
       "category": "CodeStyle"
     },
     {
+      "patternId": "contains_over_filter_count",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "contains_over_filter_is_empty",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "contains_over_first_not_nil",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "contains_over_range_nil_comparison",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
       "patternId": "control_statement",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "convenience_type",
       "level": "Info",
       "category": "CodeStyle"
     },
@@ -68,12 +118,52 @@
       "category": "CodeStyle"
     },
     {
+      "patternId": "deployment_target",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
       "patternId": "discarded_notification_center_observer",
       "level": "Info",
       "category": "CodeStyle"
     },
     {
+      "patternId": "discouraged_direct_init",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "discouraged_object_literal",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "discouraged_optional_boolean",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "discouraged_optional_collection",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "duplicate_enum_cases",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "duplicate_imports",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
       "patternId": "dynamic_inline",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "empty_collection_literal",
       "level": "Info",
       "category": "CodeStyle"
     },
@@ -98,7 +188,42 @@
       "category": "CodeStyle"
     },
     {
+      "patternId": "empty_string",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "empty_xctest_method",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "enum_case_associated_values_count",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "expiring_todo",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "explicit_acl",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "explicit_enum_raw_value",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
       "patternId": "explicit_init",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "explicit_self",
       "level": "Info",
       "category": "CodeStyle"
     },
@@ -118,6 +243,11 @@
       "category": "CodeStyle"
     },
     {
+      "patternId": "fallthrough",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
       "patternId": "fatal_error_message",
       "level": "Info",
       "category": "CodeStyle"
@@ -133,7 +263,27 @@
       "category": "CodeStyle"
     },
     {
+      "patternId": "file_name",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "file_name_no_space",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "file_types_order",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
       "patternId": "first_where",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "flatmap_over_map_reduce",
       "level": "Info",
       "category": "CodeStyle"
     },
@@ -163,12 +313,22 @@
       "category": "CodeStyle"
     },
     {
+      "patternId": "function_default_parameter_at_end",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
       "patternId": "function_parameter_count",
       "level": "Info",
       "category": "CodeStyle"
     },
     {
       "patternId": "generic_type_name",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "identical_operands",
       "level": "Info",
       "category": "CodeStyle"
     },
@@ -193,7 +353,32 @@
       "category": "CodeStyle"
     },
     {
+      "patternId": "indentation_width",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "inert_defer",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "is_disjoint",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "joined_default_parameter",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
       "patternId": "large_tuple",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "last_where",
       "level": "Info",
       "category": "CodeStyle"
     },
@@ -218,7 +403,27 @@
       "category": "CodeStyle"
     },
     {
+      "patternId": "legacy_hashing",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "legacy_multiple",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
       "patternId": "legacy_nsgeometry_functions",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "legacy_random",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "let_var_whitespace",
       "level": "Info",
       "category": "CodeStyle"
     },
@@ -228,12 +433,62 @@
       "category": "CodeStyle"
     },
     {
+      "patternId": "literal_expression_end_indentation",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "lower_acl_than_parent",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
       "patternId": "mark",
       "level": "Info",
       "category": "CodeStyle"
     },
     {
+      "patternId": "missing_docs",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "modifier_order",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "multiline_arguments",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "multiline_arguments_brackets",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "multiline_function_chains",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "multiline_literal_brackets",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
       "patternId": "multiline_parameters",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "multiline_parameters_brackets",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "multiple_closures_with_trailing_closure",
       "level": "Info",
       "category": "CodeStyle"
     },
@@ -253,7 +508,37 @@
       "category": "CodeStyle"
     },
     {
+      "patternId": "no_fallthrough_only",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "no_grouping_extension",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "no_space_in_method_call",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
       "patternId": "notification_center_detachment",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "nslocalizedstring_key",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "nslocalizedstring_require_bundle",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "nsobject_prefer_isequal",
       "level": "Info",
       "category": "CodeStyle"
     },
@@ -283,7 +568,42 @@
       "category": "CodeStyle"
     },
     {
+      "patternId": "optional_enum_case_matching",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "orphaned_doc_comment",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
       "patternId": "overridden_super_call",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "override_in_extension",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "pattern_matching_keywords",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "prefer_self_type_over_type_of_self",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "prefixed_toplevel_constant",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "private_action",
       "level": "Info",
       "category": "CodeStyle"
     },
@@ -293,7 +613,17 @@
       "category": "CodeStyle"
     },
     {
+      "patternId": "private_over_fileprivate",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
       "patternId": "private_unit_test",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "prohibited_interface_builder",
       "level": "Info",
       "category": "CodeStyle"
     },
@@ -308,6 +638,36 @@
       "category": "CodeStyle"
     },
     {
+      "patternId": "quick_discouraged_call",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "quick_discouraged_focused_test",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "quick_discouraged_pending_test",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "raw_value_for_camel_cased_codable_enum",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "reduce_boolean",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "reduce_into",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
       "patternId": "redundant_discardable_let",
       "level": "Info",
       "category": "CodeStyle"
@@ -318,7 +678,17 @@
       "category": "CodeStyle"
     },
     {
+      "patternId": "redundant_objc_attribute",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
       "patternId": "redundant_optional_initialization",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "redundant_set_access_control",
       "level": "Info",
       "category": "CodeStyle"
     },
@@ -328,7 +698,22 @@
       "category": "CodeStyle"
     },
     {
+      "patternId": "redundant_type_annotation",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
       "patternId": "redundant_void_return",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "required_deinit",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "required_enum_case",
       "level": "Info",
       "category": "CodeStyle"
     },
@@ -343,12 +728,47 @@
       "category": "CodeStyle"
     },
     {
+      "patternId": "single_test_class",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "sorted_first_last",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
       "patternId": "sorted_imports",
       "level": "Info",
       "category": "CodeStyle"
     },
     {
       "patternId": "statement_position",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "static_operator",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "strict_fileprivate",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "strong_iboutlet",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "superfluous_disable_command",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "switch_case_alignment",
       "level": "Info",
       "category": "CodeStyle"
     },
@@ -364,6 +784,16 @@
     },
     {
       "patternId": "todo",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "toggle_bool",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "trailing_closure",
       "level": "Info",
       "category": "CodeStyle"
     },
@@ -393,7 +823,42 @@
       "category": "CodeStyle"
     },
     {
+      "patternId": "type_contents_order",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
       "patternId": "type_name",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "unavailable_function",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "unneeded_break_in_switch",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "unneeded_parentheses_in_closure_argument",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "unowned_variable_capture",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "untyped_error_in_catch",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "unused_capture_list",
       "level": "Info",
       "category": "CodeStyle"
     },
@@ -403,12 +868,32 @@
       "category": "CodeStyle"
     },
     {
+      "patternId": "unused_control_flow_label",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "unused_declaration",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
       "patternId": "unused_enumerated",
       "level": "Info",
       "category": "CodeStyle"
     },
     {
+      "patternId": "unused_import",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
       "patternId": "unused_optional_binding",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "unused_setter_value",
       "level": "Info",
       "category": "CodeStyle"
     },
@@ -433,6 +918,21 @@
       "category": "CodeStyle"
     },
     {
+      "patternId": "vertical_whitespace_between_cases",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "vertical_whitespace_closing_braces",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "vertical_whitespace_opening_braces",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
       "patternId": "void_return",
       "level": "Info",
       "category": "CodeStyle"
@@ -443,167 +943,7 @@
       "category": "CodeStyle"
     },
     {
-      "patternId": "array_init",
-      "level": "Info",
-      "category": "CodeStyle"
-    },
-    {
-      "patternId": "block_based_kvo",
-      "level": "Info",
-      "category": "CodeStyle"
-    },
-    {
-      "patternId": "contains_over_first_not_nil",
-      "level": "Info",
-      "category": "CodeStyle"
-    },
-    {
-      "patternId": "discouraged_direct_init",
-      "level": "Info",
-      "category": "CodeStyle"
-    },
-    {
-      "patternId": "discouraged_object_literal",
-      "level": "Info",
-      "category": "CodeStyle"
-    },
-    {
-      "patternId": "discouraged_optional_boolean",
-      "level": "Info",
-      "category": "CodeStyle"
-    },
-    {
-      "patternId": "explicit_acl",
-      "level": "Info",
-      "category": "CodeStyle"
-    },
-    {
-      "patternId": "explicit_enum_raw_value",
-      "level": "Info",
-      "category": "CodeStyle"
-    },
-    {
-      "patternId": "fallthrough",
-      "level": "Info",
-      "category": "CodeStyle"
-    },
-    {
-      "patternId": "is_disjoint",
-      "level": "Info",
-      "category": "CodeStyle"
-    },
-    {
-      "patternId": "joined_default_parameter",
-      "level": "Info",
-      "category": "CodeStyle"
-    },
-    {
-      "patternId": "let_var_whitespace",
-      "level": "Info",
-      "category": "CodeStyle"
-    },
-    {
-      "patternId": "literal_expression_end_indentation",
-      "level": "Info",
-      "category": "CodeStyle"
-    },
-    {
-      "patternId": "multiline_arguments",
-      "level": "Info",
-      "category": "CodeStyle"
-    },
-    {
-      "patternId": "multiple_closures_with_trailing_closure",
-      "level": "Info",
-      "category": "CodeStyle"
-    },
-    {
-      "patternId": "no_grouping_extension",
-      "level": "Info",
-      "category": "CodeStyle"
-    },
-    {
-      "patternId": "override_in_extension",
-      "level": "Info",
-      "category": "CodeStyle"
-    },
-    {
-      "patternId": "pattern_matching_keywords",
-      "level": "Info",
-      "category": "CodeStyle"
-    },
-    {
-      "patternId": "prefixed_toplevel_constant",
-      "level": "Info",
-      "category": "CodeStyle"
-    },
-    {
-      "patternId": "private_action",
-      "level": "Info",
-      "category": "CodeStyle"
-    },
-    {
-      "patternId": "private_over_fileprivate",
-      "level": "Info",
-      "category": "CodeStyle"
-    },
-    {
-      "patternId": "quick_discouraged_call",
-      "level": "Info",
-      "category": "CodeStyle"
-    },
-    {
-      "patternId": "quick_discouraged_focused_test",
-      "level": "Info",
-      "category": "CodeStyle"
-    },
-    {
-      "patternId": "quick_discouraged_pending_test",
-      "level": "Info",
-      "category": "CodeStyle"
-    },
-    {
-      "patternId": "required_enum_case",
-      "level": "Info",
-      "category": "CodeStyle"
-    },
-    {
-      "patternId": "single_test_class",
-      "level": "Info",
-      "category": "CodeStyle"
-    },
-    {
-      "patternId": "sorted_first_last",
-      "level": "Info",
-      "category": "CodeStyle"
-    },
-    {
-      "patternId": "strict_fileprivate",
-      "level": "Info",
-      "category": "CodeStyle"
-    },
-    {
-      "patternId": "superfluous_disable_command",
-      "level": "Info",
-      "category": "CodeStyle"
-    },
-    {
-      "patternId": "switch_case_alignment",
-      "level": "Info",
-      "category": "CodeStyle"
-    },
-    {
-      "patternId": "trailing_closure",
-      "level": "Info",
-      "category": "CodeStyle"
-    },
-    {
-      "patternId": "unneeded_break_in_switch",
-      "level": "Info",
-      "category": "CodeStyle"
-    },
-    {
-      "patternId": "unneeded_parentheses_in_closure_argument",
+      "patternId": "xct_specific_matcher",
       "level": "Info",
       "category": "CodeStyle"
     },

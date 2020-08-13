@@ -1,4 +1,4 @@
-FROM norionomura/swiftlint:0.39.2 as builder
+FROM norionomura/swiftlint:0.40.0 as builder
 
 FROM swift:5.2.4-xenial-slim
 

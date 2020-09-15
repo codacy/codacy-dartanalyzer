@@ -5,957 +5,1148 @@
     {
       "patternId": "anyobject_protocol",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "array_init",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "attributes",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "block_based_kvo",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "class_delegate_protocol",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "closing_brace",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "closure_body_length",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "closure_end_indentation",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "closure_parameter_position",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "closure_spacing",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "collection_alignment",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "colon",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "comma",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "compiler_protocol_init",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "conditional_returns_on_newline",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "contains_over_filter_count",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "contains_over_filter_is_empty",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "contains_over_first_not_nil",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "contains_over_range_nil_comparison",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "control_statement",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "convenience_type",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "custom_rules",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "cyclomatic_complexity",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "deployment_target",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "discarded_notification_center_observer",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "discouraged_direct_init",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "discouraged_object_literal",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "discouraged_optional_boolean",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "discouraged_optional_collection",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "duplicate_enum_cases",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "duplicate_imports",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "dynamic_inline",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "empty_collection_literal",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "empty_count",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "empty_enum_arguments",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "empty_parameters",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "empty_parentheses_with_trailing_closure",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "empty_string",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "empty_xctest_method",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "enum_case_associated_values_count",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "expiring_todo",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "explicit_acl",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "explicit_enum_raw_value",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "explicit_init",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "explicit_self",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "explicit_top_level_acl",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "explicit_type_interface",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "extension_access_modifier",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "fallthrough",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "fatal_error_message",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "file_header",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "file_length",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "file_name",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "file_name_no_space",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "file_types_order",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "first_where",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "flatmap_over_map_reduce",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "for_where",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "force_cast",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "force_try",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "force_unwrapping",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "function_body_length",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "function_default_parameter_at_end",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "function_parameter_count",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "generic_type_name",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "identical_operands",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "identifier_name",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "implicit_getter",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "implicit_return",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "implicitly_unwrapped_optional",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "indentation_width",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "inert_defer",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "is_disjoint",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "joined_default_parameter",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "large_tuple",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "last_where",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "leading_whitespace",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "legacy_cggeometry_functions",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "legacy_constant",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "legacy_constructor",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "legacy_hashing",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "legacy_multiple",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "legacy_nsgeometry_functions",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "legacy_random",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "let_var_whitespace",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "line_length",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "literal_expression_end_indentation",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "lower_acl_than_parent",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "mark",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "missing_docs",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "modifier_order",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "multiline_arguments",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "multiline_arguments_brackets",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "multiline_function_chains",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "multiline_literal_brackets",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "multiline_parameters",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "multiline_parameters_brackets",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "multiple_closures_with_trailing_closure",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "nesting",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "nimble_operator",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "no_extension_access_modifier",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "no_fallthrough_only",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "no_grouping_extension",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "no_space_in_method_call",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "notification_center_detachment",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "nslocalizedstring_key",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "nslocalizedstring_require_bundle",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "nsobject_prefer_isequal",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "number_separator",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "object_literal",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "opening_brace",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "operator_usage_whitespace",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "operator_whitespace",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "optional_enum_case_matching",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "orphaned_doc_comment",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "overridden_super_call",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "override_in_extension",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "pattern_matching_keywords",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "prefer_self_type_over_type_of_self",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "prefixed_toplevel_constant",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "private_action",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "private_outlet",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "private_over_fileprivate",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "private_unit_test",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "prohibited_interface_builder",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "prohibited_super_call",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "protocol_property_accessors_order",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "quick_discouraged_call",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "quick_discouraged_focused_test",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "quick_discouraged_pending_test",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "raw_value_for_camel_cased_codable_enum",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "reduce_boolean",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "reduce_into",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "redundant_discardable_let",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "redundant_nil_coalescing",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "redundant_objc_attribute",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "redundant_optional_initialization",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "redundant_set_access_control",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "redundant_string_enum_value",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "redundant_type_annotation",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "redundant_void_return",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "required_deinit",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "required_enum_case",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "return_arrow_whitespace",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "shorthand_operator",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "single_test_class",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "sorted_first_last",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "sorted_imports",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "statement_position",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "static_operator",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "strict_fileprivate",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "strong_iboutlet",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "superfluous_disable_command",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "switch_case_alignment",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "switch_case_on_newline",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "syntactic_sugar",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "todo",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "toggle_bool",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "trailing_closure",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "trailing_comma",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "trailing_newline",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "trailing_semicolon",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "trailing_whitespace",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "type_body_length",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "type_contents_order",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "type_name",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "unavailable_function",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "unneeded_break_in_switch",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "unneeded_parentheses_in_closure_argument",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "unowned_variable_capture",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "untyped_error_in_catch",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "unused_capture_list",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "unused_closure_parameter",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "unused_control_flow_label",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "unused_declaration",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "unused_enumerated",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "unused_import",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "unused_optional_binding",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "unused_setter_value",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "valid_ibinspectable",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "vertical_parameter_alignment",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "vertical_parameter_alignment_on_call",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "vertical_whitespace",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "vertical_whitespace_between_cases",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "vertical_whitespace_closing_braces",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "vertical_whitespace_opening_braces",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "void_return",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "weak_delegate",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "xct_specific_matcher",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     },
     {
       "patternId": "xctfail_message",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": true
     },
     {
       "patternId": "yoda_condition",
       "level": "Info",
-      "category": "CodeStyle"
+      "category": "CodeStyle",
+      "enabled": false
     }
   ]
 }

@@ -16,7 +16,7 @@ Compile / sourceGenerators += Def.task {
   Seq(file)
 }.taskValue
 
-libraryDependencies += "com.codacy" %% "codacy-engine-scala-seed" % "4.0.3"
+libraryDependencies += "com.codacy" %% "codacy-engine-scala-seed" % "5.0.0"
 
 enablePlugins(GraalVMNativeImagePlugin)
 

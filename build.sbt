@@ -16,20 +16,19 @@ Compile / sourceGenerators += Def.task {
   Seq(file)
 }.taskValue
 
-libraryDependencies += "com.codacy" %% "codacy-engine-scala-seed" % "5.0.1"
-
 enablePlugins(GraalVMNativeImagePlugin)
 
-val graalVersion = "20.1.0-java11"
+libraryDependencies ++= Seq(
+  "com.codacy" %% "codacy-engine-scala-seed" % "5.0.1",
+  "org.scalameta" %% "svm-subs" % "20.2.0"
+)
 
-graalVMNativeImageGraalVersion := Some(graalVersion)
-containerBuildImage := Some(s"oracle/graalvm-ce:$graalVersion")
+graalVMNativeImageGraalVersion := Some("21.0.0")
 graalVMNativeImageOptions ++= Seq(
   "-O1",
   "-H:+ReportExceptionStackTraces",
   "--no-fallback",
   "--no-server",
-  "--initialize-at-build-time",
   "--report-unsupported-elements-at-runtime",
   "--static"
 )

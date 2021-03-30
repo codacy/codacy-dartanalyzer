@@ -60,6 +60,16 @@ default: break
 }
 ```
 
+```swift
+if case .bar = foo {
+}
+```
+
+```swift
+guard case .bar = foo else {
+}
+```
+
 ## Triggering Examples
 
 ```swift
@@ -92,5 +102,15 @@ func example(foo: Foo) {
     case case .bar↓(_):
         break
     }
+}
+```
+
+```swift
+if case .bar↓(_) = foo {
+}
+```
+
+```swift
+guard case .bar↓(_) = foo else {
 }
 ```

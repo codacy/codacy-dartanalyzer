@@ -8,7 +8,7 @@ Prefer implicit returns in closures, functions and getters.
 * **Kind:** style
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 3.0.0
-* **Default configuration:** warning, included: [closure, function, getter]
+* **Default configuration:** warning, included: [function, closure, getter]
 
 ## Non Triggering Examples
 

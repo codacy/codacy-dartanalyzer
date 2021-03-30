@@ -41,6 +41,19 @@ enum Numbers: String, Codable {
 ```
 
 ```swift
+enum Status: String, Codable {
+    case OK, ACCEPTABLE
+}
+```
+
+```swift
+enum Status: String, Codable {
+    case ok
+    case maybeAcceptable = "maybe_acceptable"
+}
+```
+
+```swift
 enum Status: String {
     case ok
     case notAcceptable

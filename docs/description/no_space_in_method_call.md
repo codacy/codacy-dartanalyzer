@@ -65,3 +65,7 @@ object.foo↓ () {}
 ```swift
 object.foo↓     ()
 ```
+
+```swift
+object.foo↓     (value: 1) { x in print(x) }
+```

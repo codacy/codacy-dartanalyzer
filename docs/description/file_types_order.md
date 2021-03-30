@@ -8,7 +8,7 @@ Specifies how the types within a file should be ordered.
 * **Kind:** style
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 3.0.0
-* **Default configuration:** warning, order: [[SwiftLintFramework.FileType.supportingType], [SwiftLintFramework.FileType.mainType], [SwiftLintFramework.FileType.extension]]
+* **Default configuration:** warning, order: [[SwiftLintFramework.FileType.supportingType], [SwiftLintFramework.FileType.mainType], [SwiftLintFramework.FileType.extension], [SwiftLintFramework.FileType.previewProvider]]
 
 ## Non Triggering Examples
 
@@ -71,18 +71,10 @@ class TestViewController: UIViewController {
     // Life-Cycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        view1.setNeedsLayout()
-        view1.layoutIfNeeded()
-        hasLayoutedView1 = true
     }
 
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-
-        view2.setNeedsLayout()
-        view2.layoutIfNeeded()
-        hasLayoutedView2 = true
     }
 
     // IBActions
@@ -125,10 +117,6 @@ extension TestViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
-
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
-    }
 }
 ```
 
@@ -136,6 +124,18 @@ extension TestViewController: UITableViewDataSource {
 // Only extensions
 extension Foo {}
 extension Bar {
+}
+```
+
+```swift
+struct ContentView: View {
+    var body: some View {
+        Text("Hello, World!")
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View { ContentView() }
 }
 ```
 
@@ -156,10 +156,6 @@ protocol TestViewControllerDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
-
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
-    }
 }
 
 class TestViewController: UIViewController {}
@@ -190,10 +186,6 @@ protocol TestViewControllerDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
-
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
-    }
 }
 
 class TestViewController: UIViewController {}
@@ -203,9 +195,13 @@ extension TestViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
-
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
-    }
 }
+```
+
+```swift
+// Preview Provider
+↓struct ContentView_Previews: PreviewProvider {}
+
+// Main Type
+struct ContentView: View {}
 ```

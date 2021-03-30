@@ -80,64 +80,70 @@ let mediaView: UIView = { [weak self] index in
 
 ```swift
 [1, 2].map {
- ↓number in
- number + 1 
+    ↓number in
+    number + 1
 }
-
 ```
 
 ```swift
 [1, 2].map {
- ↓number -> Int in
- number + 1 
+    ↓number -> Int in
+    number + 1
 }
-
 ```
 
 ```swift
 [1, 2].map {
- (↓number: Int) -> Int in
- number + 1 
+    (↓number: Int) -> Int in
+    number + 1
 }
-
 ```
 
 ```swift
 [1, 2].map {
- [weak self] ↓number in
- number + 1 
+    [weak ↓self] ↓number in
+    number + 1
 }
-
 ```
 
 ```swift
 [1, 2].map { [weak self]
- ↓number in
- number + 1 
+    ↓number in
+    number + 1
 }
-
 ```
 
 ```swift
 [1, 2].map({
- ↓number in
- number + 1 
+    ↓number in
+    number + 1
 })
-
 ```
 
 ```swift
 [1, 2].something(closure: {
- ↓number in
- number + 1 
+    ↓number in
+    number + 1
 })
-
 ```
 
 ```swift
 [1, 2].reduce(0) {
- ↓sum, ↓number in
- number + sum 
-}
+    ↓sum, ↓number in
+    number + sum
+})
+```
 
+```swift
+f.completionHandler = {
+    ↓thing in
+    doStuff()
+}
+```
+
+```swift
+foo {
+    [weak ↓self] in
+    self?.bar()
+}
 ```

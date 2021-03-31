@@ -1,20 +1,20 @@
 //#Patterns: quick_discouraged_call
 
-//#Issue: {"severity": "Info", "line": 30, "patternId": "quick_discouraged_call"}
-//#Issue: {"severity": "Info", "line": 40, "patternId": "quick_discouraged_call"}
-//#Issue: {"severity": "Info", "line": 51, "patternId": "quick_discouraged_call"}
-//#Issue: {"severity": "Info", "line": 54, "patternId": "quick_discouraged_call"}
-//#Issue: {"severity": "Info", "line": 55, "patternId": "quick_discouraged_call"}
-//#Issue: {"severity": "Info", "line": 79, "patternId": "quick_discouraged_call"}
-//#Issue: {"severity": "Info", "line": 92, "patternId": "quick_discouraged_call"}
-//#Issue: {"severity": "Info", "line": 102, "patternId": "quick_discouraged_call"}
-//#Issue: {"severity": "Info", "line": 112, "patternId": "quick_discouraged_call"}
-//#Issue: {"severity": "Info", "line": 122, "patternId": "quick_discouraged_call"}
-//#Issue: {"severity": "Info", "line": 132, "patternId": "quick_discouraged_call"}
-//#Issue: {"severity": "Info", "line": 142, "patternId": "quick_discouraged_call"}
-//#Issue: {"severity": "Info", "line": 145, "patternId": "quick_discouraged_call"}
-//#Issue: {"severity": "Info", "line": 155, "patternId": "quick_discouraged_call"}
-//#Issue: {"severity": "Info", "line": 158, "patternId": "quick_discouraged_call"}
+//#Issue: {"severity": "Warning", "line": 30, "patternId": "quick_discouraged_call"}
+//#Issue: {"severity": "Warning", "line": 40, "patternId": "quick_discouraged_call"}
+//#Issue: {"severity": "Warning", "line": 51, "patternId": "quick_discouraged_call"}
+//#Issue: {"severity": "Warning", "line": 54, "patternId": "quick_discouraged_call"}
+//#Issue: {"severity": "Warning", "line": 55, "patternId": "quick_discouraged_call"}
+//#Issue: {"severity": "Warning", "line": 79, "patternId": "quick_discouraged_call"}
+//#Issue: {"severity": "Warning", "line": 92, "patternId": "quick_discouraged_call"}
+//#Issue: {"severity": "Warning", "line": 102, "patternId": "quick_discouraged_call"}
+//#Issue: {"severity": "Warning", "line": 112, "patternId": "quick_discouraged_call"}
+//#Issue: {"severity": "Warning", "line": 122, "patternId": "quick_discouraged_call"}
+//#Issue: {"severity": "Warning", "line": 132, "patternId": "quick_discouraged_call"}
+//#Issue: {"severity": "Warning", "line": 142, "patternId": "quick_discouraged_call"}
+//#Issue: {"severity": "Warning", "line": 145, "patternId": "quick_discouraged_call"}
+//#Issue: {"severity": "Warning", "line": 155, "patternId": "quick_discouraged_call"}
+//#Issue: {"severity": "Warning", "line": 158, "patternId": "quick_discouraged_call"}
 
 
 class TotoTests {

@@ -1,10 +1,10 @@
 //#Patterns: explicit_enum_raw_value
 
-//#Issue: {"severity": "Info", "line": 12, "patternId": "explicit_enum_raw_value"}
-//#Issue: {"severity": "Info", "line": 18, "patternId": "explicit_enum_raw_value"}
-//#Issue: {"severity": "Info", "line": 24, "patternId": "explicit_enum_raw_value"}
-//#Issue: {"severity": "Info", "line": 25, "patternId": "explicit_enum_raw_value"}
-//#Issue: {"severity": "Info", "line": 31, "patternId": "explicit_enum_raw_value"}
+//#Issue: {"severity": "Warning", "line": 12, "patternId": "explicit_enum_raw_value"}
+//#Issue: {"severity": "Warning", "line": 18, "patternId": "explicit_enum_raw_value"}
+//#Issue: {"severity": "Warning", "line": 24, "patternId": "explicit_enum_raw_value"}
+//#Issue: {"severity": "Warning", "line": 25, "patternId": "explicit_enum_raw_value"}
+//#Issue: {"severity": "Warning", "line": 31, "patternId": "explicit_enum_raw_value"}
 
 
 

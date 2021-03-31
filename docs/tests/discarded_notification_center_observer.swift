@@ -1,8 +1,8 @@
 //#Patterns: discarded_notification_center_observer
 
-//#Issue: {"severity": "Info", "line": 7, "patternId": "discarded_notification_center_observer"}
-//#Issue: {"severity": "Info", "line": 10, "patternId": "discarded_notification_center_observer"}
-//#Issue: {"severity": "Info", "line": 14, "patternId": "discarded_notification_center_observer"}
+//#Issue: {"severity": "Warning", "line": 7, "patternId": "discarded_notification_center_observer"}
+//#Issue: {"severity": "Warning", "line": 10, "patternId": "discarded_notification_center_observer"}
+//#Issue: {"severity": "Warning", "line": 14, "patternId": "discarded_notification_center_observer"}
 
     nc.addObserver(forName: .NSSystemTimeZoneDidChange, object: nil, queue: nil) { }
 

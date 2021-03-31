@@ -1,12 +1,12 @@
 //#Patterns: yoda_condition
 
-//#Issue: {"severity": "Info", "line": 12, "patternId": "yoda_condition"}
-//#Issue: {"severity": "Info", "line": 16, "patternId": "yoda_condition"}
-//#Issue: {"severity": "Info", "line": 20, "patternId": "yoda_condition"}
-//#Issue: {"severity": "Info", "line": 24, "patternId": "yoda_condition"}
-//#Issue: {"severity": "Info", "line": 27, "patternId": "yoda_condition"}
-//#Issue: {"severity": "Info", "line": 30, "patternId": "yoda_condition"}
-//#Issue: {"severity": "Info", "line": 33, "patternId": "yoda_condition"}
+//#Issue: {"severity": "Warning", "line": 12, "patternId": "yoda_condition"}
+//#Issue: {"severity": "Warning", "line": 16, "patternId": "yoda_condition"}
+//#Issue: {"severity": "Warning", "line": 20, "patternId": "yoda_condition"}
+//#Issue: {"severity": "Warning", "line": 24, "patternId": "yoda_condition"}
+//#Issue: {"severity": "Warning", "line": 27, "patternId": "yoda_condition"}
+//#Issue: {"severity": "Warning", "line": 30, "patternId": "yoda_condition"}
+//#Issue: {"severity": "Warning", "line": 33, "patternId": "yoda_condition"}
 
 
 if 42 == foo {}

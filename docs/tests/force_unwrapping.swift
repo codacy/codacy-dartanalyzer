@@ -1,18 +1,18 @@
 //#Patterns: force_unwrapping
 
-//#Issue: {"severity": "Info", "line": 17, "patternId": "force_unwrapping"}
-//#Issue: {"severity": "Info", "line": 19, "patternId": "force_unwrapping"}
-//#Issue: {"severity": "Info", "line": 21, "patternId": "force_unwrapping"}
-//#Issue: {"severity": "Info", "line": 23, "patternId": "force_unwrapping"}
-//#Issue: {"severity": "Info", "line": 25, "patternId": "force_unwrapping"}
-//#Issue: {"severity": "Info", "line": 27, "patternId": "force_unwrapping"}
-//#Issue: {"severity": "Info", "line": 29, "patternId": "force_unwrapping"}
-//#Issue: {"severity": "Info", "line": 31, "patternId": "force_unwrapping"}
-//#Issue: {"severity": "Info", "line": 33, "patternId": "force_unwrapping"}
-//#Issue: {"severity": "Info", "line": 35, "patternId": "force_unwrapping"}
-//#Issue: {"severity": "Info", "line": 37, "patternId": "force_unwrapping"}
-//#Issue: {"severity": "Info", "line": 40, "patternId": "force_unwrapping"}
-//#Issue: {"severity": "Info", "line": 43, "patternId": "force_unwrapping"}
+//#Issue: {"severity": "Warning", "line": 17, "patternId": "force_unwrapping"}
+//#Issue: {"severity": "Warning", "line": 19, "patternId": "force_unwrapping"}
+//#Issue: {"severity": "Warning", "line": 21, "patternId": "force_unwrapping"}
+//#Issue: {"severity": "Warning", "line": 23, "patternId": "force_unwrapping"}
+//#Issue: {"severity": "Warning", "line": 25, "patternId": "force_unwrapping"}
+//#Issue: {"severity": "Warning", "line": 27, "patternId": "force_unwrapping"}
+//#Issue: {"severity": "Warning", "line": 29, "patternId": "force_unwrapping"}
+//#Issue: {"severity": "Warning", "line": 31, "patternId": "force_unwrapping"}
+//#Issue: {"severity": "Warning", "line": 33, "patternId": "force_unwrapping"}
+//#Issue: {"severity": "Warning", "line": 35, "patternId": "force_unwrapping"}
+//#Issue: {"severity": "Warning", "line": 37, "patternId": "force_unwrapping"}
+//#Issue: {"severity": "Warning", "line": 40, "patternId": "force_unwrapping"}
+//#Issue: {"severity": "Warning", "line": 43, "patternId": "force_unwrapping"}
 
     let url = NSURL(string: query)!
 

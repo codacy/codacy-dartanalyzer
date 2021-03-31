@@ -1,12 +1,12 @@
 //#Patterns: strict_fileprivate
 
-//#Issue: {"severity": "Info", "line": 12, "patternId": "strict_fileprivate"}
-//#Issue: {"severity": "Info", "line": 15, "patternId": "strict_fileprivate"}
-//#Issue: {"severity": "Info", "line": 19, "patternId": "strict_fileprivate"}
-//#Issue: {"severity": "Info", "line": 24, "patternId": "strict_fileprivate"}
-//#Issue: {"severity": "Info", "line": 29, "patternId": "strict_fileprivate"}
-//#Issue: {"severity": "Info", "line": 34, "patternId": "strict_fileprivate"}
-//#Issue: {"severity": "Info", "line": 40, "patternId": "strict_fileprivate"}
+//#Issue: {"severity": "Warning", "line": 12, "patternId": "strict_fileprivate"}
+//#Issue: {"severity": "Warning", "line": 15, "patternId": "strict_fileprivate"}
+//#Issue: {"severity": "Warning", "line": 19, "patternId": "strict_fileprivate"}
+//#Issue: {"severity": "Warning", "line": 24, "patternId": "strict_fileprivate"}
+//#Issue: {"severity": "Warning", "line": 29, "patternId": "strict_fileprivate"}
+//#Issue: {"severity": "Warning", "line": 34, "patternId": "strict_fileprivate"}
+//#Issue: {"severity": "Warning", "line": 40, "patternId": "strict_fileprivate"}
 
 
 fileprivate extension String {}

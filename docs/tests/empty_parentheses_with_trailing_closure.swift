@@ -1,9 +1,9 @@
 //#Patterns: empty_parentheses_with_trailing_closure
 
-//#Issue: {"severity": "Info", "line": 8, "patternId": "empty_parentheses_with_trailing_closure"}
-//#Issue: {"severity": "Info", "line": 11, "patternId": "empty_parentheses_with_trailing_closure"}
-//#Issue: {"severity": "Info", "line": 14, "patternId": "empty_parentheses_with_trailing_closure"}
-//#Issue: {"severity": "Info", "line": 19, "patternId": "empty_parentheses_with_trailing_closure"}
+//#Issue: {"severity": "Warning", "line": 8, "patternId": "empty_parentheses_with_trailing_closure"}
+//#Issue: {"severity": "Warning", "line": 11, "patternId": "empty_parentheses_with_trailing_closure"}
+//#Issue: {"severity": "Warning", "line": 14, "patternId": "empty_parentheses_with_trailing_closure"}
+//#Issue: {"severity": "Warning", "line": 19, "patternId": "empty_parentheses_with_trailing_closure"}
 
     [1, 2].map() { $0 + 1 }
 

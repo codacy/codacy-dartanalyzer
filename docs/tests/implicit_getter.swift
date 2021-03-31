@@ -1,10 +1,10 @@
 //#Patterns: implicit_getter
 
-//#Issue: {"severity": "Info", "line": 11, "patternId": "implicit_getter"}
-//#Issue: {"severity": "Info", "line": 21, "patternId": "implicit_getter"}
-//#Issue: {"severity": "Info", "line": 31, "patternId": "implicit_getter"}
-//#Issue: {"severity": "Info", "line": 40, "patternId": "implicit_getter"}
-//#Issue: {"severity": "Info", "line": 49, "patternId": "implicit_getter"}
+//#Issue: {"severity": "Warning", "line": 11, "patternId": "implicit_getter"}
+//#Issue: {"severity": "Warning", "line": 21, "patternId": "implicit_getter"}
+//#Issue: {"severity": "Warning", "line": 31, "patternId": "implicit_getter"}
+//#Issue: {"severity": "Warning", "line": 40, "patternId": "implicit_getter"}
+//#Issue: {"severity": "Warning", "line": 49, "patternId": "implicit_getter"}
 
     class Foo {
       var foo: Int {

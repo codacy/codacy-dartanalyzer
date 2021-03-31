@@ -1,18 +1,18 @@
 //#Patterns: sorted_first_last
 
-//#Issue: {"severity": "Info", "line": 18, "patternId": "sorted_first_last"}
-//#Issue: {"severity": "Info", "line": 22, "patternId": "sorted_first_last"}
-//#Issue: {"severity": "Info", "line": 26, "patternId": "sorted_first_last"}
-//#Issue: {"severity": "Info", "line": 30, "patternId": "sorted_first_last"}
-//#Issue: {"severity": "Info", "line": 34, "patternId": "sorted_first_last"}
-//#Issue: {"severity": "Info", "line": 38, "patternId": "sorted_first_last"}
-//#Issue: {"severity": "Info", "line": 42, "patternId": "sorted_first_last"}
-//#Issue: {"severity": "Info", "line": 46, "patternId": "sorted_first_last"}
-//#Issue: {"severity": "Info", "line": 50, "patternId": "sorted_first_last"}
-//#Issue: {"severity": "Info", "line": 54, "patternId": "sorted_first_last"}
-//#Issue: {"severity": "Info", "line": 58, "patternId": "sorted_first_last"}
-//#Issue: {"severity": "Info", "line": 62, "patternId": "sorted_first_last"}
-//#Issue: {"severity": "Info", "line": 66, "patternId": "sorted_first_last"}
+//#Issue: {"severity": "Warning", "line": 18, "patternId": "sorted_first_last"}
+//#Issue: {"severity": "Warning", "line": 22, "patternId": "sorted_first_last"}
+//#Issue: {"severity": "Warning", "line": 26, "patternId": "sorted_first_last"}
+//#Issue: {"severity": "Warning", "line": 30, "patternId": "sorted_first_last"}
+//#Issue: {"severity": "Warning", "line": 34, "patternId": "sorted_first_last"}
+//#Issue: {"severity": "Warning", "line": 38, "patternId": "sorted_first_last"}
+//#Issue: {"severity": "Warning", "line": 42, "patternId": "sorted_first_last"}
+//#Issue: {"severity": "Warning", "line": 46, "patternId": "sorted_first_last"}
+//#Issue: {"severity": "Warning", "line": 50, "patternId": "sorted_first_last"}
+//#Issue: {"severity": "Warning", "line": 54, "patternId": "sorted_first_last"}
+//#Issue: {"severity": "Warning", "line": 58, "patternId": "sorted_first_last"}
+//#Issue: {"severity": "Warning", "line": 62, "patternId": "sorted_first_last"}
+//#Issue: {"severity": "Warning", "line": 66, "patternId": "sorted_first_last"}
 
 
 myList.sorted().first

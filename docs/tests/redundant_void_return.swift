@@ -1,9 +1,9 @@
 //#Patterns: redundant_void_return
 
-//#Issue: {"severity": "Info", "line": 8, "patternId": "redundant_void_return"}
-//#Issue: {"severity": "Info", "line": 12, "patternId": "redundant_void_return"}
-//#Issue: {"severity": "Info", "line": 16, "patternId": "redundant_void_return"}
-//#Issue: {"severity": "Info", "line": 20, "patternId": "redundant_void_return"}
+//#Issue: {"severity": "Warning", "line": 8, "patternId": "redundant_void_return"}
+//#Issue: {"severity": "Warning", "line": 12, "patternId": "redundant_void_return"}
+//#Issue: {"severity": "Warning", "line": 16, "patternId": "redundant_void_return"}
+//#Issue: {"severity": "Warning", "line": 20, "patternId": "redundant_void_return"}
 
     func foo() -> Void {}
 

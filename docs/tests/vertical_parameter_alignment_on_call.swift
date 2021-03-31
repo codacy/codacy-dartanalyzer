@@ -1,12 +1,12 @@
 //#Patterns: vertical_parameter_alignment_on_call
 
-//#Issue: {"severity": "Info", "line": 12, "patternId": "vertical_parameter_alignment_on_call"}
-//#Issue: {"severity": "Info", "line": 15, "patternId": "vertical_parameter_alignment_on_call"}
-//#Issue: {"severity": "Info", "line": 18, "patternId": "vertical_parameter_alignment_on_call"}
-//#Issue: {"severity": "Info", "line": 19, "patternId": "vertical_parameter_alignment_on_call"}
-//#Issue: {"severity": "Info", "line": 22, "patternId": "vertical_parameter_alignment_on_call"}
-//#Issue: {"severity": "Info", "line": 27, "patternId": "vertical_parameter_alignment_on_call"}
-//#Issue: {"severity": "Info", "line": 30, "patternId": "vertical_parameter_alignment_on_call"}
+//#Issue: {"severity": "Warning", "line": 12, "patternId": "vertical_parameter_alignment_on_call"}
+//#Issue: {"severity": "Warning", "line": 15, "patternId": "vertical_parameter_alignment_on_call"}
+//#Issue: {"severity": "Warning", "line": 18, "patternId": "vertical_parameter_alignment_on_call"}
+//#Issue: {"severity": "Warning", "line": 19, "patternId": "vertical_parameter_alignment_on_call"}
+//#Issue: {"severity": "Warning", "line": 22, "patternId": "vertical_parameter_alignment_on_call"}
+//#Issue: {"severity": "Warning", "line": 27, "patternId": "vertical_parameter_alignment_on_call"}
+//#Issue: {"severity": "Warning", "line": 30, "patternId": "vertical_parameter_alignment_on_call"}
 
     foo(param1: 1, param2: bar
                     param3: false, param4: true)

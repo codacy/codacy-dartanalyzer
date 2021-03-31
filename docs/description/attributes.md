@@ -198,6 +198,11 @@ internal func foo(identifier: String, completion: @escaping (() -> Void)) {}
 ```
 
 ```swift
+@objc
+internal func foo(identifier: String, completion: @autoclosure (() -> Bool)) {}
+```
+
+```swift
 func printBoolOrTrue(_ expression: @autoclosure () throws -> Bool?) rethrows {
   try print(expression() ?? true)
 }

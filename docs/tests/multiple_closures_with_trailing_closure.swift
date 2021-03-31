@@ -1,7 +1,7 @@
 //#Patterns: multiple_closures_with_trailing_closure
 
-//#Issue: {"severity": "Info", "line": 8, "patternId": "multiple_closures_with_trailing_closure"}
-//#Issue: {"severity": "Info", "line": 13, "patternId": "multiple_closures_with_trailing_closure"}
+//#Issue: {"severity": "Warning", "line": 8, "patternId": "multiple_closures_with_trailing_closure"}
+//#Issue: {"severity": "Warning", "line": 13, "patternId": "multiple_closures_with_trailing_closure"}
 
 
 

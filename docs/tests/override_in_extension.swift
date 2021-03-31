@@ -1,7 +1,7 @@
 //#Patterns: override_in_extension
 
-//#Issue: {"severity": "Info", "line": 9, "patternId": "override_in_extension"}
-//#Issue: {"severity": "Info", "line": 15, "patternId": "override_in_extension"}
+//#Issue: {"severity": "Warning", "line": 9, "patternId": "override_in_extension"}
+//#Issue: {"severity": "Warning", "line": 15, "patternId": "override_in_extension"}
 
 
 

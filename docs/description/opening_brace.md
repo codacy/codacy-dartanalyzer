@@ -77,10 +77,25 @@ struct Parent {
 
 ```swift
 func f(rect: CGRect) {
-   {
-      let centre = CGPoint(x: rect.midX, y: rect.midY)
-      print(centre)
-   }()
+    {
+        let centre = CGPoint(x: rect.midX, y: rect.midY)
+        print(centre)
+    }()
+}
+```
+
+```swift
+func f(rect: CGRect) -> () -> Void {
+    {
+        let centre = CGPoint(x: rect.midX, y: rect.midY)
+        print(centre)
+    }
+}
+```
+
+```swift
+func f() -> () -> Void {
+    {}
 }
 ```
 

@@ -1,9 +1,9 @@
 //#Patterns: unneeded_break_in_switch
 
-//#Issue: {"severity": "Info", "line": 12, "patternId": "unneeded_break_in_switch"}
-//#Issue: {"severity": "Info", "line": 19, "patternId": "unneeded_break_in_switch"}
-//#Issue: {"severity": "Info", "line": 26, "patternId": "unneeded_break_in_switch"}
-//#Issue: {"severity": "Info", "line": 33, "patternId": "unneeded_break_in_switch"}
+//#Issue: {"severity": "Warning", "line": 12, "patternId": "unneeded_break_in_switch"}
+//#Issue: {"severity": "Warning", "line": 19, "patternId": "unneeded_break_in_switch"}
+//#Issue: {"severity": "Warning", "line": 26, "patternId": "unneeded_break_in_switch"}
+//#Issue: {"severity": "Warning", "line": 33, "patternId": "unneeded_break_in_switch"}
 
 
 switch foo {

@@ -1,14 +1,14 @@
 //#Patterns: nimble_operator
 
-//#Issue: {"severity": "Info", "line": 13, "patternId": "nimble_operator"}
-//#Issue: {"severity": "Info", "line": 16, "patternId": "nimble_operator"}
-//#Issue: {"severity": "Info", "line": 19, "patternId": "nimble_operator"}
-//#Issue: {"severity": "Info", "line": 22, "patternId": "nimble_operator"}
-//#Issue: {"severity": "Info", "line": 25, "patternId": "nimble_operator"}
-//#Issue: {"severity": "Info", "line": 28, "patternId": "nimble_operator"}
-//#Issue: {"severity": "Info", "line": 31, "patternId": "nimble_operator"}
-//#Issue: {"severity": "Info", "line": 34, "patternId": "nimble_operator"}
-//#Issue: {"severity": "Info", "line": 38, "patternId": "nimble_operator"}
+//#Issue: {"severity": "Warning", "line": 13, "patternId": "nimble_operator"}
+//#Issue: {"severity": "Warning", "line": 16, "patternId": "nimble_operator"}
+//#Issue: {"severity": "Warning", "line": 19, "patternId": "nimble_operator"}
+//#Issue: {"severity": "Warning", "line": 22, "patternId": "nimble_operator"}
+//#Issue: {"severity": "Warning", "line": 25, "patternId": "nimble_operator"}
+//#Issue: {"severity": "Warning", "line": 28, "patternId": "nimble_operator"}
+//#Issue: {"severity": "Warning", "line": 31, "patternId": "nimble_operator"}
+//#Issue: {"severity": "Warning", "line": 34, "patternId": "nimble_operator"}
+//#Issue: {"severity": "Warning", "line": 38, "patternId": "nimble_operator"}
 
     expect(seagull.squawk).toNot(equal("Hi"))
 

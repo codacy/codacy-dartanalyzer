@@ -58,6 +58,12 @@ class SomeType {
 func foo<T>(param1: T, param2: String, param3: String) -> T { /* some code */ }
 ```
 
+```swift
+    func foo(a: [Int] = [
+        1
+    ])
+```
+
 ## Triggering Examples
 
 ```swift

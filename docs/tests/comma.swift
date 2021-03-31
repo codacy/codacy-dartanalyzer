@@ -1,10 +1,10 @@
 //#Patterns: comma
 
-//#Issue: {"severity": "Info", "line": 9, "patternId": "comma"}
-//#Issue: {"severity": "Info", "line": 11, "patternId": "comma"}
-//#Issue: {"severity": "Info", "line": 13, "patternId": "comma"}
-//#Issue: {"severity": "Info", "line": 15, "patternId": "comma"}
-//#Issue: {"severity": "Info", "line": 18, "patternId": "comma"}
+//#Issue: {"severity": "Warning", "line": 9, "patternId": "comma"}
+//#Issue: {"severity": "Warning", "line": 11, "patternId": "comma"}
+//#Issue: {"severity": "Warning", "line": 13, "patternId": "comma"}
+//#Issue: {"severity": "Warning", "line": 15, "patternId": "comma"}
+//#Issue: {"severity": "Warning", "line": 18, "patternId": "comma"}
 
     func abc(a: String ,b: String) { }
 

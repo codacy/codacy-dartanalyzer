@@ -85,25 +85,59 @@ extension A: Equatable {}
 extension A {}
 ```
 
+```swift
+extension Foo {
+    internal func bar() {}
+}
+```
+
+```swift
+internal enum Foo {
+    case bar
+}
+```
+
+```swift
+extension Foo {
+    public var isValid: Bool {
+        let result = true
+        return result
+    }
+}
+```
+
+```swift
+extension Foo {
+    private var isValid: Bool {
+        get {
+            return true
+        }
+        set(newValue) {
+            print(newValue)
+        }
+    }
+}
+```
+
 ## Triggering Examples
 
 ```swift
-enum A {}
+↓enum A {}
 
 ```
 
 ```swift
-final class B {}
+final ↓class B {}
 
 ```
 
 ```swift
-internal struct C { let d = 5 }
+internal struct C { ↓let d = 5 }
 
 ```
 
 ```swift
-public struct C { let d = 5 }
+public struct C { ↓let d = 5 }
 
 ```
 
@@ -114,6 +148,12 @@ func a() {}
 
 ```swift
 internal let a = 0
-func b() {}
+↓func b() {}
 
+```
+
+```swift
+extension Foo {
+    ↓func bar() {}
+}
 ```

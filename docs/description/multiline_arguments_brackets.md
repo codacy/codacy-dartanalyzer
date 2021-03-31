@@ -51,6 +51,33 @@ AlertViewModel.AlertAction(title: "some title", style: .default) {
 }
 ```
 
+```swift
+public final class Logger {
+    public static let shared = Logger(outputs: [
+        OSLoggerOutput(),
+        ErrorLoggerOutput()
+    ])
+}
+```
+
+```swift
+let errors = try self.download([
+    (description: description, priority: priority),
+])
+```
+
+```swift
+return SignalProducer({ observer, _ in
+    observer.sendCompleted()
+}).onMainQueue()
+```
+
+```swift
+SomeType(a: [
+    1, 2, 3
+], b: [1, 2])
+```
+
 ## Triggering Examples
 
 ```swift
@@ -80,4 +107,11 @@ foo(
         x: 5,
         y: 7
 )↓)
+```
+
+```swift
+SomeOtherType(↓a: [
+        1, 2, 3
+    ],
+    b: "two"↓)
 ```

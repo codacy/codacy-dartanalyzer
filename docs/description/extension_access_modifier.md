@@ -60,6 +60,13 @@ extension Foo {
 }
 ```
 
+```swift
+extension Foo {
+    func setup() {}
+    public func update() {}
+}
+```
+
 ## Triggering Examples
 
 ```swift
@@ -80,5 +87,16 @@ extension Foo {
 public extension Foo {
    public ↓func bar() {}
    public ↓func baz() {}
+}
+```
+
+```swift
+↓extension Foo {
+   public var bar: Int {
+      let value = 1
+      return value
+   }
+
+   public var baz: Int { return 1 }
 }
 ```

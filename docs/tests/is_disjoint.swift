@@ -1,7 +1,7 @@
 //#Patterns: is_disjoint
 
-//#Issue: {"severity": "Info", "line": 8, "patternId": "is_disjoint"}
-//#Issue: {"severity": "Info", "line": 11, "patternId": "is_disjoint"}
+//#Issue: {"severity": "Warning", "line": 8, "patternId": "is_disjoint"}
+//#Issue: {"severity": "Warning", "line": 11, "patternId": "is_disjoint"}
 
 
 

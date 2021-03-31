@@ -118,6 +118,13 @@ switch foo {
 }
 ```
 
+```swift
+do {
+  let loadedToken = try tokenManager.decodeToken(from: response)
+  return loadedToken
+} catch { throw error }
+```
+
 ## Triggering Examples
 
 ```swift

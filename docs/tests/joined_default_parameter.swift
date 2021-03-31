@@ -1,7 +1,7 @@
 //#Patterns: joined_default_parameter
 
-//#Issue: {"severity": "Info", "line": 8, "patternId": "joined_default_parameter"}
-//#Issue: {"severity": "Info", "line": 12, "patternId": "joined_default_parameter"}
+//#Issue: {"severity": "Warning", "line": 8, "patternId": "joined_default_parameter"}
+//#Issue: {"severity": "Warning", "line": 12, "patternId": "joined_default_parameter"}
 
 
 

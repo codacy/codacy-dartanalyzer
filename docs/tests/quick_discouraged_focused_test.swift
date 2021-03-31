@@ -1,12 +1,12 @@
 //#Patterns: quick_discouraged_focused_test
 
-//#Issue: {"severity": "Info", "line": 13, "patternId": "quick_discouraged_focused_test"}
-//#Issue: {"severity": "Info", "line": 20, "patternId": "quick_discouraged_focused_test"}
-//#Issue: {"severity": "Info", "line": 27, "patternId": "quick_discouraged_focused_test"}
-//#Issue: {"severity": "Info", "line": 35, "patternId": "quick_discouraged_focused_test"}
-//#Issue: {"severity": "Info", "line": 44, "patternId": "quick_discouraged_focused_test"}
-//#Issue: {"severity": "Info", "line": 54, "patternId": "quick_discouraged_focused_test"}
-//#Issue: {"severity": "Info", "line": 63, "patternId": "quick_discouraged_focused_test"}
+//#Issue: {"severity": "Warning", "line": 13, "patternId": "quick_discouraged_focused_test"}
+//#Issue: {"severity": "Warning", "line": 20, "patternId": "quick_discouraged_focused_test"}
+//#Issue: {"severity": "Warning", "line": 27, "patternId": "quick_discouraged_focused_test"}
+//#Issue: {"severity": "Warning", "line": 35, "patternId": "quick_discouraged_focused_test"}
+//#Issue: {"severity": "Warning", "line": 44, "patternId": "quick_discouraged_focused_test"}
+//#Issue: {"severity": "Warning", "line": 54, "patternId": "quick_discouraged_focused_test"}
+//#Issue: {"severity": "Warning", "line": 63, "patternId": "quick_discouraged_focused_test"}
 
 class TotoTests: QuickSpec {
     override func spec() {

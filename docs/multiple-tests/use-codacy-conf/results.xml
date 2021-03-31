@@ -2,10 +2,10 @@
 <checkstyle version="1.5">
     <file name="closing_brace.swift"></file>
     <file name="dynamic_inline.swift">
-        <error source="dynamic_inline" line="23" message="Avoid using 'dynamic' and '@inline(__always)' together." severity="info" />
-        <error source="dynamic_inline" line="10" message="Avoid using 'dynamic' and '@inline(__always)' together." severity="info" />
-        <error source="dynamic_inline" line="29" message="Avoid using 'dynamic' and '@inline(__always)' together." severity="info" />
-        <error source="dynamic_inline" line="18" message="Avoid using 'dynamic' and '@inline(__always)' together." severity="info" />
-        <error source="dynamic_inline" line="14" message="Avoid using 'dynamic' and '@inline(__always)' together." severity="info" />
+        <error source="dynamic_inline" line="23" message="Avoid using 'dynamic' and '@inline(__always)' together." severity="error" />
+        <error source="dynamic_inline" line="10" message="Avoid using 'dynamic' and '@inline(__always)' together." severity="error" />
+        <error source="dynamic_inline" line="29" message="Avoid using 'dynamic' and '@inline(__always)' together." severity="error" />
+        <error source="dynamic_inline" line="18" message="Avoid using 'dynamic' and '@inline(__always)' together." severity="error" />
+        <error source="dynamic_inline" line="14" message="Avoid using 'dynamic' and '@inline(__always)' together." severity="error" />
     </file>
 </checkstyle>

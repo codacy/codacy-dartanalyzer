@@ -1,24 +1,24 @@
 //#Patterns: multiline_parameters
 
-//#Issue: {"severity": "Info", "line": 23, "patternId": "multiline_parameters"}
-//#Issue: {"severity": "Info", "line": 29, "patternId": "multiline_parameters"}
-//#Issue: {"severity": "Info", "line": 34, "patternId": "multiline_parameters"}
-//#Issue: {"severity": "Info", "line": 39, "patternId": "multiline_parameters"}
-//#Issue: {"severity": "Info", "line": 44, "patternId": "multiline_parameters"}
-//#Issue: {"severity": "Info", "line": 49, "patternId": "multiline_parameters"}
-//#Issue: {"severity": "Info", "line": 54, "patternId": "multiline_parameters"}
-//#Issue: {"severity": "Info", "line": 59, "patternId": "multiline_parameters"}
-//#Issue: {"severity": "Info", "line": 64, "patternId": "multiline_parameters"}
-//#Issue: {"severity": "Info", "line": 69, "patternId": "multiline_parameters"}
-//#Issue: {"severity": "Info", "line": 74, "patternId": "multiline_parameters"}
-//#Issue: {"severity": "Info", "line": 79, "patternId": "multiline_parameters"}
-//#Issue: {"severity": "Info", "line": 84, "patternId": "multiline_parameters"}
-//#Issue: {"severity": "Info", "line": 89, "patternId": "multiline_parameters"}
-//#Issue: {"severity": "Info", "line": 94, "patternId": "multiline_parameters"}
-//#Issue: {"severity": "Info", "line": 99, "patternId": "multiline_parameters"}
-//#Issue: {"severity": "Info", "line": 104, "patternId": "multiline_parameters"}
-//#Issue: {"severity": "Info", "line": 109, "patternId": "multiline_parameters"}
-//#Issue: {"severity": "Info", "line": 114, "patternId": "multiline_parameters"}
+//#Issue: {"severity": "Warning", "line": 23, "patternId": "multiline_parameters"}
+//#Issue: {"severity": "Warning", "line": 29, "patternId": "multiline_parameters"}
+//#Issue: {"severity": "Warning", "line": 34, "patternId": "multiline_parameters"}
+//#Issue: {"severity": "Warning", "line": 39, "patternId": "multiline_parameters"}
+//#Issue: {"severity": "Warning", "line": 44, "patternId": "multiline_parameters"}
+//#Issue: {"severity": "Warning", "line": 49, "patternId": "multiline_parameters"}
+//#Issue: {"severity": "Warning", "line": 54, "patternId": "multiline_parameters"}
+//#Issue: {"severity": "Warning", "line": 59, "patternId": "multiline_parameters"}
+//#Issue: {"severity": "Warning", "line": 64, "patternId": "multiline_parameters"}
+//#Issue: {"severity": "Warning", "line": 69, "patternId": "multiline_parameters"}
+//#Issue: {"severity": "Warning", "line": 74, "patternId": "multiline_parameters"}
+//#Issue: {"severity": "Warning", "line": 79, "patternId": "multiline_parameters"}
+//#Issue: {"severity": "Warning", "line": 84, "patternId": "multiline_parameters"}
+//#Issue: {"severity": "Warning", "line": 89, "patternId": "multiline_parameters"}
+//#Issue: {"severity": "Warning", "line": 94, "patternId": "multiline_parameters"}
+//#Issue: {"severity": "Warning", "line": 99, "patternId": "multiline_parameters"}
+//#Issue: {"severity": "Warning", "line": 104, "patternId": "multiline_parameters"}
+//#Issue: {"severity": "Warning", "line": 109, "patternId": "multiline_parameters"}
+//#Issue: {"severity": "Warning", "line": 114, "patternId": "multiline_parameters"}
 
     func foo(_ param1: Int,
               param2: Int, param3: Int) -> (Int) -> Int {

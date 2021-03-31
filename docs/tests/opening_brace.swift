@@ -1,19 +1,19 @@
 //#Patterns: opening_brace
 
-//#Issue: {"severity": "Info", "line": 18, "patternId": "opening_brace"}
-//#Issue: {"severity": "Info", "line": 22, "patternId": "opening_brace"}
-//#Issue: {"severity": "Info", "line": 24, "patternId": "opening_brace"}
-//#Issue: {"severity": "Info", "line": 26, "patternId": "opening_brace"}
-//#Issue: {"severity": "Info", "line": 28, "patternId": "opening_brace"}
-//#Issue: {"severity": "Info", "line": 30, "patternId": "opening_brace"}
-//#Issue: {"severity": "Info", "line": 32, "patternId": "opening_brace"}
-//#Issue: {"severity": "Info", "line": 37, "patternId": "opening_brace"}
-//#Issue: {"severity": "Info", "line": 42, "patternId": "opening_brace"}
-//#Issue: {"severity": "Info", "line": 47, "patternId": "opening_brace"}
-//#Issue: {"severity": "Info", "line": 49, "patternId": "opening_brace"}
-//#Issue: {"severity": "Info", "line": 53, "patternId": "opening_brace"}
-//#Issue: {"severity": "Info", "line": 59, "patternId": "opening_brace"}
-//#Issue: {"severity": "Info", "line": 65, "patternId": "opening_brace"}
+//#Issue: {"severity": "Warning", "line": 18, "patternId": "opening_brace"}
+//#Issue: {"severity": "Warning", "line": 22, "patternId": "opening_brace"}
+//#Issue: {"severity": "Warning", "line": 24, "patternId": "opening_brace"}
+//#Issue: {"severity": "Warning", "line": 26, "patternId": "opening_brace"}
+//#Issue: {"severity": "Warning", "line": 28, "patternId": "opening_brace"}
+//#Issue: {"severity": "Warning", "line": 30, "patternId": "opening_brace"}
+//#Issue: {"severity": "Warning", "line": 32, "patternId": "opening_brace"}
+//#Issue: {"severity": "Warning", "line": 37, "patternId": "opening_brace"}
+//#Issue: {"severity": "Warning", "line": 42, "patternId": "opening_brace"}
+//#Issue: {"severity": "Warning", "line": 47, "patternId": "opening_brace"}
+//#Issue: {"severity": "Warning", "line": 49, "patternId": "opening_brace"}
+//#Issue: {"severity": "Warning", "line": 53, "patternId": "opening_brace"}
+//#Issue: {"severity": "Warning", "line": 59, "patternId": "opening_brace"}
+//#Issue: {"severity": "Warning", "line": 65, "patternId": "opening_brace"}
 
     func abc(){
     }

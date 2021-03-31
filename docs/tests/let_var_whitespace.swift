@@ -1,11 +1,11 @@
 //#Patterns: let_var_whitespace
 
-//#Issue: {"severity": "Info", "line": 12, "patternId": "let_var_whitespace"}
-//#Issue: {"severity": "Info", "line": 18, "patternId": "let_var_whitespace"}
-//#Issue: {"severity": "Info", "line": 24, "patternId": "let_var_whitespace"}
-//#Issue: {"severity": "Info", "line": 30, "patternId": "let_var_whitespace"}
-//#Issue: {"severity": "Info", "line": 35, "patternId": "let_var_whitespace"}
-//#Issue: {"severity": "Info", "line": 42, "patternId": "let_var_whitespace"}
+//#Issue: {"severity": "Warning", "line": 12, "patternId": "let_var_whitespace"}
+//#Issue: {"severity": "Warning", "line": 18, "patternId": "let_var_whitespace"}
+//#Issue: {"severity": "Warning", "line": 24, "patternId": "let_var_whitespace"}
+//#Issue: {"severity": "Warning", "line": 30, "patternId": "let_var_whitespace"}
+//#Issue: {"severity": "Warning", "line": 35, "patternId": "let_var_whitespace"}
+//#Issue: {"severity": "Warning", "line": 42, "patternId": "let_var_whitespace"}
 
 
 var x = 1

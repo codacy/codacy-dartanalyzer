@@ -1,9 +1,9 @@
 //#Patterns: extension_access_modifier
 
-//#Issue: {"severity": "Info", "line": 8, "patternId": "extension_access_modifier"}
-//#Issue: {"severity": "Info", "line": 13, "patternId": "extension_access_modifier"}
-//#Issue: {"severity": "Info", "line": 19, "patternId": "extension_access_modifier"}
-//#Issue: {"severity": "Info", "line": 20, "patternId": "extension_access_modifier"}
+//#Issue: {"severity": "Warning", "line": 8, "patternId": "extension_access_modifier"}
+//#Issue: {"severity": "Warning", "line": 13, "patternId": "extension_access_modifier"}
+//#Issue: {"severity": "Warning", "line": 19, "patternId": "extension_access_modifier"}
+//#Issue: {"severity": "Warning", "line": 20, "patternId": "extension_access_modifier"}
 
     extension Foo {
        public var bar: Int { return 1 }

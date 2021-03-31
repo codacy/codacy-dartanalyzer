@@ -1,11 +1,11 @@
 //#Patterns: explicit_acl
 
-//#Issue: {"severity": "Info", "line": 11, "patternId": "explicit_acl"}
-//#Issue: {"severity": "Info", "line": 14, "patternId": "explicit_acl"}
-//#Issue: {"severity": "Info", "line": 17, "patternId": "explicit_acl"}
-//#Issue: {"severity": "Info", "line": 20, "patternId": "explicit_acl"}
-//#Issue: {"severity": "Info", "line": 23, "patternId": "explicit_acl"}
-//#Issue: {"severity": "Info", "line": 27, "patternId": "explicit_acl"}
+//#Issue: {"severity": "Warning", "line": 11, "patternId": "explicit_acl"}
+//#Issue: {"severity": "Warning", "line": 14, "patternId": "explicit_acl"}
+//#Issue: {"severity": "Warning", "line": 17, "patternId": "explicit_acl"}
+//#Issue: {"severity": "Warning", "line": 20, "patternId": "explicit_acl"}
+//#Issue: {"severity": "Warning", "line": 23, "patternId": "explicit_acl"}
+//#Issue: {"severity": "Warning", "line": 27, "patternId": "explicit_acl"}
 
 
 enum A {}

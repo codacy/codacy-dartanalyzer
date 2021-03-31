@@ -1,11 +1,11 @@
 //#Patterns: pattern_matching_keywords
 
-//#Issue: {"severity": "Info", "line": 11, "patternId": "pattern_matching_keywords"}
-//#Issue: {"severity": "Info", "line": 16, "patternId": "pattern_matching_keywords"}
-//#Issue: {"severity": "Info", "line": 21, "patternId": "pattern_matching_keywords"}
-//#Issue: {"severity": "Info", "line": 26, "patternId": "pattern_matching_keywords"}
-//#Issue: {"severity": "Info", "line": 31, "patternId": "pattern_matching_keywords"}
-//#Issue: {"severity": "Info", "line": 36, "patternId": "pattern_matching_keywords"}
+//#Issue: {"severity": "Warning", "line": 11, "patternId": "pattern_matching_keywords"}
+//#Issue: {"severity": "Warning", "line": 16, "patternId": "pattern_matching_keywords"}
+//#Issue: {"severity": "Warning", "line": 21, "patternId": "pattern_matching_keywords"}
+//#Issue: {"severity": "Warning", "line": 26, "patternId": "pattern_matching_keywords"}
+//#Issue: {"severity": "Warning", "line": 31, "patternId": "pattern_matching_keywords"}
+//#Issue: {"severity": "Warning", "line": 36, "patternId": "pattern_matching_keywords"}
 
 switch foo {
 case (let x,  let y): break

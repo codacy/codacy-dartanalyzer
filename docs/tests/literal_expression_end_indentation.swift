@@ -1,8 +1,8 @@
 //#Patterns: literal_expression_end_indentation
 
-//#Issue: {"severity": "Info", "line": 12, "patternId": "literal_expression_end_indentation"}
-//#Issue: {"severity": "Info", "line": 19, "patternId": "literal_expression_end_indentation"}
-//#Issue: {"severity": "Info", "line": 25, "patternId": "literal_expression_end_indentation"}
+//#Issue: {"severity": "Warning", "line": 12, "patternId": "literal_expression_end_indentation"}
+//#Issue: {"severity": "Warning", "line": 19, "patternId": "literal_expression_end_indentation"}
+//#Issue: {"severity": "Warning", "line": 25, "patternId": "literal_expression_end_indentation"}
 
 
 

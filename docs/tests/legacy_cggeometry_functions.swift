@@ -1,25 +1,25 @@
 //#Patterns: legacy_cggeometry_functions
 
-//#Issue: {"severity": "Info", "line": 24, "patternId": "legacy_cggeometry_functions"}
-//#Issue: {"severity": "Info", "line": 26, "patternId": "legacy_cggeometry_functions"}
-//#Issue: {"severity": "Info", "line": 28, "patternId": "legacy_cggeometry_functions"}
-//#Issue: {"severity": "Info", "line": 30, "patternId": "legacy_cggeometry_functions"}
-//#Issue: {"severity": "Info", "line": 32, "patternId": "legacy_cggeometry_functions"}
-//#Issue: {"severity": "Info", "line": 34, "patternId": "legacy_cggeometry_functions"}
-//#Issue: {"severity": "Info", "line": 36, "patternId": "legacy_cggeometry_functions"}
-//#Issue: {"severity": "Info", "line": 38, "patternId": "legacy_cggeometry_functions"}
-//#Issue: {"severity": "Info", "line": 40, "patternId": "legacy_cggeometry_functions"}
-//#Issue: {"severity": "Info", "line": 42, "patternId": "legacy_cggeometry_functions"}
-//#Issue: {"severity": "Info", "line": 44, "patternId": "legacy_cggeometry_functions"}
-//#Issue: {"severity": "Info", "line": 46, "patternId": "legacy_cggeometry_functions"}
-//#Issue: {"severity": "Info", "line": 48, "patternId": "legacy_cggeometry_functions"}
-//#Issue: {"severity": "Info", "line": 50, "patternId": "legacy_cggeometry_functions"}
-//#Issue: {"severity": "Info", "line": 52, "patternId": "legacy_cggeometry_functions"}
-//#Issue: {"severity": "Info", "line": 54, "patternId": "legacy_cggeometry_functions"}
-//#Issue: {"severity": "Info", "line": 56, "patternId": "legacy_cggeometry_functions"}
-//#Issue: {"severity": "Info", "line": 58, "patternId": "legacy_cggeometry_functions"}
-//#Issue: {"severity": "Info", "line": 60, "patternId": "legacy_cggeometry_functions"}
-//#Issue: {"severity": "Info", "line": 62, "patternId": "legacy_cggeometry_functions"}
+//#Issue: {"severity": "Warning", "line": 24, "patternId": "legacy_cggeometry_functions"}
+//#Issue: {"severity": "Warning", "line": 26, "patternId": "legacy_cggeometry_functions"}
+//#Issue: {"severity": "Warning", "line": 28, "patternId": "legacy_cggeometry_functions"}
+//#Issue: {"severity": "Warning", "line": 30, "patternId": "legacy_cggeometry_functions"}
+//#Issue: {"severity": "Warning", "line": 32, "patternId": "legacy_cggeometry_functions"}
+//#Issue: {"severity": "Warning", "line": 34, "patternId": "legacy_cggeometry_functions"}
+//#Issue: {"severity": "Warning", "line": 36, "patternId": "legacy_cggeometry_functions"}
+//#Issue: {"severity": "Warning", "line": 38, "patternId": "legacy_cggeometry_functions"}
+//#Issue: {"severity": "Warning", "line": 40, "patternId": "legacy_cggeometry_functions"}
+//#Issue: {"severity": "Warning", "line": 42, "patternId": "legacy_cggeometry_functions"}
+//#Issue: {"severity": "Warning", "line": 44, "patternId": "legacy_cggeometry_functions"}
+//#Issue: {"severity": "Warning", "line": 46, "patternId": "legacy_cggeometry_functions"}
+//#Issue: {"severity": "Warning", "line": 48, "patternId": "legacy_cggeometry_functions"}
+//#Issue: {"severity": "Warning", "line": 50, "patternId": "legacy_cggeometry_functions"}
+//#Issue: {"severity": "Warning", "line": 52, "patternId": "legacy_cggeometry_functions"}
+//#Issue: {"severity": "Warning", "line": 54, "patternId": "legacy_cggeometry_functions"}
+//#Issue: {"severity": "Warning", "line": 56, "patternId": "legacy_cggeometry_functions"}
+//#Issue: {"severity": "Warning", "line": 58, "patternId": "legacy_cggeometry_functions"}
+//#Issue: {"severity": "Warning", "line": 60, "patternId": "legacy_cggeometry_functions"}
+//#Issue: {"severity": "Warning", "line": 62, "patternId": "legacy_cggeometry_functions"}
 
     CGRectGetWidth(rect)
 

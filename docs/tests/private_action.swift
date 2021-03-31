@@ -1,16 +1,16 @@
 //#Patterns: private_action
 
-//#Issue: {"severity": "Info", "line": 17, "patternId": "private_action"}
-//#Issue: {"severity": "Info", "line": 23, "patternId": "private_action"}
-//#Issue: {"severity": "Info", "line": 29, "patternId": "private_action"}
-//#Issue: {"severity": "Info", "line": 35, "patternId": "private_action"}
-//#Issue: {"severity": "Info", "line": 41, "patternId": "private_action"}
-//#Issue: {"severity": "Info", "line": 47, "patternId": "private_action"}
-//#Issue: {"severity": "Info", "line": 53, "patternId": "private_action"}
-//#Issue: {"severity": "Info", "line": 59, "patternId": "private_action"}
-//#Issue: {"severity": "Info", "line": 65, "patternId": "private_action"}
-//#Issue: {"severity": "Info", "line": 71, "patternId": "private_action"}
-//#Issue: {"severity": "Info", "line": 77, "patternId": "private_action"}
+//#Issue: {"severity": "Warning", "line": 17, "patternId": "private_action"}
+//#Issue: {"severity": "Warning", "line": 23, "patternId": "private_action"}
+//#Issue: {"severity": "Warning", "line": 29, "patternId": "private_action"}
+//#Issue: {"severity": "Warning", "line": 35, "patternId": "private_action"}
+//#Issue: {"severity": "Warning", "line": 41, "patternId": "private_action"}
+//#Issue: {"severity": "Warning", "line": 47, "patternId": "private_action"}
+//#Issue: {"severity": "Warning", "line": 53, "patternId": "private_action"}
+//#Issue: {"severity": "Warning", "line": 59, "patternId": "private_action"}
+//#Issue: {"severity": "Warning", "line": 65, "patternId": "private_action"}
+//#Issue: {"severity": "Warning", "line": 71, "patternId": "private_action"}
+//#Issue: {"severity": "Warning", "line": 77, "patternId": "private_action"}
 
 
 class Foo {

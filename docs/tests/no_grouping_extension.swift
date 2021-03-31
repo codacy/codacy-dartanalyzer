@@ -1,9 +1,9 @@
 //#Patterns: no_grouping_extension
 
-//#Issue: {"severity": "Info", "line": 11, "patternId": "no_grouping_extension"}
-//#Issue: {"severity": "Info", "line": 15, "patternId": "no_grouping_extension"}
-//#Issue: {"severity": "Info", "line": 21, "patternId": "no_grouping_extension"}
-//#Issue: {"severity": "Info", "line": 26, "patternId": "no_grouping_extension"}
+//#Issue: {"severity": "Warning", "line": 11, "patternId": "no_grouping_extension"}
+//#Issue: {"severity": "Warning", "line": 15, "patternId": "no_grouping_extension"}
+//#Issue: {"severity": "Warning", "line": 21, "patternId": "no_grouping_extension"}
+//#Issue: {"severity": "Warning", "line": 26, "patternId": "no_grouping_extension"}
 
 
 

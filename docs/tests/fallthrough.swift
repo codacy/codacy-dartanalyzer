@@ -1,6 +1,6 @@
 //#Patterns: fallthrough
 
-//#Issue: {"severity": "Info", "line": 9, "patternId": "fallthrough"}
+//#Issue: {"severity": "Warning", "line": 9, "patternId": "fallthrough"}
 
 
 

@@ -1,13 +1,13 @@
 //#Patterns: return_arrow_whitespace
 
-//#Issue: {"severity": "Info", "line": 12, "patternId": "return_arrow_whitespace"}
-//#Issue: {"severity": "Info", "line": 15, "patternId": "return_arrow_whitespace"}
-//#Issue: {"severity": "Info", "line": 18, "patternId": "return_arrow_whitespace"}
-//#Issue: {"severity": "Info", "line": 21, "patternId": "return_arrow_whitespace"}
-//#Issue: {"severity": "Info", "line": 24, "patternId": "return_arrow_whitespace"}
-//#Issue: {"severity": "Info", "line": 27, "patternId": "return_arrow_whitespace"}
-//#Issue: {"severity": "Info", "line": 30, "patternId": "return_arrow_whitespace"}
-//#Issue: {"severity": "Info", "line": 33, "patternId": "return_arrow_whitespace"}
+//#Issue: {"severity": "Warning", "line": 12, "patternId": "return_arrow_whitespace"}
+//#Issue: {"severity": "Warning", "line": 15, "patternId": "return_arrow_whitespace"}
+//#Issue: {"severity": "Warning", "line": 18, "patternId": "return_arrow_whitespace"}
+//#Issue: {"severity": "Warning", "line": 21, "patternId": "return_arrow_whitespace"}
+//#Issue: {"severity": "Warning", "line": 24, "patternId": "return_arrow_whitespace"}
+//#Issue: {"severity": "Warning", "line": 27, "patternId": "return_arrow_whitespace"}
+//#Issue: {"severity": "Warning", "line": 30, "patternId": "return_arrow_whitespace"}
+//#Issue: {"severity": "Warning", "line": 33, "patternId": "return_arrow_whitespace"}
 
     func abc()->Int {}
 

@@ -1,6 +1,6 @@
-FROM norionomura/swiftlint:0.40.0 as builder
+FROM norionomura/swiftlint:0.43.1_swift-5.4.0 as builder
 
-FROM swift:5.2.4-xenial-slim
+FROM swift:5.5.0-xenial-slim
 
 COPY --from=builder /usr/bin/swiftlint /usr/bin/swiftlint
 COPY --from=builder /usr/lib/libsourcekitdInProc.so /usr/lib/libsourcekitdInProc.so

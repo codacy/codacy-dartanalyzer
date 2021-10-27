@@ -1,9 +1,11 @@
 //#Patterns: nesting
 
-//#Issue: {"severity": "Info", "line": 8, "patternId": "nesting"}
-//#Issue: {"severity": "Info", "line": 11, "patternId": "nesting"}
-//#Issue: {"severity": "Info", "line": 14, "patternId": "nesting"}
+//#Issue: {"severity": "Info", "line": 10, "patternId": "nesting"}
+//#Issue: {"severity": "Info", "line": 13, "patternId": "nesting"}
+//#Issue: {"severity": "Info", "line": 16, "patternId": "nesting"}
 //#Issue: {"severity": "Info", "line": 22, "patternId": "nesting"}
+//#Issue: {"severity": "Info", "line": 23, "patternId": "nesting"}
+//#Issue: {"severity": "Info", "line": 24, "patternId": "nesting"}
 
     class A { class B { class C {} } }
 

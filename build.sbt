@@ -1,27 +1,30 @@
 organization := "com.codacy"
 
-name := "codacy-swiftlint"
+name := "codacy-dartanalyzer"
 
-scalaVersion := "2.13.3"
+scalaVersion := "2.13.8"
 
-lazy val swiftlintVersion = Def.setting("1.10.0")
+lazy val dartanalyzerVersion = Def.setting("1.10.0")
 
 Compile / sourceGenerators += Def.task {
-  val file = (Compile / sourceManaged).value / "codacy" / "swiftlint" / "Versions.scala"
-  IO.write(file, s"""package codacy.swiftlint
+  val file = (Compile / sourceManaged).value / "codacy" / "dartanalyzer" / "Versions.scala"
+  IO.write(file, s"""package codacy.dartanalyzer
                     |object Versions {
-                    |  val swiftlintVersion: String = "${swiftlintVersion.value}"
+                    |  val dartanalyzerVersion: String = "${dartanalyzerVersion.value}"
                     |}
                     |""".stripMargin)
   Seq(file)
 }.taskValue
 
+enablePlugins(JavaAppPackaging)
 enablePlugins(GraalVMNativeImagePlugin)
 
 libraryDependencies ++= Seq(
-  "com.codacy" %% "codacy-engine-scala-seed" % "5.0.1",
+  "com.codacy" %% "codacy-engine-scala-seed" % "5.0.3",
   "org.scalameta" %% "svm-subs" % "20.2.0"
 )
+
+scalacOptions -= "-Xfatal-warnings"
 
 graalVMNativeImageGraalVersion := Some("21.0.0")
 graalVMNativeImageOptions ++= Seq(

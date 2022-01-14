@@ -1,3 +1,0 @@
-whitelist_rules:
-  - closing_brace
-  - dynamic_inline

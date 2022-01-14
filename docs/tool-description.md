@@ -1,1 +1,1 @@
-A tool to enforce Swift style and conventions, loosely based on GitHub's Swift Style Guide. [Learn more](https://github.com/realm/SwiftLint)
+A tool to analyze your code, checking for errors and warnings that are specified in the Dart Language Specification. [Learn more](https://github.com/dart-lang/sdk/tree/master/pkg/analyzer_cli#dartanalyzer)

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<checkstyle version="1.5">
-    <file name="closing_brace.swift">
-        <error source="closing_brace" line="6" message="Closing brace with closing parenthesis should not have any whitespaces in the middle." severity="warning" />
-        <error source="closing_brace" line="8" message="Closing brace with closing parenthesis should not have any whitespaces in the middle." severity="warning" />
-    </file>
-</checkstyle>

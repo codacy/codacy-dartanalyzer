@@ -1,8 +1,8 @@
 version: 2.1
 
 orbs:
-  codacy: codacy/base@4.2.7
-  codacy_plugins_test: codacy/plugins-test@0.15.4
+  codacy: codacy/base@6.1.3
+  codacy_plugins_test: codacy/plugins-test@1.0.0
 
 workflows:
   version: 2
@@ -13,20 +13,10 @@ workflows:
       - codacy/sbt:
           name: publish_docker_local
           cmd: |
-            sbt "scalafmt::test;
-                 test:scalafmt::test;
-                 sbt:scalafmt::test;
-                 graalvm-native-image:packageBin"
-            docker build -t $CIRCLE_PROJECT_REPONAME:latest .
-            # Install Ammonite
-            sudo sh -c '(echo "#!/usr/bin/env sh" && curl -L https://github.com/lihaoyi/Ammonite/releases/download/2.3.8/2.13-2.3.8) > /usr/local/bin/amm && chmod +x /usr/local/bin/amm'
-            # Run doc-generator
-            sudo amm doc-generator.sc
-            # Update docker image with generated docs
+            sbt scalafmtCheckAll graalvm-native-image:packageBin
             docker build -t $CIRCLE_PROJECT_REPONAME:latest .
             docker save --output docker-image.tar $CIRCLE_PROJECT_REPONAME:latest
           persist_to_workspace: true
-          cache_prefix: sbt-cache-27102021-3
           requires:
             - codacy/checkout_and_version
       - codacy_plugins_test/run:

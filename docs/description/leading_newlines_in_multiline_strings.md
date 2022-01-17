@@ -1,0 +1,22 @@
+Multiline strings are easier to read when they start with a newline (a newline
+starting a multiline string is ignored).
+
+**BAD:**
+```dart
+var s1 = '''{
+  "a": 1,
+  "b": 2
+}''';
+```
+
+**GOOD:**
+```dart
+var s1 = '''
+{
+  "a": 1,
+  "b": 2
+}''';
+
+var s2 = '''This one-liner multiline string is ok. It usually allows to escape both ' and " in the string.''';
+```
+

@@ -1,5 +1,1021 @@
 {
-  "name" : "dartanalyzer",
-  "version" : "2.15.1",
-  "patterns" : [ ]
+  "name": "Dart",
+  "version": "2.15.1",
+  "patterns": [
+    {
+      "patternId": "always_declare_return_types",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "always_put_control_body_on_new_line",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "always_put_required_named_parameters_first",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "always_require_non_null_named_parameters",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "always_specify_types",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "always_use_package_imports",
+      "level": "Error",
+      "category": "errors"
+    },
+    {
+      "patternId": "annotate_overrides",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "avoid_annotating_with_dynamic",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "avoid_as",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "avoid_bool_literals_in_conditional_expressions",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "avoid_catches_without_on_clauses",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "avoid_catching_errors",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "avoid_classes_with_only_static_members",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "avoid_double_and_int_checks",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "avoid_dynamic_calls",
+      "level": "Error",
+      "category": "errors"
+    },
+    {
+      "patternId": "avoid_empty_else",
+      "level": "Error",
+      "category": "errors"
+    },
+    {
+      "patternId": "avoid_escaping_inner_quotes",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "avoid_field_initializers_in_const_classes",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "avoid_final_parameters",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "avoid_function_literals_in_foreach_calls",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "avoid_implementing_value_types",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "avoid_init_to_null",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "avoid_js_rounded_ints",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "avoid_multiple_declarations_per_line",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "avoid_null_checks_in_equality_operators",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "avoid_equals_and_hash_code_on_mutable_classes",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "avoid_positional_boolean_parameters",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "avoid_print",
+      "level": "Error",
+      "category": "errors"
+    },
+    {
+      "patternId": "avoid_private_typedef_functions",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "avoid_redundant_argument_values",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "avoid_relative_lib_imports",
+      "level": "Error",
+      "category": "errors"
+    },
+    {
+      "patternId": "avoid_renaming_method_parameters",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "avoid_returning_null",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "avoid_returning_null_for_future",
+      "level": "Error",
+      "category": "errors"
+    },
+    {
+      "patternId": "avoid_returning_null_for_void",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "avoid_returning_this",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "avoid_return_types_on_setters",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "avoid_setters_without_getters",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "avoid_shadowing_type_parameters",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "avoid_single_cascade_in_expression_statements",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "avoid_slow_async_io",
+      "level": "Error",
+      "category": "errors"
+    },
+    {
+      "patternId": "avoid_type_to_string",
+      "level": "Error",
+      "category": "errors"
+    },
+    {
+      "patternId": "avoid_types_as_parameter_names",
+      "level": "Error",
+      "category": "errors"
+    },
+    {
+      "patternId": "avoid_types_on_closure_parameters",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "avoid_unnecessary_containers",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "avoid_unused_constructor_parameters",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "avoid_void_async",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "avoid_web_libraries_in_flutter",
+      "level": "Error",
+      "category": "errors"
+    },
+    {
+      "patternId": "await_only_futures",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "camel_case_extensions",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "camel_case_types",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "cancel_subscriptions",
+      "level": "Error",
+      "category": "errors"
+    },
+    {
+      "patternId": "cascade_invocations",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "cast_nullable_to_non_nullable",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "close_sinks",
+      "level": "Error",
+      "category": "errors"
+    },
+    {
+      "patternId": "comment_references",
+      "level": "Error",
+      "category": "errors"
+    },
+    {
+      "patternId": "conditional_uri_does_not_exist",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "constant_identifier_names",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "control_flow_in_finally",
+      "level": "Error",
+      "category": "errors"
+    },
+    {
+      "patternId": "curly_braces_in_flow_control_structures",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "depend_on_referenced_packages",
+      "level": "Info",
+      "category": "pub"
+    },
+    {
+      "patternId": "deprecated_consistency",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "diagnostic_describe_all_properties",
+      "level": "Error",
+      "category": "errors"
+    },
+    {
+      "patternId": "directives_ordering",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "do_not_use_environment",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "empty_catches",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "empty_constructor_bodies",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "empty_statements",
+      "level": "Error",
+      "category": "errors"
+    },
+    {
+      "patternId": "eol_at_end_of_file",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "exhaustive_cases",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "file_names",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "flutter_style_todos",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "hash_and_equals",
+      "level": "Error",
+      "category": "errors"
+    },
+    {
+      "patternId": "implementation_imports",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "invariant_booleans",
+      "level": "Error",
+      "category": "errors"
+    },
+    {
+      "patternId": "iterable_contains_unrelated_type",
+      "level": "Error",
+      "category": "errors"
+    },
+    {
+      "patternId": "join_return_with_assignment",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "leading_newlines_in_multiline_strings",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "library_names",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "library_prefixes",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "library_private_types_in_public_api",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "lines_longer_than_80_chars",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "list_remove_unrelated_type",
+      "level": "Error",
+      "category": "errors"
+    },
+    {
+      "patternId": "literal_only_boolean_expressions",
+      "level": "Error",
+      "category": "errors"
+    },
+    {
+      "patternId": "missing_whitespace_between_adjacent_strings",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "no_adjacent_strings_in_list",
+      "level": "Error",
+      "category": "errors"
+    },
+    {
+      "patternId": "no_default_cases",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "no_duplicate_case_values",
+      "level": "Error",
+      "category": "errors"
+    },
+    {
+      "patternId": "non_constant_identifier_names",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "no_leading_underscores_for_library_prefixes",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "no_leading_underscores_for_local_identifiers",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "no_logic_in_create_state",
+      "level": "Error",
+      "category": "errors"
+    },
+    {
+      "patternId": "noop_primitive_operations",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "no_runtimeType_toString",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "null_check_on_nullable_type_parameter",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "null_closures",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "omit_local_variable_types",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "one_member_abstracts",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "only_throw_errors",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "overridden_fields",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "package_api_docs",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "package_prefixed_library_names",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "parameter_assignments",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "prefer_adjacent_string_concatenation",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "prefer_asserts_in_initializer_lists",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "prefer_asserts_with_message",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "prefer_bool_in_asserts",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "prefer_collection_literals",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "prefer_conditional_assignment",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "prefer_const_constructors",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "prefer_const_constructors_in_immutables",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "prefer_const_declarations",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "prefer_const_literals_to_create_immutables",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "prefer_constructors_over_static_methods",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "prefer_contains",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "prefer_double_quotes",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "prefer_equal_for_default_values",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "prefer_expression_function_bodies",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "prefer_final_fields",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "prefer_final_in_for_each",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "prefer_final_locals",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "prefer_final_parameters",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "prefer_foreach",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "prefer_for_elements_to_map_fromIterable",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "prefer_function_declarations_over_variables",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "prefer_generic_function_type_aliases",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "prefer_if_elements_to_conditional_expressions",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "prefer_if_null_operators",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "prefer_initializing_formals",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "prefer_inlined_adds",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "prefer_interpolation_to_compose_strings",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "prefer_int_literals",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "prefer_is_empty",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "prefer_is_not_empty",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "prefer_is_not_operator",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "prefer_iterable_whereType",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "prefer_mixin",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "prefer_null_aware_operators",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "prefer_null_aware_method_calls",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "prefer_relative_imports",
+      "level": "Error",
+      "category": "errors"
+    },
+    {
+      "patternId": "prefer_single_quotes",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "prefer_spread_collections",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "prefer_typing_uninitialized_variables",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "prefer_void_to_null",
+      "level": "Error",
+      "category": "errors"
+    },
+    {
+      "patternId": "provide_deprecation_message",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "public_member_api_docs",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "package_names",
+      "level": "Info",
+      "category": "pub"
+    },
+    {
+      "patternId": "secure_pubspec_urls",
+      "level": "Info",
+      "category": "pub"
+    },
+    {
+      "patternId": "recursive_getters",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "require_trailing_commas",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "sized_box_for_whitespace",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "sized_box_shrink_expand",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "slash_for_doc_comments",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "sort_child_properties_last",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "sort_constructors_first",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "sort_pub_dependencies",
+      "level": "Info",
+      "category": "pub"
+    },
+    {
+      "patternId": "sort_unnamed_constructors_first",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "super_goes_last",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "test_types_in_equals",
+      "level": "Error",
+      "category": "errors"
+    },
+    {
+      "patternId": "tighten_type_of_initializing_formals",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "throw_in_finally",
+      "level": "Error",
+      "category": "errors"
+    },
+    {
+      "patternId": "type_annotate_public_apis",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "type_init_formals",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "unawaited_futures",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "unnecessary_await_in_return",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "unnecessary_brace_in_string_interps",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "unnecessary_const",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "unnecessary_constructor_name",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "unnecessary_final",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "unnecessary_new",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "unnecessary_null_aware_assignments",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "unnecessary_null_in_if_null_operators",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "unnecessary_getters_setters",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "unnecessary_lambdas",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "unnecessary_late",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "unnecessary_nullable_for_final_variable_declarations",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "unnecessary_null_checks",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "unnecessary_overrides",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "unnecessary_parenthesis",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "unnecessary_raw_strings",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "unnecessary_statements",
+      "level": "Error",
+      "category": "errors"
+    },
+    {
+      "patternId": "unnecessary_string_escapes",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "unnecessary_string_interpolations",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "unnecessary_this",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "unrelated_type_equality_checks",
+      "level": "Error",
+      "category": "errors"
+    },
+    {
+      "patternId": "unsafe_html",
+      "level": "Error",
+      "category": "errors"
+    },
+    {
+      "patternId": "use_build_context_synchronously",
+      "level": "Error",
+      "category": "errors"
+    },
+    {
+      "patternId": "use_decorated_box",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "use_full_hex_values_for_flutter_colors",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "use_function_type_syntax_for_parameters",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "use_if_null_to_convert_nulls_to_bools",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "use_is_even_rather_than_modulo",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "use_key_in_widget_constructors",
+      "level": "Error",
+      "category": "errors"
+    },
+    {
+      "patternId": "use_late_for_private_fields_and_variables",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "use_named_constants",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "use_rethrow_when_possible",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "use_raw_strings",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "use_setters_to_change_properties",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "use_string_buffers",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "use_test_throws_matchers",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "use_to_and_as_if_applicable",
+      "level": "Info",
+      "category": "style"
+    },
+    {
+      "patternId": "valid_regexps",
+      "level": "Error",
+      "category": "errors"
+    },
+    {
+      "patternId": "void_checks",
+      "level": "Info",
+      "category": "style"
+    }
+  ]
 }

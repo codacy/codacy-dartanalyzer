@@ -2,7 +2,7 @@
 **
 
 # Allow files and directories
-!/target/graalvm-native-image/codacy-swiftlint
+!/target/graalvm-native-image/codacy-dartanalyzer
 !/target/universal/stage/
 !/docs
 

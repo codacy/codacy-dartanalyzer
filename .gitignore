@@ -3,6 +3,7 @@
 /project/*-shim.sbt
 /project/project/
 /project/target/
+/project/metals.sbt
 target
 .idea
 .DS_Store
@@ -10,4 +11,3 @@ target
 .bloop
 .vscode
 .bsp
-.ammonite

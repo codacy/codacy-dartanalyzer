@@ -1,10 +1,10 @@
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/c19f9b18251e4dc5bce89b0a70d0bc70)](https://app.codacy.com/gh/codacy/codacy-swiftlint?utm_source=github.com&utm_medium=referral&utm_content=codacy/codacy-swiftlint&utm_campaign=Badge_Grade_Settings)
-[![Build Status](https://circleci.com/gh/codacy/codacy-swiftlint.svg?style=shield&circle-token=:circle-token)](https://circleci.com/gh/codacy/codacy-swiftlint)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/c19f9b18251e4dc5bce89b0a70d0bc70)](https://app.codacy.com/gh/codacy/codacy-dartanalyzer?utm_source=github.com&utm_medium=referral&utm_content=codacy/codacy-dartanalyzer&utm_campaign=Badge_Grade_Settings)
+[![Build Status](https://circleci.com/gh/codacy/codacy-dartanalyzer.svg?style=shield&circle-token=:circle-token)](https://circleci.com/gh/codacy/codacy-dartanalyzer)
 
-# Codacy Swiftlint
+# Codacy Dart Analyzer
 
-This is the docker engine we use at Codacy to have [Swiftlint](https://github.com/realm/SwiftLint) support.
+This is the docker engine we use at Codacy to have [Dart Analyzer](https://github.com/dart-lang/sdk/tree/master/pkg/analyzer_cli#dartanalyzer) support.
 You can also create a docker to integrate the tool and language of your choice!
 See the [codacy-engine-scala-seed](https://github.com/codacy/codacy-engine-scala-seed) repository for more information.
 
@@ -14,7 +14,7 @@ You can create the docker by doing:
 
 ```bash
 sbt graalvm-native-image:packageBin
-docker build -t codacy-swiftlint .
+docker build -t codacy-dartanalyzer .
 ```
 
 The docker is ran with the following command:
@@ -29,7 +29,7 @@ For a faster development loop you can create a Docker image based on the JVM ins
 
 ```bash
 sbt universal:stage
-docker build -t codacy-swiftlint -f Dockerfile.dev .
+docker build -t codacy-dartanalyzer -f Dockerfile.dev .
 ```
 
 We use the [codacy-plugins-test](https://github.com/codacy/codacy-plugins-test) to test our external tools integration.

@@ -46,8 +46,6 @@ void main() {
     );
   });
 
-  print(encoder.convert(PatternsFile(patterns: patterns)));
-
   File("docs/description/description.json")
       .writeAsStringSync(encoder.convert(descriptions));
 

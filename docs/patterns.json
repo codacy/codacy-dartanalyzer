@@ -1,5 +1,1021 @@
 {
-  "name" : "dartanalyzer",
-  "version" : "2.15.1",
-  "patterns" : [ ]
+  "name": "Dart",
+  "version": "1.18.0",
+  "patterns": [
+    {
+      "patternId": "always_declare_return_types",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "always_put_control_body_on_new_line",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "always_put_required_named_parameters_first",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "always_require_non_null_named_parameters",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "always_specify_types",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "always_use_package_imports",
+      "level": "Error",
+      "category": "ErrorProne"
+    },
+    {
+      "patternId": "annotate_overrides",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "avoid_annotating_with_dynamic",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "avoid_as",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "avoid_bool_literals_in_conditional_expressions",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "avoid_catches_without_on_clauses",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "avoid_catching_errors",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "avoid_classes_with_only_static_members",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "avoid_double_and_int_checks",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "avoid_dynamic_calls",
+      "level": "Error",
+      "category": "ErrorProne"
+    },
+    {
+      "patternId": "avoid_empty_else",
+      "level": "Error",
+      "category": "ErrorProne"
+    },
+    {
+      "patternId": "avoid_escaping_inner_quotes",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "avoid_field_initializers_in_const_classes",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "avoid_final_parameters",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "avoid_function_literals_in_foreach_calls",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "avoid_implementing_value_types",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "avoid_init_to_null",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "avoid_js_rounded_ints",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "avoid_multiple_declarations_per_line",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "avoid_null_checks_in_equality_operators",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "avoid_equals_and_hash_code_on_mutable_classes",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "avoid_positional_boolean_parameters",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "avoid_print",
+      "level": "Error",
+      "category": "ErrorProne"
+    },
+    {
+      "patternId": "avoid_private_typedef_functions",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "avoid_redundant_argument_values",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "avoid_relative_lib_imports",
+      "level": "Error",
+      "category": "ErrorProne"
+    },
+    {
+      "patternId": "avoid_renaming_method_parameters",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "avoid_returning_null",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "avoid_returning_null_for_future",
+      "level": "Error",
+      "category": "ErrorProne"
+    },
+    {
+      "patternId": "avoid_returning_null_for_void",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "avoid_returning_this",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "avoid_return_types_on_setters",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "avoid_setters_without_getters",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "avoid_shadowing_type_parameters",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "avoid_single_cascade_in_expression_statements",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "avoid_slow_async_io",
+      "level": "Error",
+      "category": "ErrorProne"
+    },
+    {
+      "patternId": "avoid_type_to_string",
+      "level": "Error",
+      "category": "ErrorProne"
+    },
+    {
+      "patternId": "avoid_types_as_parameter_names",
+      "level": "Error",
+      "category": "ErrorProne"
+    },
+    {
+      "patternId": "avoid_types_on_closure_parameters",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "avoid_unnecessary_containers",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "avoid_unused_constructor_parameters",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "avoid_void_async",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "avoid_web_libraries_in_flutter",
+      "level": "Error",
+      "category": "ErrorProne"
+    },
+    {
+      "patternId": "await_only_futures",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "camel_case_extensions",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "camel_case_types",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "cancel_subscriptions",
+      "level": "Error",
+      "category": "ErrorProne"
+    },
+    {
+      "patternId": "cascade_invocations",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "cast_nullable_to_non_nullable",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "close_sinks",
+      "level": "Error",
+      "category": "ErrorProne"
+    },
+    {
+      "patternId": "comment_references",
+      "level": "Error",
+      "category": "ErrorProne"
+    },
+    {
+      "patternId": "conditional_uri_does_not_exist",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "constant_identifier_names",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "control_flow_in_finally",
+      "level": "Error",
+      "category": "ErrorProne"
+    },
+    {
+      "patternId": "curly_braces_in_flow_control_structures",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "depend_on_referenced_packages",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "deprecated_consistency",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "diagnostic_describe_all_properties",
+      "level": "Error",
+      "category": "ErrorProne"
+    },
+    {
+      "patternId": "directives_ordering",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "do_not_use_environment",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "empty_catches",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "empty_constructor_bodies",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "empty_statements",
+      "level": "Error",
+      "category": "ErrorProne"
+    },
+    {
+      "patternId": "eol_at_end_of_file",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "exhaustive_cases",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "file_names",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "flutter_style_todos",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "hash_and_equals",
+      "level": "Error",
+      "category": "ErrorProne"
+    },
+    {
+      "patternId": "implementation_imports",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "invariant_booleans",
+      "level": "Error",
+      "category": "ErrorProne"
+    },
+    {
+      "patternId": "iterable_contains_unrelated_type",
+      "level": "Error",
+      "category": "ErrorProne"
+    },
+    {
+      "patternId": "join_return_with_assignment",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "leading_newlines_in_multiline_strings",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "library_names",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "library_prefixes",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "library_private_types_in_public_api",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "lines_longer_than_80_chars",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "list_remove_unrelated_type",
+      "level": "Error",
+      "category": "ErrorProne"
+    },
+    {
+      "patternId": "literal_only_boolean_expressions",
+      "level": "Error",
+      "category": "ErrorProne"
+    },
+    {
+      "patternId": "missing_whitespace_between_adjacent_strings",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "no_adjacent_strings_in_list",
+      "level": "Error",
+      "category": "ErrorProne"
+    },
+    {
+      "patternId": "no_default_cases",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "no_duplicate_case_values",
+      "level": "Error",
+      "category": "ErrorProne"
+    },
+    {
+      "patternId": "non_constant_identifier_names",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "no_leading_underscores_for_library_prefixes",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "no_leading_underscores_for_local_identifiers",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "no_logic_in_create_state",
+      "level": "Error",
+      "category": "ErrorProne"
+    },
+    {
+      "patternId": "noop_primitive_operations",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "no_runtimeType_toString",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "null_check_on_nullable_type_parameter",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "null_closures",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "omit_local_variable_types",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "one_member_abstracts",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "only_throw_errors",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "overridden_fields",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "package_api_docs",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "package_prefixed_library_names",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "parameter_assignments",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "prefer_adjacent_string_concatenation",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "prefer_asserts_in_initializer_lists",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "prefer_asserts_with_message",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "prefer_bool_in_asserts",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "prefer_collection_literals",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "prefer_conditional_assignment",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "prefer_const_constructors",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "prefer_const_constructors_in_immutables",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "prefer_const_declarations",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "prefer_const_literals_to_create_immutables",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "prefer_constructors_over_static_methods",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "prefer_contains",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "prefer_double_quotes",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "prefer_equal_for_default_values",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "prefer_expression_function_bodies",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "prefer_final_fields",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "prefer_final_in_for_each",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "prefer_final_locals",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "prefer_final_parameters",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "prefer_foreach",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "prefer_for_elements_to_map_fromIterable",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "prefer_function_declarations_over_variables",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "prefer_generic_function_type_aliases",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "prefer_if_elements_to_conditional_expressions",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "prefer_if_null_operators",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "prefer_initializing_formals",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "prefer_inlined_adds",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "prefer_interpolation_to_compose_strings",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "prefer_int_literals",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "prefer_is_empty",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "prefer_is_not_empty",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "prefer_is_not_operator",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "prefer_iterable_whereType",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "prefer_mixin",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "prefer_null_aware_operators",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "prefer_null_aware_method_calls",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "prefer_relative_imports",
+      "level": "Error",
+      "category": "ErrorProne"
+    },
+    {
+      "patternId": "prefer_single_quotes",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "prefer_spread_collections",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "prefer_typing_uninitialized_variables",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "prefer_void_to_null",
+      "level": "Error",
+      "category": "ErrorProne"
+    },
+    {
+      "patternId": "provide_deprecation_message",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "public_member_api_docs",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "package_names",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "secure_pubspec_urls",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "recursive_getters",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "require_trailing_commas",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "sized_box_for_whitespace",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "sized_box_shrink_expand",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "slash_for_doc_comments",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "sort_child_properties_last",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "sort_constructors_first",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "sort_pub_dependencies",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "sort_unnamed_constructors_first",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "super_goes_last",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "test_types_in_equals",
+      "level": "Error",
+      "category": "ErrorProne"
+    },
+    {
+      "patternId": "tighten_type_of_initializing_formals",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "throw_in_finally",
+      "level": "Error",
+      "category": "ErrorProne"
+    },
+    {
+      "patternId": "type_annotate_public_apis",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "type_init_formals",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "unawaited_futures",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "unnecessary_await_in_return",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "unnecessary_brace_in_string_interps",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "unnecessary_const",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "unnecessary_constructor_name",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "unnecessary_final",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "unnecessary_new",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "unnecessary_null_aware_assignments",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "unnecessary_null_in_if_null_operators",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "unnecessary_getters_setters",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "unnecessary_lambdas",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "unnecessary_late",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "unnecessary_nullable_for_final_variable_declarations",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "unnecessary_null_checks",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "unnecessary_overrides",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "unnecessary_parenthesis",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "unnecessary_raw_strings",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "unnecessary_statements",
+      "level": "Error",
+      "category": "ErrorProne"
+    },
+    {
+      "patternId": "unnecessary_string_escapes",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "unnecessary_string_interpolations",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "unnecessary_this",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "unrelated_type_equality_checks",
+      "level": "Error",
+      "category": "ErrorProne"
+    },
+    {
+      "patternId": "unsafe_html",
+      "level": "Error",
+      "category": "ErrorProne"
+    },
+    {
+      "patternId": "use_build_context_synchronously",
+      "level": "Error",
+      "category": "ErrorProne"
+    },
+    {
+      "patternId": "use_decorated_box",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "use_full_hex_values_for_flutter_colors",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "use_function_type_syntax_for_parameters",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "use_if_null_to_convert_nulls_to_bools",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "use_is_even_rather_than_modulo",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "use_key_in_widget_constructors",
+      "level": "Error",
+      "category": "ErrorProne"
+    },
+    {
+      "patternId": "use_late_for_private_fields_and_variables",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "use_named_constants",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "use_rethrow_when_possible",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "use_raw_strings",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "use_setters_to_change_properties",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "use_string_buffers",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "use_test_throws_matchers",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "use_to_and_as_if_applicable",
+      "level": "Info",
+      "category": "CodeStyle"
+    },
+    {
+      "patternId": "valid_regexps",
+      "level": "Error",
+      "category": "ErrorProne"
+    },
+    {
+      "patternId": "void_checks",
+      "level": "Info",
+      "category": "CodeStyle"
+    }
+  ]
 }

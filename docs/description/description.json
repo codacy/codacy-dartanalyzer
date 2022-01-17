@@ -1,1 +1,1017 @@
-[ ]
+[
+  {
+    "patternId": "always_declare_return_types",
+    "title": "Always declare return types",
+    "description": "Declare method return types."
+  },
+  {
+    "patternId": "always_put_control_body_on_new_line",
+    "title": "Always put control body on new line",
+    "description": "Separate the control structure expression from its statement."
+  },
+  {
+    "patternId": "always_put_required_named_parameters_first",
+    "title": "Always put required named parameters first",
+    "description": "Put required named parameters first."
+  },
+  {
+    "patternId": "always_require_non_null_named_parameters",
+    "title": "Always require non null named parameters",
+    "description": "Specify `@required` on named parameters without defaults."
+  },
+  {
+    "patternId": "always_specify_types",
+    "title": "Always specify types",
+    "description": "Specify type annotations."
+  },
+  {
+    "patternId": "always_use_package_imports",
+    "title": "Always use package imports",
+    "description": "Avoid relative imports for files in `lib/`."
+  },
+  {
+    "patternId": "annotate_overrides",
+    "title": "Annotate overrides",
+    "description": "Annotate overridden members."
+  },
+  {
+    "patternId": "avoid_annotating_with_dynamic",
+    "title": "Avoid annotating with dynamic",
+    "description": "Avoid annotating with dynamic when not required."
+  },
+  {
+    "patternId": "avoid_as",
+    "title": "Avoid as",
+    "description": "Avoid using `as`."
+  },
+  {
+    "patternId": "avoid_bool_literals_in_conditional_expressions",
+    "title": "Avoid bool literals in conditional expressions",
+    "description": "Avoid bool literals in conditional expressions."
+  },
+  {
+    "patternId": "avoid_catches_without_on_clauses",
+    "title": "Avoid catches without on clauses",
+    "description": "Avoid catches without on clauses."
+  },
+  {
+    "patternId": "avoid_catching_errors",
+    "title": "Avoid catching errors",
+    "description": "Don't explicitly catch Error or types that implement it."
+  },
+  {
+    "patternId": "avoid_classes_with_only_static_members",
+    "title": "Avoid classes with only static members",
+    "description": "Avoid defining a class that contains only static members."
+  },
+  {
+    "patternId": "avoid_double_and_int_checks",
+    "title": "Avoid double and int checks",
+    "description": "Avoid double and int checks."
+  },
+  {
+    "patternId": "avoid_dynamic_calls",
+    "title": "Avoid dynamic calls",
+    "description": "Avoid method calls or property accesses on a \"dynamic\" target."
+  },
+  {
+    "patternId": "avoid_empty_else",
+    "title": "Avoid empty else",
+    "description": "Avoid empty else statements."
+  },
+  {
+    "patternId": "avoid_escaping_inner_quotes",
+    "title": "Avoid escaping inner quotes",
+    "description": "Avoid escaping inner quotes by converting surrounding quotes."
+  },
+  {
+    "patternId": "avoid_field_initializers_in_const_classes",
+    "title": "Avoid field initializers in const classes",
+    "description": "Avoid field initializers in const classes."
+  },
+  {
+    "patternId": "avoid_final_parameters",
+    "title": "Avoid final parameters",
+    "description": "Avoid final for parameter declarations"
+  },
+  {
+    "patternId": "avoid_function_literals_in_foreach_calls",
+    "title": "Avoid function literals in foreach calls",
+    "description": "Avoid using `forEach` with a function literal."
+  },
+  {
+    "patternId": "avoid_implementing_value_types",
+    "title": "Avoid implementing value types",
+    "description": "Don't implement classes that override `==`."
+  },
+  {
+    "patternId": "avoid_init_to_null",
+    "title": "Avoid init to null",
+    "description": "Don't explicitly initialize variables to null."
+  },
+  {
+    "patternId": "avoid_js_rounded_ints",
+    "title": "Avoid js rounded ints",
+    "description": "Avoid JavaScript rounded ints."
+  },
+  {
+    "patternId": "avoid_multiple_declarations_per_line",
+    "title": "Avoid multiple declarations per line",
+    "description": "Don't declare multiple variables on a single line."
+  },
+  {
+    "patternId": "avoid_null_checks_in_equality_operators",
+    "title": "Avoid null checks in equality operators",
+    "description": "Don't check for null in custom == operators."
+  },
+  {
+    "patternId": "avoid_equals_and_hash_code_on_mutable_classes",
+    "title": "Avoid equals and hash code on mutable classes",
+    "description": "Avoid overloading operator == and hashCode on classes not marked `@immutable`."
+  },
+  {
+    "patternId": "avoid_positional_boolean_parameters",
+    "title": "Avoid positional boolean parameters",
+    "description": "Avoid positional boolean parameters."
+  },
+  {
+    "patternId": "avoid_print",
+    "title": "Avoid print",
+    "description": "Avoid `print` calls in production code."
+  },
+  {
+    "patternId": "avoid_private_typedef_functions",
+    "title": "Avoid private typedef functions",
+    "description": "Avoid private typedef functions."
+  },
+  {
+    "patternId": "avoid_redundant_argument_values",
+    "title": "Avoid redundant argument values",
+    "description": "Avoid redundant argument values."
+  },
+  {
+    "patternId": "avoid_relative_lib_imports",
+    "title": "Avoid relative lib imports",
+    "description": "Avoid relative imports for files in `lib/`."
+  },
+  {
+    "patternId": "avoid_renaming_method_parameters",
+    "title": "Avoid renaming method parameters",
+    "description": "Don't rename parameters of overridden methods."
+  },
+  {
+    "patternId": "avoid_returning_null",
+    "title": "Avoid returning null",
+    "description": "Avoid returning null from members whose return type is bool, double, int, or num."
+  },
+  {
+    "patternId": "avoid_returning_null_for_future",
+    "title": "Avoid returning null for future",
+    "description": "Avoid returning null for Future."
+  },
+  {
+    "patternId": "avoid_returning_null_for_void",
+    "title": "Avoid returning null for void",
+    "description": "Avoid returning null for void."
+  },
+  {
+    "patternId": "avoid_returning_this",
+    "title": "Avoid returning this",
+    "description": "Avoid returning this from methods just to enable a fluent interface."
+  },
+  {
+    "patternId": "avoid_return_types_on_setters",
+    "title": "Avoid return types on setters",
+    "description": "Avoid return types on setters."
+  },
+  {
+    "patternId": "avoid_setters_without_getters",
+    "title": "Avoid setters without getters",
+    "description": "Avoid setters without getters."
+  },
+  {
+    "patternId": "avoid_shadowing_type_parameters",
+    "title": "Avoid shadowing type parameters",
+    "description": "Avoid shadowing type parameters."
+  },
+  {
+    "patternId": "avoid_single_cascade_in_expression_statements",
+    "title": "Avoid single cascade in expression statements",
+    "description": "Avoid single cascade in expression statements."
+  },
+  {
+    "patternId": "avoid_slow_async_io",
+    "title": "Avoid slow async io",
+    "description": "Avoid slow async `dart:io` methods."
+  },
+  {
+    "patternId": "avoid_type_to_string",
+    "title": "Avoid type to string",
+    "description": "Avoid <Type>.toString() in production code since results may be minified."
+  },
+  {
+    "patternId": "avoid_types_as_parameter_names",
+    "title": "Avoid types as parameter names",
+    "description": "Avoid types as parameter names."
+  },
+  {
+    "patternId": "avoid_types_on_closure_parameters",
+    "title": "Avoid types on closure parameters",
+    "description": "Avoid annotating types for function expression parameters."
+  },
+  {
+    "patternId": "avoid_unnecessary_containers",
+    "title": "Avoid unnecessary containers",
+    "description": "Avoid unnecessary containers."
+  },
+  {
+    "patternId": "avoid_unused_constructor_parameters",
+    "title": "Avoid unused constructor parameters",
+    "description": "Avoid defining unused parameters in constructors."
+  },
+  {
+    "patternId": "avoid_void_async",
+    "title": "Avoid void async",
+    "description": "Avoid async functions that return void."
+  },
+  {
+    "patternId": "avoid_web_libraries_in_flutter",
+    "title": "Avoid web libraries in flutter",
+    "description": "Avoid using web-only libraries outside Flutter web plugin packages."
+  },
+  {
+    "patternId": "await_only_futures",
+    "title": "Await only futures",
+    "description": "Await only futures."
+  },
+  {
+    "patternId": "camel_case_extensions",
+    "title": "Camel case extensions",
+    "description": "Name extensions using UpperCamelCase."
+  },
+  {
+    "patternId": "camel_case_types",
+    "title": "Camel case types",
+    "description": "Name types using UpperCamelCase."
+  },
+  {
+    "patternId": "cancel_subscriptions",
+    "title": "Cancel subscriptions",
+    "description": "Cancel instances of dart.async.StreamSubscription."
+  },
+  {
+    "patternId": "cascade_invocations",
+    "title": "Cascade invocations",
+    "description": "Cascade consecutive method invocations on the same reference."
+  },
+  {
+    "patternId": "cast_nullable_to_non_nullable",
+    "title": "Cast nullable to non nullable",
+    "description": "Don't cast a nullable value to a non nullable type."
+  },
+  {
+    "patternId": "close_sinks",
+    "title": "Close sinks",
+    "description": "Close instances of `dart.core.Sink`."
+  },
+  {
+    "patternId": "comment_references",
+    "title": "Comment references",
+    "description": "Only reference in scope identifiers in doc comments."
+  },
+  {
+    "patternId": "conditional_uri_does_not_exist",
+    "title": "Conditional uri does not exist",
+    "description": "Missing conditional import."
+  },
+  {
+    "patternId": "constant_identifier_names",
+    "title": "Constant identifier names",
+    "description": "Prefer using lowerCamelCase for constant names."
+  },
+  {
+    "patternId": "control_flow_in_finally",
+    "title": "Control flow in finally",
+    "description": "Avoid control flow in finally blocks."
+  },
+  {
+    "patternId": "curly_braces_in_flow_control_structures",
+    "title": "Curly braces in flow control structures",
+    "description": "DO use curly braces for all flow control structures."
+  },
+  {
+    "patternId": "depend_on_referenced_packages",
+    "title": "Depend on referenced packages",
+    "description": "Depend on referenced packages."
+  },
+  {
+    "patternId": "deprecated_consistency",
+    "title": "Deprecated consistency",
+    "description": "Missing deprecated annotation."
+  },
+  {
+    "patternId": "diagnostic_describe_all_properties",
+    "title": "Diagnostic describe all properties",
+    "description": "DO reference all public properties in debug methods."
+  },
+  {
+    "patternId": "directives_ordering",
+    "title": "Directives ordering",
+    "description": "Adhere to Effective Dart Guide directives sorting conventions."
+  },
+  {
+    "patternId": "do_not_use_environment",
+    "title": "Do not use environment",
+    "description": "Do not use environment declared variables."
+  },
+  {
+    "patternId": "empty_catches",
+    "title": "Empty catches",
+    "description": "Avoid empty catch blocks."
+  },
+  {
+    "patternId": "empty_constructor_bodies",
+    "title": "Empty constructor bodies",
+    "description": "Use `;` instead of `{}` for empty constructor bodies."
+  },
+  {
+    "patternId": "empty_statements",
+    "title": "Empty statements",
+    "description": "Avoid empty statements."
+  },
+  {
+    "patternId": "eol_at_end_of_file",
+    "title": "Eol at end of file",
+    "description": "Put a single newline at end of file."
+  },
+  {
+    "patternId": "exhaustive_cases",
+    "title": "Exhaustive cases",
+    "description": "Define case clauses for all constants in enum-like classes."
+  },
+  {
+    "patternId": "file_names",
+    "title": "File names",
+    "description": "Name source files using `lowercase_with_underscores`."
+  },
+  {
+    "patternId": "flutter_style_todos",
+    "title": "Flutter style todos",
+    "description": "Use Flutter TODO format: // TODO(username): message, https://URL-to-issue."
+  },
+  {
+    "patternId": "hash_and_equals",
+    "title": "Hash and equals",
+    "description": "Always override `hashCode` if overriding `==`."
+  },
+  {
+    "patternId": "implementation_imports",
+    "title": "Implementation imports",
+    "description": "Don't import implementation files from another package."
+  },
+  {
+    "patternId": "invariant_booleans",
+    "title": "Invariant booleans",
+    "description": "Conditions should not unconditionally evaluate to `true` or to `false`."
+  },
+  {
+    "patternId": "iterable_contains_unrelated_type",
+    "title": "Iterable contains unrelated type",
+    "description": "Invocation of Iterable<E>.contains with references of unrelated types."
+  },
+  {
+    "patternId": "join_return_with_assignment",
+    "title": "Join return with assignment",
+    "description": "Join return statement with assignment when possible."
+  },
+  {
+    "patternId": "leading_newlines_in_multiline_strings",
+    "title": "Leading newlines in multiline strings",
+    "description": "Start multiline strings with a newline."
+  },
+  {
+    "patternId": "library_names",
+    "title": "Library names",
+    "description": "Name libraries using `lowercase_with_underscores`."
+  },
+  {
+    "patternId": "library_prefixes",
+    "title": "Library prefixes",
+    "description": "Use `lowercase_with_underscores` when specifying a library prefix."
+  },
+  {
+    "patternId": "library_private_types_in_public_api",
+    "title": "Library private types in public api",
+    "description": "Avoid using private types in public APIs."
+  },
+  {
+    "patternId": "lines_longer_than_80_chars",
+    "title": "Lines longer than 80 chars",
+    "description": "Avoid lines longer than 80 characters."
+  },
+  {
+    "patternId": "list_remove_unrelated_type",
+    "title": "List remove unrelated type",
+    "description": "Invocation of `remove` with references of unrelated types."
+  },
+  {
+    "patternId": "literal_only_boolean_expressions",
+    "title": "Literal only boolean expressions",
+    "description": "Boolean expression composed only with literals."
+  },
+  {
+    "patternId": "missing_whitespace_between_adjacent_strings",
+    "title": "Missing whitespace between adjacent strings",
+    "description": "Missing whitespace between adjacent strings."
+  },
+  {
+    "patternId": "no_adjacent_strings_in_list",
+    "title": "No adjacent strings in list",
+    "description": "Don't use adjacent strings in list."
+  },
+  {
+    "patternId": "no_default_cases",
+    "title": "No default cases",
+    "description": "No default cases."
+  },
+  {
+    "patternId": "no_duplicate_case_values",
+    "title": "No duplicate case values",
+    "description": "Don't use more than one case with same value."
+  },
+  {
+    "patternId": "non_constant_identifier_names",
+    "title": "Non constant identifier names",
+    "description": "Name non-constant identifiers using lowerCamelCase."
+  },
+  {
+    "patternId": "no_leading_underscores_for_library_prefixes",
+    "title": "No leading underscores for library prefixes",
+    "description": "Avoid leading underscores for library prefixes."
+  },
+  {
+    "patternId": "no_leading_underscores_for_local_identifiers",
+    "title": "No leading underscores for local identifiers",
+    "description": "Avoid leading underscores for local identifiers."
+  },
+  {
+    "patternId": "no_logic_in_create_state",
+    "title": "No logic in create state",
+    "description": "Don't put any logic in createState."
+  },
+  {
+    "patternId": "noop_primitive_operations",
+    "title": "Noop primitive operations",
+    "description": "Noop primitive operations."
+  },
+  {
+    "patternId": "no_runtimeType_toString",
+    "title": "No runtimeType toString",
+    "description": "Avoid calling toString() on runtimeType."
+  },
+  {
+    "patternId": "null_check_on_nullable_type_parameter",
+    "title": "Null check on nullable type parameter",
+    "description": "Don't use null check on a potentially nullable type parameter."
+  },
+  {
+    "patternId": "null_closures",
+    "title": "Null closures",
+    "description": "Do not pass `null` as an argument where a closure is expected."
+  },
+  {
+    "patternId": "omit_local_variable_types",
+    "title": "Omit local variable types",
+    "description": "Omit type annotations for local variables."
+  },
+  {
+    "patternId": "one_member_abstracts",
+    "title": "One member abstracts",
+    "description": "Avoid defining a one-member abstract class when a simple function will do."
+  },
+  {
+    "patternId": "only_throw_errors",
+    "title": "Only throw errors",
+    "description": "Only throw instances of classes extending either Exception or Error."
+  },
+  {
+    "patternId": "overridden_fields",
+    "title": "Overridden fields",
+    "description": "Don't override fields."
+  },
+  {
+    "patternId": "package_api_docs",
+    "title": "Package api docs",
+    "description": "Provide doc comments for all public APIs."
+  },
+  {
+    "patternId": "package_prefixed_library_names",
+    "title": "Package prefixed library names",
+    "description": "Prefix library names with the package name and a dot-separated path."
+  },
+  {
+    "patternId": "parameter_assignments",
+    "title": "Parameter assignments",
+    "description": "Don't reassign references to parameters of functions or methods."
+  },
+  {
+    "patternId": "prefer_adjacent_string_concatenation",
+    "title": "Prefer adjacent string concatenation",
+    "description": "Use adjacent strings to concatenate string literals."
+  },
+  {
+    "patternId": "prefer_asserts_in_initializer_lists",
+    "title": "Prefer asserts in initializer lists",
+    "description": "Prefer putting asserts in initializer list."
+  },
+  {
+    "patternId": "prefer_asserts_with_message",
+    "title": "Prefer asserts with message",
+    "description": "Prefer asserts with message."
+  },
+  {
+    "patternId": "prefer_bool_in_asserts",
+    "title": "Prefer bool in asserts",
+    "description": "Prefer using a boolean as the assert condition."
+  },
+  {
+    "patternId": "prefer_collection_literals",
+    "title": "Prefer collection literals",
+    "description": "Use collection literals when possible."
+  },
+  {
+    "patternId": "prefer_conditional_assignment",
+    "title": "Prefer conditional assignment",
+    "description": "Prefer using `??=` over testing for null."
+  },
+  {
+    "patternId": "prefer_const_constructors",
+    "title": "Prefer const constructors",
+    "description": "Prefer const with constant constructors."
+  },
+  {
+    "patternId": "prefer_const_constructors_in_immutables",
+    "title": "Prefer const constructors in immutables",
+    "description": "Prefer declaring const constructors on `@immutable` classes."
+  },
+  {
+    "patternId": "prefer_const_declarations",
+    "title": "Prefer const declarations",
+    "description": "Prefer const over final for declarations."
+  },
+  {
+    "patternId": "prefer_const_literals_to_create_immutables",
+    "title": "Prefer const literals to create immutables",
+    "description": "Prefer const literals as parameters of constructors on @immutable classes."
+  },
+  {
+    "patternId": "prefer_constructors_over_static_methods",
+    "title": "Prefer constructors over static methods",
+    "description": "Prefer defining constructors instead of static methods to create instances."
+  },
+  {
+    "patternId": "prefer_contains",
+    "title": "Prefer contains",
+    "description": "Use contains for `List` and `String` instances."
+  },
+  {
+    "patternId": "prefer_double_quotes",
+    "title": "Prefer double quotes",
+    "description": "Prefer double quotes where they won't require escape sequences."
+  },
+  {
+    "patternId": "prefer_equal_for_default_values",
+    "title": "Prefer equal for default values",
+    "description": "Use `=` to separate a named parameter from its default value."
+  },
+  {
+    "patternId": "prefer_expression_function_bodies",
+    "title": "Prefer expression function bodies",
+    "description": "Use => for short members whose body is a single return statement."
+  },
+  {
+    "patternId": "prefer_final_fields",
+    "title": "Prefer final fields",
+    "description": "Private field could be final."
+  },
+  {
+    "patternId": "prefer_final_in_for_each",
+    "title": "Prefer final in for each",
+    "description": "Prefer final in for-each loop variable if reference is not reassigned."
+  },
+  {
+    "patternId": "prefer_final_locals",
+    "title": "Prefer final locals",
+    "description": "Prefer final for variable declarations if they are not reassigned."
+  },
+  {
+    "patternId": "prefer_final_parameters",
+    "title": "Prefer final parameters",
+    "description": "Prefer final for parameter declarations if they are not reassigned."
+  },
+  {
+    "patternId": "prefer_foreach",
+    "title": "Prefer foreach",
+    "description": "Use `forEach` to only apply a function to all the elements."
+  },
+  {
+    "patternId": "prefer_for_elements_to_map_fromIterable",
+    "title": "Prefer for elements to map fromIterable",
+    "description": "Prefer for elements when building maps from iterables."
+  },
+  {
+    "patternId": "prefer_function_declarations_over_variables",
+    "title": "Prefer function declarations over variables",
+    "description": "Use a function declaration to bind a function to a name."
+  },
+  {
+    "patternId": "prefer_generic_function_type_aliases",
+    "title": "Prefer generic function type aliases",
+    "description": "Prefer generic function type aliases."
+  },
+  {
+    "patternId": "prefer_if_elements_to_conditional_expressions",
+    "title": "Prefer if elements to conditional expressions",
+    "description": "Prefer if elements to conditional expressions where possible."
+  },
+  {
+    "patternId": "prefer_if_null_operators",
+    "title": "Prefer if null operators",
+    "description": "Prefer using if null operators."
+  },
+  {
+    "patternId": "prefer_initializing_formals",
+    "title": "Prefer initializing formals",
+    "description": "Use initializing formals when possible."
+  },
+  {
+    "patternId": "prefer_inlined_adds",
+    "title": "Prefer inlined adds",
+    "description": "Inline list item declarations where possible."
+  },
+  {
+    "patternId": "prefer_interpolation_to_compose_strings",
+    "title": "Prefer interpolation to compose strings",
+    "description": "Use interpolation to compose strings and values."
+  },
+  {
+    "patternId": "prefer_int_literals",
+    "title": "Prefer int literals",
+    "description": "Prefer int literals over double literals."
+  },
+  {
+    "patternId": "prefer_is_empty",
+    "title": "Prefer is empty",
+    "description": "Use `isEmpty` for Iterables and Maps."
+  },
+  {
+    "patternId": "prefer_is_not_empty",
+    "title": "Prefer is not empty",
+    "description": "Use `isNotEmpty` for Iterables and Maps."
+  },
+  {
+    "patternId": "prefer_is_not_operator",
+    "title": "Prefer is not operator",
+    "description": "Prefer is! operator."
+  },
+  {
+    "patternId": "prefer_iterable_whereType",
+    "title": "Prefer iterable whereType",
+    "description": "Prefer to use whereType on iterable."
+  },
+  {
+    "patternId": "prefer_mixin",
+    "title": "Prefer mixin",
+    "description": "Prefer using mixins."
+  },
+  {
+    "patternId": "prefer_null_aware_operators",
+    "title": "Prefer null aware operators",
+    "description": "Prefer using null aware operators."
+  },
+  {
+    "patternId": "prefer_null_aware_method_calls",
+    "title": "Prefer null aware method calls",
+    "description": "Prefer null aware method calls."
+  },
+  {
+    "patternId": "prefer_relative_imports",
+    "title": "Prefer relative imports",
+    "description": "Prefer relative imports for files in `lib/`."
+  },
+  {
+    "patternId": "prefer_single_quotes",
+    "title": "Prefer single quotes",
+    "description": "Only use double quotes for strings containing single quotes."
+  },
+  {
+    "patternId": "prefer_spread_collections",
+    "title": "Prefer spread collections",
+    "description": "Use spread collections when possible."
+  },
+  {
+    "patternId": "prefer_typing_uninitialized_variables",
+    "title": "Prefer typing uninitialized variables",
+    "description": "Prefer typing uninitialized variables and fields."
+  },
+  {
+    "patternId": "prefer_void_to_null",
+    "title": "Prefer void to null",
+    "description": "Don't use the Null type, unless you are positive that you don't want void."
+  },
+  {
+    "patternId": "provide_deprecation_message",
+    "title": "Provide deprecation message",
+    "description": "Provide a deprecation message, via @Deprecated(\"message\")."
+  },
+  {
+    "patternId": "public_member_api_docs",
+    "title": "Public member api docs",
+    "description": "Document all public members."
+  },
+  {
+    "patternId": "package_names",
+    "title": "Package names",
+    "description": "Use `lowercase_with_underscores` for package names."
+  },
+  {
+    "patternId": "secure_pubspec_urls",
+    "title": "Secure pubspec urls",
+    "description": "Use secure urls in `pubspec.yaml`."
+  },
+  {
+    "patternId": "recursive_getters",
+    "title": "Recursive getters",
+    "description": "Property getter recursively returns itself."
+  },
+  {
+    "patternId": "require_trailing_commas",
+    "title": "Require trailing commas",
+    "description": "Use trailing commas for all function calls and declarations."
+  },
+  {
+    "patternId": "sized_box_for_whitespace",
+    "title": "Sized box for whitespace",
+    "description": "SizedBox for whitespace."
+  },
+  {
+    "patternId": "sized_box_shrink_expand",
+    "title": "Sized box shrink expand",
+    "description": "Use SizedBox shrink and expand named constructors."
+  },
+  {
+    "patternId": "slash_for_doc_comments",
+    "title": "Slash for doc comments",
+    "description": "Prefer using /// for doc comments."
+  },
+  {
+    "patternId": "sort_child_properties_last",
+    "title": "Sort child properties last",
+    "description": "Sort child properties last in widget instance creations."
+  },
+  {
+    "patternId": "sort_constructors_first",
+    "title": "Sort constructors first",
+    "description": "Sort constructor declarations before other members."
+  },
+  {
+    "patternId": "sort_pub_dependencies",
+    "title": "Sort pub dependencies",
+    "description": "Sort pub dependencies."
+  },
+  {
+    "patternId": "sort_unnamed_constructors_first",
+    "title": "Sort unnamed constructors first",
+    "description": "Sort unnamed constructor declarations first."
+  },
+  {
+    "patternId": "super_goes_last",
+    "title": "Super goes last",
+    "description": "Place the `super` call last in a constructor initialization list."
+  },
+  {
+    "patternId": "test_types_in_equals",
+    "title": "Test types in equals",
+    "description": "Test type arguments in operator ==(Object other)."
+  },
+  {
+    "patternId": "tighten_type_of_initializing_formals",
+    "title": "Tighten type of initializing formals",
+    "description": "Tighten type of initializing formal."
+  },
+  {
+    "patternId": "throw_in_finally",
+    "title": "Throw in finally",
+    "description": "Avoid `throw` in finally block."
+  },
+  {
+    "patternId": "type_annotate_public_apis",
+    "title": "Type annotate public apis",
+    "description": "Type annotate public APIs."
+  },
+  {
+    "patternId": "type_init_formals",
+    "title": "Type init formals",
+    "description": "Don't type annotate initializing formals."
+  },
+  {
+    "patternId": "unawaited_futures",
+    "title": "Unawaited futures",
+    "description": "`Future` results in `async` function bodies must be `await`ed or marked `unawaited` using `dart:async`."
+  },
+  {
+    "patternId": "unnecessary_await_in_return",
+    "title": "Unnecessary await in return",
+    "description": "Unnecessary await keyword in return."
+  },
+  {
+    "patternId": "unnecessary_brace_in_string_interps",
+    "title": "Unnecessary brace in string interps",
+    "description": "Avoid using braces in interpolation when not needed."
+  },
+  {
+    "patternId": "unnecessary_const",
+    "title": "Unnecessary const",
+    "description": "Avoid const keyword."
+  },
+  {
+    "patternId": "unnecessary_constructor_name",
+    "title": "Unnecessary constructor name",
+    "description": "Unnecessary `.new` constructor name."
+  },
+  {
+    "patternId": "unnecessary_final",
+    "title": "Unnecessary final",
+    "description": "Don't use `final` for local variables."
+  },
+  {
+    "patternId": "unnecessary_new",
+    "title": "Unnecessary new",
+    "description": "Unnecessary new keyword."
+  },
+  {
+    "patternId": "unnecessary_null_aware_assignments",
+    "title": "Unnecessary null aware assignments",
+    "description": "Avoid null in null-aware assignment."
+  },
+  {
+    "patternId": "unnecessary_null_in_if_null_operators",
+    "title": "Unnecessary null in if null operators",
+    "description": "Avoid using `null` in `if null` operators."
+  },
+  {
+    "patternId": "unnecessary_getters_setters",
+    "title": "Unnecessary getters setters",
+    "description": "Avoid wrapping fields in getters and setters just to be \"safe\"."
+  },
+  {
+    "patternId": "unnecessary_lambdas",
+    "title": "Unnecessary lambdas",
+    "description": "Don't create a lambda when a tear-off will do."
+  },
+  {
+    "patternId": "unnecessary_late",
+    "title": "Unnecessary late",
+    "description": "Don't specify the `late` modifier when it is not needed."
+  },
+  {
+    "patternId": "unnecessary_nullable_for_final_variable_declarations",
+    "title": "Unnecessary nullable for final variable declarations",
+    "description": "Use a non-nullable type for a final variable initialized with a non-nullable value."
+  },
+  {
+    "patternId": "unnecessary_null_checks",
+    "title": "Unnecessary null checks",
+    "description": "Unnecessary null checks."
+  },
+  {
+    "patternId": "unnecessary_overrides",
+    "title": "Unnecessary overrides",
+    "description": "Don't override a method to do a super method invocation with the same parameters."
+  },
+  {
+    "patternId": "unnecessary_parenthesis",
+    "title": "Unnecessary parenthesis",
+    "description": "Unnecessary parenthesis can be removed."
+  },
+  {
+    "patternId": "unnecessary_raw_strings",
+    "title": "Unnecessary raw strings",
+    "description": "Unnecessary raw string."
+  },
+  {
+    "patternId": "unnecessary_statements",
+    "title": "Unnecessary statements",
+    "description": "Avoid using unnecessary statements."
+  },
+  {
+    "patternId": "unnecessary_string_escapes",
+    "title": "Unnecessary string escapes",
+    "description": "Remove unnecessary backslashes in strings."
+  },
+  {
+    "patternId": "unnecessary_string_interpolations",
+    "title": "Unnecessary string interpolations",
+    "description": "Unnecessary string interpolation."
+  },
+  {
+    "patternId": "unnecessary_this",
+    "title": "Unnecessary this",
+    "description": "Don't access members with `this` unless avoiding shadowing."
+  },
+  {
+    "patternId": "unrelated_type_equality_checks",
+    "title": "Unrelated type equality checks",
+    "description": "Equality operator `==` invocation with references of unrelated types."
+  },
+  {
+    "patternId": "unsafe_html",
+    "title": "Unsafe html",
+    "description": "Avoid unsafe HTML APIs."
+  },
+  {
+    "patternId": "use_build_context_synchronously",
+    "title": "Use build context synchronously",
+    "description": "Do not use BuildContexts across async gaps."
+  },
+  {
+    "patternId": "use_decorated_box",
+    "title": "Use decorated box",
+    "description": "Use `DecoratedBox`."
+  },
+  {
+    "patternId": "use_full_hex_values_for_flutter_colors",
+    "title": "Use full hex values for flutter colors",
+    "description": "Prefer an 8-digit hexadecimal integer(0xFFFFFFFF) to instantiate Color."
+  },
+  {
+    "patternId": "use_function_type_syntax_for_parameters",
+    "title": "Use function type syntax for parameters",
+    "description": "Use generic function type syntax for parameters."
+  },
+  {
+    "patternId": "use_if_null_to_convert_nulls_to_bools",
+    "title": "Use if null to convert nulls to bools",
+    "description": "Use if-null operators to convert nulls to bools."
+  },
+  {
+    "patternId": "use_is_even_rather_than_modulo",
+    "title": "Use is even rather than modulo",
+    "description": "Prefer intValue.isOdd/isEven instead of checking the result of % 2."
+  },
+  {
+    "patternId": "use_key_in_widget_constructors",
+    "title": "Use key in widget constructors",
+    "description": "Use key in widget constructors."
+  },
+  {
+    "patternId": "use_late_for_private_fields_and_variables",
+    "title": "Use late for private fields and variables",
+    "description": "Use late for private members with non-nullable type."
+  },
+  {
+    "patternId": "use_named_constants",
+    "title": "Use named constants",
+    "description": "Use predefined named constants."
+  },
+  {
+    "patternId": "use_rethrow_when_possible",
+    "title": "Use rethrow when possible",
+    "description": "Use rethrow to rethrow a caught exception."
+  },
+  {
+    "patternId": "use_raw_strings",
+    "title": "Use raw strings",
+    "description": "Use raw string to avoid escapes."
+  },
+  {
+    "patternId": "use_setters_to_change_properties",
+    "title": "Use setters to change properties",
+    "description": "Use a setter for operations that conceptually change a property."
+  },
+  {
+    "patternId": "use_string_buffers",
+    "title": "Use string buffers",
+    "description": "Use string buffers to compose strings."
+  },
+  {
+    "patternId": "use_test_throws_matchers",
+    "title": "Use test throws matchers",
+    "description": "Use throwsA matcher instead of fail()."
+  },
+  {
+    "patternId": "use_to_and_as_if_applicable",
+    "title": "Use to and as if applicable",
+    "description": "Start the name of the method with to/_to or as/_as if applicable."
+  },
+  {
+    "patternId": "valid_regexps",
+    "title": "Valid regexps",
+    "description": "Use valid regular expression syntax."
+  },
+  {
+    "patternId": "void_checks",
+    "title": "Void checks",
+    "description": "Don't assign to void."
+  }
+]

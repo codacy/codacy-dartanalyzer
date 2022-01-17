@@ -31,7 +31,7 @@ void main() {
     var pattern = PatternSpec(
         patternId: rule.name,
         level: rule.group.name == "errors" ? "Error" : "Info",
-        category: rule.group.name);
+        category: rule.group.name == "errors" ? "ErrorProne" : "CodeStyle");
 
     patterns.add(pattern);
 

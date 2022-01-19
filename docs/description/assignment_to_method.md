@@ -1,0 +1,23 @@
+#### Description
+
+The analyzer produces this diagnostic when the target of an assignment is a
+method.
+
+#### Example
+
+The following code produces this diagnostic because `f` can't be assigned a
+value because it's a method:
+
+```dart
+class C {
+  void f() {}
+
+  void g() {
+    [!f!] = null;
+  }
+}
+```
+
+#### Common fixes
+
+Rewrite the code so that there isn't an assignment to a method.

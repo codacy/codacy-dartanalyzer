@@ -1,0 +1,25 @@
+#### Description
+
+The analyzer produces this diagnostic when one or more of the parameters in
+an operator declaration are optional.
+
+#### Example
+
+The following code produces this diagnostic because the parameter `other`
+is an optional parameter:
+
+```dart
+class C {
+  C operator +([[!C? other!]]) => this;
+}
+```
+
+#### Common fixes
+
+Make all of the parameters be required parameters:
+
+```dart
+class C {
+  C operator +(C other) => this;
+}
+```

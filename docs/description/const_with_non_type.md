@@ -1,0 +1,1 @@
+#### CONST_WITH_NON_TYPE

@@ -1,0 +1,4 @@
+analyzer:
+  errors:
+    unused_local_variable: ignore
+

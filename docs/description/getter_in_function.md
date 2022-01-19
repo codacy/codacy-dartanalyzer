@@ -1,0 +1,1 @@
+#### GETTER_IN_FUNCTION

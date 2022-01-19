@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<checkstyle version="1.5">
+    <file name="test.dart">
+        <error source="unused_local_variable" line="2" message="The value of the local variable 'unusedVar' isn't used." severity="info" />
+    </file>
+</checkstyle>

@@ -1,0 +1,21 @@
+#### Description
+
+The analyzer produces this diagnostic when a set literal has more than one
+type argument.
+
+#### Example
+
+The following code produces this diagnostic because the set literal has
+three type arguments when it can have at most one:
+
+```dart
+var s = [!<int, String, int>!]{0, 'a', 1};
+```
+
+#### Common fixes
+
+Remove all except one of the type arguments:
+
+```dart
+var s = <int>{0, 1};
+```

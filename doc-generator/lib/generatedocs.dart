@@ -9,6 +9,7 @@ import 'package:yaml/yaml.dart';
 import 'package:analyzer/src/services/lint.dart' as linterReg;
 
 void main() {
+  final sdkVersion = '2.15.1';
   final encoder = new JsonEncoder.withIndent("  ");
 
   //clear existing docs
@@ -57,8 +58,10 @@ void main() {
     'clone',
     '--depth',
     '1',
+    '--branch',
+    sdkVersion,
     'https://github.com/dart-lang/sdk.git',
-    '$sdkDir'
+    sdkDir
   ]);
 
   final String messageFileContent =

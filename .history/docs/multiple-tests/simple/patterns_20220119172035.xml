@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-
-<module name="root">
-    <module name="patternId" value="unused_local_variable"/>
-</module>

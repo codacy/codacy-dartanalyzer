@@ -1,9 +1,9 @@
 #### Description
 
-The analyzer produces this diagnostic when an initializing formal
-parameter is found in a constructor in a class that doesn't declare the
-field being initialized. Constructors can't initialize fields that aren't
-declared and fields that are inherited from superclasses.
+The analyzer produces this diagnostic when a field formal parameter is
+found in a constructor in a class that doesn't declare the field being
+initialized. Constructors can't initialize fields that aren't declared and
+fields that are inherited from superclasses.
 
 #### Example
 

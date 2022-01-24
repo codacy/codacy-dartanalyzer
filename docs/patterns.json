@@ -1873,16 +1873,6 @@
       "category": "ErrorProne"
     },
     {
-      "patternId": "implicit_unnamed_super_constructor_invocation_missing_required_argument",
-      "level": "Warning",
-      "category": "ErrorProne"
-    },
-    {
-      "patternId": "implicit_unnamed_super_constructor_invocation_not_enough_positional_arguments",
-      "level": "Warning",
-      "category": "ErrorProne"
-    },
-    {
       "patternId": "import_internal_library",
       "level": "Warning",
       "category": "ErrorProne"
@@ -2038,6 +2028,11 @@
       "category": "ErrorProne"
     },
     {
+      "patternId": "invalid_constructor_name",
+      "level": "Warning",
+      "category": "ErrorProne"
+    },
+    {
       "patternId": "invalid_extension_argument_count",
       "level": "Warning",
       "category": "ErrorProne"
@@ -2078,7 +2073,7 @@
       "category": "ErrorProne"
     },
     {
-      "patternId": "invalid_super_formal_parameter_location",
+      "patternId": "invalid_super_invocation",
       "level": "Warning",
       "category": "ErrorProne"
     },
@@ -2213,11 +2208,6 @@
       "category": "ErrorProne"
     },
     {
-      "patternId": "missing_default_value_for_parameter_with_annotation",
-      "level": "Warning",
-      "category": "ErrorProne"
-    },
-    {
       "patternId": "missing_required_argument",
       "level": "Warning",
       "category": "ErrorProne"
@@ -2244,6 +2234,26 @@
     },
     {
       "patternId": "mixin_class_declares_constructor",
+      "level": "Warning",
+      "category": "ErrorProne"
+    },
+    {
+      "patternId": "mixin_declares_constructor",
+      "level": "Warning",
+      "category": "ErrorProne"
+    },
+    {
+      "patternId": "mixin_inference_inconsistent_matching_classes",
+      "level": "Warning",
+      "category": "ErrorProne"
+    },
+    {
+      "patternId": "mixin_inference_no_matching_class",
+      "level": "Warning",
+      "category": "ErrorProne"
+    },
+    {
+      "patternId": "mixin_inference_no_possible_substitution",
       "level": "Warning",
       "category": "ErrorProne"
     },
@@ -2563,11 +2573,6 @@
       "category": "ErrorProne"
     },
     {
-      "patternId": "positional_super_formal_parameter_with_positional_argument",
-      "level": "Warning",
-      "category": "ErrorProne"
-    },
-    {
       "patternId": "prefix_collides_with_top_level_member",
       "level": "Warning",
       "category": "ErrorProne"
@@ -2753,21 +2758,6 @@
       "category": "ErrorProne"
     },
     {
-      "patternId": "super_formal_parameter_type_is_not_subtype_of_associated",
-      "level": "Warning",
-      "category": "ErrorProne"
-    },
-    {
-      "patternId": "super_formal_parameter_without_associated_named",
-      "level": "Warning",
-      "category": "ErrorProne"
-    },
-    {
-      "patternId": "super_formal_parameter_without_associated_positional",
-      "level": "Warning",
-      "category": "ErrorProne"
-    },
-    {
       "patternId": "implements_deferred_class",
       "level": "Warning",
       "category": "ErrorProne"
@@ -2824,11 +2814,6 @@
     },
     {
       "patternId": "super_initializer_in_object",
-      "level": "Warning",
-      "category": "ErrorProne"
-    },
-    {
-      "patternId": "super_invocation_not_last",
       "level": "Warning",
       "category": "ErrorProne"
     },
@@ -3188,32 +3173,7 @@
       "category": "ErrorProne"
     },
     {
-      "patternId": "yield_each_of_invalid_type",
-      "level": "Warning",
-      "category": "ErrorProne"
-    },
-    {
       "patternId": "yield_of_invalid_type",
-      "level": "Warning",
-      "category": "ErrorProne"
-    },
-    {
-      "patternId": "abi_specific_integer_invalid",
-      "level": "Warning",
-      "category": "ErrorProne"
-    },
-    {
-      "patternId": "abi_specific_integer_mapping_extra",
-      "level": "Warning",
-      "category": "ErrorProne"
-    },
-    {
-      "patternId": "abi_specific_integer_mapping_missing",
-      "level": "Warning",
-      "category": "ErrorProne"
-    },
-    {
-      "patternId": "abi_specific_integer_mapping_unsupported",
       "level": "Warning",
       "category": "ErrorProne"
     },
@@ -3419,11 +3379,6 @@
     },
     {
       "patternId": "assignment_of_do_not_store",
-      "level": "Warning",
-      "category": "ErrorProne"
-    },
-    {
-      "patternId": "body_might_complete_normally_nullable",
       "level": "Warning",
       "category": "ErrorProne"
     },

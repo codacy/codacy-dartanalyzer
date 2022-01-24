@@ -1,15 +1,13 @@
 #### Description
 
-The analyzer produces this diagnostic when the type of an initializing
-formal parameter isn't assignable to the type of the field being
-initialized.
+The analyzer produces this diagnostic when the type of a field formal
+parameter isn't assignable to the type of the field being initialized.
 
 #### Example
 
-The following code produces this diagnostic because the initializing
-formal parameter has the type `String`, but the type of the field is
-`int`. The parameter must have a type that is a subtype of the field's
-type.
+The following code produces this diagnostic because the field formal
+parameter has the type `String`, but the type of the field is `int`. The
+parameter must have a type that is a subtype of the field's type.
 
 ```dart
 class C {
@@ -45,8 +43,8 @@ class C {
 ```
 
 If the types of both the field and the parameter are correct, then use an
-initializer rather than an initializing formal parameter to convert the
-parameter value into a value of the correct type:
+initializer rather than a field formal parameter to convert the parameter
+value into a value of the correct type:
 
 ```dart
 class C {

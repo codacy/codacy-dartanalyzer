@@ -6,8 +6,7 @@ the parameter list and in the initializer list of a constructor.
 #### Example
 
 The following code produces this diagnostic because the field `f` is
-initialized both by an initializing formal parameter and in the
-initializer list:
+initialized both by a field formal parameter and in the initializer list:
 
 ```dart
 class C {

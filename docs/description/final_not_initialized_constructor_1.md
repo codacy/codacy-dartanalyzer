@@ -20,8 +20,8 @@ class C {
 
 #### Common fixes
 
-If the value should be passed in to the constructor directly, then use an
-initializing formal parameter to initialize the field `value`:
+If the value should be passed in to the constructor directly, then use a
+field formal parameter to initialize the field `value`:
 
 ```dart
 class C {

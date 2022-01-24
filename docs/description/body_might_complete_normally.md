@@ -57,15 +57,13 @@ class C<T> {
 }
 ```
 
-If the method intentionally returns `null` at the end, then add an
-explicit return of `null` at the end of the method and change the
+If the method intentionally returns `null` at the end, then change the
 return type so that it's valid to return `null`:
 
 ```dart
 class C<T> {
   T? m(T t) {
     print(t);
-    return null;
   }
 }
 ```

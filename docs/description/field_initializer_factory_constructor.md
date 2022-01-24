@@ -1,13 +1,13 @@
 #### Description
 
-The analyzer produces this diagnostic when a factory constructor has an
-initializing formal parameter. Factory constructors can't assign values to
-fields because no instance is created; hence, there is no field to assign.
+The analyzer produces this diagnostic when a factory constructor has a
+field formal parameter. Factory constructors can't assign values to fields
+because no instance is created; hence, there is no field to assign.
 
 #### Example
 
 The following code produces this diagnostic because the factory constructor
-uses an initializing formal parameter:
+uses a field formal parameter:
 
 ```dart
 class C {
@@ -19,7 +19,7 @@ class C {
 
 #### Common fixes
 
-Replace the initializing formal parameter with a normal parameter:
+Replace the field formal parameter with a normal parameter:
 
 ```dart
 class C {

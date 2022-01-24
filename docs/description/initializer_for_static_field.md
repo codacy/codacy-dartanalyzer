@@ -1,13 +1,13 @@
 #### Description
 
-The analyzer produces this diagnostic when a static field is initialized
-in a constructor using either an initializing formal parameter or an
-assignment in the initializer list.
+The analyzer produces this diagnostic when a static field is initialized in
+a constructor using either a field formal parameter or an assignment in the
+initializer list.
 
 #### Example
 
-The following code produces this diagnostic because the static field `a`
-is being initialized by the initializing formal parameter `this.a`:
+The following code produces this diagnostic because the static field `a` is
+being initialized by the field formal parameter `this.a`:
 
 ```dart
 class C {

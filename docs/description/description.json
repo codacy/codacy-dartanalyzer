@@ -1870,16 +1870,6 @@
     "description": ""
   },
   {
-    "patternId": "implicit_unnamed_super_constructor_invocation_missing_required_argument",
-    "title": "Implicit unnamed super constructor invocation missing required argument",
-    "description": ""
-  },
-  {
-    "patternId": "implicit_unnamed_super_constructor_invocation_not_enough_positional_arguments",
-    "title": "Implicit unnamed super constructor invocation not enough positional arguments",
-    "description": ""
-  },
-  {
     "patternId": "import_internal_library",
     "title": "Import internal library",
     "description": ""
@@ -2035,6 +2025,11 @@
     "description": ""
   },
   {
+    "patternId": "invalid_constructor_name",
+    "title": "Invalid constructor name",
+    "description": ""
+  },
+  {
     "patternId": "invalid_extension_argument_count",
     "title": "Invalid extension argument count",
     "description": ""
@@ -2075,8 +2070,8 @@
     "description": ""
   },
   {
-    "patternId": "invalid_super_formal_parameter_location",
-    "title": "Invalid super formal parameter location",
+    "patternId": "invalid_super_invocation",
+    "title": "Invalid super invocation",
     "description": ""
   },
   {
@@ -2210,11 +2205,6 @@
     "description": ""
   },
   {
-    "patternId": "missing_default_value_for_parameter_with_annotation",
-    "title": "Missing default value for parameter with annotation",
-    "description": ""
-  },
-  {
     "patternId": "missing_required_argument",
     "title": "Missing required argument",
     "description": ""
@@ -2242,6 +2232,26 @@
   {
     "patternId": "mixin_class_declares_constructor",
     "title": "Mixin class declares constructor",
+    "description": ""
+  },
+  {
+    "patternId": "mixin_declares_constructor",
+    "title": "Mixin declares constructor",
+    "description": ""
+  },
+  {
+    "patternId": "mixin_inference_inconsistent_matching_classes",
+    "title": "Mixin inference inconsistent matching classes",
+    "description": ""
+  },
+  {
+    "patternId": "mixin_inference_no_matching_class",
+    "title": "Mixin inference no matching class",
+    "description": ""
+  },
+  {
+    "patternId": "mixin_inference_no_possible_substitution",
+    "title": "Mixin inference no possible substitution",
     "description": ""
   },
   {
@@ -2560,11 +2570,6 @@
     "description": ""
   },
   {
-    "patternId": "positional_super_formal_parameter_with_positional_argument",
-    "title": "Positional super formal parameter with positional argument",
-    "description": ""
-  },
-  {
     "patternId": "prefix_collides_with_top_level_member",
     "title": "Prefix collides with top level member",
     "description": ""
@@ -2750,21 +2755,6 @@
     "description": ""
   },
   {
-    "patternId": "super_formal_parameter_type_is_not_subtype_of_associated",
-    "title": "Super formal parameter type is not subtype of associated",
-    "description": ""
-  },
-  {
-    "patternId": "super_formal_parameter_without_associated_named",
-    "title": "Super formal parameter without associated named",
-    "description": ""
-  },
-  {
-    "patternId": "super_formal_parameter_without_associated_positional",
-    "title": "Super formal parameter without associated positional",
-    "description": ""
-  },
-  {
     "patternId": "implements_deferred_class",
     "title": "Implements deferred class",
     "description": ""
@@ -2822,11 +2812,6 @@
   {
     "patternId": "super_initializer_in_object",
     "title": "Super initializer in object",
-    "description": ""
-  },
-  {
-    "patternId": "super_invocation_not_last",
-    "title": "Super invocation not last",
     "description": ""
   },
   {
@@ -3185,33 +3170,8 @@
     "description": ""
   },
   {
-    "patternId": "yield_each_of_invalid_type",
-    "title": "Yield each of invalid type",
-    "description": ""
-  },
-  {
     "patternId": "yield_of_invalid_type",
     "title": "Yield of invalid type",
-    "description": ""
-  },
-  {
-    "patternId": "abi_specific_integer_invalid",
-    "title": "Abi specific integer invalid",
-    "description": ""
-  },
-  {
-    "patternId": "abi_specific_integer_mapping_extra",
-    "title": "Abi specific integer mapping extra",
-    "description": ""
-  },
-  {
-    "patternId": "abi_specific_integer_mapping_missing",
-    "title": "Abi specific integer mapping missing",
-    "description": ""
-  },
-  {
-    "patternId": "abi_specific_integer_mapping_unsupported",
-    "title": "Abi specific integer mapping unsupported",
     "description": ""
   },
   {
@@ -3417,11 +3377,6 @@
   {
     "patternId": "assignment_of_do_not_store",
     "title": "Assignment of do not store",
-    "description": ""
-  },
-  {
-    "patternId": "body_might_complete_normally_nullable",
-    "title": "Body might complete normally nullable",
     "description": ""
   },
   {

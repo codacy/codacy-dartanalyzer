@@ -9,7 +9,7 @@ import 'package:yaml/yaml.dart';
 import 'package:analyzer/src/services/lint.dart' as linterReg;
 
 void main() {
-  final sdkVersion = '2.15.1';
+  final sdkVersion = '2.15.1'; //TODO, derive this from the pubspec
   final encoder = new JsonEncoder.withIndent("  ");
 
   //clear existing docs

@@ -2,10 +2,8 @@ package codacy.dartanalyzer
 
 import better.files.File
 import com.codacy.plugins.api.results.{Pattern, Result, Tool}
-import com.codacy.plugins.api.{Options, Source, patternTimeToFixFormat}
-import com.codacy.tools.scala.seed.utils.{CommandResult, CommandRunner}
-import play.api.libs.json.{Json, __}
-//import play.api.libs.json._
+import com.codacy.plugins.api.{Options, Source}
+import com.codacy.tools.scala.seed.utils.CommandRunner
 
 import scala.util.Try
 import com.codacy.tools.scala.seed.DockerEngine
@@ -18,89 +16,73 @@ object DartAnalyzer extends Tool {
       files: Option[Set[Source.File]],
       options: Map[Options.Key, Options.Value]
   )(implicit specification: Tool.Specification): Try[List[Result]] = Try {
-    val formatOutput = "machine"
 
-    val f = files.get
+    val f = files.toSet.flatten
 
-    val ignoredPatters = specification.patterns
-      .filter(pattern => !configuration.getOrElse(List.empty).map(_.patternId).contains(pattern.patternId))
+    val optionsFileOptions = configuration match {
+      case Some(configurationPatterns) =>
+        val configurationPatternIds: Set[Pattern.Id] =
+          configurationPatterns.map(_.patternId).toSet
+        val patterns = specification.patterns
+          .map { pattern =>
+            if (configurationPatternIds.contains(pattern.patternId)) {
+              s"    ${pattern.patternId.value}: error"
+            } else {
+              s"    ${pattern.patternId.value}: ignore"
+            }
+          }
+          .mkString("\n")
 
-    val patterns =
-      ignoredPatters.map(pattern => s"    ${pattern.patternId}: ignore").mkString("\n") ++ "\n" ++
-      configuration.getOrElse(List.empty).map(pattern => s"    ${pattern.patternId}: error").mkString("\n")
+        // TODO: this works only for analyzer rules.
+        // other (linter, etc.) rules need to handled differently.
+        val optionsFileContent =
+          s"""
+          |analyzer:
+          |  errors:
+          |${patterns}
+          |""".stripMargin
 
-    val optionsFileContent =
-      s"""
-      |analyzer:
-      |  errors:
-      |${patterns}
-      """.stripMargin
-
-    //println(optionsFileContent)
-
-    val optionsFilePath = File.newTemporaryFile().writeText(optionsFileContent).path.toString
-
-    //println(optionsFilePath)
+        val optionsFilePath =
+          File.newTemporaryFile().writeText(optionsFileContent).path.toString
+        Seq("--options", optionsFilePath)
+      case None =>
+        Seq.empty[String]
+    }
 
     val paths = f.map(_.path)
-    val command = List("dartanalyzer", "--format", formatOutput, "--options", optionsFilePath) ++ paths
+    val command =
+      List("dartanalyzer", "--format", "machine") ++ optionsFileOptions ++ paths
 
-    //println(command)
-
-    val res: Either[Throwable, CommandResult] = CommandRunner.exec(command)
-
-    val stdout = res match {
-      case Left(ex) => throw ex
-      case Right(v) => v.stderr
+    CommandRunner.exec(command).toTry.map { commandResult =>
+      val stderr = commandResult.stderr.map(_.trim).filter(_.nonEmpty)
+      stderr.map(parseMachineFormat)
     }
+  }.flatten
 
-    val result = formatOutput match {
-      case "json" =>
-        val parsed = Json.parse(stdout.mkString("\n"))
-        parsed.as[DartAnalyzerResult]
-      case "machine" =>
-        val parsedDiagnostics = stdout.map(parseMachineFormat)
-        DartAnalyzerResult(diagnostics = parsedDiagnostics)
-    }
-
-    convert(result)
-  }
-
-  
-  def parseMachineFormat(outputLine: String): Diagnostic = {
+  def parseMachineFormat(outputLine: String): Result = {
     outputLine.split('|') match {
-      case Array(severity, _type, name, file, lineNumber, columnNumber, length, problemMessage) =>
-        Diagnostic(
-          severity = severity,
-          `type` = _type,
-          code = name.toLowerCase,
-          location =
-            Location(
-              file = file,
-              range = Range(
-                start = Position(offset = length.toInt, line = lineNumber.toInt, column = columnNumber.toInt),
-                end = None)),
-          problemMessage = problemMessage,
-          correctionMessage = None,
-          documentation = None
+      case Array(
+            severity,
+            _type,
+            name,
+            file,
+            lineNumber,
+            columnNumber,
+            length,
+            problemMessage
+          ) =>
+        Result.Issue(
+          file = Source.File(file),
+          message = Result.Message(problemMessage),
+          patternId = Pattern.Id(name.toLowerCase),
+          line = Source.Line(lineNumber.toInt)
         )
-      case _ => throw new RuntimeException("Unable to parse machine format from dartanalyzer")
+      case array =>
+        throw new Exception(
+          s"Unable to parse machine format from dartanalyzer: ${array.toList}"
+        )
     }
-    
   }
-
-
-  def convert(dartAnalyzerResult: DartAnalyzerResult): List[Result] = {
-    dartAnalyzerResult.diagnostics.map { diagnostic =>
-      Result.Issue(
-        file = Source.File(diagnostic.location.file),
-        message = Result.Message(diagnostic.problemMessage),
-        patternId = Pattern.Id(diagnostic.code),
-        line = Source.Line(diagnostic.location.range.start.line)
-      )
-    }.toList
-  }
-
 }
 
 object Engine extends DockerEngine(DartAnalyzer)()

@@ -7,12 +7,16 @@ scalaVersion := "2.13.8"
 lazy val dartanalyzerVersion = Def.setting("1.10.0")
 
 Compile / sourceGenerators += Def.task {
-  val file = (Compile / sourceManaged).value / "codacy" / "dartanalyzer" / "Versions.scala"
-  IO.write(file, s"""package codacy.dartanalyzer
+  val file =
+    (Compile / sourceManaged).value / "codacy" / "dartanalyzer" / "Versions.scala"
+  IO.write(
+    file,
+    s"""package codacy.dartanalyzer
                     |object Versions {
                     |  val dartanalyzerVersion: String = "${dartanalyzerVersion.value}"
                     |}
-                    |""".stripMargin)
+                    |""".stripMargin
+  )
   Seq(file)
 }.taskValue
 

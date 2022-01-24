@@ -1,1 +1,0 @@
-#### INVALID_CAST_NEW_EXPR

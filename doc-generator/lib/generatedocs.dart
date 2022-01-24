@@ -6,7 +6,6 @@ import 'package:linter/src/rules.dart';
 
 import 'dart:convert';
 import 'package:yaml/yaml.dart';
-import 'package:analyzer/src/services/lint.dart' as linterReg;
 
 void main() {
   final sdkVersion = '2.15.1'; //TODO, derive this from the pubspec
@@ -67,20 +66,15 @@ void main() {
   final String messageFileContent =
       File(sdkDir + "/pkg/analyzer/messages.yaml").readAsStringSync();
 
-  print(messageFileContent);
   Map<Object, Object> yaml =
       loadYaml(messageFileContent) as Map<Object, Object>;
 
   Map<String, Map<String, AnalyzerErrorCodeInfo>> messagePatterns =
       decodeAnalyzerMessagesYaml(yaml);
-  print(messagePatterns);
 
   messagePatterns.forEach((key, group) {
-    print("Group " + key);
-
     group.forEach((key, value) {
       String patternId = key.toLowerCase();
-      print("PatternId: " + patternId);
 
       var pattern = PatternSpec(
           patternId: patternId, level: 'Warning', category: 'ErrorProne');
@@ -93,33 +87,30 @@ void main() {
       descriptions.add(
           Description(patternId: patternId, title: title, description: ''));
 
-      File("docs/description/" + patternId + ".md")
-          .writeAsStringSync(value.documentation ?? '#### ' + key);
+      if(value.documentation != null) {
+        File("docs/description/" + patternId + ".md")
+            .writeAsStringSync(value.documentation);
+      }
     });
   });
 
   new Directory(sdkDir).deleteSync(recursive: true);
 
-  print('--- Descriptions ---');
-  print(descriptions.toList());
   File("docs/description/description.json")
       .writeAsStringSync(encoder.convert(descriptions.toList()));
 
-  print('--- Patterns ---');
-  print(encoder.convert(
-      PatternsFile(patterns: patterns, version: linterReg.linterVersion)));
   File("docs/patterns.json")
-      .writeAsStringSync(encoder.convert(PatternsFile(patterns: patterns)));
+      .writeAsStringSync(encoder.convert(PatternsFile(name: "dartanalyzer", version: sdkVersion, patterns: patterns)));
 }
 
 // Models
 
 class PatternsFile {
-  final String name = "Dart";
-  String version;
+  final String name;
+  final String version;
   final Set<PatternSpec> patterns;
 
-  PatternsFile({this.patterns, this.version = '1.18.0'});
+  PatternsFile({this.name, this.patterns, this.version});
 
   Map<String, dynamic> toJson() =>
       {'name': name, 'version': version, 'patterns': patterns.toList()};

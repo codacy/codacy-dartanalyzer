@@ -1013,5 +1013,3620 @@
     "patternId": "void_checks",
     "title": "Void checks",
     "description": "Don't assign to void."
+  },
+  {
+    "patternId": "included_file_parse_error",
+    "title": "Included file parse error",
+    "description": ""
+  },
+  {
+    "patternId": "parse_error",
+    "title": "Parse error",
+    "description": ""
+  },
+  {
+    "patternId": "preview_dart_2_setting_deprecated",
+    "title": "Preview dart 2 setting deprecated",
+    "description": ""
+  },
+  {
+    "patternId": "strong_mode_setting_deprecated",
+    "title": "Strong mode setting deprecated",
+    "description": ""
+  },
+  {
+    "patternId": "super_mixins_setting_deprecated",
+    "title": "Super mixins setting deprecated",
+    "description": ""
+  },
+  {
+    "patternId": "analysis_option_deprecated",
+    "title": "Analysis option deprecated",
+    "description": ""
+  },
+  {
+    "patternId": "included_file_warning",
+    "title": "Included file warning",
+    "description": ""
+  },
+  {
+    "patternId": "include_file_not_found",
+    "title": "Include file not found",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_option",
+    "title": "Invalid option",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_section_format",
+    "title": "Invalid section format",
+    "description": ""
+  },
+  {
+    "patternId": "spec_mode_removed",
+    "title": "Spec mode removed",
+    "description": ""
+  },
+  {
+    "patternId": "unrecognized_error_code",
+    "title": "Unrecognized error code",
+    "description": ""
+  },
+  {
+    "patternId": "unsupported_option_without_values",
+    "title": "Unsupported option without values",
+    "description": ""
+  },
+  {
+    "patternId": "unsupported_option_with_legal_value",
+    "title": "Unsupported option with legal value",
+    "description": ""
+  },
+  {
+    "patternId": "unsupported_option_with_legal_values",
+    "title": "Unsupported option with legal values",
+    "description": ""
+  },
+  {
+    "patternId": "unsupported_value",
+    "title": "Unsupported value",
+    "description": ""
+  },
+  {
+    "patternId": "abstract_field_constructor_initializer",
+    "title": "Abstract field constructor initializer",
+    "description": ""
+  },
+  {
+    "patternId": "abstract_field_initializer",
+    "title": "Abstract field initializer",
+    "description": ""
+  },
+  {
+    "patternId": "abstract_super_member_reference",
+    "title": "Abstract super member reference",
+    "description": ""
+  },
+  {
+    "patternId": "ambiguous_export",
+    "title": "Ambiguous export",
+    "description": ""
+  },
+  {
+    "patternId": "ambiguous_extension_member_access",
+    "title": "Ambiguous extension member access",
+    "description": ""
+  },
+  {
+    "patternId": "ambiguous_import",
+    "title": "Ambiguous import",
+    "description": ""
+  },
+  {
+    "patternId": "ambiguous_set_or_map_literal_both",
+    "title": "Ambiguous set or map literal both",
+    "description": ""
+  },
+  {
+    "patternId": "ambiguous_set_or_map_literal_either",
+    "title": "Ambiguous set or map literal either",
+    "description": ""
+  },
+  {
+    "patternId": "argument_type_not_assignable",
+    "title": "Argument type not assignable",
+    "description": ""
+  },
+  {
+    "patternId": "assert_in_redirecting_constructor",
+    "title": "Assert in redirecting constructor",
+    "description": ""
+  },
+  {
+    "patternId": "assignment_to_const",
+    "title": "Assignment to const",
+    "description": ""
+  },
+  {
+    "patternId": "assignment_to_final",
+    "title": "Assignment to final",
+    "description": ""
+  },
+  {
+    "patternId": "assignment_to_final_local",
+    "title": "Assignment to final local",
+    "description": ""
+  },
+  {
+    "patternId": "assignment_to_final_no_setter",
+    "title": "Assignment to final no setter",
+    "description": ""
+  },
+  {
+    "patternId": "assignment_to_function",
+    "title": "Assignment to function",
+    "description": ""
+  },
+  {
+    "patternId": "assignment_to_method",
+    "title": "Assignment to method",
+    "description": ""
+  },
+  {
+    "patternId": "assignment_to_type",
+    "title": "Assignment to type",
+    "description": ""
+  },
+  {
+    "patternId": "async_for_in_wrong_context",
+    "title": "Async for in wrong context",
+    "description": ""
+  },
+  {
+    "patternId": "await_in_late_local_variable_initializer",
+    "title": "Await in late local variable initializer",
+    "description": ""
+  },
+  {
+    "patternId": "await_in_wrong_context",
+    "title": "Await in wrong context",
+    "description": ""
+  },
+  {
+    "patternId": "body_might_complete_normally",
+    "title": "Body might complete normally",
+    "description": ""
+  },
+  {
+    "patternId": "break_label_on_switch_member",
+    "title": "Break label on switch member",
+    "description": ""
+  },
+  {
+    "patternId": "built_in_identifier_as_type",
+    "title": "Built in identifier as type",
+    "description": ""
+  },
+  {
+    "patternId": "built_in_identifier_as_extension_name",
+    "title": "Built in identifier as extension name",
+    "description": ""
+  },
+  {
+    "patternId": "built_in_identifier_as_prefix_name",
+    "title": "Built in identifier as prefix name",
+    "description": ""
+  },
+  {
+    "patternId": "built_in_identifier_as_type_name",
+    "title": "Built in identifier as type name",
+    "description": ""
+  },
+  {
+    "patternId": "built_in_identifier_as_type_parameter_name",
+    "title": "Built in identifier as type parameter name",
+    "description": ""
+  },
+  {
+    "patternId": "built_in_identifier_as_typedef_name",
+    "title": "Built in identifier as typedef name",
+    "description": ""
+  },
+  {
+    "patternId": "case_block_not_terminated",
+    "title": "Case block not terminated",
+    "description": ""
+  },
+  {
+    "patternId": "case_expression_type_implements_equals",
+    "title": "Case expression type implements equals",
+    "description": ""
+  },
+  {
+    "patternId": "case_expression_type_is_not_switch_expression_subtype",
+    "title": "Case expression type is not switch expression subtype",
+    "description": ""
+  },
+  {
+    "patternId": "cast_to_non_type",
+    "title": "Cast to non type",
+    "description": ""
+  },
+  {
+    "patternId": "class_instantiation_access_to_instance_member",
+    "title": "Class instantiation access to instance member",
+    "description": ""
+  },
+  {
+    "patternId": "class_instantiation_access_to_unknown_member",
+    "title": "Class instantiation access to unknown member",
+    "description": ""
+  },
+  {
+    "patternId": "class_instantiation_access_to_static_member",
+    "title": "Class instantiation access to static member",
+    "description": ""
+  },
+  {
+    "patternId": "non_constant_map_key_from_deferred_library",
+    "title": "Non constant map key from deferred library",
+    "description": ""
+  },
+  {
+    "patternId": "non_constant_list_element_from_deferred_library",
+    "title": "Non constant list element from deferred library",
+    "description": ""
+  },
+  {
+    "patternId": "set_element_from_deferred_library",
+    "title": "Set element from deferred library",
+    "description": ""
+  },
+  {
+    "patternId": "non_constant_map_value_from_deferred_library",
+    "title": "Non constant map value from deferred library",
+    "description": ""
+  },
+  {
+    "patternId": "concrete_class_with_abstract_member",
+    "title": "Concrete class with abstract member",
+    "description": ""
+  },
+  {
+    "patternId": "conflicting_constructor_and_static_field",
+    "title": "Conflicting constructor and static field",
+    "description": ""
+  },
+  {
+    "patternId": "conflicting_constructor_and_static_getter",
+    "title": "Conflicting constructor and static getter",
+    "description": ""
+  },
+  {
+    "patternId": "conflicting_constructor_and_static_method",
+    "title": "Conflicting constructor and static method",
+    "description": ""
+  },
+  {
+    "patternId": "conflicting_constructor_and_static_setter",
+    "title": "Conflicting constructor and static setter",
+    "description": ""
+  },
+  {
+    "patternId": "conflicting_field_and_method",
+    "title": "Conflicting field and method",
+    "description": ""
+  },
+  {
+    "patternId": "conflicting_generic_interfaces",
+    "title": "Conflicting generic interfaces",
+    "description": ""
+  },
+  {
+    "patternId": "conflicting_method_and_field",
+    "title": "Conflicting method and field",
+    "description": ""
+  },
+  {
+    "patternId": "conflicting_static_and_instance",
+    "title": "Conflicting static and instance",
+    "description": ""
+  },
+  {
+    "patternId": "conflicting_type_variable_and_class",
+    "title": "Conflicting type variable and class",
+    "description": ""
+  },
+  {
+    "patternId": "conflicting_type_variable_and_extension",
+    "title": "Conflicting type variable and extension",
+    "description": ""
+  },
+  {
+    "patternId": "conflicting_type_variable_and_mixin",
+    "title": "Conflicting type variable and mixin",
+    "description": ""
+  },
+  {
+    "patternId": "conflicting_type_variable_and_member_class",
+    "title": "Conflicting type variable and member class",
+    "description": ""
+  },
+  {
+    "patternId": "conflicting_type_variable_and_member_mixin",
+    "title": "Conflicting type variable and member mixin",
+    "description": ""
+  },
+  {
+    "patternId": "conflicting_type_variable_and_member_extension",
+    "title": "Conflicting type variable and member extension",
+    "description": ""
+  },
+  {
+    "patternId": "const_constructor_field_type_mismatch",
+    "title": "Const constructor field type mismatch",
+    "description": ""
+  },
+  {
+    "patternId": "const_constructor_param_type_mismatch",
+    "title": "Const constructor param type mismatch",
+    "description": ""
+  },
+  {
+    "patternId": "const_constructor_throws_exception",
+    "title": "Const constructor throws exception",
+    "description": ""
+  },
+  {
+    "patternId": "const_constructor_with_field_initialized_by_non_const",
+    "title": "Const constructor with field initialized by non const",
+    "description": ""
+  },
+  {
+    "patternId": "const_constructor_with_mixin_with_field",
+    "title": "Const constructor with mixin with field",
+    "description": ""
+  },
+  {
+    "patternId": "const_constructor_with_mixin_with_fields",
+    "title": "Const constructor with mixin with fields",
+    "description": ""
+  },
+  {
+    "patternId": "const_constructor_with_non_const_super",
+    "title": "Const constructor with non const super",
+    "description": ""
+  },
+  {
+    "patternId": "const_constructor_with_non_final_field",
+    "title": "Const constructor with non final field",
+    "description": ""
+  },
+  {
+    "patternId": "const_deferred_class",
+    "title": "Const deferred class",
+    "description": ""
+  },
+  {
+    "patternId": "const_eval_throws_exception",
+    "title": "Const eval throws exception",
+    "description": ""
+  },
+  {
+    "patternId": "const_eval_throws_idbze",
+    "title": "Const eval throws idbze",
+    "description": ""
+  },
+  {
+    "patternId": "const_eval_type_bool",
+    "title": "Const eval type bool",
+    "description": ""
+  },
+  {
+    "patternId": "const_eval_type_bool_int",
+    "title": "Const eval type bool int",
+    "description": ""
+  },
+  {
+    "patternId": "const_eval_type_bool_num_string",
+    "title": "Const eval type bool num string",
+    "description": ""
+  },
+  {
+    "patternId": "const_eval_type_int",
+    "title": "Const eval type int",
+    "description": ""
+  },
+  {
+    "patternId": "const_eval_type_num",
+    "title": "Const eval type num",
+    "description": ""
+  },
+  {
+    "patternId": "const_eval_type_type",
+    "title": "Const eval type type",
+    "description": ""
+  },
+  {
+    "patternId": "const_initialized_with_non_constant_value",
+    "title": "Const initialized with non constant value",
+    "description": ""
+  },
+  {
+    "patternId": "const_initialized_with_non_constant_value_from_deferred_library",
+    "title": "Const initialized with non constant value from deferred library",
+    "description": ""
+  },
+  {
+    "patternId": "const_instance_field",
+    "title": "Const instance field",
+    "description": ""
+  },
+  {
+    "patternId": "const_map_key_expression_type_implements_equals",
+    "title": "Const map key expression type implements equals",
+    "description": ""
+  },
+  {
+    "patternId": "const_not_initialized",
+    "title": "Const not initialized",
+    "description": ""
+  },
+  {
+    "patternId": "const_set_element_type_implements_equals",
+    "title": "Const set element type implements equals",
+    "description": ""
+  },
+  {
+    "patternId": "const_spread_expected_list_or_set",
+    "title": "Const spread expected list or set",
+    "description": ""
+  },
+  {
+    "patternId": "const_spread_expected_map",
+    "title": "Const spread expected map",
+    "description": ""
+  },
+  {
+    "patternId": "const_with_non_const",
+    "title": "Const with non const",
+    "description": ""
+  },
+  {
+    "patternId": "const_with_non_constant_argument",
+    "title": "Const with non constant argument",
+    "description": ""
+  },
+  {
+    "patternId": "const_with_type_parameters",
+    "title": "Const with type parameters",
+    "description": ""
+  },
+  {
+    "patternId": "const_with_type_parameters_constructor_tearoff",
+    "title": "Const with type parameters constructor tearoff",
+    "description": ""
+  },
+  {
+    "patternId": "const_with_type_parameters_function_tearoff",
+    "title": "Const with type parameters function tearoff",
+    "description": ""
+  },
+  {
+    "patternId": "const_with_undefined_constructor",
+    "title": "Const with undefined constructor",
+    "description": ""
+  },
+  {
+    "patternId": "const_with_undefined_constructor_default",
+    "title": "Const with undefined constructor default",
+    "description": ""
+  },
+  {
+    "patternId": "continue_label_on_switch",
+    "title": "Continue label on switch",
+    "description": ""
+  },
+  {
+    "patternId": "could_not_infer",
+    "title": "Could not infer",
+    "description": ""
+  },
+  {
+    "patternId": "new_with_non_type",
+    "title": "New with non type",
+    "description": ""
+  },
+  {
+    "patternId": "const_with_non_type",
+    "title": "Const with non type",
+    "description": ""
+  },
+  {
+    "patternId": "default_list_constructor",
+    "title": "Default list constructor",
+    "description": ""
+  },
+  {
+    "patternId": "default_value_in_redirecting_factory_constructor",
+    "title": "Default value in redirecting factory constructor",
+    "description": ""
+  },
+  {
+    "patternId": "default_value_on_required_parameter",
+    "title": "Default value on required parameter",
+    "description": ""
+  },
+  {
+    "patternId": "deferred_import_of_extension",
+    "title": "Deferred import of extension",
+    "description": ""
+  },
+  {
+    "patternId": "definitely_unassigned_late_local_variable",
+    "title": "Definitely unassigned late local variable",
+    "description": ""
+  },
+  {
+    "patternId": "disallowed_type_instantiation_expression",
+    "title": "Disallowed type instantiation expression",
+    "description": ""
+  },
+  {
+    "patternId": "duplicate_constructor_name",
+    "title": "Duplicate constructor name",
+    "description": ""
+  },
+  {
+    "patternId": "duplicate_constructor_default",
+    "title": "Duplicate constructor default",
+    "description": ""
+  },
+  {
+    "patternId": "duplicate_definition",
+    "title": "Duplicate definition",
+    "description": ""
+  },
+  {
+    "patternId": "duplicate_field_formal_parameter",
+    "title": "Duplicate field formal parameter",
+    "description": ""
+  },
+  {
+    "patternId": "duplicate_named_argument",
+    "title": "Duplicate named argument",
+    "description": ""
+  },
+  {
+    "patternId": "duplicate_part",
+    "title": "Duplicate part",
+    "description": ""
+  },
+  {
+    "patternId": "enum_constant_same_name_as_enclosing",
+    "title": "Enum constant same name as enclosing",
+    "description": ""
+  },
+  {
+    "patternId": "equal_elements_in_const_set",
+    "title": "Equal elements in const set",
+    "description": ""
+  },
+  {
+    "patternId": "equal_keys_in_const_map",
+    "title": "Equal keys in const map",
+    "description": ""
+  },
+  {
+    "patternId": "expected_one_list_type_arguments",
+    "title": "Expected one list type arguments",
+    "description": ""
+  },
+  {
+    "patternId": "expected_one_set_type_arguments",
+    "title": "Expected one set type arguments",
+    "description": ""
+  },
+  {
+    "patternId": "expected_two_map_type_arguments",
+    "title": "Expected two map type arguments",
+    "description": ""
+  },
+  {
+    "patternId": "export_internal_library",
+    "title": "Export internal library",
+    "description": ""
+  },
+  {
+    "patternId": "export_legacy_symbol",
+    "title": "Export legacy symbol",
+    "description": ""
+  },
+  {
+    "patternId": "export_of_non_library",
+    "title": "Export of non library",
+    "description": ""
+  },
+  {
+    "patternId": "expression_in_map",
+    "title": "Expression in map",
+    "description": ""
+  },
+  {
+    "patternId": "extends_non_class",
+    "title": "Extends non class",
+    "description": ""
+  },
+  {
+    "patternId": "extension_as_expression",
+    "title": "Extension as expression",
+    "description": ""
+  },
+  {
+    "patternId": "extension_conflicting_static_and_instance",
+    "title": "Extension conflicting static and instance",
+    "description": ""
+  },
+  {
+    "patternId": "extension_declares_member_of_object",
+    "title": "Extension declares member of object",
+    "description": ""
+  },
+  {
+    "patternId": "extension_override_access_to_static_member",
+    "title": "Extension override access to static member",
+    "description": ""
+  },
+  {
+    "patternId": "extension_override_argument_not_assignable",
+    "title": "Extension override argument not assignable",
+    "description": ""
+  },
+  {
+    "patternId": "extension_override_without_access",
+    "title": "Extension override without access",
+    "description": ""
+  },
+  {
+    "patternId": "extension_override_with_cascade",
+    "title": "Extension override with cascade",
+    "description": ""
+  },
+  {
+    "patternId": "external_field_constructor_initializer",
+    "title": "External field constructor initializer",
+    "description": ""
+  },
+  {
+    "patternId": "external_field_initializer",
+    "title": "External field initializer",
+    "description": ""
+  },
+  {
+    "patternId": "external_variable_initializer",
+    "title": "External variable initializer",
+    "description": ""
+  },
+  {
+    "patternId": "extra_positional_arguments",
+    "title": "Extra positional arguments",
+    "description": ""
+  },
+  {
+    "patternId": "extra_positional_arguments_could_be_named",
+    "title": "Extra positional arguments could be named",
+    "description": ""
+  },
+  {
+    "patternId": "field_initialized_by_multiple_initializers",
+    "title": "Field initialized by multiple initializers",
+    "description": ""
+  },
+  {
+    "patternId": "field_initialized_in_initializer_and_declaration",
+    "title": "Field initialized in initializer and declaration",
+    "description": ""
+  },
+  {
+    "patternId": "field_initialized_in_parameter_and_initializer",
+    "title": "Field initialized in parameter and initializer",
+    "description": ""
+  },
+  {
+    "patternId": "field_initializer_factory_constructor",
+    "title": "Field initializer factory constructor",
+    "description": ""
+  },
+  {
+    "patternId": "field_initializer_not_assignable",
+    "title": "Field initializer not assignable",
+    "description": ""
+  },
+  {
+    "patternId": "const_field_initializer_not_assignable",
+    "title": "Const field initializer not assignable",
+    "description": ""
+  },
+  {
+    "patternId": "field_initializer_outside_constructor",
+    "title": "Field initializer outside constructor",
+    "description": ""
+  },
+  {
+    "patternId": "field_initializer_redirecting_constructor",
+    "title": "Field initializer redirecting constructor",
+    "description": ""
+  },
+  {
+    "patternId": "field_initializing_formal_not_assignable",
+    "title": "Field initializing formal not assignable",
+    "description": ""
+  },
+  {
+    "patternId": "final_initialized_in_declaration_and_constructor",
+    "title": "Final initialized in declaration and constructor",
+    "description": ""
+  },
+  {
+    "patternId": "final_not_initialized",
+    "title": "Final not initialized",
+    "description": ""
+  },
+  {
+    "patternId": "final_not_initialized_constructor_1",
+    "title": "Final not initialized constructor 1",
+    "description": ""
+  },
+  {
+    "patternId": "final_not_initialized_constructor_2",
+    "title": "Final not initialized constructor 2",
+    "description": ""
+  },
+  {
+    "patternId": "final_not_initialized_constructor_3_plus",
+    "title": "Final not initialized constructor 3 plus",
+    "description": ""
+  },
+  {
+    "patternId": "for_in_of_invalid_element_type",
+    "title": "For in of invalid element type",
+    "description": ""
+  },
+  {
+    "patternId": "for_in_of_invalid_type",
+    "title": "For in of invalid type",
+    "description": ""
+  },
+  {
+    "patternId": "for_in_with_const_variable",
+    "title": "For in with const variable",
+    "description": ""
+  },
+  {
+    "patternId": "generic_function_type_cannot_be_bound",
+    "title": "Generic function type cannot be bound",
+    "description": ""
+  },
+  {
+    "patternId": "generic_function_type_cannot_be_type_argument",
+    "title": "Generic function type cannot be type argument",
+    "description": ""
+  },
+  {
+    "patternId": "generic_method_type_instantiation_on_dynamic",
+    "title": "Generic method type instantiation on dynamic",
+    "description": ""
+  },
+  {
+    "patternId": "getter_not_assignable_setter_types",
+    "title": "Getter not assignable setter types",
+    "description": ""
+  },
+  {
+    "patternId": "getter_not_subtype_setter_types",
+    "title": "Getter not subtype setter types",
+    "description": ""
+  },
+  {
+    "patternId": "if_element_condition_from_deferred_library",
+    "title": "If element condition from deferred library",
+    "description": ""
+  },
+  {
+    "patternId": "illegal_async_generator_return_type",
+    "title": "Illegal async generator return type",
+    "description": ""
+  },
+  {
+    "patternId": "illegal_async_return_type",
+    "title": "Illegal async return type",
+    "description": ""
+  },
+  {
+    "patternId": "illegal_sync_generator_return_type",
+    "title": "Illegal sync generator return type",
+    "description": ""
+  },
+  {
+    "patternId": "implements_non_class",
+    "title": "Implements non class",
+    "description": ""
+  },
+  {
+    "patternId": "implements_repeated",
+    "title": "Implements repeated",
+    "description": ""
+  },
+  {
+    "patternId": "implements_super_class",
+    "title": "Implements super class",
+    "description": ""
+  },
+  {
+    "patternId": "implicit_this_reference_in_initializer",
+    "title": "Implicit this reference in initializer",
+    "description": ""
+  },
+  {
+    "patternId": "import_internal_library",
+    "title": "Import internal library",
+    "description": ""
+  },
+  {
+    "patternId": "import_of_non_library",
+    "title": "Import of non library",
+    "description": ""
+  },
+  {
+    "patternId": "inconsistent_case_expression_types",
+    "title": "Inconsistent case expression types",
+    "description": ""
+  },
+  {
+    "patternId": "inconsistent_inheritance",
+    "title": "Inconsistent inheritance",
+    "description": ""
+  },
+  {
+    "patternId": "inconsistent_inheritance_getter_and_method",
+    "title": "Inconsistent inheritance getter and method",
+    "description": ""
+  },
+  {
+    "patternId": "inconsistent_language_version_override",
+    "title": "Inconsistent language version override",
+    "description": ""
+  },
+  {
+    "patternId": "initializer_for_non_existent_field",
+    "title": "Initializer for non existent field",
+    "description": ""
+  },
+  {
+    "patternId": "initializer_for_static_field",
+    "title": "Initializer for static field",
+    "description": ""
+  },
+  {
+    "patternId": "initializing_formal_for_non_existent_field",
+    "title": "Initializing formal for non existent field",
+    "description": ""
+  },
+  {
+    "patternId": "instance_access_to_static_member",
+    "title": "Instance access to static member",
+    "description": ""
+  },
+  {
+    "patternId": "instance_access_to_static_member_of_unnamed_extension",
+    "title": "Instance access to static member of unnamed extension",
+    "description": ""
+  },
+  {
+    "patternId": "instance_member_access_from_factory",
+    "title": "Instance member access from factory",
+    "description": ""
+  },
+  {
+    "patternId": "instance_member_access_from_static",
+    "title": "Instance member access from static",
+    "description": ""
+  },
+  {
+    "patternId": "instantiate_abstract_class",
+    "title": "Instantiate abstract class",
+    "description": ""
+  },
+  {
+    "patternId": "instantiate_enum",
+    "title": "Instantiate enum",
+    "description": ""
+  },
+  {
+    "patternId": "instantiate_type_alias_expands_to_type_parameter",
+    "title": "Instantiate type alias expands to type parameter",
+    "description": ""
+  },
+  {
+    "patternId": "integer_literal_imprecise_as_double",
+    "title": "Integer literal imprecise as double",
+    "description": ""
+  },
+  {
+    "patternId": "integer_literal_out_of_range",
+    "title": "Integer literal out of range",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_annotation",
+    "title": "Invalid annotation",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_annotation_constant_value_from_deferred_library",
+    "title": "Invalid annotation constant value from deferred library",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_annotation_from_deferred_library",
+    "title": "Invalid annotation from deferred library",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_assignment",
+    "title": "Invalid assignment",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_cast_function",
+    "title": "Invalid cast function",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_cast_function_expr",
+    "title": "Invalid cast function expr",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_cast_literal",
+    "title": "Invalid cast literal",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_cast_literal_list",
+    "title": "Invalid cast literal list",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_cast_literal_map",
+    "title": "Invalid cast literal map",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_cast_literal_set",
+    "title": "Invalid cast literal set",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_cast_method",
+    "title": "Invalid cast method",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_cast_new_expr",
+    "title": "Invalid cast new expr",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_constant",
+    "title": "Invalid constant",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_constructor_name",
+    "title": "Invalid constructor name",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_extension_argument_count",
+    "title": "Invalid extension argument count",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_factory_name_not_a_class",
+    "title": "Invalid factory name not a class",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_implementation_override",
+    "title": "Invalid implementation override",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_inline_function_type",
+    "title": "Invalid inline function type",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_modifier_on_constructor",
+    "title": "Invalid modifier on constructor",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_modifier_on_setter",
+    "title": "Invalid modifier on setter",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_override",
+    "title": "Invalid override",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_reference_to_this",
+    "title": "Invalid reference to this",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_super_invocation",
+    "title": "Invalid super invocation",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_type_argument_in_const_list",
+    "title": "Invalid type argument in const list",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_type_argument_in_const_map",
+    "title": "Invalid type argument in const map",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_type_argument_in_const_set",
+    "title": "Invalid type argument in const set",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_uri",
+    "title": "Invalid uri",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_use_of_covariant",
+    "title": "Invalid use of covariant",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_use_of_null_value",
+    "title": "Invalid use of null value",
+    "description": ""
+  },
+  {
+    "patternId": "invocation_of_extension_without_call",
+    "title": "Invocation of extension without call",
+    "description": ""
+  },
+  {
+    "patternId": "invocation_of_non_function",
+    "title": "Invocation of non function",
+    "description": ""
+  },
+  {
+    "patternId": "invocation_of_non_function_expression",
+    "title": "Invocation of non function expression",
+    "description": ""
+  },
+  {
+    "patternId": "label_in_outer_scope",
+    "title": "Label in outer scope",
+    "description": ""
+  },
+  {
+    "patternId": "label_undefined",
+    "title": "Label undefined",
+    "description": ""
+  },
+  {
+    "patternId": "late_final_field_with_const_constructor",
+    "title": "Late final field with const constructor",
+    "description": ""
+  },
+  {
+    "patternId": "late_final_local_already_assigned",
+    "title": "Late final local already assigned",
+    "description": ""
+  },
+  {
+    "patternId": "list_element_type_not_assignable",
+    "title": "List element type not assignable",
+    "description": ""
+  },
+  {
+    "patternId": "main_first_positional_parameter_type",
+    "title": "Main first positional parameter type",
+    "description": ""
+  },
+  {
+    "patternId": "main_has_required_named_parameters",
+    "title": "Main has required named parameters",
+    "description": ""
+  },
+  {
+    "patternId": "main_has_too_many_required_positional_parameters",
+    "title": "Main has too many required positional parameters",
+    "description": ""
+  },
+  {
+    "patternId": "main_is_not_function",
+    "title": "Main is not function",
+    "description": ""
+  },
+  {
+    "patternId": "map_entry_not_in_map",
+    "title": "Map entry not in map",
+    "description": ""
+  },
+  {
+    "patternId": "map_key_type_not_assignable",
+    "title": "Map key type not assignable",
+    "description": ""
+  },
+  {
+    "patternId": "map_value_type_not_assignable",
+    "title": "Map value type not assignable",
+    "description": ""
+  },
+  {
+    "patternId": "missing_const_in_list_literal",
+    "title": "Missing const in list literal",
+    "description": ""
+  },
+  {
+    "patternId": "missing_const_in_map_literal",
+    "title": "Missing const in map literal",
+    "description": ""
+  },
+  {
+    "patternId": "missing_const_in_set_literal",
+    "title": "Missing const in set literal",
+    "description": ""
+  },
+  {
+    "patternId": "missing_dart_library",
+    "title": "Missing dart library",
+    "description": ""
+  },
+  {
+    "patternId": "missing_default_value_for_parameter",
+    "title": "Missing default value for parameter",
+    "description": ""
+  },
+  {
+    "patternId": "missing_required_argument",
+    "title": "Missing required argument",
+    "description": ""
+  },
+  {
+    "patternId": "mixins_super_class",
+    "title": "Mixins super class",
+    "description": ""
+  },
+  {
+    "patternId": "mixin_application_concrete_super_invoked_member_type",
+    "title": "Mixin application concrete super invoked member type",
+    "description": ""
+  },
+  {
+    "patternId": "mixin_application_not_implemented_interface",
+    "title": "Mixin application not implemented interface",
+    "description": ""
+  },
+  {
+    "patternId": "mixin_application_no_concrete_super_invoked_member",
+    "title": "Mixin application no concrete super invoked member",
+    "description": ""
+  },
+  {
+    "patternId": "mixin_class_declares_constructor",
+    "title": "Mixin class declares constructor",
+    "description": ""
+  },
+  {
+    "patternId": "mixin_declares_constructor",
+    "title": "Mixin declares constructor",
+    "description": ""
+  },
+  {
+    "patternId": "mixin_inference_inconsistent_matching_classes",
+    "title": "Mixin inference inconsistent matching classes",
+    "description": ""
+  },
+  {
+    "patternId": "mixin_inference_no_matching_class",
+    "title": "Mixin inference no matching class",
+    "description": ""
+  },
+  {
+    "patternId": "mixin_inference_no_possible_substitution",
+    "title": "Mixin inference no possible substitution",
+    "description": ""
+  },
+  {
+    "patternId": "mixin_inherits_from_not_object",
+    "title": "Mixin inherits from not object",
+    "description": ""
+  },
+  {
+    "patternId": "mixin_instantiate",
+    "title": "Mixin instantiate",
+    "description": ""
+  },
+  {
+    "patternId": "mixin_of_non_class",
+    "title": "Mixin of non class",
+    "description": ""
+  },
+  {
+    "patternId": "mixin_super_class_constraint_deferred_class",
+    "title": "Mixin super class constraint deferred class",
+    "description": ""
+  },
+  {
+    "patternId": "mixin_super_class_constraint_non_interface",
+    "title": "Mixin super class constraint non interface",
+    "description": ""
+  },
+  {
+    "patternId": "mixin_with_non_class_superclass",
+    "title": "Mixin with non class superclass",
+    "description": ""
+  },
+  {
+    "patternId": "multiple_redirecting_constructor_invocations",
+    "title": "Multiple redirecting constructor invocations",
+    "description": ""
+  },
+  {
+    "patternId": "multiple_super_initializers",
+    "title": "Multiple super initializers",
+    "description": ""
+  },
+  {
+    "patternId": "new_with_undefined_constructor",
+    "title": "New with undefined constructor",
+    "description": ""
+  },
+  {
+    "patternId": "new_with_undefined_constructor_default",
+    "title": "New with undefined constructor default",
+    "description": ""
+  },
+  {
+    "patternId": "non_abstract_class_inherits_abstract_member_five_plus",
+    "title": "Non abstract class inherits abstract member five plus",
+    "description": ""
+  },
+  {
+    "patternId": "non_abstract_class_inherits_abstract_member_four",
+    "title": "Non abstract class inherits abstract member four",
+    "description": ""
+  },
+  {
+    "patternId": "non_abstract_class_inherits_abstract_member_one",
+    "title": "Non abstract class inherits abstract member one",
+    "description": ""
+  },
+  {
+    "patternId": "non_abstract_class_inherits_abstract_member_three",
+    "title": "Non abstract class inherits abstract member three",
+    "description": ""
+  },
+  {
+    "patternId": "non_abstract_class_inherits_abstract_member_two",
+    "title": "Non abstract class inherits abstract member two",
+    "description": ""
+  },
+  {
+    "patternId": "non_bool_condition",
+    "title": "Non bool condition",
+    "description": ""
+  },
+  {
+    "patternId": "non_bool_expression",
+    "title": "Non bool expression",
+    "description": ""
+  },
+  {
+    "patternId": "non_bool_negation_expression",
+    "title": "Non bool negation expression",
+    "description": ""
+  },
+  {
+    "patternId": "non_bool_operand",
+    "title": "Non bool operand",
+    "description": ""
+  },
+  {
+    "patternId": "non_constant_annotation_constructor",
+    "title": "Non constant annotation constructor",
+    "description": ""
+  },
+  {
+    "patternId": "non_constant_case_expression",
+    "title": "Non constant case expression",
+    "description": ""
+  },
+  {
+    "patternId": "non_constant_case_expression_from_deferred_library",
+    "title": "Non constant case expression from deferred library",
+    "description": ""
+  },
+  {
+    "patternId": "non_constant_default_value",
+    "title": "Non constant default value",
+    "description": ""
+  },
+  {
+    "patternId": "non_constant_default_value_from_deferred_library",
+    "title": "Non constant default value from deferred library",
+    "description": ""
+  },
+  {
+    "patternId": "non_constant_list_element",
+    "title": "Non constant list element",
+    "description": ""
+  },
+  {
+    "patternId": "non_constant_map_element",
+    "title": "Non constant map element",
+    "description": ""
+  },
+  {
+    "patternId": "non_constant_map_key",
+    "title": "Non constant map key",
+    "description": ""
+  },
+  {
+    "patternId": "non_constant_map_value",
+    "title": "Non constant map value",
+    "description": ""
+  },
+  {
+    "patternId": "non_constant_set_element",
+    "title": "Non constant set element",
+    "description": ""
+  },
+  {
+    "patternId": "non_const_map_as_expression_statement",
+    "title": "Non const map as expression statement",
+    "description": ""
+  },
+  {
+    "patternId": "non_generative_constructor",
+    "title": "Non generative constructor",
+    "description": ""
+  },
+  {
+    "patternId": "non_generative_implicit_constructor",
+    "title": "Non generative implicit constructor",
+    "description": ""
+  },
+  {
+    "patternId": "non_sync_factory",
+    "title": "Non sync factory",
+    "description": ""
+  },
+  {
+    "patternId": "non_type_as_type_argument",
+    "title": "Non type as type argument",
+    "description": ""
+  },
+  {
+    "patternId": "non_type_in_catch_clause",
+    "title": "Non type in catch clause",
+    "description": ""
+  },
+  {
+    "patternId": "non_void_return_for_operator",
+    "title": "Non void return for operator",
+    "description": ""
+  },
+  {
+    "patternId": "non_void_return_for_setter",
+    "title": "Non void return for setter",
+    "description": ""
+  },
+  {
+    "patternId": "not_assigned_potentially_non_nullable_local_variable",
+    "title": "Not assigned potentially non nullable local variable",
+    "description": ""
+  },
+  {
+    "patternId": "not_a_type",
+    "title": "Not a type",
+    "description": ""
+  },
+  {
+    "patternId": "not_binary_operator",
+    "title": "Not binary operator",
+    "description": ""
+  },
+  {
+    "patternId": "not_enough_positional_arguments",
+    "title": "Not enough positional arguments",
+    "description": ""
+  },
+  {
+    "patternId": "not_initialized_non_nullable_instance_field",
+    "title": "Not initialized non nullable instance field",
+    "description": ""
+  },
+  {
+    "patternId": "not_initialized_non_nullable_instance_field_constructor",
+    "title": "Not initialized non nullable instance field constructor",
+    "description": ""
+  },
+  {
+    "patternId": "not_initialized_non_nullable_variable",
+    "title": "Not initialized non nullable variable",
+    "description": ""
+  },
+  {
+    "patternId": "not_instantiated_bound",
+    "title": "Not instantiated bound",
+    "description": ""
+  },
+  {
+    "patternId": "not_iterable_spread",
+    "title": "Not iterable spread",
+    "description": ""
+  },
+  {
+    "patternId": "not_map_spread",
+    "title": "Not map spread",
+    "description": ""
+  },
+  {
+    "patternId": "not_null_aware_null_spread",
+    "title": "Not null aware null spread",
+    "description": ""
+  },
+  {
+    "patternId": "no_annotation_constructor_arguments",
+    "title": "No annotation constructor arguments",
+    "description": ""
+  },
+  {
+    "patternId": "no_combined_super_signature",
+    "title": "No combined super signature",
+    "description": ""
+  },
+  {
+    "patternId": "no_default_super_constructor_explicit",
+    "title": "No default super constructor explicit",
+    "description": ""
+  },
+  {
+    "patternId": "no_default_super_constructor_implicit",
+    "title": "No default super constructor implicit",
+    "description": ""
+  },
+  {
+    "patternId": "no_generative_constructors_in_superclass",
+    "title": "No generative constructors in superclass",
+    "description": ""
+  },
+  {
+    "patternId": "nullable_type_in_extends_clause",
+    "title": "Nullable type in extends clause",
+    "description": ""
+  },
+  {
+    "patternId": "nullable_type_in_implements_clause",
+    "title": "Nullable type in implements clause",
+    "description": ""
+  },
+  {
+    "patternId": "nullable_type_in_on_clause",
+    "title": "Nullable type in on clause",
+    "description": ""
+  },
+  {
+    "patternId": "nullable_type_in_with_clause",
+    "title": "Nullable type in with clause",
+    "description": ""
+  },
+  {
+    "patternId": "object_cannot_extend_another_class",
+    "title": "Object cannot extend another class",
+    "description": ""
+  },
+  {
+    "patternId": "on_repeated",
+    "title": "On repeated",
+    "description": ""
+  },
+  {
+    "patternId": "optional_parameter_in_operator",
+    "title": "Optional parameter in operator",
+    "description": ""
+  },
+  {
+    "patternId": "part_of_different_library",
+    "title": "Part of different library",
+    "description": ""
+  },
+  {
+    "patternId": "part_of_non_part",
+    "title": "Part of non part",
+    "description": ""
+  },
+  {
+    "patternId": "part_of_unnamed_library",
+    "title": "Part of unnamed library",
+    "description": ""
+  },
+  {
+    "patternId": "prefix_collides_with_top_level_member",
+    "title": "Prefix collides with top level member",
+    "description": ""
+  },
+  {
+    "patternId": "prefix_identifier_not_followed_by_dot",
+    "title": "Prefix identifier not followed by dot",
+    "description": ""
+  },
+  {
+    "patternId": "prefix_shadowed_by_local_declaration",
+    "title": "Prefix shadowed by local declaration",
+    "description": ""
+  },
+  {
+    "patternId": "private_collision_in_mixin_application",
+    "title": "Private collision in mixin application",
+    "description": ""
+  },
+  {
+    "patternId": "private_optional_parameter",
+    "title": "Private optional parameter",
+    "description": ""
+  },
+  {
+    "patternId": "private_setter",
+    "title": "Private setter",
+    "description": ""
+  },
+  {
+    "patternId": "read_potentially_unassigned_final",
+    "title": "Read potentially unassigned final",
+    "description": ""
+  },
+  {
+    "patternId": "recursive_compile_time_constant",
+    "title": "Recursive compile time constant",
+    "description": ""
+  },
+  {
+    "patternId": "recursive_constructor_redirect",
+    "title": "Recursive constructor redirect",
+    "description": ""
+  },
+  {
+    "patternId": "recursive_factory_redirect",
+    "title": "Recursive factory redirect",
+    "description": ""
+  },
+  {
+    "patternId": "recursive_interface_inheritance",
+    "title": "Recursive interface inheritance",
+    "description": ""
+  },
+  {
+    "patternId": "recursive_interface_inheritance_extends",
+    "title": "Recursive interface inheritance extends",
+    "description": ""
+  },
+  {
+    "patternId": "recursive_interface_inheritance_implements",
+    "title": "Recursive interface inheritance implements",
+    "description": ""
+  },
+  {
+    "patternId": "recursive_interface_inheritance_on",
+    "title": "Recursive interface inheritance on",
+    "description": ""
+  },
+  {
+    "patternId": "recursive_interface_inheritance_with",
+    "title": "Recursive interface inheritance with",
+    "description": ""
+  },
+  {
+    "patternId": "redirect_generative_to_missing_constructor",
+    "title": "Redirect generative to missing constructor",
+    "description": ""
+  },
+  {
+    "patternId": "redirect_generative_to_non_generative_constructor",
+    "title": "Redirect generative to non generative constructor",
+    "description": ""
+  },
+  {
+    "patternId": "redirect_to_abstract_class_constructor",
+    "title": "Redirect to abstract class constructor",
+    "description": ""
+  },
+  {
+    "patternId": "redirect_to_invalid_function_type",
+    "title": "Redirect to invalid function type",
+    "description": ""
+  },
+  {
+    "patternId": "redirect_to_invalid_return_type",
+    "title": "Redirect to invalid return type",
+    "description": ""
+  },
+  {
+    "patternId": "redirect_to_missing_constructor",
+    "title": "Redirect to missing constructor",
+    "description": ""
+  },
+  {
+    "patternId": "redirect_to_non_class",
+    "title": "Redirect to non class",
+    "description": ""
+  },
+  {
+    "patternId": "redirect_to_non_const_constructor",
+    "title": "Redirect to non const constructor",
+    "description": ""
+  },
+  {
+    "patternId": "redirect_to_type_alias_expands_to_type_parameter",
+    "title": "Redirect to type alias expands to type parameter",
+    "description": ""
+  },
+  {
+    "patternId": "referenced_before_declaration",
+    "title": "Referenced before declaration",
+    "description": ""
+  },
+  {
+    "patternId": "rethrow_outside_catch",
+    "title": "Rethrow outside catch",
+    "description": ""
+  },
+  {
+    "patternId": "return_in_generative_constructor",
+    "title": "Return in generative constructor",
+    "description": ""
+  },
+  {
+    "patternId": "return_in_generator",
+    "title": "Return in generator",
+    "description": ""
+  },
+  {
+    "patternId": "return_of_invalid_type_from_constructor",
+    "title": "Return of invalid type from constructor",
+    "description": ""
+  },
+  {
+    "patternId": "return_of_invalid_type_from_function",
+    "title": "Return of invalid type from function",
+    "description": ""
+  },
+  {
+    "patternId": "return_of_invalid_type_from_method",
+    "title": "Return of invalid type from method",
+    "description": ""
+  },
+  {
+    "patternId": "return_of_invalid_type_from_closure",
+    "title": "Return of invalid type from closure",
+    "description": ""
+  },
+  {
+    "patternId": "return_without_value",
+    "title": "Return without value",
+    "description": ""
+  },
+  {
+    "patternId": "set_element_type_not_assignable",
+    "title": "Set element type not assignable",
+    "description": ""
+  },
+  {
+    "patternId": "shared_deferred_prefix",
+    "title": "Shared deferred prefix",
+    "description": ""
+  },
+  {
+    "patternId": "spread_expression_from_deferred_library",
+    "title": "Spread expression from deferred library",
+    "description": ""
+  },
+  {
+    "patternId": "static_access_to_instance_member",
+    "title": "Static access to instance member",
+    "description": ""
+  },
+  {
+    "patternId": "implements_deferred_class",
+    "title": "Implements deferred class",
+    "description": ""
+  },
+  {
+    "patternId": "mixin_deferred_class",
+    "title": "Mixin deferred class",
+    "description": ""
+  },
+  {
+    "patternId": "extends_deferred_class",
+    "title": "Extends deferred class",
+    "description": ""
+  },
+  {
+    "patternId": "extends_disallowed_class",
+    "title": "Extends disallowed class",
+    "description": ""
+  },
+  {
+    "patternId": "mixin_of_disallowed_class",
+    "title": "Mixin of disallowed class",
+    "description": ""
+  },
+  {
+    "patternId": "mixin_super_class_constraint_disallowed_class",
+    "title": "Mixin super class constraint disallowed class",
+    "description": ""
+  },
+  {
+    "patternId": "implements_disallowed_class",
+    "title": "Implements disallowed class",
+    "description": ""
+  },
+  {
+    "patternId": "extends_type_alias_expands_to_type_parameter",
+    "title": "Extends type alias expands to type parameter",
+    "description": ""
+  },
+  {
+    "patternId": "mixin_on_type_alias_expands_to_type_parameter",
+    "title": "Mixin on type alias expands to type parameter",
+    "description": ""
+  },
+  {
+    "patternId": "mixin_of_type_alias_expands_to_type_parameter",
+    "title": "Mixin of type alias expands to type parameter",
+    "description": ""
+  },
+  {
+    "patternId": "implements_type_alias_expands_to_type_parameter",
+    "title": "Implements type alias expands to type parameter",
+    "description": ""
+  },
+  {
+    "patternId": "super_initializer_in_object",
+    "title": "Super initializer in object",
+    "description": ""
+  },
+  {
+    "patternId": "super_in_extension",
+    "title": "Super in extension",
+    "description": ""
+  },
+  {
+    "patternId": "super_in_invalid_context",
+    "title": "Super in invalid context",
+    "description": ""
+  },
+  {
+    "patternId": "super_in_redirecting_constructor",
+    "title": "Super in redirecting constructor",
+    "description": ""
+  },
+  {
+    "patternId": "switch_case_completes_normally",
+    "title": "Switch case completes normally",
+    "description": ""
+  },
+  {
+    "patternId": "switch_expression_not_assignable",
+    "title": "Switch expression not assignable",
+    "description": ""
+  },
+  {
+    "patternId": "tearoff_of_generative_constructor_of_abstract_class",
+    "title": "Tearoff of generative constructor of abstract class",
+    "description": ""
+  },
+  {
+    "patternId": "throw_of_invalid_type",
+    "title": "Throw of invalid type",
+    "description": ""
+  },
+  {
+    "patternId": "top_level_cycle",
+    "title": "Top level cycle",
+    "description": ""
+  },
+  {
+    "patternId": "type_alias_cannot_reference_itself",
+    "title": "Type alias cannot reference itself",
+    "description": ""
+  },
+  {
+    "patternId": "type_annotation_deferred_class",
+    "title": "Type annotation deferred class",
+    "description": ""
+  },
+  {
+    "patternId": "type_argument_not_matching_bounds",
+    "title": "Type argument not matching bounds",
+    "description": ""
+  },
+  {
+    "patternId": "type_parameter_referenced_by_static",
+    "title": "Type parameter referenced by static",
+    "description": ""
+  },
+  {
+    "patternId": "type_parameter_supertype_of_its_bound",
+    "title": "Type parameter supertype of its bound",
+    "description": ""
+  },
+  {
+    "patternId": "type_test_with_non_type",
+    "title": "Type test with non type",
+    "description": ""
+  },
+  {
+    "patternId": "type_test_with_undefined_name",
+    "title": "Type test with undefined name",
+    "description": ""
+  },
+  {
+    "patternId": "unchecked_use_of_nullable_value_in_spread",
+    "title": "Unchecked use of nullable value in spread",
+    "description": ""
+  },
+  {
+    "patternId": "unchecked_invocation_of_nullable_value",
+    "title": "Unchecked invocation of nullable value",
+    "description": ""
+  },
+  {
+    "patternId": "unchecked_method_invocation_of_nullable_value",
+    "title": "Unchecked method invocation of nullable value",
+    "description": ""
+  },
+  {
+    "patternId": "unchecked_operator_invocation_of_nullable_value",
+    "title": "Unchecked operator invocation of nullable value",
+    "description": ""
+  },
+  {
+    "patternId": "unchecked_use_of_nullable_value_in_yield_each",
+    "title": "Unchecked use of nullable value in yield each",
+    "description": ""
+  },
+  {
+    "patternId": "unchecked_use_of_nullable_value_as_condition",
+    "title": "Unchecked use of nullable value as condition",
+    "description": ""
+  },
+  {
+    "patternId": "unchecked_use_of_nullable_value_as_iterator",
+    "title": "Unchecked use of nullable value as iterator",
+    "description": ""
+  },
+  {
+    "patternId": "unchecked_property_access_of_nullable_value",
+    "title": "Unchecked property access of nullable value",
+    "description": ""
+  },
+  {
+    "patternId": "undefined_annotation",
+    "title": "Undefined annotation",
+    "description": ""
+  },
+  {
+    "patternId": "undefined_class",
+    "title": "Undefined class",
+    "description": ""
+  },
+  {
+    "patternId": "undefined_class_boolean",
+    "title": "Undefined class boolean",
+    "description": ""
+  },
+  {
+    "patternId": "undefined_constructor_in_initializer",
+    "title": "Undefined constructor in initializer",
+    "description": ""
+  },
+  {
+    "patternId": "undefined_constructor_in_initializer_default",
+    "title": "Undefined constructor in initializer default",
+    "description": ""
+  },
+  {
+    "patternId": "undefined_enum_constant",
+    "title": "Undefined enum constant",
+    "description": ""
+  },
+  {
+    "patternId": "undefined_extension_getter",
+    "title": "Undefined extension getter",
+    "description": ""
+  },
+  {
+    "patternId": "undefined_extension_method",
+    "title": "Undefined extension method",
+    "description": ""
+  },
+  {
+    "patternId": "undefined_extension_operator",
+    "title": "Undefined extension operator",
+    "description": ""
+  },
+  {
+    "patternId": "undefined_extension_setter",
+    "title": "Undefined extension setter",
+    "description": ""
+  },
+  {
+    "patternId": "undefined_function",
+    "title": "Undefined function",
+    "description": ""
+  },
+  {
+    "patternId": "undefined_getter",
+    "title": "Undefined getter",
+    "description": ""
+  },
+  {
+    "patternId": "undefined_getter_on_function_type",
+    "title": "Undefined getter on function type",
+    "description": ""
+  },
+  {
+    "patternId": "undefined_identifier",
+    "title": "Undefined identifier",
+    "description": ""
+  },
+  {
+    "patternId": "undefined_identifier_await",
+    "title": "Undefined identifier await",
+    "description": ""
+  },
+  {
+    "patternId": "undefined_method",
+    "title": "Undefined method",
+    "description": ""
+  },
+  {
+    "patternId": "undefined_method_on_function_type",
+    "title": "Undefined method on function type",
+    "description": ""
+  },
+  {
+    "patternId": "undefined_named_parameter",
+    "title": "Undefined named parameter",
+    "description": ""
+  },
+  {
+    "patternId": "undefined_operator",
+    "title": "Undefined operator",
+    "description": ""
+  },
+  {
+    "patternId": "undefined_prefixed_name",
+    "title": "Undefined prefixed name",
+    "description": ""
+  },
+  {
+    "patternId": "undefined_setter",
+    "title": "Undefined setter",
+    "description": ""
+  },
+  {
+    "patternId": "undefined_setter_on_function_type",
+    "title": "Undefined setter on function type",
+    "description": ""
+  },
+  {
+    "patternId": "undefined_super_getter",
+    "title": "Undefined super getter",
+    "description": ""
+  },
+  {
+    "patternId": "undefined_super_method",
+    "title": "Undefined super method",
+    "description": ""
+  },
+  {
+    "patternId": "undefined_super_operator",
+    "title": "Undefined super operator",
+    "description": ""
+  },
+  {
+    "patternId": "undefined_super_setter",
+    "title": "Undefined super setter",
+    "description": ""
+  },
+  {
+    "patternId": "unqualified_reference_to_non_local_static_member",
+    "title": "Unqualified reference to non local static member",
+    "description": ""
+  },
+  {
+    "patternId": "unqualified_reference_to_static_member_of_extended_type",
+    "title": "Unqualified reference to static member of extended type",
+    "description": ""
+  },
+  {
+    "patternId": "uri_does_not_exist",
+    "title": "Uri does not exist",
+    "description": ""
+  },
+  {
+    "patternId": "uri_has_not_been_generated",
+    "title": "Uri has not been generated",
+    "description": ""
+  },
+  {
+    "patternId": "uri_with_interpolation",
+    "title": "Uri with interpolation",
+    "description": ""
+  },
+  {
+    "patternId": "use_of_native_extension",
+    "title": "Use of native extension",
+    "description": ""
+  },
+  {
+    "patternId": "use_of_void_result",
+    "title": "Use of void result",
+    "description": ""
+  },
+  {
+    "patternId": "variable_type_mismatch",
+    "title": "Variable type mismatch",
+    "description": ""
+  },
+  {
+    "patternId": "wrong_explicit_type_parameter_variance_in_superinterface",
+    "title": "Wrong explicit type parameter variance in superinterface",
+    "description": ""
+  },
+  {
+    "patternId": "wrong_number_of_parameters_for_operator",
+    "title": "Wrong number of parameters for operator",
+    "description": ""
+  },
+  {
+    "patternId": "wrong_number_of_parameters_for_operator_minus",
+    "title": "Wrong number of parameters for operator minus",
+    "description": ""
+  },
+  {
+    "patternId": "wrong_number_of_parameters_for_setter",
+    "title": "Wrong number of parameters for setter",
+    "description": ""
+  },
+  {
+    "patternId": "wrong_number_of_type_arguments",
+    "title": "Wrong number of type arguments",
+    "description": ""
+  },
+  {
+    "patternId": "wrong_number_of_type_arguments_constructor",
+    "title": "Wrong number of type arguments constructor",
+    "description": ""
+  },
+  {
+    "patternId": "wrong_number_of_type_arguments_extension",
+    "title": "Wrong number of type arguments extension",
+    "description": ""
+  },
+  {
+    "patternId": "wrong_number_of_type_arguments_anonymous_function",
+    "title": "Wrong number of type arguments anonymous function",
+    "description": ""
+  },
+  {
+    "patternId": "wrong_number_of_type_arguments_function",
+    "title": "Wrong number of type arguments function",
+    "description": ""
+  },
+  {
+    "patternId": "wrong_number_of_type_arguments_method",
+    "title": "Wrong number of type arguments method",
+    "description": ""
+  },
+  {
+    "patternId": "wrong_type_parameter_variance_in_superinterface",
+    "title": "Wrong type parameter variance in superinterface",
+    "description": ""
+  },
+  {
+    "patternId": "wrong_type_parameter_variance_position",
+    "title": "Wrong type parameter variance position",
+    "description": ""
+  },
+  {
+    "patternId": "yield_each_in_non_generator",
+    "title": "Yield each in non generator",
+    "description": ""
+  },
+  {
+    "patternId": "yield_in_non_generator",
+    "title": "Yield in non generator",
+    "description": ""
+  },
+  {
+    "patternId": "yield_of_invalid_type",
+    "title": "Yield of invalid type",
+    "description": ""
+  },
+  {
+    "patternId": "annotation_on_pointer_field",
+    "title": "Annotation on pointer field",
+    "description": ""
+  },
+  {
+    "patternId": "argument_must_be_a_constant",
+    "title": "Argument must be a constant",
+    "description": ""
+  },
+  {
+    "patternId": "creation_of_struct_or_union",
+    "title": "Creation of struct or union",
+    "description": ""
+  },
+  {
+    "patternId": "empty_struct",
+    "title": "Empty struct",
+    "description": ""
+  },
+  {
+    "patternId": "extra_annotation_on_struct_field",
+    "title": "Extra annotation on struct field",
+    "description": ""
+  },
+  {
+    "patternId": "extra_size_annotation_carray",
+    "title": "Extra size annotation carray",
+    "description": ""
+  },
+  {
+    "patternId": "ffi_native_must_be_external",
+    "title": "Ffi native must be external",
+    "description": ""
+  },
+  {
+    "patternId": "ffi_native_only_classes_extending_nativefieldwrapperclass1_can_be_pointer",
+    "title": "Ffi native only classes extending nativefieldwrapperclass1 can be pointer",
+    "description": ""
+  },
+  {
+    "patternId": "ffi_native_unexpected_number_of_parameters",
+    "title": "Ffi native unexpected number of parameters",
+    "description": ""
+  },
+  {
+    "patternId": "ffi_native_unexpected_number_of_parameters_with_receiver",
+    "title": "Ffi native unexpected number of parameters with receiver",
+    "description": ""
+  },
+  {
+    "patternId": "field_initializer_in_struct",
+    "title": "Field initializer in struct",
+    "description": ""
+  },
+  {
+    "patternId": "field_in_struct_with_initializer",
+    "title": "Field in struct with initializer",
+    "description": ""
+  },
+  {
+    "patternId": "field_must_be_external_in_struct",
+    "title": "Field must be external in struct",
+    "description": ""
+  },
+  {
+    "patternId": "generic_struct_subclass",
+    "title": "Generic struct subclass",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_exception_value",
+    "title": "Invalid exception value",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_field_type_in_struct",
+    "title": "Invalid field type in struct",
+    "description": ""
+  },
+  {
+    "patternId": "leaf_call_must_not_return_handle",
+    "title": "Leaf call must not return handle",
+    "description": ""
+  },
+  {
+    "patternId": "leaf_call_must_not_take_handle",
+    "title": "Leaf call must not take handle",
+    "description": ""
+  },
+  {
+    "patternId": "mismatched_annotation_on_struct_field",
+    "title": "Mismatched annotation on struct field",
+    "description": ""
+  },
+  {
+    "patternId": "missing_annotation_on_struct_field",
+    "title": "Missing annotation on struct field",
+    "description": ""
+  },
+  {
+    "patternId": "missing_exception_value",
+    "title": "Missing exception value",
+    "description": ""
+  },
+  {
+    "patternId": "missing_field_type_in_struct",
+    "title": "Missing field type in struct",
+    "description": ""
+  },
+  {
+    "patternId": "missing_size_annotation_carray",
+    "title": "Missing size annotation carray",
+    "description": ""
+  },
+  {
+    "patternId": "must_be_a_native_function_type",
+    "title": "Must be a native function type",
+    "description": ""
+  },
+  {
+    "patternId": "must_be_a_subtype",
+    "title": "Must be a subtype",
+    "description": ""
+  },
+  {
+    "patternId": "non_constant_type_argument",
+    "title": "Non constant type argument",
+    "description": ""
+  },
+  {
+    "patternId": "non_native_function_type_argument_to_pointer",
+    "title": "Non native function type argument to pointer",
+    "description": ""
+  },
+  {
+    "patternId": "non_positive_array_dimension",
+    "title": "Non positive array dimension",
+    "description": ""
+  },
+  {
+    "patternId": "non_sized_type_argument",
+    "title": "Non sized type argument",
+    "description": ""
+  },
+  {
+    "patternId": "packed_annotation",
+    "title": "Packed annotation",
+    "description": ""
+  },
+  {
+    "patternId": "packed_annotation_alignment",
+    "title": "Packed annotation alignment",
+    "description": ""
+  },
+  {
+    "patternId": "packed_nesting_non_packed",
+    "title": "Packed nesting non packed",
+    "description": ""
+  },
+  {
+    "patternId": "size_annotation_dimensions",
+    "title": "Size annotation dimensions",
+    "description": ""
+  },
+  {
+    "patternId": "subtype_of_ffi_class_in_extends",
+    "title": "Subtype of ffi class in extends",
+    "description": ""
+  },
+  {
+    "patternId": "subtype_of_ffi_class_in_implements",
+    "title": "Subtype of ffi class in implements",
+    "description": ""
+  },
+  {
+    "patternId": "subtype_of_ffi_class_in_with",
+    "title": "Subtype of ffi class in with",
+    "description": ""
+  },
+  {
+    "patternId": "subtype_of_struct_class_in_extends",
+    "title": "Subtype of struct class in extends",
+    "description": ""
+  },
+  {
+    "patternId": "subtype_of_struct_class_in_implements",
+    "title": "Subtype of struct class in implements",
+    "description": ""
+  },
+  {
+    "patternId": "subtype_of_struct_class_in_with",
+    "title": "Subtype of struct class in with",
+    "description": ""
+  },
+  {
+    "patternId": "argument_type_not_assignable_to_error_handler",
+    "title": "Argument type not assignable to error handler",
+    "description": ""
+  },
+  {
+    "patternId": "assignment_of_do_not_store",
+    "title": "Assignment of do not store",
+    "description": ""
+  },
+  {
+    "patternId": "can_be_null_after_null_aware",
+    "title": "Can be null after null aware",
+    "description": ""
+  },
+  {
+    "patternId": "dead_code",
+    "title": "Dead code",
+    "description": ""
+  },
+  {
+    "patternId": "dead_code_catch_following_catch",
+    "title": "Dead code catch following catch",
+    "description": ""
+  },
+  {
+    "patternId": "dead_code_on_catch_subtype",
+    "title": "Dead code on catch subtype",
+    "description": ""
+  },
+  {
+    "patternId": "deprecated_function_class_declaration",
+    "title": "Deprecated function class declaration",
+    "description": ""
+  },
+  {
+    "patternId": "deprecated_member_use",
+    "title": "Deprecated member use",
+    "description": ""
+  },
+  {
+    "patternId": "deprecated_member_use_with_message",
+    "title": "Deprecated member use with message",
+    "description": ""
+  },
+  {
+    "patternId": "deprecated_member_use_from_same_package",
+    "title": "Deprecated member use from same package",
+    "description": ""
+  },
+  {
+    "patternId": "deprecated_member_use_from_same_package_with_message",
+    "title": "Deprecated member use from same package with message",
+    "description": ""
+  },
+  {
+    "patternId": "deprecated_new_in_comment_reference",
+    "title": "Deprecated new in comment reference",
+    "description": ""
+  },
+  {
+    "patternId": "deprecated_mixin_function",
+    "title": "Deprecated mixin function",
+    "description": ""
+  },
+  {
+    "patternId": "deprecated_implements_function",
+    "title": "Deprecated implements function",
+    "description": ""
+  },
+  {
+    "patternId": "deprecated_extends_function",
+    "title": "Deprecated extends function",
+    "description": ""
+  },
+  {
+    "patternId": "division_optimization",
+    "title": "Division optimization",
+    "description": ""
+  },
+  {
+    "patternId": "duplicate_hidden_name",
+    "title": "Duplicate hidden name",
+    "description": ""
+  },
+  {
+    "patternId": "duplicate_ignore",
+    "title": "Duplicate ignore",
+    "description": ""
+  },
+  {
+    "patternId": "duplicate_import",
+    "title": "Duplicate import",
+    "description": ""
+  },
+  {
+    "patternId": "duplicate_shown_name",
+    "title": "Duplicate shown name",
+    "description": ""
+  },
+  {
+    "patternId": "equal_elements_in_set",
+    "title": "Equal elements in set",
+    "description": ""
+  },
+  {
+    "patternId": "equal_keys_in_map",
+    "title": "Equal keys in map",
+    "description": ""
+  },
+  {
+    "patternId": "file_import_inside_lib_references_file_outside",
+    "title": "File import inside lib references file outside",
+    "description": ""
+  },
+  {
+    "patternId": "file_import_outside_lib_references_file_inside",
+    "title": "File import outside lib references file inside",
+    "description": ""
+  },
+  {
+    "patternId": "import_deferred_library_with_load_function",
+    "title": "Import deferred library with load function",
+    "description": ""
+  },
+  {
+    "patternId": "import_of_legacy_library_into_null_safe",
+    "title": "Import of legacy library into null safe",
+    "description": ""
+  },
+  {
+    "patternId": "inference_failure_on_collection_literal",
+    "title": "Inference failure on collection literal",
+    "description": ""
+  },
+  {
+    "patternId": "inference_failure_on_function_invocation",
+    "title": "Inference failure on function invocation",
+    "description": ""
+  },
+  {
+    "patternId": "inference_failure_on_function_return_type",
+    "title": "Inference failure on function return type",
+    "description": ""
+  },
+  {
+    "patternId": "inference_failure_on_generic_invocation",
+    "title": "Inference failure on generic invocation",
+    "description": ""
+  },
+  {
+    "patternId": "inference_failure_on_instance_creation",
+    "title": "Inference failure on instance creation",
+    "description": ""
+  },
+  {
+    "patternId": "inference_failure_on_uninitialized_variable",
+    "title": "Inference failure on uninitialized variable",
+    "description": ""
+  },
+  {
+    "patternId": "inference_failure_on_untyped_parameter",
+    "title": "Inference failure on untyped parameter",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_annotation_target",
+    "title": "Invalid annotation target",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_export_of_internal_element",
+    "title": "Invalid export of internal element",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_export_of_internal_element_indirectly",
+    "title": "Invalid export of internal element indirectly",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_factory_annotation",
+    "title": "Invalid factory annotation",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_factory_method_decl",
+    "title": "Invalid factory method decl",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_factory_method_impl",
+    "title": "Invalid factory method impl",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_immutable_annotation",
+    "title": "Invalid immutable annotation",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_internal_annotation",
+    "title": "Invalid internal annotation",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_language_version_override_greater",
+    "title": "Invalid language version override greater",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_language_version_override_at_sign",
+    "title": "Invalid language version override at sign",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_language_version_override_location",
+    "title": "Invalid language version override location",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_language_version_override_lower_case",
+    "title": "Invalid language version override lower case",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_language_version_override_number",
+    "title": "Invalid language version override number",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_language_version_override_prefix",
+    "title": "Invalid language version override prefix",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_language_version_override_trailing_characters",
+    "title": "Invalid language version override trailing characters",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_language_version_override_two_slashes",
+    "title": "Invalid language version override two slashes",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_language_version_override_equals",
+    "title": "Invalid language version override equals",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_literal_annotation",
+    "title": "Invalid literal annotation",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_non_virtual_annotation",
+    "title": "Invalid non virtual annotation",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_override_of_non_virtual_member",
+    "title": "Invalid override of non virtual member",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_required_named_param",
+    "title": "Invalid required named param",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_required_optional_positional_param",
+    "title": "Invalid required optional positional param",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_required_positional_param",
+    "title": "Invalid required positional param",
+    "description": ""
+  },
+  {
+    "patternId": "return_type_invalid_for_catch_error",
+    "title": "Return type invalid for catch error",
+    "description": ""
+  },
+  {
+    "patternId": "return_of_invalid_type_from_catch_error",
+    "title": "Return of invalid type from catch error",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_sealed_annotation",
+    "title": "Invalid sealed annotation",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_use_of_internal_member",
+    "title": "Invalid use of internal member",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_use_of_protected_member",
+    "title": "Invalid use of protected member",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_use_of_visible_for_overriding_member",
+    "title": "Invalid use of visible for overriding member",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_use_of_visible_for_template_member",
+    "title": "Invalid use of visible for template member",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_use_of_visible_for_testing_member",
+    "title": "Invalid use of visible for testing member",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_visibility_annotation",
+    "title": "Invalid visibility annotation",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_visible_for_overriding_annotation",
+    "title": "Invalid visible for overriding annotation",
+    "description": ""
+  },
+  {
+    "patternId": "missing_required_param",
+    "title": "Missing required param",
+    "description": ""
+  },
+  {
+    "patternId": "missing_required_param_with_details",
+    "title": "Missing required param with details",
+    "description": ""
+  },
+  {
+    "patternId": "missing_return",
+    "title": "Missing return",
+    "description": ""
+  },
+  {
+    "patternId": "mixin_on_sealed_class",
+    "title": "Mixin on sealed class",
+    "description": ""
+  },
+  {
+    "patternId": "must_be_immutable",
+    "title": "Must be immutable",
+    "description": ""
+  },
+  {
+    "patternId": "must_call_super",
+    "title": "Must call super",
+    "description": ""
+  },
+  {
+    "patternId": "non_const_call_to_literal_constructor_using_new",
+    "title": "Non const call to literal constructor using new",
+    "description": ""
+  },
+  {
+    "patternId": "non_const_call_to_literal_constructor",
+    "title": "Non const call to literal constructor",
+    "description": ""
+  },
+  {
+    "patternId": "nullable_type_in_catch_clause",
+    "title": "Nullable type in catch clause",
+    "description": ""
+  },
+  {
+    "patternId": "null_argument_to_non_null_type",
+    "title": "Null argument to non null type",
+    "description": ""
+  },
+  {
+    "patternId": "null_aware_before_operator",
+    "title": "Null aware before operator",
+    "description": ""
+  },
+  {
+    "patternId": "null_aware_in_condition",
+    "title": "Null aware in condition",
+    "description": ""
+  },
+  {
+    "patternId": "null_aware_in_logical_operator",
+    "title": "Null aware in logical operator",
+    "description": ""
+  },
+  {
+    "patternId": "null_check_always_fails",
+    "title": "Null check always fails",
+    "description": ""
+  },
+  {
+    "patternId": "override_on_non_overriding_field",
+    "title": "Override on non overriding field",
+    "description": ""
+  },
+  {
+    "patternId": "override_on_non_overriding_getter",
+    "title": "Override on non overriding getter",
+    "description": ""
+  },
+  {
+    "patternId": "override_on_non_overriding_method",
+    "title": "Override on non overriding method",
+    "description": ""
+  },
+  {
+    "patternId": "override_on_non_overriding_setter",
+    "title": "Override on non overriding setter",
+    "description": ""
+  },
+  {
+    "patternId": "package_import_contains_dot_dot",
+    "title": "Package import contains dot dot",
+    "description": ""
+  },
+  {
+    "patternId": "receiver_of_type_never",
+    "title": "Receiver of type never",
+    "description": ""
+  },
+  {
+    "patternId": "return_of_do_not_store",
+    "title": "Return of do not store",
+    "description": ""
+  },
+  {
+    "patternId": "sdk_version_async_exported_from_core",
+    "title": "Sdk version async exported from core",
+    "description": ""
+  },
+  {
+    "patternId": "sdk_version_as_expression_in_const_context",
+    "title": "Sdk version as expression in const context",
+    "description": ""
+  },
+  {
+    "patternId": "sdk_version_bool_operator_in_const_context",
+    "title": "Sdk version bool operator in const context",
+    "description": ""
+  },
+  {
+    "patternId": "sdk_version_constructor_tearoffs",
+    "title": "Sdk version constructor tearoffs",
+    "description": ""
+  },
+  {
+    "patternId": "sdk_version_eq_eq_operator_in_const_context",
+    "title": "Sdk version eq eq operator in const context",
+    "description": ""
+  },
+  {
+    "patternId": "sdk_version_extension_methods",
+    "title": "Sdk version extension methods",
+    "description": ""
+  },
+  {
+    "patternId": "sdk_version_gt_gt_gt_operator",
+    "title": "Sdk version gt gt gt operator",
+    "description": ""
+  },
+  {
+    "patternId": "sdk_version_is_expression_in_const_context",
+    "title": "Sdk version is expression in const context",
+    "description": ""
+  },
+  {
+    "patternId": "sdk_version_never",
+    "title": "Sdk version never",
+    "description": ""
+  },
+  {
+    "patternId": "sdk_version_set_literal",
+    "title": "Sdk version set literal",
+    "description": ""
+  },
+  {
+    "patternId": "sdk_version_ui_as_code",
+    "title": "Sdk version ui as code",
+    "description": ""
+  },
+  {
+    "patternId": "sdk_version_ui_as_code_in_const_context",
+    "title": "Sdk version ui as code in const context",
+    "description": ""
+  },
+  {
+    "patternId": "strict_raw_type",
+    "title": "Strict raw type",
+    "description": ""
+  },
+  {
+    "patternId": "subtype_of_sealed_class",
+    "title": "Subtype of sealed class",
+    "description": ""
+  },
+  {
+    "patternId": "text_direction_code_point_in_comment",
+    "title": "Text direction code point in comment",
+    "description": ""
+  },
+  {
+    "patternId": "text_direction_code_point_in_literal",
+    "title": "Text direction code point in literal",
+    "description": ""
+  },
+  {
+    "patternId": "type_check_is_not_null",
+    "title": "Type check is not null",
+    "description": ""
+  },
+  {
+    "patternId": "type_check_is_null",
+    "title": "Type check is null",
+    "description": ""
+  },
+  {
+    "patternId": "undefined_hidden_name",
+    "title": "Undefined hidden name",
+    "description": ""
+  },
+  {
+    "patternId": "undefined_referenced_parameter",
+    "title": "Undefined referenced parameter",
+    "description": ""
+  },
+  {
+    "patternId": "undefined_shown_name",
+    "title": "Undefined shown name",
+    "description": ""
+  },
+  {
+    "patternId": "unignorable_ignore",
+    "title": "Unignorable ignore",
+    "description": ""
+  },
+  {
+    "patternId": "unnecessary_cast",
+    "title": "Unnecessary cast",
+    "description": ""
+  },
+  {
+    "patternId": "unnecessary_ignore",
+    "title": "Unnecessary ignore",
+    "description": ""
+  },
+  {
+    "patternId": "unnecessary_import",
+    "title": "Unnecessary import",
+    "description": ""
+  },
+  {
+    "patternId": "unnecessary_no_such_method",
+    "title": "Unnecessary no such method",
+    "description": ""
+  },
+  {
+    "patternId": "unnecessary_null_comparison_false",
+    "title": "Unnecessary null comparison false",
+    "description": ""
+  },
+  {
+    "patternId": "unnecessary_null_comparison_true",
+    "title": "Unnecessary null comparison true",
+    "description": ""
+  },
+  {
+    "patternId": "unnecessary_question_mark",
+    "title": "Unnecessary question mark",
+    "description": ""
+  },
+  {
+    "patternId": "unnecessary_type_check_false",
+    "title": "Unnecessary type check false",
+    "description": ""
+  },
+  {
+    "patternId": "unnecessary_type_check_true",
+    "title": "Unnecessary type check true",
+    "description": ""
+  },
+  {
+    "patternId": "unused_catch_clause",
+    "title": "Unused catch clause",
+    "description": ""
+  },
+  {
+    "patternId": "unused_catch_stack",
+    "title": "Unused catch stack",
+    "description": ""
+  },
+  {
+    "patternId": "unused_element",
+    "title": "Unused element",
+    "description": ""
+  },
+  {
+    "patternId": "unused_element_parameter",
+    "title": "Unused element parameter",
+    "description": ""
+  },
+  {
+    "patternId": "unused_field",
+    "title": "Unused field",
+    "description": ""
+  },
+  {
+    "patternId": "unused_import",
+    "title": "Unused import",
+    "description": ""
+  },
+  {
+    "patternId": "unused_label",
+    "title": "Unused label",
+    "description": ""
+  },
+  {
+    "patternId": "unused_local_variable",
+    "title": "Unused local variable",
+    "description": ""
+  },
+  {
+    "patternId": "unused_result",
+    "title": "Unused result",
+    "description": ""
+  },
+  {
+    "patternId": "unused_result_with_message",
+    "title": "Unused result with message",
+    "description": ""
+  },
+  {
+    "patternId": "unused_shown_name",
+    "title": "Unused shown name",
+    "description": ""
+  },
+  {
+    "patternId": "implicit_dynamic_field",
+    "title": "Implicit dynamic field",
+    "description": ""
+  },
+  {
+    "patternId": "implicit_dynamic_function",
+    "title": "Implicit dynamic function",
+    "description": ""
+  },
+  {
+    "patternId": "implicit_dynamic_invoke",
+    "title": "Implicit dynamic invoke",
+    "description": ""
+  },
+  {
+    "patternId": "implicit_dynamic_list_literal",
+    "title": "Implicit dynamic list literal",
+    "description": ""
+  },
+  {
+    "patternId": "implicit_dynamic_map_literal",
+    "title": "Implicit dynamic map literal",
+    "description": ""
+  },
+  {
+    "patternId": "implicit_dynamic_method",
+    "title": "Implicit dynamic method",
+    "description": ""
+  },
+  {
+    "patternId": "implicit_dynamic_parameter",
+    "title": "Implicit dynamic parameter",
+    "description": ""
+  },
+  {
+    "patternId": "implicit_dynamic_return",
+    "title": "Implicit dynamic return",
+    "description": ""
+  },
+  {
+    "patternId": "implicit_dynamic_type",
+    "title": "Implicit dynamic type",
+    "description": ""
+  },
+  {
+    "patternId": "implicit_dynamic_variable",
+    "title": "Implicit dynamic variable",
+    "description": ""
+  },
+  {
+    "patternId": "camera_permissions_incompatible",
+    "title": "Camera permissions incompatible",
+    "description": ""
+  },
+  {
+    "patternId": "non_resizable_activity",
+    "title": "Non resizable activity",
+    "description": ""
+  },
+  {
+    "patternId": "no_touchscreen_feature",
+    "title": "No touchscreen feature",
+    "description": ""
+  },
+  {
+    "patternId": "permission_implies_unsupported_hardware",
+    "title": "Permission implies unsupported hardware",
+    "description": ""
+  },
+  {
+    "patternId": "setting_orientation_on_activity",
+    "title": "Setting orientation on activity",
+    "description": ""
+  },
+  {
+    "patternId": "unsupported_chrome_os_feature",
+    "title": "Unsupported chrome os feature",
+    "description": ""
+  },
+  {
+    "patternId": "unsupported_chrome_os_hardware",
+    "title": "Unsupported chrome os hardware",
+    "description": ""
+  },
+  {
+    "patternId": "abstract_enum",
+    "title": "Abstract enum",
+    "description": ""
+  },
+  {
+    "patternId": "abstract_static_method",
+    "title": "Abstract static method",
+    "description": ""
+  },
+  {
+    "patternId": "abstract_top_level_function",
+    "title": "Abstract top level function",
+    "description": ""
+  },
+  {
+    "patternId": "abstract_top_level_variable",
+    "title": "Abstract top level variable",
+    "description": ""
+  },
+  {
+    "patternId": "abstract_typedef",
+    "title": "Abstract typedef",
+    "description": ""
+  },
+  {
+    "patternId": "async_keyword_used_as_identifier",
+    "title": "Async keyword used as identifier",
+    "description": ""
+  },
+  {
+    "patternId": "const_constructor_with_body",
+    "title": "Const constructor with body",
+    "description": ""
+  },
+  {
+    "patternId": "const_enum",
+    "title": "Const enum",
+    "description": ""
+  },
+  {
+    "patternId": "const_typedef",
+    "title": "Const typedef",
+    "description": ""
+  },
+  {
+    "patternId": "covariant_constructor",
+    "title": "Covariant constructor",
+    "description": ""
+  },
+  {
+    "patternId": "covariant_top_level_declaration",
+    "title": "Covariant top level declaration",
+    "description": ""
+  },
+  {
+    "patternId": "default_value_in_function_type",
+    "title": "Default value in function type",
+    "description": ""
+  },
+  {
+    "patternId": "empty_enum_body",
+    "title": "Empty enum body",
+    "description": ""
+  },
+  {
+    "patternId": "expected_case_or_default",
+    "title": "Expected case or default",
+    "description": ""
+  },
+  {
+    "patternId": "expected_class_member",
+    "title": "Expected class member",
+    "description": ""
+  },
+  {
+    "patternId": "expected_executable",
+    "title": "Expected executable",
+    "description": ""
+  },
+  {
+    "patternId": "expected_list_or_map_literal",
+    "title": "Expected list or map literal",
+    "description": ""
+  },
+  {
+    "patternId": "expected_string_literal",
+    "title": "Expected string literal",
+    "description": ""
+  },
+  {
+    "patternId": "expected_token",
+    "title": "Expected token",
+    "description": ""
+  },
+  {
+    "patternId": "expected_type_name",
+    "title": "Expected type name",
+    "description": ""
+  },
+  {
+    "patternId": "external_getter_with_body",
+    "title": "External getter with body",
+    "description": ""
+  },
+  {
+    "patternId": "external_operator_with_body",
+    "title": "External operator with body",
+    "description": ""
+  },
+  {
+    "patternId": "external_setter_with_body",
+    "title": "External setter with body",
+    "description": ""
+  },
+  {
+    "patternId": "factory_without_body",
+    "title": "Factory without body",
+    "description": ""
+  },
+  {
+    "patternId": "factory_with_initializers",
+    "title": "Factory with initializers",
+    "description": ""
+  },
+  {
+    "patternId": "final_class",
+    "title": "Final class",
+    "description": ""
+  },
+  {
+    "patternId": "final_constructor",
+    "title": "Final constructor",
+    "description": ""
+  },
+  {
+    "patternId": "final_enum",
+    "title": "Final enum",
+    "description": ""
+  },
+  {
+    "patternId": "final_method",
+    "title": "Final method",
+    "description": ""
+  },
+  {
+    "patternId": "final_typedef",
+    "title": "Final typedef",
+    "description": ""
+  },
+  {
+    "patternId": "getter_in_function",
+    "title": "Getter in function",
+    "description": ""
+  },
+  {
+    "patternId": "getter_with_parameters",
+    "title": "Getter with parameters",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_code_point",
+    "title": "Invalid code point",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_comment_reference",
+    "title": "Invalid comment reference",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_generic_function_type",
+    "title": "Invalid generic function type",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_literal_in_configuration",
+    "title": "Invalid literal in configuration",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_operator_for_super",
+    "title": "Invalid operator for super",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_star_after_async",
+    "title": "Invalid star after async",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_sync",
+    "title": "Invalid sync",
+    "description": ""
+  },
+  {
+    "patternId": "local_function_declaration_modifier",
+    "title": "Local function declaration modifier",
+    "description": ""
+  },
+  {
+    "patternId": "missing_closing_parenthesis",
+    "title": "Missing closing parenthesis",
+    "description": ""
+  },
+  {
+    "patternId": "missing_enum_body",
+    "title": "Missing enum body",
+    "description": ""
+  },
+  {
+    "patternId": "missing_expression_in_initializer",
+    "title": "Missing expression in initializer",
+    "description": ""
+  },
+  {
+    "patternId": "missing_function_body",
+    "title": "Missing function body",
+    "description": ""
+  },
+  {
+    "patternId": "missing_function_keyword",
+    "title": "Missing function keyword",
+    "description": ""
+  },
+  {
+    "patternId": "missing_function_parameters",
+    "title": "Missing function parameters",
+    "description": ""
+  },
+  {
+    "patternId": "missing_get",
+    "title": "Missing get",
+    "description": ""
+  },
+  {
+    "patternId": "missing_identifier",
+    "title": "Missing identifier",
+    "description": ""
+  },
+  {
+    "patternId": "missing_method_parameters",
+    "title": "Missing method parameters",
+    "description": ""
+  },
+  {
+    "patternId": "missing_name_for_named_parameter",
+    "title": "Missing name for named parameter",
+    "description": ""
+  },
+  {
+    "patternId": "missing_name_in_library_directive",
+    "title": "Missing name in library directive",
+    "description": ""
+  },
+  {
+    "patternId": "missing_name_in_part_of_directive",
+    "title": "Missing name in part of directive",
+    "description": ""
+  },
+  {
+    "patternId": "missing_star_after_sync",
+    "title": "Missing star after sync",
+    "description": ""
+  },
+  {
+    "patternId": "missing_terminator_for_parameter_group",
+    "title": "Missing terminator for parameter group",
+    "description": ""
+  },
+  {
+    "patternId": "missing_typedef_parameters",
+    "title": "Missing typedef parameters",
+    "description": ""
+  },
+  {
+    "patternId": "missing_variable_in_for_each",
+    "title": "Missing variable in for each",
+    "description": ""
+  },
+  {
+    "patternId": "mixed_parameter_groups",
+    "title": "Mixed parameter groups",
+    "description": ""
+  },
+  {
+    "patternId": "multiple_implements_clauses",
+    "title": "Multiple implements clauses",
+    "description": ""
+  },
+  {
+    "patternId": "multiple_named_parameter_groups",
+    "title": "Multiple named parameter groups",
+    "description": ""
+  },
+  {
+    "patternId": "multiple_positional_parameter_groups",
+    "title": "Multiple positional parameter groups",
+    "description": ""
+  },
+  {
+    "patternId": "multiple_variables_in_for_each",
+    "title": "Multiple variables in for each",
+    "description": ""
+  },
+  {
+    "patternId": "named_function_expression",
+    "title": "Named function expression",
+    "description": ""
+  },
+  {
+    "patternId": "named_function_type",
+    "title": "Named function type",
+    "description": ""
+  },
+  {
+    "patternId": "named_parameter_outside_group",
+    "title": "Named parameter outside group",
+    "description": ""
+  },
+  {
+    "patternId": "native_clause_in_non_sdk_code",
+    "title": "Native clause in non sdk code",
+    "description": ""
+  },
+  {
+    "patternId": "native_function_body_in_non_sdk_code",
+    "title": "Native function body in non sdk code",
+    "description": ""
+  },
+  {
+    "patternId": "non_constructor_factory",
+    "title": "Non constructor factory",
+    "description": ""
+  },
+  {
+    "patternId": "non_identifier_library_name",
+    "title": "Non identifier library name",
+    "description": ""
+  },
+  {
+    "patternId": "non_part_of_directive_in_part",
+    "title": "Non part of directive in part",
+    "description": ""
+  },
+  {
+    "patternId": "non_string_literal_as_uri",
+    "title": "Non string literal as uri",
+    "description": ""
+  },
+  {
+    "patternId": "non_user_definable_operator",
+    "title": "Non user definable operator",
+    "description": ""
+  },
+  {
+    "patternId": "normal_before_optional_parameters",
+    "title": "Normal before optional parameters",
+    "description": ""
+  },
+  {
+    "patternId": "positional_after_named_argument",
+    "title": "Positional after named argument",
+    "description": ""
+  },
+  {
+    "patternId": "positional_parameter_outside_group",
+    "title": "Positional parameter outside group",
+    "description": ""
+  },
+  {
+    "patternId": "setter_in_function",
+    "title": "Setter in function",
+    "description": ""
+  },
+  {
+    "patternId": "static_getter_without_body",
+    "title": "Static getter without body",
+    "description": ""
+  },
+  {
+    "patternId": "static_setter_without_body",
+    "title": "Static setter without body",
+    "description": ""
+  },
+  {
+    "patternId": "static_top_level_declaration",
+    "title": "Static top level declaration",
+    "description": ""
+  },
+  {
+    "patternId": "unexpected_terminator_for_parameter_group",
+    "title": "Unexpected terminator for parameter group",
+    "description": ""
+  },
+  {
+    "patternId": "unexpected_token",
+    "title": "Unexpected token",
+    "description": ""
+  },
+  {
+    "patternId": "var_class",
+    "title": "Var class",
+    "description": ""
+  },
+  {
+    "patternId": "var_enum",
+    "title": "Var enum",
+    "description": ""
+  },
+  {
+    "patternId": "var_typedef",
+    "title": "Var typedef",
+    "description": ""
+  },
+  {
+    "patternId": "wrong_separator_for_positional_parameter",
+    "title": "Wrong separator for positional parameter",
+    "description": ""
+  },
+  {
+    "patternId": "wrong_terminator_for_parameter_group",
+    "title": "Wrong terminator for parameter group",
+    "description": ""
+  },
+  {
+    "patternId": "asset_directory_does_not_exist",
+    "title": "Asset directory does not exist",
+    "description": ""
+  },
+  {
+    "patternId": "asset_does_not_exist",
+    "title": "Asset does not exist",
+    "description": ""
+  },
+  {
+    "patternId": "asset_field_not_list",
+    "title": "Asset field not list",
+    "description": ""
+  },
+  {
+    "patternId": "asset_not_string",
+    "title": "Asset not string",
+    "description": ""
+  },
+  {
+    "patternId": "dependencies_field_not_map",
+    "title": "Dependencies field not map",
+    "description": ""
+  },
+  {
+    "patternId": "deprecated_field",
+    "title": "Deprecated field",
+    "description": ""
+  },
+  {
+    "patternId": "flutter_field_not_map",
+    "title": "Flutter field not map",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_dependency",
+    "title": "Invalid dependency",
+    "description": ""
+  },
+  {
+    "patternId": "missing_name",
+    "title": "Missing name",
+    "description": ""
+  },
+  {
+    "patternId": "name_not_string",
+    "title": "Name not string",
+    "description": ""
+  },
+  {
+    "patternId": "path_does_not_exist",
+    "title": "Path does not exist",
+    "description": ""
+  },
+  {
+    "patternId": "path_not_posix",
+    "title": "Path not posix",
+    "description": ""
+  },
+  {
+    "patternId": "path_pubspec_does_not_exist",
+    "title": "Path pubspec does not exist",
+    "description": ""
+  },
+  {
+    "patternId": "unnecessary_dev_dependency",
+    "title": "Unnecessary dev dependency",
+    "description": ""
+  },
+  {
+    "patternId": "dead_null_aware_expression",
+    "title": "Dead null aware expression",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_null_aware_operator",
+    "title": "Invalid null aware operator",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_null_aware_operator_after_short_circuit",
+    "title": "Invalid null aware operator after short circuit",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_override_different_default_values_named",
+    "title": "Invalid override different default values named",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_override_different_default_values_positional",
+    "title": "Invalid override different default values positional",
+    "description": ""
+  },
+  {
+    "patternId": "missing_enum_constant_in_switch",
+    "title": "Missing enum constant in switch",
+    "description": ""
+  },
+  {
+    "patternId": "unnecessary_non_null_assertion",
+    "title": "Unnecessary non null assertion",
+    "description": ""
   }
 ]

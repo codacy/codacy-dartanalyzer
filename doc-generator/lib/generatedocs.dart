@@ -5,8 +5,10 @@ import 'package:linter/src/analyzer.dart';
 import 'package:linter/src/rules.dart';
 
 import 'dart:convert';
+import 'package:yaml/yaml.dart';
 
 void main() {
+  final sdkVersion = '2.15.1'; //TODO, derive this from the pubspec
   final encoder = new JsonEncoder.withIndent("  ");
 
   //clear existing docs
@@ -24,14 +26,14 @@ void main() {
 
   Iterable<LintRule> rules = Registry.ruleRegistry.rules;
 
-  List<PatternSpec> patterns = List.empty(growable: true);
-  List<Description> descriptions = List.empty(growable: true);
+  Set<PatternSpec> patterns = {};
+  Set<Description> descriptions = {};
 
   rules.forEach((rule) {
     var pattern = PatternSpec(
         patternId: rule.name,
         level: rule.group.name == "errors" ? "Error" : "Info",
-        category: rule.group.name == "errors" ? "ErrorProne" : "CodeStyle");
+        category: rule.group.name == "style" ? "CodeStyle" : "ErrorProne");
 
     patterns.add(pattern);
 
@@ -46,22 +48,72 @@ void main() {
     );
   });
 
+  //Registry.ruleRegistry.rules does not have rules, so this was the solution
+  // to get all the missing rules with md documentation
+  final String sdkDir = "tempDartSdk";
+  new Directory(sdkDir).createSync();
+
+  Process.runSync('git', [
+    'clone',
+    '--depth',
+    '1',
+    '--branch',
+    sdkVersion,
+    'https://github.com/dart-lang/sdk.git',
+    sdkDir
+  ]);
+
+  final String messageFileContent =
+      File(sdkDir + "/pkg/analyzer/messages.yaml").readAsStringSync();
+
+  Map<Object, Object> yaml =
+      loadYaml(messageFileContent) as Map<Object, Object>;
+
+  Map<String, Map<String, AnalyzerErrorCodeInfo>> messagePatterns =
+      decodeAnalyzerMessagesYaml(yaml);
+
+  messagePatterns.forEach((key, group) {
+    group.forEach((key, value) {
+      String patternId = key.toLowerCase();
+
+      var pattern = PatternSpec(
+          patternId: patternId, level: 'Warning', category: 'ErrorProne');
+
+      patterns.add(pattern);
+
+      var splited = patternId.split("_").join(" ");
+      var title = splited[0].toUpperCase() + splited.substring(1);
+
+      descriptions.add(
+          Description(patternId: patternId, title: title, description: ''));
+
+      if(value.documentation != null) {
+        File("docs/description/" + patternId + ".md")
+            .writeAsStringSync(value.documentation);
+      }
+    });
+  });
+
+  new Directory(sdkDir).deleteSync(recursive: true);
+
   File("docs/description/description.json")
-      .writeAsStringSync(encoder.convert(descriptions));
+      .writeAsStringSync(encoder.convert(descriptions.toList()));
 
   File("docs/patterns.json")
-      .writeAsStringSync(encoder.convert(PatternsFile(patterns: patterns)));
+      .writeAsStringSync(encoder.convert(PatternsFile(name: "dartanalyzer", version: sdkVersion, patterns: patterns)));
 }
 
-class PatternsFile {
-  final String name = "Dart";
-  final String version = "1.18.0";
-  final List<PatternSpec> patterns;
+// Models
 
-  PatternsFile({this.patterns});
+class PatternsFile {
+  final String name;
+  final String version;
+  final Set<PatternSpec> patterns;
+
+  PatternsFile({this.name, this.patterns, this.version});
 
   Map<String, dynamic> toJson() =>
-      {'name': name, 'version': version, 'patterns': patterns};
+      {'name': name, 'version': version, 'patterns': patterns.toList()};
 }
 
 class Description {
@@ -87,4 +139,130 @@ class PatternSpec {
 
   Map<String, dynamic> toJson() =>
       {'patternId': patternId, 'level': level, 'category': category};
+}
+
+//Dart Sdk
+
+/// Decodes a YAML object (obtained from `pkg/analyzer/messages.yaml`) into a
+/// two-level map of [ErrorCodeInfo], indexed first by class name and then by
+/// error name.
+Map<String, Map<String, AnalyzerErrorCodeInfo>> decodeAnalyzerMessagesYaml(
+    Object yaml) {
+  Never problem(String message) {
+    throw 'Problem in pkg/analyzer/messages.yaml: $message';
+  }
+
+  var result = <String, Map<String, AnalyzerErrorCodeInfo>>{};
+  if (yaml is! Map<Object, Object>) {
+    problem('root node is not a map');
+  }
+
+  (yaml as Map<Object, Object>).forEach((key, value) {
+    var className = key;
+    if (className is! String) {
+      problem('non-string class key ${json.encode(className)}');
+    }
+    var classValue = value;
+    if (classValue is! Map<Object, Object>) {
+      problem('value associated with class key $className is not a map');
+    }
+    (classValue as Map<Object, Object>).forEach((key, value) {
+      var errorName = key;
+      if (errorName is! String) {
+        problem('in class $className, non-string error key '
+            '${json.encode(errorName)}');
+      }
+      var errorValue = value;
+      if (errorValue is! Map<Object, Object>) {
+        problem('value associated with error $className.$errorName is not a '
+            'map');
+      }
+      try {
+        (result[className] ??= {})[errorName] =
+            AnalyzerErrorCodeInfo.fromYaml(errorValue);
+      } catch (e) {
+        problem('while processing '
+            '$className.$errorName, $e');
+      }
+    });
+  });
+
+  return result;
+}
+
+class AnalyzerErrorCodeInfo extends ErrorCodeInfo {
+  AnalyzerErrorCodeInfo(
+      {String comment,
+      String correctionMessage,
+      String documentation,
+      bool hasPublishedDocs = false,
+      bool isUnresolvedIdentifier = false,
+      String problemMessage,
+      String sharedName})
+      : super(
+            comment: comment,
+            correctionMessage: correctionMessage,
+            documentation: documentation,
+            hasPublishedDocs: hasPublishedDocs,
+            isUnresolvedIdentifier: isUnresolvedIdentifier,
+            problemMessage: problemMessage,
+            sharedName: sharedName);
+
+  AnalyzerErrorCodeInfo.fromYaml(Map<Object, Object> yaml)
+      : super.fromYaml(yaml);
+}
+
+abstract class ErrorCodeInfo {
+  /// If present, a documentation comment that should be associated with the
+  /// error in code generated output.
+  final String comment;
+
+  /// If the error code has an associated correctionMessage, the template for
+  /// it.
+  final String correctionMessage;
+
+  /// If present, user-facing documentation for the error.
+  final String documentation;
+
+  /// `true` if diagnostics with this code have documentation for them that has
+  /// been published.
+  final bool hasPublishedDocs;
+
+  /// Indicates whether this error is caused by an unresolved identifier.
+  final bool isUnresolvedIdentifier;
+
+  /// The problemMessage for the error code.
+  final String problemMessage;
+
+  /// If present, indicates that this error code has a special name for
+  /// presentation to the user, that is potentially shared with other error
+  /// codes.
+  final String sharedName;
+
+  /// If present, indicates that this error code has been renamed from
+  /// [previousName] to its current name (or [sharedName]).
+  final String previousName;
+
+  ErrorCodeInfo(
+      {this.comment,
+      this.documentation,
+      this.hasPublishedDocs = false,
+      this.isUnresolvedIdentifier = false,
+      this.sharedName,
+      this.problemMessage,
+      this.correctionMessage,
+      this.previousName});
+
+  /// Decodes an [ErrorCodeInfo] object from its YAML representation.
+  ErrorCodeInfo.fromYaml(Map<Object, Object> yaml)
+      : this(
+            comment: yaml['comment'] as String,
+            correctionMessage: yaml['correctionMessage'] as String,
+            documentation: yaml['documentation'] as String,
+            hasPublishedDocs: yaml['hasPublishedDocs'] as bool ?? false,
+            isUnresolvedIdentifier:
+                yaml['isUnresolvedIdentifier'] as bool ?? false,
+            problemMessage: yaml['problemMessage'] as String,
+            sharedName: yaml['sharedName'] as String,
+            previousName: yaml['previousName'] as String);
 }

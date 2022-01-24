@@ -1,0 +1,29 @@
+#### Description
+
+The analyzer produces this diagnostic when an element in a set literal has
+a type that isn't assignable to the element type of the set.
+
+#### Example
+
+The following code produces this diagnostic because the type of the string
+literal `'0'` is `String`, which isn't assignable to `int`, the element
+type of the set:
+
+```dart
+var s = <int>{[!'0'!]};
+```
+
+#### Common fixes
+
+If the element type of the set literal is wrong, then change the element
+type of the set:
+
+```dart
+var s = <String>{'0'};
+```
+
+If the type of the element is wrong, then change the element:
+
+```dart
+var s = <int>{'0'.length};
+```

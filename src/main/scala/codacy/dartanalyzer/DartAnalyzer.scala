@@ -26,19 +26,17 @@ object DartAnalyzer extends Tool {
         val patterns = specification.patterns
           .map { pattern =>
             if (configurationPatternIds.contains(pattern.patternId)) {
-              s"    ${pattern.patternId.value}: error"
+              s"    ${pattern.patternId.value}: true"
             } else {
-              s"    ${pattern.patternId.value}: ignore"
+              s"    ${pattern.patternId.value}: false"
             }
           }
           .mkString("\n")
 
-        // TODO: this works only for analyzer rules.
-        // other (linter, etc.) rules need to handled differently.
         val optionsFileContent =
           s"""
-          |analyzer:
-          |  errors:
+          |linter:
+          |  rules:
           |${patterns}
           |""".stripMargin
 

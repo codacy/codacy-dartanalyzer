@@ -24,16 +24,17 @@ void main() {
 
   registerLintRules();
 
-  Iterable<LintRule> rules = Registry.ruleRegistry.rules;
+  Iterable<LintRule> enabledRules = Registry.ruleRegistry.rules;
 
   Set<PatternSpec> patterns = {};
   Set<Description> descriptions = {};
 
-  rules.forEach((rule) {
+  enabledRules.forEach((rule) {
     var pattern = PatternSpec(
         patternId: rule.name,
         level: rule.group.name == "errors" ? "Error" : "Info",
-        category: rule.group.name == "style" ? "CodeStyle" : "ErrorProne");
+        category: rule.group.name == "style" ? "CodeStyle" : "ErrorProne",
+        enabled: true);
 
     patterns.add(pattern);
 
@@ -77,7 +78,10 @@ void main() {
       String patternId = key.toLowerCase();
 
       var pattern = PatternSpec(
-          patternId: patternId, level: 'Warning', category: 'ErrorProne');
+          patternId: patternId,
+          level: 'Warning',
+          category: 'ErrorProne',
+          enabled: false);
 
       patterns.add(pattern);
 
@@ -87,7 +91,7 @@ void main() {
       descriptions.add(
           Description(patternId: patternId, title: title, description: ''));
 
-      if(value.documentation != null) {
+      if (value.documentation != null) {
         File("docs/description/" + patternId + ".md")
             .writeAsStringSync(value.documentation);
       }
@@ -99,8 +103,8 @@ void main() {
   File("docs/description/description.json")
       .writeAsStringSync(encoder.convert(descriptions.toList()));
 
-  File("docs/patterns.json")
-      .writeAsStringSync(encoder.convert(PatternsFile(name: "dartanalyzer", version: sdkVersion, patterns: patterns)));
+  File("docs/patterns.json").writeAsStringSync(encoder.convert(PatternsFile(
+      name: "dartanalyzer", version: sdkVersion, patterns: patterns)));
 }
 
 // Models
@@ -133,12 +137,16 @@ class PatternSpec {
   final String level;
   final String category;
   //parameters: ParameterSpec[]
-  //enabled: Boolean
+  final bool enabled;
 
-  PatternSpec({this.patternId, this.level, this.category});
+  PatternSpec({this.patternId, this.level, this.category, this.enabled});
 
-  Map<String, dynamic> toJson() =>
-      {'patternId': patternId, 'level': level, 'category': category};
+  Map<String, dynamic> toJson() => {
+        'patternId': patternId,
+        'level': level,
+        'category': category,
+        'enabled': enabled
+      };
 }
 
 //Dart Sdk

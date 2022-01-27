@@ -22,7 +22,7 @@ void main() {
   //create description dir
   new Directory("docs/description").createSync(recursive: true);
 
-  final String patternsTypeFileName = 'patterns_type.json';
+  final File patternsTypeFile = new File('docs/patterns_type.json');
 
   if (new File('docs/' + patternsTypeFileName).existsSync()) {
     new File('docs/' + patternsTypeFileName).deleteSync();

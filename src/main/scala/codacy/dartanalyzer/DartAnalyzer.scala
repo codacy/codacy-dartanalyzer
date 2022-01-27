@@ -7,6 +7,7 @@ import com.codacy.tools.scala.seed.utils.CommandRunner
 
 import scala.util.Try
 import com.codacy.tools.scala.seed.DockerEngine
+import play.api.libs.json.Json
 
 object DartAnalyzer extends Tool {
 
@@ -19,25 +20,47 @@ object DartAnalyzer extends Tool {
 
     val f = files.toSet.flatten
 
+    val patternsType = Json
+      .parse(File("/docs/patterns_type.json").contentAsString)
+      .as[Map[String, String]]
+
     val optionsFileOptions = configuration match {
       case Some(configurationPatterns) =>
         val configurationPatternIds: Set[Pattern.Id] =
           configurationPatterns.map(_.patternId).toSet
-        val patterns = specification.patterns
+
+        val lintPatterns = specification.patterns
+          .filter(pattern => patternsType(pattern.patternId.value) == "lint")
           .map { pattern =>
             if (configurationPatternIds.contains(pattern.patternId)) {
               s"    ${pattern.patternId.value}: true"
             } else {
               s"    ${pattern.patternId.value}: false"
             }
+
+          }
+          .mkString("\n")
+
+        val errorPatterns = specification.patterns
+          .filter(pattern => patternsType(pattern.patternId.value) == "error")
+          .map { pattern =>
+            if (configurationPatternIds.contains(pattern.patternId)) {
+              s"    ${pattern.patternId.value}: ${pattern.level.toString.toLowerCase}"
+            } else {
+              s"    ${pattern.patternId.value}: ignore"
+            }
+
           }
           .mkString("\n")
 
         val optionsFileContent =
           s"""
+          |analyzer:
+          |  errors:
+          |${errorPatterns}
           |linter:
           |  rules:
-          |${patterns}
+          |${lintPatterns}
           |""".stripMargin
 
         val optionsFilePath =

@@ -22,19 +22,29 @@ void main() {
   //create description dir
   new Directory("docs/description").createSync(recursive: true);
 
+  final File patternsTypeFile = new File('docs/patterns_type.json');
+
+  if (patternsTypeFile.existsSync()) {
+    patternsTypeFile.deleteSync();
+  }
+
   registerLintRules();
 
-  Iterable<LintRule> enabledRules = Registry.ruleRegistry.rules;
+  Map<String, String> patternsType = {};
+
+  Iterable<LintRule> enabledLintRules = Registry.ruleRegistry.rules;
 
   Set<PatternSpec> patterns = {};
   Set<Description> descriptions = {};
 
-  enabledRules.forEach((rule) {
+  enabledLintRules.forEach((rule) {
     var pattern = PatternSpec(
         patternId: rule.name,
         level: rule.group.name == "errors" ? "Error" : "Info",
         category: rule.group.name == "style" ? "CodeStyle" : "ErrorProne",
         enabled: true);
+
+    patternsType[pattern.patternId] = 'lint';
 
     patterns.add(pattern);
 
@@ -70,10 +80,10 @@ void main() {
   Map<Object, Object> yaml =
       loadYaml(messageFileContent) as Map<Object, Object>;
 
-  Map<String, Map<String, AnalyzerErrorCodeInfo>> messagePatterns =
+  final Map<String, Map<String, AnalyzerErrorCodeInfo>> errorPatterns =
       decodeAnalyzerMessagesYaml(yaml);
 
-  messagePatterns.forEach((key, group) {
+  errorPatterns.forEach((key, group) {
     group.forEach((key, value) {
       String patternId = key.toLowerCase();
 
@@ -83,6 +93,7 @@ void main() {
           category: 'ErrorProne',
           enabled: false);
 
+      patternsType[pattern.patternId] = 'error';
       patterns.add(pattern);
 
       var splited = patternId.split("_").join(" ");
@@ -105,6 +116,8 @@ void main() {
 
   File("docs/patterns.json").writeAsStringSync(encoder.convert(PatternsFile(
       name: "dartanalyzer", version: sdkVersion, patterns: patterns)));
+
+  patternsTypeFile.writeAsStringSync(encoder.convert(patternsType));
 }
 
 // Models

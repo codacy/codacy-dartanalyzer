@@ -22,19 +22,34 @@ void main() {
   //create description dir
   new Directory("docs/description").createSync(recursive: true);
 
+  final String patternsTypeFileName = 'patterns_type.json';
+
+  //create and clear tool resources
+  if (new Directory("src/main/resources").existsSync()) {
+    if (new File('src/main/resources/' + patternsTypeFileName).existsSync()) {
+      new File('src/main/resources/' + patternsTypeFileName).deleteSync();
+    }
+  } else {
+    new Directory("src/main/resources").createSync();
+  }
+
   registerLintRules();
 
-  Iterable<LintRule> enabledRules = Registry.ruleRegistry.rules;
+  Map<String, String> patternsType = {};
+
+  Iterable<LintRule> enabledLintRules = Registry.ruleRegistry.rules;
 
   Set<PatternSpec> patterns = {};
   Set<Description> descriptions = {};
 
-  enabledRules.forEach((rule) {
+  enabledLintRules.forEach((rule) {
     var pattern = PatternSpec(
         patternId: rule.name,
         level: rule.group.name == "errors" ? "Error" : "Info",
         category: rule.group.name == "style" ? "CodeStyle" : "ErrorProne",
         enabled: true);
+
+    patternsType[pattern.patternId] = 'lint';
 
     patterns.add(pattern);
 
@@ -70,10 +85,10 @@ void main() {
   Map<Object, Object> yaml =
       loadYaml(messageFileContent) as Map<Object, Object>;
 
-  Map<String, Map<String, AnalyzerErrorCodeInfo>> messagePatterns =
+  final Map<String, Map<String, AnalyzerErrorCodeInfo>> errorPatterns =
       decodeAnalyzerMessagesYaml(yaml);
 
-  messagePatterns.forEach((key, group) {
+  errorPatterns.forEach((key, group) {
     group.forEach((key, value) {
       String patternId = key.toLowerCase();
 
@@ -83,6 +98,7 @@ void main() {
           category: 'ErrorProne',
           enabled: false);
 
+      patternsType[pattern.patternId] = 'error';
       patterns.add(pattern);
 
       var splited = patternId.split("_").join(" ");
@@ -105,6 +121,9 @@ void main() {
 
   File("docs/patterns.json").writeAsStringSync(encoder.convert(PatternsFile(
       name: "dartanalyzer", version: sdkVersion, patterns: patterns)));
+
+  File('src/main/resources/' + patternsTypeFileName)
+      .writeAsStringSync(encoder.convert(patternsType));
 }
 
 // Models

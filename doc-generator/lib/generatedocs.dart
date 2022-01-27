@@ -24,8 +24,8 @@ void main() {
 
   final File patternsTypeFile = new File('docs/patterns_type.json');
 
-  if (new File('docs/' + patternsTypeFileName).existsSync()) {
-    new File('docs/' + patternsTypeFileName).deleteSync();
+  if (patternsTypeFile.existsSync()) {
+    patternsTypeFile.deleteSync();
   }
 
   registerLintRules();
@@ -117,8 +117,7 @@ void main() {
   File("docs/patterns.json").writeAsStringSync(encoder.convert(PatternsFile(
       name: "dartanalyzer", version: sdkVersion, patterns: patterns)));
 
-  File('docs/' + patternsTypeFileName)
-      .writeAsStringSync(encoder.convert(patternsType));
+  patternsTypeFile.writeAsStringSync(encoder.convert(patternsType));
 }
 
 // Models

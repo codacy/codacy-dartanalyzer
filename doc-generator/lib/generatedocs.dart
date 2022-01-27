@@ -24,13 +24,8 @@ void main() {
 
   final String patternsTypeFileName = 'patterns_type.json';
 
-  //create and clear tool resources
-  if (new Directory("src/main/resources").existsSync()) {
-    if (new File('src/main/resources/' + patternsTypeFileName).existsSync()) {
-      new File('src/main/resources/' + patternsTypeFileName).deleteSync();
-    }
-  } else {
-    new Directory("src/main/resources").createSync();
+  if (new File('docs/' + patternsTypeFileName).existsSync()) {
+    new File('docs/' + patternsTypeFileName).deleteSync();
   }
 
   registerLintRules();
@@ -122,7 +117,7 @@ void main() {
   File("docs/patterns.json").writeAsStringSync(encoder.convert(PatternsFile(
       name: "dartanalyzer", version: sdkVersion, patterns: patterns)));
 
-  File('src/main/resources/' + patternsTypeFileName)
+  File('docs/' + patternsTypeFileName)
       .writeAsStringSync(encoder.convert(patternsType));
 }
 

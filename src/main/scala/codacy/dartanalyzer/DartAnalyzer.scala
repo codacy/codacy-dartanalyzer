@@ -7,7 +7,6 @@ import com.codacy.tools.scala.seed.utils.CommandRunner
 
 import scala.util.Try
 import com.codacy.tools.scala.seed.DockerEngine
-import scala.io.{Source => ScalaSource}
 import play.api.libs.json.Json
 
 object DartAnalyzer extends Tool {
@@ -22,7 +21,7 @@ object DartAnalyzer extends Tool {
     val f = files.toSet.flatten
 
     val patternsType = Json
-      .parse(ScalaSource.fromResource("patterns_type.json").mkString)
+      .parse(File("/docs/patterns_type.json").contentAsString)
       .as[Map[String, String]]
 
     val optionsFileOptions = configuration match {

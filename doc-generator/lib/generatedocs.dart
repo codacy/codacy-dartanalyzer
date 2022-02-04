@@ -8,21 +8,28 @@ import 'dart:convert';
 import 'package:yaml/yaml.dart';
 
 void main() {
-  final sdkVersion = '2.15.1'; //TODO, derive this from the pubspec
+  File pubspecFile = new File('doc-generator/pubspec.yaml');
+  Map pubspec = loadYaml(pubspecFile.readAsStringSync());
+
+  final sdkVersion = pubspec['patternsSdkVersion'];
   final encoder = new JsonEncoder.withIndent("  ");
 
+  final String docsDescriptionDirPath = "docs/description";
+  final Directory docsDescriptionDir = new Directory(docsDescriptionDirPath);
+  final File descriptionFile = new File("docs/description/description.json");
+  final File patternsFile = new File("docs/patterns.json");
+  final File patternsTypeFile = new File('docs/patterns_type.json');
+
   //clear existing docs
-  if (new Directory("docs/description").existsSync()) {
-    new Directory("docs/description").deleteSync(recursive: true);
+  if (docsDescriptionDir.existsSync()) {
+    docsDescriptionDir.deleteSync(recursive: true);
   }
-  if (new File("docs/patterns.json").existsSync()) {
-    new File("docs/patterns.json").deleteSync(recursive: true);
+  if (patternsFile.existsSync()) {
+    patternsFile.deleteSync(recursive: true);
   }
 
   //create description dir
-  new Directory("docs/description").createSync(recursive: true);
-
-  final File patternsTypeFile = new File('docs/patterns_type.json');
+  docsDescriptionDir.createSync(recursive: true);
 
   if (patternsTypeFile.existsSync()) {
     patternsTypeFile.deleteSync();
@@ -54,7 +61,7 @@ void main() {
     descriptions.add(Description(
         patternId: rule.name, title: title, description: rule.description));
 
-    File("docs/description/" + rule.name + ".md").writeAsStringSync(
+    File(docsDescriptionDirPath + '/' + rule.name + ".md").writeAsStringSync(
       rule.details,
     );
   });
@@ -103,7 +110,7 @@ void main() {
           Description(patternId: patternId, title: title, description: ''));
 
       if (value.documentation != null) {
-        File("docs/description/" + patternId + ".md")
+        File(docsDescriptionDirPath + '/' + patternId + ".md")
             .writeAsStringSync(value.documentation);
       }
     });
@@ -111,10 +118,9 @@ void main() {
 
   new Directory(sdkDir).deleteSync(recursive: true);
 
-  File("docs/description/description.json")
-      .writeAsStringSync(encoder.convert(descriptions.toList()));
+  descriptionFile.writeAsStringSync(encoder.convert(descriptions.toList()));
 
-  File("docs/patterns.json").writeAsStringSync(encoder.convert(PatternsFile(
+  patternsFile.writeAsStringSync(encoder.convert(PatternsFile(
       name: "dartanalyzer", version: sdkVersion, patterns: patterns)));
 
   patternsTypeFile.writeAsStringSync(encoder.convert(patternsType));

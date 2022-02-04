@@ -14,7 +14,7 @@ workflows:
           name: publish_docker_local
           cmd: |
             sbt scalafmtCheckAll graalvm-native-image:packageBin
-            docker build -t $CIRCLE_PROJECT_REPONAME:latest .
+            docker build --build-arg TOOL_VERSION=$(cat .tool_version) -t $CIRCLE_PROJECT_REPONAME:latest .
             docker save --output docker-image.tar $CIRCLE_PROJECT_REPONAME:latest
           persist_to_workspace: true
           requires:

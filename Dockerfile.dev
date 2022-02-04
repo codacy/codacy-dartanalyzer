@@ -1,4 +1,6 @@
-FROM dart:2.15.1
+ARG TOOL_VERSION
+
+FROM dart:${TOOL_VERSION}
 
 RUN apt-get update && apt-get install -y openjdk-11-jre
 

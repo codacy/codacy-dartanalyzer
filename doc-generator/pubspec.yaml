@@ -9,4 +9,3 @@ environment:
 dependencies:
   linter: 1.18.0
   yaml: ^3.0.0
-  

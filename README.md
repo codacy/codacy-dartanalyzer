@@ -29,7 +29,7 @@ For a faster development loop you can create a Docker image based on the JVM ins
 
 ```bash
 sbt universal:stage
-docker build -t codacy-dartanalyzer -f Dockerfile.dev .
+docker build --build-arg TOOL_VERSION=$(cat .tool_version) -t codacy-dartanalyzer -f Dockerfile.dev .
 ```
 
 We use the [codacy-plugins-test](https://github.com/codacy/codacy-plugins-test) to test our external tools integration.

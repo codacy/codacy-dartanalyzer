@@ -1,4 +1,6 @@
-FROM dart:2.15.1
+ARG TOOL_VERSION
+
+FROM dart:${TOOL_VERSION}
 
 COPY docs /docs
 COPY target/graalvm-native-image/codacy-dartanalyzer /workdir/

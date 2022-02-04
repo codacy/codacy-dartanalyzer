@@ -8,10 +8,10 @@ import 'dart:convert';
 import 'package:yaml/yaml.dart';
 
 void main() {
-  File pubspecFile = new File('doc-generator/pubspec.yaml');
-  Map pubspec = loadYaml(pubspecFile.readAsStringSync());
+  File dartanalyzerVersionFile = new File('.tool_version');
 
-  final sdkVersion = pubspec['patternsSdkVersion'];
+  final sdkVersion = dartanalyzerVersionFile.readAsStringSync();
+
   final encoder = new JsonEncoder.withIndent("  ");
 
   final String docsDescriptionDirPath = "docs/description";

@@ -8,13 +8,78 @@ This is the docker engine we use at Codacy to have [Dart Analyzer](https://githu
 You can also create a docker to integrate the tool and language of your choice!
 See the [codacy-engine-scala-seed](https://github.com/codacy/codacy-engine-scala-seed) repository for more information.
 
+## Limitations
+
+### Include not working on analysis_options.yaml
+
+Currently, the tool does not support 'include' on the configuration files (analysis_options.yaml).
+You can work around this by importing manually those specific rules, for example:
+
+Instead of doing this
+``` yaml
+include: package:lints/recommended.yaml
+```
+Do this, go to official package lint repos ([lints](https://github.com/dart-lang/lints/blob/main/lib/recommended.yaml), [flutter](https://github.com/flutter/packages/blob/master/packages/flutter_lints/lib/flutter.yaml)*)
+and copy-paste those rules into your analysis_options.yaml file, like so:
+
+``` yaml
+linter:
+  rules:
+    #Core
+    - avoid_empty_else
+    - avoid_relative_lib_imports
+    - avoid_shadowing_type_parameters
+    - avoid_types_as_parameter_names
+    - await_only_futures
+    - camel_case_extensions
+    - camel_case_types
+    - curly_braces_in_flow_control_structures
+    - depend_on_referenced_packages
+    - empty_catches
+    - file_names
+    - hash_and_equals
+    - iterable_contains_unrelated_type
+    - list_remove_unrelated_type
+    - no_duplicate_case_values
+    - non_constant_identifier_names
+    - null_check_on_nullable_type_parameter
+    - package_prefixed_library_names
+    - prefer_generic_function_type_aliases
+    - prefer_is_empty
+    - prefer_is_not_empty
+    - prefer_iterable_whereType
+    - prefer_typing_uninitialized_variables
+    - provide_deprecation_message
+    - unnecessary_overrides
+    - unrelated_type_equality_checks
+    - valid_regexps
+    - void_checks
+    
+    #Recommended 
+    - avoid_print
+    - avoid_unnecessary_containers
+    - avoid_web_libraries_in_flutter
+    - no_logic_in_create_state
+    - prefer_const_constructors
+    - prefer_const_constructors_in_immutables
+    - prefer_const_declarations
+    - prefer_const_literals_to_create_immutables
+    - sized_box_for_whitespace
+    - use_full_hex_values_for_flutter_colors
+    - use_key_in_widget_constructors
+```
+
+
+*Flutter is not fully supported on this tool.
+
+
 ## Usage
 
 You can create the docker by doing:
 
 ```bash
 sbt graalvm-native-image:packageBin
-docker build -t codacy-dartanalyzer .
+docker build --build-arg TOOL_VERSION=$(cat .tool_version) -t codacy-dartanalyzer .
 ```
 
 The docker is ran with the following command:

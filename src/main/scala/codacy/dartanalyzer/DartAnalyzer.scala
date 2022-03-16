@@ -1,6 +1,7 @@
 package codacy.dartanalyzer
 
 import better.files.File
+import codacy.dartanalyzer.model.DartAnalyzeResult
 import com.codacy.plugins.api.results.{Pattern, Result, Tool}
 import com.codacy.plugins.api.{Options, Source}
 import com.codacy.tools.scala.seed.utils.CommandRunner
@@ -18,13 +19,13 @@ object DartAnalyzer extends Tool {
       options: Map[Options.Key, Options.Value]
   )(implicit specification: Tool.Specification): Try[List[Result]] = Try {
 
-    val f = files.toSet.flatten
+    val batchFiles = files.toSet.flatten
 
     val patternsType = Json
       .parse(File("/docs/patterns_type.json").contentAsString)
       .as[Map[String, String]]
 
-    val optionsFileOptions = configuration match {
+    val optionsFilePath = configuration match {
       case Some(configurationPatterns) =>
         val configurationPatternIds: Set[Pattern.Id] =
           configurationPatterns.map(_.patternId).toSet
@@ -70,39 +71,42 @@ object DartAnalyzer extends Tool {
         Seq.empty[String]
     }
 
-    val paths = f.map(_.path)
+    val filesToAnalyse = batchFiles.map(_.path)
     val command =
-      List("dartanalyzer", "--format", "machine") ++ optionsFileOptions ++ paths
+      List(
+        "dartanalyzer",
+        "--format",
+        "json"
+      ) ++ optionsFilePath ++ filesToAnalyse
 
-    CommandRunner.exec(command).toTry.map { commandResult =>
-      val stderr = commandResult.stderr.map(_.trim).filter(_.nonEmpty)
-      stderr.map(parseMachineFormat)
+    CommandRunner.exec(command, Some(new java.io.File(source.path))).toTry.map {
+      commandResult => parseJsonFormat(commandResult.stdout.mkString)
     }
   }.flatten
 
-  def parseMachineFormat(outputLine: String): Result = {
-    outputLine.split('|') match {
-      case Array(
-            severity,
-            _type,
-            name,
-            file,
-            lineNumber,
-            columnNumber,
-            length,
-            problemMessage
-          ) =>
-        Result.Issue(
-          file = Source.File(file),
-          message = Result.Message(problemMessage),
-          patternId = Pattern.Id(name.toLowerCase),
-          line = Source.Line(lineNumber.toInt)
-        )
-      case array =>
-        throw new Exception(
-          s"Unable to parse machine format from dartanalyzer: ${array.toList}"
-        )
-    }
+  def parseJsonFormat(outputLine: String): List[Result] = {
+
+    Json
+      .parse(outputLine)
+      .validate[DartAnalyzeResult]
+      .fold[List[Result]](
+        errors =>
+          throw new Exception(
+            s"Unable to parse json format from dartanalyzer: $outputLine errors: $errors"
+          ),
+        dartAnalyzeResult => {
+          dartAnalyzeResult.diagnostics
+            .map[Result](diagnostic => {
+              Result.Issue(
+                file = Source.File(diagnostic.location.file),
+                message = Result.Message(diagnostic.problemMessage),
+                patternId = Pattern.Id(diagnostic.code.toLowerCase),
+                line = Source.Line(diagnostic.location.range.start.line)
+              )
+            })
+            .toList
+        }
+      )
   }
 }
 

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<checkstyle version="1.5">
+    <file name="test.dart">
+        <error source="avoid_print" line="2" message="Avoid `print` calls in production code." severity="error" />
+    </file>
+</checkstyle>

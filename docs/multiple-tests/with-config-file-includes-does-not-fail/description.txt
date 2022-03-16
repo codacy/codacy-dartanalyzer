@@ -1,0 +1,1 @@
+This test is just to check that the include options do not break the tool, at this moment we still do not support includes/plugins

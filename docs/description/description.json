@@ -2070,11 +2070,6 @@
     "description": ""
   },
   {
-    "patternId": "invalid_super_invocation",
-    "title": "Invalid super invocation",
-    "description": ""
-  },
-  {
     "patternId": "invalid_type_argument_in_const_list",
     "title": "Invalid type argument in const list",
     "description": ""
@@ -2815,6 +2810,11 @@
     "description": ""
   },
   {
+    "patternId": "super_invocation_not_last",
+    "title": "Super invocation not last",
+    "description": ""
+  },
+  {
     "patternId": "super_in_extension",
     "title": "Super in extension",
     "description": ""
@@ -3170,8 +3170,33 @@
     "description": ""
   },
   {
+    "patternId": "yield_each_of_invalid_type",
+    "title": "Yield each of invalid type",
+    "description": ""
+  },
+  {
     "patternId": "yield_of_invalid_type",
     "title": "Yield of invalid type",
+    "description": ""
+  },
+  {
+    "patternId": "abi_specific_integer_invalid",
+    "title": "Abi specific integer invalid",
+    "description": ""
+  },
+  {
+    "patternId": "abi_specific_integer_mapping_extra",
+    "title": "Abi specific integer mapping extra",
+    "description": ""
+  },
+  {
+    "patternId": "abi_specific_integer_mapping_missing",
+    "title": "Abi specific integer mapping missing",
+    "description": ""
+  },
+  {
+    "patternId": "abi_specific_integer_mapping_unsupported",
+    "title": "Abi specific integer mapping unsupported",
     "description": ""
   },
   {
@@ -3377,6 +3402,11 @@
   {
     "patternId": "assignment_of_do_not_store",
     "title": "Assignment of do not store",
+    "description": ""
+  },
+  {
+    "patternId": "body_might_complete_normally_nullable",
+    "title": "Body might complete normally nullable",
     "description": ""
   },
   {

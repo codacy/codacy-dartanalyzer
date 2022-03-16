@@ -1,6 +1,6 @@
 {
   "name": "dartanalyzer",
-  "version": "2.15.1",
+  "version": "2.16.1",
   "patterns": [
     {
       "patternId": "always_declare_return_types",
@@ -2487,12 +2487,6 @@
       "enabled": false
     },
     {
-      "patternId": "invalid_super_invocation",
-      "level": "Warning",
-      "category": "ErrorProne",
-      "enabled": false
-    },
-    {
       "patternId": "invalid_type_argument_in_const_list",
       "level": "Warning",
       "category": "ErrorProne",
@@ -3381,6 +3375,12 @@
       "enabled": false
     },
     {
+      "patternId": "super_invocation_not_last",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
       "patternId": "super_in_extension",
       "level": "Warning",
       "category": "ErrorProne",
@@ -3807,7 +3807,37 @@
       "enabled": false
     },
     {
+      "patternId": "yield_each_of_invalid_type",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
       "patternId": "yield_of_invalid_type",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "abi_specific_integer_invalid",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "abi_specific_integer_mapping_extra",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "abi_specific_integer_mapping_missing",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "abi_specific_integer_mapping_unsupported",
       "level": "Warning",
       "category": "ErrorProne",
       "enabled": false
@@ -4054,6 +4084,12 @@
     },
     {
       "patternId": "assignment_of_do_not_store",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "body_might_complete_normally_nullable",
       "level": "Warning",
       "category": "ErrorProne",
       "enabled": false

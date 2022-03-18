@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
+<!-- This test is just to check that the include options do not break the tool, at this moment we still do not support includes/plugins -->
 <checkstyle version="1.5">
     <file name="test.dart">
         <error source="avoid_print" line="2" message="Avoid `print` calls in production code." severity="error" />

@@ -1,1 +1,0 @@
-For this test the analysis_options.yaml file from the repo should not override the received patterns from the UI (patterns.xml)

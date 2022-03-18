@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-
-<module name="root">
-    <module name="prefer_single_quotes" />
-    <module name="unused_local_variable" />
-</module>

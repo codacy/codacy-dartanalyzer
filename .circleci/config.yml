@@ -17,6 +17,7 @@ workflows:
             docker build --build-arg TOOL_VERSION=$(cat .tool_version) -t $CIRCLE_PROJECT_REPONAME:latest .
             docker save --output docker-image.tar $CIRCLE_PROJECT_REPONAME:latest
           persist_to_workspace: true
+          cache_prefix: sbt-cache-18032022-3
           requires:
             - codacy/checkout_and_version
       - codacy_plugins_test/run:

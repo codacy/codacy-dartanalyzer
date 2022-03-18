@@ -10,9 +10,9 @@ See the [codacy-engine-scala-seed](https://github.com/codacy/codacy-engine-scala
 
 ## Limitations
 
-### Include not working on analysis_options.yaml
+### Include not working on _analysis_options.yaml_
 
-Currently, the tool does not support 'include' on the configuration files (analysis_options.yaml).
+Currently, the tool does not support 'include' on the configuration files (_analysis_options.yaml_).
 You can work around this by importing manually those specific rules, for example:
 
 Instead of doing this
@@ -20,7 +20,7 @@ Instead of doing this
 include: package:lints/recommended.yaml
 ```
 Do this, go to official package lint repos ([lints](https://github.com/dart-lang/lints/blob/main/lib/recommended.yaml), [flutter](https://github.com/flutter/packages/blob/master/packages/flutter_lints/lib/flutter.yaml)*)
-and copy-paste those rules into your analysis_options.yaml file, like so:
+and copy-paste those rules into your _analysis_options.yaml_ file, like so:
 
 ``` yaml
 linter:
@@ -72,6 +72,23 @@ linter:
 
 *Flutter is not fully supported on this tool.
 
+## Implementation Details
+
+We currently are using `dartanalyzer` (deprecated) instead of `dart analyze` because `dartanalyzer` provides a way to specify
+a configuration file `dartanalyzer --options <file>`, that way we can build the config file consistently with the patterns we want enabled vs disabled. 
+When receiving patterns configurations via website/UI and if the configuration file (_analysis_options.yaml_) is present on the repo and a client want to use it, we can simply not pass a 
+configuration file as parameter to `dartanalyzer --options <file>` and the `dartanalyzer` will pick automatically a file with name
+_analysis_options.yaml_ as the configuration file.
+
+### Future development/maintenance
+
+Regarding the use of `dart analyze` it means that we will not be able to specify the config file via `--options` flag, because `dart analyze`
+is meant to scan recursively different _analysis_options.yaml_, from the root to the packages and etc. With previous information, we might need 
+to have a codacy _analysis_options.yaml_ on the root of the machine/docker (currently we have access limitations) where we run the tool where we can specify the 
+patterns received by the website/UI, and THEN we might need (at current state of the tool `dart analyze`) to ignore all _analysis_options.yaml_ from the repo so the configs are not overridden.
+
+Remark, regarding current [limitation](#include-not-working-on-analysis_optionsyaml) we might also want to have a pubspec.yaml file at root where we can support
+different packages/plugins download and installed when building the docker image we can offer the ability to have includes on _analysis_options.yaml_. 
 
 ## Usage
 

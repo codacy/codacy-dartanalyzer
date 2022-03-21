@@ -1,7 +1,7 @@
 #### Description
 
 The analyzer produces this diagnostic when a package under either
-`dependencies` or `dev_dependencies` is not a pub, `git`, or `path` based
+`dependencies` or `dev_dependencies` isn't a pub, `git`, or `path` based
 dependency.
 
 See [Package dependencies](https://dart.dev/tools/pub/dependencies) for
@@ -10,7 +10,7 @@ more information about the kind of dependencies that are supported.
 #### Example
 
 The following code produces this diagnostic because the dependency on the
-package `transmogrify` is not a pub, `git`, or `path` based dependency:
+package `transmogrify` isn't a pub, `git`, or `path` based dependency:
 
 ```yaml
 %uri="pubspec.yaml"

@@ -1,9 +1,10 @@
 #### Description
 
-The analyzer produces this diagnostic when the type of object produced by a
-`yield` expression doesn't match the type of objects that are to be
-returned from the `Iterable` or `Stream` types that are returned from a
-generator (a function or method marked with either `sync*` or `async*`).
+The analyzer produces this diagnostic when the type of object produced by
+a `yield` or `yield*` expression doesn't match the type of objects that
+are to be returned from the `Iterable` or `Stream` types that are returned
+from a generator (a function or method marked with either `sync*` or
+`async*`).
 
 #### Example
 

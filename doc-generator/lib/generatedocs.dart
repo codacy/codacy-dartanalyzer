@@ -310,6 +310,9 @@ void createInitialPubspecFiles(String sdkVersion){
   }
 
   /*
+  This is the initial pubspec.yaml file for dart, it contains some ordinary/required fields
+  and the sdkVersion which should be the same as the one used on the tool and the pattern generation.
+
   name: "dartanalyzer"
   version: "0.0.1"
   description: "Initial pubspec.yaml to install supported includes on analysis_options.yaml files"
@@ -325,7 +328,7 @@ void createInitialPubspecFiles(String sdkVersion){
     'environment': {
       'sdk': sdkVersion,
     },
-  });
+  }) + "\n";
 
   File file = File(dartanalyzerPathStr + '/pubspec.yaml');
   file.createSync();

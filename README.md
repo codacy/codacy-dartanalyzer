@@ -18,6 +18,10 @@ See the [codacy-engine-scala-seed](https://github.com/codacy/codacy-engine-scala
 To support new packages just add them on Dockerfile after the development context is created, like so:  
         `RUN dart pub add lints --dev`
 
+## How to bump the tool
+
+To bump the tool just update the version at __.toolversion__ file
+
 ## Implementation Details
 
 We currently are using `dartanalyzer` (deprecated) instead of `dart analyze` because `dartanalyzer` provides a way to specify

@@ -79,8 +79,8 @@ object DartAnalyzer extends Tool {
         "json"
       ) ++ optionsFilePath ++ filesToAnalyse
 
-    CommandRunner.exec(command, Some(new java.io.File(source.path))).toTry.map {
-      commandResult => parseJsonFormat(commandResult.stdout.mkString)
+    CommandRunner.exec(command).toTry.map { commandResult =>
+      parseJsonFormat(commandResult.stdout.mkString)
     }
   }.flatten
 

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<checkstyle version="1.5">
+    <file name="test.dart">
+        <error source="prefer_contains" line="3" message="Use contains instead of indexOf" severity="info" />
+        <error source="curly_braces_in_flow_control_structures" line="6" message="DO use curly braces for all flow control structures." severity="info" />
+        <error source="empty_statements" line="6" message="Avoid empty statements." severity="error" />
+        <error source="curly_braces_in_flow_control_structures" line="4" message="DO use curly braces for all flow control structures." severity="info" />
+        <error source="avoid_empty_else" line="6" message="Avoid empty else statements." severity="error" />
+    </file>
+</checkstyle>

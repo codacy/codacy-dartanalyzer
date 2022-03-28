@@ -4,6 +4,18 @@ FROM dart:${TOOL_VERSION}
 
 RUN apt-get update && apt-get install -y openjdk-11-jre
 
+WORKDIR /
+
+ENV PUB_CACHE=/
+
+RUN mkdir .dart_tool
+COPY docs/dartanalyzer/.packages /
+COPY docs/dartanalyzer/pubspec.yaml /
+COPY docs/dartanalyzer/pubspec.lock /
+
+RUN dart pub add lints --dev
+RUN dart pub add flutter_lints --dev
+
 COPY docs /docs
 COPY target/universal/stage/ /workdir/
 RUN chmod 755 /usr/lib/dart && chmod +x /workdir/bin/codacy-dartanalyzer

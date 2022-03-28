@@ -5,6 +5,7 @@ import 'package:linter/src/analyzer.dart';
 import 'package:linter/src/rules.dart';
 
 import 'dart:convert';
+import 'dart:core';
 import 'package:yaml/yaml.dart';
 
 void main() {
@@ -124,6 +125,8 @@ void main() {
       name: "dartanalyzer", version: sdkVersion, patterns: patterns)));
 
   patternsTypeFile.writeAsStringSync(encoder.convert(patternsType));
+
+  createInitialPubspecFiles(sdkVersion);
 }
 
 // Models
@@ -292,4 +295,110 @@ abstract class ErrorCodeInfo {
             problemMessage: yaml['problemMessage'] as String,
             sharedName: yaml['sharedName'] as String,
             previousName: yaml['previousName'] as String);
+}
+
+void createInitialPubspecFiles(String sdkVersion){
+  //Create necessary initial dart files (to support includes)
+
+  final dartanalyzerPathStr = "docs/dartanalyzer";
+  final Directory dartanalyzerDir = new Directory(dartanalyzerPathStr);
+  if(dartanalyzerDir.existsSync()){
+    dartanalyzerDir.deleteSync(recursive: true);
+    dartanalyzerDir.createSync(recursive: true);
+  }else{
+    dartanalyzerDir.createSync(recursive: true);
+  }
+
+  /*
+  This is the initial pubspec.yaml file for dart, it contains some ordinary/required fields
+  and the sdkVersion which should be the same as the one used on the tool and the pattern generation.
+
+  name: "dartanalyzer"
+  version: "0.0.1"
+  description: "Initial pubspec.yaml to install supported includes on analysis_options.yaml files"
+  environment:
+    sdk: "2.16.1"
+   */
+
+  final writer = YamlWriter();
+  String pubspec = writer.write({
+    'name': 'dartanalyzer',
+    'version': '0.0.1',
+    'description': 'Initial pubspec.yaml to install supported includes on analysis_options.yaml files',
+    'environment': {
+      'sdk': sdkVersion,
+    },
+  }) + "\n";
+
+  File file = File(dartanalyzerPathStr + '/pubspec.yaml');
+  file.createSync();
+  file.writeAsStringSync(pubspec);
+
+  File(dartanalyzerPathStr + '/pubspec.lock').createSync();
+  File(dartanalyzerPathStr + '/.packages').createSync();
+}
+
+class YamlWriter {
+  /// The amount of spaces for each level.
+  final int spaces;
+
+  /// Initialize the writer with the amount of [spaces] per level.
+  YamlWriter({
+    this.spaces = 2,
+  });
+
+  /// Write a dart structure to a YAML string. [yaml] should be a [Map] or [List].
+  String write(dynamic yaml) {
+    return _writeInternal(yaml).trim();
+  }
+
+  /// Write a dart structure to a YAML string. [yaml] should be a [Map] or [List].
+  String _writeInternal(dynamic yaml, { int indent = 0 }) {
+    String str = '';
+
+    if (yaml is List) {
+      str += _writeList(yaml, indent: indent);
+    } else if (yaml is Map) {
+      str += _writeMap(yaml, indent: indent);
+    } else if (yaml is String) {
+      str += "\"${yaml.replaceAll("\"", "\\\"")}\"";
+    } else {
+      str += yaml.toString();
+    }
+
+
+    return str;
+  }
+
+  /// Write a list to a YAML string.
+  /// Pass the list in as [yaml] and indent it to the [indent] level.
+  String _writeList(List yaml, { int indent = 0 }) {
+    String str = '\n';
+
+    for (var item in yaml) {
+      str += "${_indent(indent)}- ${_writeInternal(item, indent: indent + 1)}\n";
+    }
+
+    return str;
+  }
+
+  /// Write a map to a YAML string.
+  /// Pass the map in as [yaml] and indent it to the [indent] level.
+  String _writeMap(Map yaml, { int indent = 0 }) {
+    String str = '\n';
+
+    for (var key in yaml.keys) {
+      var value = yaml[key];
+      str += "${_indent(indent)}${key.toString()}: ${_writeInternal(value, indent: indent + 1)}\n";
+    }
+
+    return str;
+  }
+
+  /// Create an indented string for the level with the spaces config.
+  /// [indent] is the level of indent whereas [spaces] is the
+  /// amount of spaces that the string should be indented by.
+  String _indent(int indent) {
+    return ''.padLeft(indent * spaces, ' ');
+  }
 }

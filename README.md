@@ -8,7 +8,7 @@ This is the docker engine we use at Codacy to have [Dart Analyzer](https://githu
 You can also create a docker to integrate the tool and language of your choice!
 See the [codacy-engine-scala-seed](https://github.com/codacy/codacy-engine-scala-seed) repository for more information.
 
-##Supported packages lints on analysis_config.yaml files
+## Supported packages lints on analysis_config.yaml files
 
 * [lints](https://pub.dev/packages/lints)
 * [flutter_lints](https://pub.dev/packages/flutter_lints)

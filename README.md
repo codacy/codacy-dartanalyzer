@@ -16,7 +16,7 @@ See the [codacy-engine-scala-seed](https://github.com/codacy/codacy-engine-scala
 ### Adding supported packages 
 
 To support new packages just add them on Dockerfile after the development context is created, like so:  
-        `RUN dart pub add lints --dev`
+        `RUN dart pub add <package> --dev`
 
 ## How to bump the tool
 

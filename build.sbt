@@ -8,7 +8,7 @@ enablePlugins(JavaAppPackaging)
 enablePlugins(GraalVMNativeImagePlugin)
 
 libraryDependencies ++= Seq(
-  "com.codacy" %% "codacy-engine-scala-seed" % "5.0.3",
+  "com.codacy" %% "codacy-engine-scala-seed" % "6.0.0",
   "org.scalameta" %% "svm-subs" % "20.2.0"
 )
 

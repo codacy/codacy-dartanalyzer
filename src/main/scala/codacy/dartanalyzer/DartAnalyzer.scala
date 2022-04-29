@@ -6,7 +6,7 @@ import com.codacy.plugins.api.results.{Pattern, Result, Tool}
 import com.codacy.plugins.api.{Options, Source}
 import com.codacy.tools.scala.seed.utils.CommandRunner
 
-import scala.util.Try
+import scala.util.{Failure, Try}
 import com.codacy.tools.scala.seed.DockerEngine
 import play.api.libs.json.Json
 
@@ -64,6 +64,12 @@ object DartAnalyzer extends Tool {
           |${lintPatterns}
           |""".stripMargin
 
+        System.err.println("====CONFIG FILE======")
+        System.err.println()
+        System.err.println(optionsFileContent)
+        System.err.println()
+        System.err.println("====CONFIG FILE END======")
+
         val optionsFilePath =
           File.newTemporaryFile().writeText(optionsFileContent).path.toString
         Seq("--options", optionsFilePath)
@@ -72,6 +78,8 @@ object DartAnalyzer extends Tool {
     }
 
     val filesToAnalyse = batchFiles.map(_.path)
+    System.err.println(s"Files to analyse: $filesToAnalyse")
+
     val command =
       List(
         "dartanalyzer",
@@ -85,7 +93,10 @@ object DartAnalyzer extends Tool {
   }.flatten
 
   def parseJsonFormat(outputLine: String): List[Result] = {
-
+    if (outputLine.isEmpty) {
+      System.err.println("No issues")
+      return List.empty[Result]
+    }
     Json
       .parse(outputLine)
       .validate[DartAnalyzeResult]

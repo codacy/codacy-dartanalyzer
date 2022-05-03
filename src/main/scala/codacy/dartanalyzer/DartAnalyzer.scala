@@ -19,8 +19,6 @@ object DartAnalyzer extends Tool {
       options: Map[Options.Key, Options.Value]
   )(implicit specification: Tool.Specification): Try[List[Result]] = Try {
 
-    val batchFiles = files.toSet.flatten
-
     val patternsType = Json
       .parse(File("/docs/patterns_type.json").contentAsString)
       .as[Map[String, String]]
@@ -64,12 +62,6 @@ object DartAnalyzer extends Tool {
           |${lintPatterns}
           |""".stripMargin
 
-        System.err.println("====CONFIG FILE======")
-        System.err.println()
-        System.err.println(optionsFileContent)
-        System.err.println()
-        System.err.println("====CONFIG FILE END======")
-
         val optionsFilePath =
           File.newTemporaryFile().writeText(optionsFileContent).path.toString
         Seq("--options", optionsFilePath)
@@ -77,7 +69,7 @@ object DartAnalyzer extends Tool {
         Seq.empty[String]
     }
 
-    val filesToAnalyse = batchFiles.map(_.path)
+    val filesToAnalyse = files.fold(Set(source.path))(_.map(_.path))
     System.err.println(s"Files to analyse: $filesToAnalyse")
 
     val command =
@@ -88,6 +80,12 @@ object DartAnalyzer extends Tool {
       ) ++ optionsFilePath ++ filesToAnalyse
 
     CommandRunner.exec(command).toTry.map { commandResult =>
+      System.err.println(s"EXIT CODE ${commandResult.exitCode}")
+      System.err.println("ERROR")
+      commandResult.stderr.foreach(System.err.println)
+      System.err.println("STDOUT")
+      commandResult.stdout.foreach(System.err.println)
+
       parseJsonFormat(commandResult.stdout.mkString)
     }
   }.flatten

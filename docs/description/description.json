@@ -1270,6 +1270,11 @@
     "description": ""
   },
   {
+    "patternId": "non_const_generative_enum_constructor",
+    "title": "Non const generative enum constructor",
+    "description": ""
+  },
+  {
     "patternId": "non_constant_map_key_from_deferred_library",
     "title": "Non constant map key from deferred library",
     "description": ""
@@ -1287,6 +1292,11 @@
   {
     "patternId": "non_constant_map_value_from_deferred_library",
     "title": "Non constant map value from deferred library",
+    "description": ""
+  },
+  {
+    "patternId": "concrete_class_has_enum_superinterface",
+    "title": "Concrete class has enum superinterface",
     "description": ""
   },
   {
@@ -1340,6 +1350,11 @@
     "description": ""
   },
   {
+    "patternId": "conflicting_type_variable_and_enum",
+    "title": "Conflicting type variable and enum",
+    "description": ""
+  },
+  {
     "patternId": "conflicting_type_variable_and_extension",
     "title": "Conflicting type variable and extension",
     "description": ""
@@ -1357,6 +1372,11 @@
   {
     "patternId": "conflicting_type_variable_and_member_mixin",
     "title": "Conflicting type variable and member mixin",
+    "description": ""
+  },
+  {
+    "patternId": "conflicting_type_variable_and_member_enum",
+    "title": "Conflicting type variable and member enum",
     "description": ""
   },
   {
@@ -1610,6 +1630,31 @@
     "description": ""
   },
   {
+    "patternId": "enum_constant_with_non_const_constructor",
+    "title": "Enum constant with non const constructor",
+    "description": ""
+  },
+  {
+    "patternId": "enum_instantiated_to_bounds_is_not_well_bounded",
+    "title": "Enum instantiated to bounds is not well bounded",
+    "description": ""
+  },
+  {
+    "patternId": "enum_mixin_with_instance_variable",
+    "title": "Enum mixin with instance variable",
+    "description": ""
+  },
+  {
+    "patternId": "enum_with_abstract_member",
+    "title": "Enum with abstract member",
+    "description": ""
+  },
+  {
+    "patternId": "enum_with_name_values",
+    "title": "Enum with name values",
+    "description": ""
+  },
+  {
     "patternId": "equal_elements_in_const_set",
     "title": "Equal elements in const set",
     "description": ""
@@ -1845,6 +1890,31 @@
     "description": ""
   },
   {
+    "patternId": "illegal_enum_values_declaration",
+    "title": "Illegal enum values declaration",
+    "description": ""
+  },
+  {
+    "patternId": "illegal_enum_values_inheritance",
+    "title": "Illegal enum values inheritance",
+    "description": ""
+  },
+  {
+    "patternId": "illegal_language_version_override",
+    "title": "Illegal language version override",
+    "description": ""
+  },
+  {
+    "patternId": "illegal_concrete_enum_member_declaration",
+    "title": "Illegal concrete enum member declaration",
+    "description": ""
+  },
+  {
+    "patternId": "illegal_concrete_enum_member_inheritance",
+    "title": "Illegal concrete enum member inheritance",
+    "description": ""
+  },
+  {
     "patternId": "illegal_sync_generator_return_type",
     "title": "Illegal sync generator return type",
     "description": ""
@@ -1867,6 +1937,11 @@
   {
     "patternId": "implicit_this_reference_in_initializer",
     "title": "Implicit this reference in initializer",
+    "description": ""
+  },
+  {
+    "patternId": "implicit_super_initializer_missing_arguments",
+    "title": "Implicit super initializer missing arguments",
     "description": ""
   },
   {
@@ -2025,11 +2100,6 @@
     "description": ""
   },
   {
-    "patternId": "invalid_constructor_name",
-    "title": "Invalid constructor name",
-    "description": ""
-  },
-  {
     "patternId": "invalid_extension_argument_count",
     "title": "Invalid extension argument count",
     "description": ""
@@ -2065,8 +2135,18 @@
     "description": ""
   },
   {
+    "patternId": "invalid_reference_to_generative_enum_constructor",
+    "title": "Invalid reference to generative enum constructor",
+    "description": ""
+  },
+  {
     "patternId": "invalid_reference_to_this",
     "title": "Invalid reference to this",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_super_formal_parameter_location",
+    "title": "Invalid super formal parameter location",
     "description": ""
   },
   {
@@ -2200,6 +2280,11 @@
     "description": ""
   },
   {
+    "patternId": "missing_default_value_for_parameter_with_annotation",
+    "title": "Missing default value for parameter with annotation",
+    "description": ""
+  },
+  {
     "patternId": "missing_required_argument",
     "title": "Missing required argument",
     "description": ""
@@ -2227,26 +2312,6 @@
   {
     "patternId": "mixin_class_declares_constructor",
     "title": "Mixin class declares constructor",
-    "description": ""
-  },
-  {
-    "patternId": "mixin_declares_constructor",
-    "title": "Mixin declares constructor",
-    "description": ""
-  },
-  {
-    "patternId": "mixin_inference_inconsistent_matching_classes",
-    "title": "Mixin inference inconsistent matching classes",
-    "description": ""
-  },
-  {
-    "patternId": "mixin_inference_no_matching_class",
-    "title": "Mixin inference no matching class",
-    "description": ""
-  },
-  {
-    "patternId": "mixin_inference_no_possible_substitution",
-    "title": "Mixin inference no possible substitution",
     "description": ""
   },
   {
@@ -2397,6 +2462,11 @@
   {
     "patternId": "non_const_map_as_expression_statement",
     "title": "Non const map as expression statement",
+    "description": ""
+  },
+  {
+    "patternId": "non_final_field_in_enum",
+    "title": "Non final field in enum",
     "description": ""
   },
   {
@@ -2562,6 +2632,11 @@
   {
     "patternId": "part_of_unnamed_library",
     "title": "Part of unnamed library",
+    "description": ""
+  },
+  {
+    "patternId": "positional_super_formal_parameter_with_positional_argument",
+    "title": "Positional super formal parameter with positional argument",
     "description": ""
   },
   {
@@ -2750,6 +2825,21 @@
     "description": ""
   },
   {
+    "patternId": "super_formal_parameter_type_is_not_subtype_of_associated",
+    "title": "Super formal parameter type is not subtype of associated",
+    "description": ""
+  },
+  {
+    "patternId": "super_formal_parameter_without_associated_named",
+    "title": "Super formal parameter without associated named",
+    "description": ""
+  },
+  {
+    "patternId": "super_formal_parameter_without_associated_positional",
+    "title": "Super formal parameter without associated positional",
+    "description": ""
+  },
+  {
     "patternId": "implements_deferred_class",
     "title": "Implements deferred class",
     "description": ""
@@ -2812,6 +2902,11 @@
   {
     "patternId": "super_invocation_not_last",
     "title": "Super invocation not last",
+    "description": ""
+  },
+  {
+    "patternId": "super_in_enum_constructor",
+    "title": "Super in enum constructor",
     "description": ""
   },
   {
@@ -2960,6 +3055,16 @@
     "description": ""
   },
   {
+    "patternId": "undefined_enum_constructor_named",
+    "title": "Undefined enum constructor named",
+    "description": ""
+  },
+  {
+    "patternId": "undefined_enum_constructor_unnamed",
+    "title": "Undefined enum constructor unnamed",
+    "description": ""
+  },
+  {
     "patternId": "undefined_extension_getter",
     "title": "Undefined extension getter",
     "description": ""
@@ -3095,6 +3200,11 @@
     "description": ""
   },
   {
+    "patternId": "values_declaration_in_enum",
+    "title": "Values declaration in enum",
+    "description": ""
+  },
+  {
     "patternId": "variable_type_mismatch",
     "title": "Variable type mismatch",
     "description": ""
@@ -3127,6 +3237,11 @@
   {
     "patternId": "wrong_number_of_type_arguments_constructor",
     "title": "Wrong number of type arguments constructor",
+    "description": ""
+  },
+  {
+    "patternId": "wrong_number_of_type_arguments_enum",
+    "title": "Wrong number of type arguments enum",
     "description": ""
   },
   {
@@ -3207,6 +3322,11 @@
   {
     "patternId": "argument_must_be_a_constant",
     "title": "Argument must be a constant",
+    "description": ""
+  },
+  {
+    "patternId": "compound_implements_finalizable",
+    "title": "Compound implements finalizable",
     "description": ""
   },
   {

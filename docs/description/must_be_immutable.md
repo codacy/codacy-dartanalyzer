@@ -2,8 +2,8 @@
 
 The analyzer produces this diagnostic when an immutable class defines one
 or more instance fields that aren't final. A class is immutable if it's
-marked as being immutable using the annotation `@immutable` or if it's a
-subclass of an immutable class.
+marked as being immutable using the annotation
+`[immutable][meta-immutable]` or if it's a subclass of an immutable class.
 
 #### Example
 

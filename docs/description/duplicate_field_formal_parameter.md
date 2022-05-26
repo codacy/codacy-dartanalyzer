@@ -1,8 +1,9 @@
 #### Description
 
-The analyzer produces this diagnostic when there's more than one field
-formal parameter for the same field in a constructor's parameter list. It
-isn't useful to assign a value that will immediately be overwritten.
+The analyzer produces this diagnostic when there's more than one
+initializing formal parameter for the same field in a constructor's
+parameter list. It isn't useful to assign a value that will immediately be
+overwritten.
 
 #### Example
 
@@ -19,7 +20,7 @@ class C {
 
 #### Common fixes
 
-Remove one of the field formal parameters:
+Remove one of the initializing formal parameters:
 
 ```dart
 class C {

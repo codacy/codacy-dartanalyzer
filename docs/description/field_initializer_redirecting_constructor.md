@@ -8,8 +8,8 @@ initialized.
 #### Examples
 
 The following code produces this diagnostic because the constructor
-`C.zero`, which redirects to the constructor `C`, has a field formal
-parameter that initializes the field `f`:
+`C.zero`, which redirects to the constructor `C`, has an initializing
+formal parameter that initializes the field `f`:
 
 ```dart
 class C {
@@ -37,8 +37,8 @@ class C {
 
 #### Common fixes
 
-If the initialization is done by a field formal parameter, then use a
-normal parameter:
+If the initialization is done by an initializing formal parameter, then
+use a normal parameter:
 
 ```dart
 class C {

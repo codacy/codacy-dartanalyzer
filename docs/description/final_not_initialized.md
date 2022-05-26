@@ -22,7 +22,7 @@ final x = 0;
 
 For instance fields, you can add an initializer as shown in the previous
 example, or you can initialize the field in every constructor. You can
-initialize the field by using a field formal parameter:
+initialize the field by using an initializing formal parameter:
 
 ```dart
 class C {

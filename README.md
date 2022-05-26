@@ -20,7 +20,7 @@ To support new packages just add them on Dockerfile after the development contex
 
 ## How to bump the tool
 
-To bump the tool just update the version at __.toolversion__ file
+To bump the tool just update the version at __.toolversion__ file and re-run the doc generation.
 
 ## Implementation Details
 

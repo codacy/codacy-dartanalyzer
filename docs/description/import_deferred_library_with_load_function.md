@@ -67,4 +67,5 @@ void f() {
 ```
 
 If type arguments shouldn't be required for the class, then mark the class
-with the `@optionalTypeArgs` annotation (from `package:meta`):
+with the `[optionalTypeArgs][meta-optionalTypeArgs]` annotation (from
+`package:meta`):

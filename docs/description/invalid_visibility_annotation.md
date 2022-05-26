@@ -1,7 +1,8 @@
 #### Description
 
-The analyzer produces this diagnostic when either the `@visibleForTemplate`
-or `@visibleForTesting` annotation is applied to a non-public declaration.
+The analyzer produces this diagnostic when either the `visibleForTemplate`
+or `[visibleForTesting][meta-visibleForTesting]` annotation is applied to
+a non-public declaration.
 
 #### Example
 

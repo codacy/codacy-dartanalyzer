@@ -1,6 +1,6 @@
 {
   "name": "dartanalyzer",
-  "version": "2.16.2",
+  "version": "2.17.0",
   "patterns": [
     {
       "patternId": "always_declare_return_types",
@@ -1527,6 +1527,12 @@
       "enabled": false
     },
     {
+      "patternId": "non_const_generative_enum_constructor",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
       "patternId": "non_constant_map_key_from_deferred_library",
       "level": "Warning",
       "category": "ErrorProne",
@@ -1546,6 +1552,12 @@
     },
     {
       "patternId": "non_constant_map_value_from_deferred_library",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "concrete_class_has_enum_superinterface",
       "level": "Warning",
       "category": "ErrorProne",
       "enabled": false
@@ -1611,6 +1623,12 @@
       "enabled": false
     },
     {
+      "patternId": "conflicting_type_variable_and_enum",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
       "patternId": "conflicting_type_variable_and_extension",
       "level": "Warning",
       "category": "ErrorProne",
@@ -1630,6 +1648,12 @@
     },
     {
       "patternId": "conflicting_type_variable_and_member_mixin",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "conflicting_type_variable_and_member_enum",
       "level": "Warning",
       "category": "ErrorProne",
       "enabled": false
@@ -1935,6 +1959,36 @@
       "enabled": false
     },
     {
+      "patternId": "enum_constant_with_non_const_constructor",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "enum_instantiated_to_bounds_is_not_well_bounded",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "enum_mixin_with_instance_variable",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "enum_with_abstract_member",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "enum_with_name_values",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
       "patternId": "equal_elements_in_const_set",
       "level": "Warning",
       "category": "ErrorProne",
@@ -2217,6 +2271,36 @@
       "enabled": false
     },
     {
+      "patternId": "illegal_enum_values_declaration",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "illegal_enum_values_inheritance",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "illegal_language_version_override",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "illegal_concrete_enum_member_declaration",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "illegal_concrete_enum_member_inheritance",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
       "patternId": "illegal_sync_generator_return_type",
       "level": "Warning",
       "category": "ErrorProne",
@@ -2242,6 +2326,12 @@
     },
     {
       "patternId": "implicit_this_reference_in_initializer",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "implicit_super_initializer_missing_arguments",
       "level": "Warning",
       "category": "ErrorProne",
       "enabled": false
@@ -2433,12 +2523,6 @@
       "enabled": false
     },
     {
-      "patternId": "invalid_constructor_name",
-      "level": "Warning",
-      "category": "ErrorProne",
-      "enabled": false
-    },
-    {
       "patternId": "invalid_extension_argument_count",
       "level": "Warning",
       "category": "ErrorProne",
@@ -2481,7 +2565,19 @@
       "enabled": false
     },
     {
+      "patternId": "invalid_reference_to_generative_enum_constructor",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
       "patternId": "invalid_reference_to_this",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_super_formal_parameter_location",
       "level": "Warning",
       "category": "ErrorProne",
       "enabled": false
@@ -2643,6 +2739,12 @@
       "enabled": false
     },
     {
+      "patternId": "missing_default_value_for_parameter_with_annotation",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
       "patternId": "missing_required_argument",
       "level": "Warning",
       "category": "ErrorProne",
@@ -2674,30 +2776,6 @@
     },
     {
       "patternId": "mixin_class_declares_constructor",
-      "level": "Warning",
-      "category": "ErrorProne",
-      "enabled": false
-    },
-    {
-      "patternId": "mixin_declares_constructor",
-      "level": "Warning",
-      "category": "ErrorProne",
-      "enabled": false
-    },
-    {
-      "patternId": "mixin_inference_inconsistent_matching_classes",
-      "level": "Warning",
-      "category": "ErrorProne",
-      "enabled": false
-    },
-    {
-      "patternId": "mixin_inference_no_matching_class",
-      "level": "Warning",
-      "category": "ErrorProne",
-      "enabled": false
-    },
-    {
-      "patternId": "mixin_inference_no_possible_substitution",
       "level": "Warning",
       "category": "ErrorProne",
       "enabled": false
@@ -2878,6 +2956,12 @@
     },
     {
       "patternId": "non_const_map_as_expression_statement",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "non_final_field_in_enum",
       "level": "Warning",
       "category": "ErrorProne",
       "enabled": false
@@ -3076,6 +3160,12 @@
     },
     {
       "patternId": "part_of_unnamed_library",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "positional_super_formal_parameter_with_positional_argument",
       "level": "Warning",
       "category": "ErrorProne",
       "enabled": false
@@ -3303,6 +3393,24 @@
       "enabled": false
     },
     {
+      "patternId": "super_formal_parameter_type_is_not_subtype_of_associated",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "super_formal_parameter_without_associated_named",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "super_formal_parameter_without_associated_positional",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
       "patternId": "implements_deferred_class",
       "level": "Warning",
       "category": "ErrorProne",
@@ -3376,6 +3484,12 @@
     },
     {
       "patternId": "super_invocation_not_last",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "super_in_enum_constructor",
       "level": "Warning",
       "category": "ErrorProne",
       "enabled": false
@@ -3555,6 +3669,18 @@
       "enabled": false
     },
     {
+      "patternId": "undefined_enum_constructor_named",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "undefined_enum_constructor_unnamed",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
       "patternId": "undefined_extension_getter",
       "level": "Warning",
       "category": "ErrorProne",
@@ -3717,6 +3843,12 @@
       "enabled": false
     },
     {
+      "patternId": "values_declaration_in_enum",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
       "patternId": "variable_type_mismatch",
       "level": "Warning",
       "category": "ErrorProne",
@@ -3754,6 +3886,12 @@
     },
     {
       "patternId": "wrong_number_of_type_arguments_constructor",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "wrong_number_of_type_arguments_enum",
       "level": "Warning",
       "category": "ErrorProne",
       "enabled": false
@@ -3850,6 +3988,12 @@
     },
     {
       "patternId": "argument_must_be_a_constant",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "compound_implements_finalizable",
       "level": "Warning",
       "category": "ErrorProne",
       "enabled": false

@@ -1,8 +1,8 @@
 #### Description
 
 The analyzer produces this diagnostic when a method that overrides a method
-that is annotated as `@mustCallSuper` doesn't invoke the overridden method
-as required.
+that is annotated as `[mustCallSuper][meta-mustCallSuper]` doesn't invoke
+the overridden method as required.
 
 #### Example
 

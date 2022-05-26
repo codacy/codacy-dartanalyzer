@@ -1,0 +1,50 @@
+#### Description
+
+The analyzer produces this diagnostic when an invocation of either
+`Pointer.asFunction` or `DynamicLibrary.lookupFunction` has an `isLeaf`
+argument whose value isn't a constant expression.
+
+The analyzer also produces this diagnostic when the value of the
+`exceptionalReturn` argument of `Pointer.fromFunction`.
+
+For more information about FFI, see [C interop using dart:ffi][].
+
+#### Example
+
+The following code produces this diagnostic because the value of the
+`isLeaf` argument is a parameter, and hence isn't a constant:
+
+```dart
+import 'dart:ffi';
+
+int Function(int) fromPointer(
+    Pointer<NativeFunction<Int8 Function(Int8)>> p, bool isLeaf) {
+  return p.asFunction(isLeaf: [!isLeaf!]);
+}
+```
+
+#### Common fixes
+
+If there's a suitable constant that can be used, then replace the argument
+with a constant:
+
+```dart
+import 'dart:ffi';
+
+const isLeaf = false;
+
+int Function(int) fromPointer(Pointer<NativeFunction<Int8 Function(Int8)>> p) {
+  return p.asFunction(isLeaf: isLeaf);
+}
+```
+
+If there isn't a suitable constant, then replace the argument with a
+boolean literal:
+
+```dart
+import 'dart:ffi';
+
+int Function(int) fromPointer(Pointer<NativeFunction<Int8 Function(Int8)>> p) {
+  return p.asFunction(isLeaf: true);
+}
+```

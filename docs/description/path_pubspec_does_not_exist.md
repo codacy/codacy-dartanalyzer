@@ -27,4 +27,4 @@ If the path is intended to be the root of a package, then add a
 name: local_package
 ```
 
-If the path is wrong, then replace it with a the correct path.
+If the path is wrong, then replace it with the correct path.

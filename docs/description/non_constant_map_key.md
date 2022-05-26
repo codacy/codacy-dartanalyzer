@@ -5,7 +5,7 @@ isn't a constant value.
 
 #### Example
 
-The following code produces this diagnostic beause `a` isn't a constant:
+The following code produces this diagnostic because `a` isn't a constant:
 
 ```dart
 var a = 'a';

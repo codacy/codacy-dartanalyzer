@@ -1,12 +1,11 @@
 package codacy.dartanalyzer
 
 import better.files.File
-import codacy.dartanalyzer.model.DartAnalyzeResult
 import com.codacy.plugins.api.results.{Pattern, Result, Tool}
 import com.codacy.plugins.api.{Options, Source}
 import com.codacy.tools.scala.seed.utils.CommandRunner
 
-import scala.util.{Failure, Try}
+import scala.util.Try
 import com.codacy.tools.scala.seed.DockerEngine
 import play.api.libs.json.Json
 
@@ -76,7 +75,8 @@ object DartAnalyzer extends Tool {
       List(
         "dartanalyzer",
         "--format",
-        "json"
+        // json format returns multiple objects after a given limit, change if only required
+        "machine"
       ) ++ optionsFilePath ++ filesToAnalyse
 
     CommandRunner.exec(command).toTry.map { commandResult =>
@@ -86,36 +86,44 @@ object DartAnalyzer extends Tool {
       System.err.println("STDOUT")
       commandResult.stdout.foreach(System.err.println)
 
-      parseJsonFormat(commandResult.stdout.mkString)
+      sanitizeStderr(commandResult.stderr).map(parseMachineFormat)
     }
   }.flatten
 
-  def parseJsonFormat(outputLine: String): List[Result] = {
-    if (outputLine.isEmpty) {
-      System.err.println("No issues")
-      return List.empty[Result]
+  // We need to sanitize the output because the deprecated message
+  def sanitizeStderr(stderr: List[String]): List[String] =
+    if (
+      stderr.nonEmpty && stderr.head
+        .contains(
+          "Warning: 'dartanalyzer' is deprecated. Please use 'dart analyze'."
+        )
+    )
+      stderr.drop(1)
+    else stderr
+
+  def parseMachineFormat(outputLine: String): Result = {
+    outputLine.split('|') match {
+      case Array(
+            severity,
+            _type,
+            name,
+            file,
+            lineNumber,
+            columnNumber,
+            length,
+            problemMessage
+          ) =>
+        Result.Issue(
+          file = Source.File(file),
+          message = Result.Message(problemMessage),
+          patternId = Pattern.Id(name.toLowerCase),
+          line = Source.Line(lineNumber.toInt)
+        )
+      case _ =>
+        throw new RuntimeException(
+          s"Unable to parse machine format from dartanalyzer $outputLine"
+        )
     }
-    Json
-      .parse(outputLine)
-      .validate[DartAnalyzeResult]
-      .fold[List[Result]](
-        errors =>
-          throw new Exception(
-            s"Unable to parse json format from dartanalyzer: $outputLine errors: $errors"
-          ),
-        dartAnalyzeResult => {
-          dartAnalyzeResult.diagnostics
-            .map[Result](diagnostic => {
-              Result.Issue(
-                file = Source.File(diagnostic.location.file),
-                message = Result.Message(diagnostic.problemMessage),
-                patternId = Pattern.Id(diagnostic.code.toLowerCase),
-                line = Source.Line(diagnostic.location.range.start.line)
-              )
-            })
-            .toList
-        }
-      )
   }
 }
 

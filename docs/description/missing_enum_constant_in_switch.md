@@ -1,7 +1,7 @@
 #### Description
 
 The analyzer produces this diagnostic when a `switch` statement for an enum
-doesn't include an option for one of the values in the enumeration.
+doesn't include an option for one of the values in the enum.
 
 Note that `null` is always a possible value for an enum and therefore also
 must be handled.

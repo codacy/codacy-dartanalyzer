@@ -1,8 +1,8 @@
 #### Description
 
 The analyzer produces this diagnostic when an annotation of the form
-`@UnusedResult.unless(parameterDefined: parameterName)` specifies a
-parameter name that isn't defined by the annotated function.
+`[UseResult][meta-UseResult].unless(parameterDefined: parameterName)`
+specifies a parameter name that isn't defined by the annotated function.
 
 #### Example
 

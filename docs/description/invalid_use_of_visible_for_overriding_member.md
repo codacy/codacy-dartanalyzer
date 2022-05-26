@@ -1,8 +1,9 @@
 #### Description
 
 The analyzer produces this diagnostic when an instance member that is
-annotated with `visibleForOverriding` is referenced outside the library in
-which it's declared for any reason other than to override it.
+annotated with `[visibleForOverriding][meta-visibleForOverriding]` is
+referenced outside the library in which it's declared for any reason other
+than to override it.
 
 #### Example
 

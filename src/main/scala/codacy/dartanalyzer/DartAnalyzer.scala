@@ -86,7 +86,8 @@ object DartAnalyzer extends Tool {
       System.err.println("STDOUT")
       commandResult.stdout.foreach(System.err.println)
 
-      sanitizeStderr(commandResult.stderr).map(parseMachineFormat)
+      sanitizeStderr(commandResult.stderr)
+        .map(parseMachineFormat)
     }
   }.flatten
 
@@ -99,7 +100,12 @@ object DartAnalyzer extends Tool {
         )
     )
       stderr.drop(1)
-    else stderr
+    else
+      stderr
+        .filterNot(line =>
+          line.contains("is a part and cannot be analyzed.") ||
+            line.contains("Please pass in a library that contains this part.")
+        )
 
   def parseMachineFormat(outputLine: String): Result = {
     outputLine.split('|') match {

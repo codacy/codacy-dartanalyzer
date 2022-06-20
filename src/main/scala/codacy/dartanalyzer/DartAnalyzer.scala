@@ -91,21 +91,33 @@ object DartAnalyzer extends Tool {
     }
   }.flatten
 
-  // We need to sanitize the output because the deprecated message
-  def sanitizeStderr(stderr: List[String]): List[String] =
-    if (
-      stderr.nonEmpty && stderr.head
-        .contains(
-          "Warning: 'dartanalyzer' is deprecated. Please use 'dart analyze'."
-        )
-    )
-      stderr.drop(1)
-    else
-      stderr
-        .filterNot(line =>
-          line.contains("is a part and cannot be analyzed.") ||
-            line.contains("Please pass in a library that contains this part.")
-        )
+  // Deprecated message on version 2.17.0
+  val deprecatedMessage =
+    "Warning: 'dartanalyzer' is deprecated. Please use 'dart analyze'."
+
+  // Part messages on version 2.17.0
+  val partInfoMessage = "Please pass in a library that contains this part."
+  val partMessage = "is a part and cannot be analyzed."
+
+  // We need to sanitize the output because the deprecated message and other feature we do not yet support
+  def sanitizeStderr(stderr: List[String]): List[String] = {
+    val withoutDeprecated =
+      if (
+        stderr.nonEmpty && stderr.head
+          .contains(deprecatedMessage)
+      ) {
+        stderr.drop(1)
+      } else {
+        stderr
+      }
+
+    withoutDeprecated
+      .filterNot(line =>
+        line.contains(partMessage) ||
+          line.contains(partInfoMessage)
+      )
+
+  }
 
   def parseMachineFormat(outputLine: String): Result = {
     outputLine.split('|') match {

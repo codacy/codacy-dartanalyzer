@@ -13,4 +13,4 @@ target
 .bsp
 .history
 doc-generator/.dart_tool
-doc-generator/pubspec.lock
+doc-generator/pubspec.lock.git/

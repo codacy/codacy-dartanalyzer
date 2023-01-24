@@ -4,7 +4,7 @@
 
 # Codacy Dart Analyzer
 
-This is the docker engine we use at Codacy to have [Dart Analyzer](https://github.com/dart-lang/sdk/tree/master/pkg/analyzer_cli#dartanalyzer) support.
+This is the docker engine we use at Codacy to have [Dart Analyzer](https://github.com/dart-lang/sdk/tree/master/pkg/analyzer) support.
 You can also create a docker to integrate the tool and language of your choice!
 See the [codacy-engine-scala-seed](https://github.com/codacy/codacy-engine-scala-seed) repository for more information.
 
@@ -20,36 +20,67 @@ To support new packages just add them on Dockerfile after the development contex
 
 ## How to bump the tool
 
-To bump the tool just update the version at __.toolversion__ file and re-run the doc generation.
+* Update the version at __.tool_version__ file with the new SDK version.
+* Re-run the [doc generation](#how-to-update-the-documentation).
 
 ## Implementation Details
 
-We currently are using `dartanalyzer` (deprecated) instead of `dart analyze` because `dartanalyzer` provides a way to specify
-a configuration file `dartanalyzer --options <file>`, that way we can build the config file consistently with the patterns we want enabled vs disabled. 
-When receiving patterns configurations via website/UI and if the configuration file (_analysis_options.yaml_) is present on the repo and a client want to use it, we can simply not pass a 
-configuration file as parameter to `dartanalyzer --options <file>` and the `dartanalyzer` will pick automatically a file with name
-_analysis_options.yaml_ as the configuration file.
+We are currently using dart's `analyse` tool, which performs static analysis on dart source code. This tool works
+by having an `analysis_options.yaml` file, which specifies all the necessary rules for analysis. This file has the 
+following structure:
+```
+include: package:lints/recommended.yaml
 
-There are some initial files created and copied at docker build moment to the docker image, these files are required to support the `include` on the _analysis_options.yaml_
-files, [supported packages](#supported-packages-lints-on-analysis_configyaml-files).
+analyzer:
+  exclude: [build/**]
+  language:
+    strict-casts: true
+    strict-raw-types: true
 
-### Future development/maintenance
+linter:
+  rules:
+    - cancel_subscriptions
+```
 
-Regarding the use of `dart analyze` it means that we will not be able to specify the config file via `--options` flag, because `dart analyze`
-is meant to scan recursively different _analysis_options.yaml_, from the root to the packages and etc. With previous information, we might need 
-to have a codacy _analysis_options.yaml_ on the root of the machine/docker (currently we have access limitations) where we run the tool where we can specify the 
-patterns received by the website/UI, and THEN we might need (at current state of the tool `dart analyze`) to ignore all _analysis_options.yaml_ from the repo so the configs are not overridden.
+The example above illustrates the most common entries you will have to specify:
+- The include operation is used to import options from the specified URL. **You can include at most one file.**
+- The analyzer entry customizes static analysis, where you can activate or de-activate specific rules, ignore files, etc.
+- The linter entry specifies linting rules.
+
+### Analysis Option File Precedence
+You can have multiple `analysis_options.yaml` files in a project. However, there are some rules that apply when you do so.
+The analyzer will always use the first analysis_options file it finds when searching through the file hierarchy. 
+The following image explains the rules used for the options files: 
+
+<figure>
+  <img src="https://dart.dev/assets/img/guides/analysis-options-directory-structure.png" style="background: white">
+  <figcaption>Fig.1 - Options files example (taken from the <a href="https://dart.dev/guides/language/analysis-options">official documentation</a>)</figcaption>
+</figure>
+
+In the case demonstrated above, the analyzer uses file `#1` to analyze the code in `my_other_package` and 
+`my_other_other_package`, and file `#2` to analyze the code in `my_package`.
+This implies that any `analysis_options.yaml` files specified in the hierarchy will override the users' provided analysis 
+configurations.
+
+When building the docker image, we the necessary files required to support the `include` operation on the 
+_analysis_options.yaml_ files [supported packages](#supported-packages-lints-on-analysis_configyaml-files).
+
+### Output formatting
+By default, dart's `analyse` tool outputs the analysis results in a human-readable format. However, this format is not 
+ideal for parsing. Luckily, there is an optional argument called format that can be supplied which changes the output 
+into something easier to parse. We use `--format=machine` because it provides the best format for parsing and 
+outputting the results required by Codacy.
 
 ## Usage
 
-You can create the docker by doing:
+You can create the docker image by executing the following commands:
 
 ```bash
 sbt graalvm-native-image:packageBin
 docker build --build-arg TOOL_VERSION=$(cat .tool_version) -t codacy-dartanalyzer .
 ```
 
-The docker is ran with the following command:
+To run the docker image, you can use the following command:
 
 ```bash
 docker run -it -v $srcDir:/src  <DOCKER_NAME>:<DOCKER_VERSION>
@@ -57,7 +88,7 @@ docker run -it -v $srcDir:/src  <DOCKER_NAME>:<DOCKER_VERSION>
 
 ## Test
 
-For a faster development loop you can create a Docker image based on the JVM instead of creating a native-image:
+For a faster development loop, you can create a JVM-based Docker image instead of creating a native-image:
 
 ```bash
 sbt universal:stage
@@ -75,6 +106,9 @@ To generate the pattern.json and rules descriptions you must run a dart program 
 dart run doc-generator/lib/generatedocs.dart
 ```
 
+
+---
+
 ## What is Codacy?
 
 [Codacy](https://www.codacy.com/) is an Automated Code Review Tool that monitors your technical debt, helps you improve your code quality, teaches best practices to your developers, and helps you save time in Code Reviews.
@@ -89,7 +123,7 @@ dart run doc-generator/lib/generatedocs.dart
 
 Codacy also helps keep track of Code Coverage, Code Duplication, and Code Complexity.
 
-Codacy supports PHP, Python, Ruby, Java, JavaScript, and Scala, among others.
+Codacy supports PHP, Python, Ruby, Java, JavaScript, Dart, and Scala, among other languages.
 
 ### Free for Open Source
 

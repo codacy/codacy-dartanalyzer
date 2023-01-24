@@ -5,7 +5,7 @@ The analyzer produces this diagnostic when an invocation of the method
 return value) when the type to be returned from the invocation is neither
 `void`, `Handle`, nor `Pointer`.
 
-For more information about FFI, see [C interop using dart:ffi][].
+For more information about FFI, see [C interop using dart:ffi][ffi].
 
 #### Example
 

@@ -28,6 +28,7 @@ Remove the language version override from the [part file][], so that it
 implicitly uses the same version as the defining compilation unit:
 
 ```dart
+%uri="lib/part.dart"
 part of 'test.dart';
 ```
 

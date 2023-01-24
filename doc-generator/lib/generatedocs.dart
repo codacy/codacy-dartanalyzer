@@ -127,6 +127,8 @@ void main() {
   patternsTypeFile.writeAsStringSync(encoder.convert(patternsType));
 
   createInitialPubspecFiles(sdkVersion);
+
+  print("Happy ending: Docs generated for SDK version $sdkVersion");
 }
 
 // Models
@@ -336,6 +338,7 @@ void createInitialPubspecFiles(String sdkVersion){
 
   File(dartanalyzerPathStr + '/pubspec.lock').createSync();
   File(dartanalyzerPathStr + '/.packages').createSync();
+  File(dartanalyzerPathStr + '/analysis_options.yaml').createSync();
 }
 
 class YamlWriter {

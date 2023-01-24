@@ -21,7 +21,7 @@ imported, then add a prefix to the import so that the local definition of
 the name doesn't shadow the imported name.
 
 If the name is the name of an existing class or mixin that isn't being
-imported, then add an import, with a prefix, for the library in which it’s
+imported, then add an import, with a prefix, for the library in which it's
 declared.
 
 Otherwise, either replace the name in the `implements` clause with the name

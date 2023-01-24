@@ -10,6 +10,7 @@ The following code produces this diagnostic because the `case` label with
  a value of zero (`0`) falls through to the `default` statements:
 
 ```dart
+%language=2.18
 void f(int a) {
   switch (a) {
     [!case!] 0:

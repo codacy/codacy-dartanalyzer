@@ -4,7 +4,7 @@ The analyzer produces this diagnostic when a class extends, implements, or
 mixes in a class that extends either `Struct` or `Union`. Classes can only
 extend either `Struct` or `Union` directly.
 
-For more information about FFI, see [C interop using dart:ffi][].
+For more information about FFI, see [C interop using dart:ffi][ffi].
 
 #### Example
 

@@ -33,5 +33,5 @@ class C<T> {
 }
 ```
 
-Note, however, that there isn’t a relationship between `T` and `S`, so this
+Note, however, that there isn't a relationship between `T` and `S`, so this
 second option changes the semantics from what was likely to be intended.

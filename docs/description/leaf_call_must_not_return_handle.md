@@ -12,7 +12,7 @@ the annotation is a function type whose return type is `Handle`.
 In all of these cases, leaf calls are only supported for the types `bool`,
 `int`, `float`, `double`, and, as a return type `void`.
 
-For more information about FFI, see [C interop using dart:ffi][].
+For more information about FFI, see [C interop using dart:ffi][ffi].
 
 #### Example
 

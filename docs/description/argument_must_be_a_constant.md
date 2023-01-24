@@ -7,7 +7,7 @@ argument whose value isn't a constant expression.
 The analyzer also produces this diagnostic when the value of the
 `exceptionalReturn` argument of `Pointer.fromFunction`.
 
-For more information about FFI, see [C interop using dart:ffi][].
+For more information about FFI, see [C interop using dart:ffi][ffi].
 
 #### Example
 

@@ -3,11 +3,12 @@ package codacy.dartanalyzer
 import better.files.File
 import com.codacy.plugins.api.results.{Pattern, Result, Tool}
 import com.codacy.plugins.api.{Options, Source}
-import com.codacy.tools.scala.seed.utils.CommandRunner
-
-import scala.util.Try
 import com.codacy.tools.scala.seed.DockerEngine
+import com.codacy.tools.scala.seed.utils.CommandRunner
 import play.api.libs.json.Json
+
+import java.io.{BufferedWriter, FileWriter, File => JavaFile}
+import scala.util.Try
 
 object DartAnalyzer extends Tool {
 
@@ -22,50 +23,52 @@ object DartAnalyzer extends Tool {
       .parse(File("/docs/patterns_type.json").contentAsString)
       .as[Map[String, String]]
 
-    val optionsFilePath = configuration match {
-      case Some(configurationPatterns) =>
-        val configurationPatternIds: Set[Pattern.Id] =
-          configurationPatterns.map(_.patternId).toSet
+    configuration.fold {
+      System.err.println("No configuration patterns")
+    } { configurationPatterns =>
+      val configurationPatternIds: Set[Pattern.Id] =
+        configurationPatterns.map(_.patternId).toSet
 
-        val lintPatterns = specification.patterns
-          .filter(pattern => patternsType(pattern.patternId.value) == "lint")
-          .map { pattern =>
-            if (configurationPatternIds.contains(pattern.patternId)) {
-              s"    ${pattern.patternId.value}: true"
-            } else {
-              s"    ${pattern.patternId.value}: false"
-            }
-
+      val lintPatterns = specification.patterns
+        .filter(pattern => patternsType(pattern.patternId.value) == "lint")
+        .map { pattern =>
+          if (configurationPatternIds.contains(pattern.patternId)) {
+            s"    ${pattern.patternId.value}: true"
+          } else {
+            s"    ${pattern.patternId.value}: false"
           }
-          .mkString("\n")
 
-        val errorPatterns = specification.patterns
-          .filter(pattern => patternsType(pattern.patternId.value) == "error")
-          .map { pattern =>
-            if (configurationPatternIds.contains(pattern.patternId)) {
-              s"    ${pattern.patternId.value}: ${pattern.level.toString.toLowerCase}"
-            } else {
-              s"    ${pattern.patternId.value}: ignore"
-            }
+        }
+        .mkString("\n")
 
+      val errorPatterns = specification.patterns
+        .filter(pattern => patternsType(pattern.patternId.value) == "error")
+        .map { pattern =>
+          if (configurationPatternIds.contains(pattern.patternId)) {
+            s"    ${pattern.patternId.value}: ${pattern.level.toString.toLowerCase}"
+          } else {
+            s"    ${pattern.patternId.value}: ignore"
           }
-          .mkString("\n")
 
-        val optionsFileContent =
-          s"""
-          |analyzer:
-          |  errors:
-          |${errorPatterns}
-          |linter:
-          |  rules:
-          |${lintPatterns}
-          |""".stripMargin
+        }
+        .mkString("\n")
 
-        val optionsFilePath =
-          File.newTemporaryFile().writeText(optionsFileContent).path.toString
-        Seq("--options", optionsFilePath)
-      case None =>
-        Seq.empty[String]
+      val optionsFileContent =
+        s"""
+           |analyzer:
+           |  errors:
+           |${errorPatterns}
+           |linter:
+           |  rules:
+           |${lintPatterns}
+           |""".stripMargin
+
+      // Write into the analysis_options for dart analyze in root folder
+      val file = new JavaFile("/analysis_options.yaml")
+      val bufferedWriter: BufferedWriter =
+        new BufferedWriter(new FileWriter(file))
+      bufferedWriter.write(optionsFileContent)
+      bufferedWriter.close()
     }
 
     val filesToAnalyse = files.fold(Set(source.path))(_.map(_.path))
@@ -73,11 +76,12 @@ object DartAnalyzer extends Tool {
 
     val command =
       List(
-        "dartanalyzer",
+        "dart",
+        "analyze",
         "--format",
         // json format returns multiple objects after a given limit, change if only required
         "machine"
-      ) ++ optionsFilePath ++ filesToAnalyse
+      ) ++ filesToAnalyse
 
     CommandRunner.exec(command).toTry.map { commandResult =>
       System.err.println(s"EXIT CODE ${commandResult.exitCode}")
@@ -86,37 +90,22 @@ object DartAnalyzer extends Tool {
       System.err.println("STDOUT")
       commandResult.stdout.foreach(System.err.println)
 
-      sanitizeStderr(commandResult.stderr)
+      sanitizeOutput(commandResult.stdout)
         .map(parseMachineFormat)
     }
   }.flatten
-
-  // Deprecated message on version 2.17.0
-  val deprecatedMessage =
-    "Warning: 'dartanalyzer' is deprecated. Please use 'dart analyze'."
 
   // Part messages on version 2.17.0
   val partInfoMessage = "Please pass in a library that contains this part."
   val partMessage = "is a part and cannot be analyzed."
 
   // We need to sanitize the output because the deprecated message and other feature we do not yet support
-  def sanitizeStderr(stderr: List[String]): List[String] = {
-    val withoutDeprecated =
-      if (
-        stderr.nonEmpty && stderr.head
-          .contains(deprecatedMessage)
-      ) {
-        stderr.drop(1)
-      } else {
-        stderr
-      }
-
-    withoutDeprecated
+  def sanitizeOutput(stderr: List[String]): List[String] = {
+    stderr
       .filterNot(line =>
         line.contains(partMessage) ||
           line.contains(partInfoMessage)
       )
-
   }
 
   def parseMachineFormat(outputLine: String): Result = {
@@ -139,7 +128,7 @@ object DartAnalyzer extends Tool {
         )
       case _ =>
         throw new RuntimeException(
-          s"Unable to parse machine format from dartanalyzer $outputLine"
+          s"Unable to parse machine format from dart analyze $outputLine"
         )
     }
   }

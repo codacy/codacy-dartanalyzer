@@ -23,6 +23,7 @@ imported using a `deferred` import, and the constant `a.zero`, declared in
 the imported library, is used in a case clause:
 
 ```dart
+%language=2.18
 import 'a.dart' deferred as a;
 
 void f(int x) {

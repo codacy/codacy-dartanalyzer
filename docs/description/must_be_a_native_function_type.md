@@ -4,7 +4,7 @@ The analyzer produces this diagnostic when an invocation of either
 `Pointer.fromFunction` or `DynamicLibrary.lookupFunction` has a type
 argument(whether explicit or inferred) that isn't a native function type.
 
-For more information about FFI, see [C interop using dart:ffi][].
+For more information about FFI, see [C interop using dart:ffi][ffi].
 
 #### Example
 

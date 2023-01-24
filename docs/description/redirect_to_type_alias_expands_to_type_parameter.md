@@ -2,7 +2,7 @@
 
 The analyzer produces this diagnostic when a redirecting factory
 constructor redirects to a type alias, and the type alias expands to one of
-the type parameters of the type alias. This isn’t allowed because the value
+the type parameters of the type alias. This isn't allowed because the value
 of the type parameter is a type rather than a class.
 
 #### Example

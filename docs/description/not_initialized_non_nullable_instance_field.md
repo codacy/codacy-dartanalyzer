@@ -34,7 +34,7 @@ class C {
 
 #### Common fixes
 
-If there's a reasonable default value for the field that’s the same for all
+If there's a reasonable default value for the field that's the same for all
 instances, then add an initializer expression:
 
 ```dart

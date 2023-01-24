@@ -8,6 +8,7 @@ clause isn't a constant expression.
 The following code produces this diagnostic because `j` isn't a constant:
 
 ```dart
+%language=2.18
 void f(int i, int j) {
   switch (i) {
     case [!j!]:

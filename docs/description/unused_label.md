@@ -34,7 +34,9 @@ If the label is needed, then use it:
 void f(int limit) {
   loop: for (int i = 0; i < limit; i++) {
     print(i);
-    break loop;
+    if (i != 0) {
+      break loop;
+    }
   }
 }
 ```

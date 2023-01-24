@@ -4,7 +4,7 @@ The analyzer produces this diagnostic when a field in a subclass of either
 `Struct` or `Union` has a type of `Array` but doesn't have a single
 `Array` annotation indicating the dimensions of the array.
 
-For more information about FFI, see [C interop using dart:ffi][].
+For more information about FFI, see [C interop using dart:ffi][ffi].
 
 #### Example
 

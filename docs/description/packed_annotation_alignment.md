@@ -3,7 +3,7 @@
 The analyzer produces this diagnostic when the argument to the `Packed`
 annotation isn't one of the allowed values: 1, 2, 4, 8, or 16.
 
-For more information about FFI, see [C interop using dart:ffi][].
+For more information about FFI, see [C interop using dart:ffi][ffi].
 
 #### Example
 

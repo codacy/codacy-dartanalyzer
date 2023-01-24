@@ -9,6 +9,7 @@ The following code produces this diagnostic because the label `l` is
 associated with the case clause for `0`:
 
 ```dart
+%language=2.18
 void f(int i) {
   switch (i) {
     l: case 0:
@@ -39,6 +40,7 @@ If the intent is to transfer control to a different case block, then use
 `continue` rather than `break`:
 
 ```dart
+%language=2.18
 void f(int i) {
   switch (i) {
     l: case 0:

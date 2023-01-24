@@ -6,7 +6,7 @@ The Dart types `int`, `double`, and `Array` are used to represent multiple
 C types, and the annotation specifies which of the compatible C types the
 field represents.
 
-For more information about FFI, see [C interop using dart:ffi][].
+For more information about FFI, see [C interop using dart:ffi][ffi].
 
 #### Example
 

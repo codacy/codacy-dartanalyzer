@@ -3,7 +3,7 @@
 The analyzer produces this diagnostic when a constructor in a subclass of
 either `Struct` or `Union` has one or more field initializers.
 
-For more information about FFI, see [C interop using dart:ffi][].
+For more information about FFI, see [C interop using dart:ffi][ffi].
 
 #### Example
 

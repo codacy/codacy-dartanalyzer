@@ -12,7 +12,7 @@ required parameters, but only one argument is provided:
 ```dart
 void f(int a, int b) {}
 void g() {
-  f[!(0)!];
+  f(0[!)!];
 }
 ```
 

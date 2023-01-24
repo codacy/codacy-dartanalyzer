@@ -24,5 +24,7 @@ class C {
 }
 ```
 TODO(brianwilkerson) It would be good to add a link to the spec or some
- other documentation that lists the number of parameters for each operator,
- but I don't know what to link to.
+ other documentation that lists the number of parameters for each
+ operator, but I don't know what to link to.
+TODO(brianwilkerson) Another reasonable fix is to convert the operator to
+ be a normal method.

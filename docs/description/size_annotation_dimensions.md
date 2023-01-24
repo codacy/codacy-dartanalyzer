@@ -4,7 +4,7 @@ The analyzer produces this diagnostic when the number of dimensions
 specified in an `Array` annotation doesn't match the number of nested
 arrays specified by the type of a field.
 
-For more information about FFI, see [C interop using dart:ffi][].
+For more information about FFI, see [C interop using dart:ffi][ffi].
 
 #### Example
 

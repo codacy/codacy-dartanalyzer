@@ -10,6 +10,7 @@ The following code produces this diagnostic because `1` is an `int`, which
 isn't a subtype of `String` (the type of `s`):
 
 ```dart
+%language=2.18
 void f(String s) {
   switch (s) {
     case [!1!]:

@@ -4,7 +4,7 @@ The analyzer produces this diagnostic when a field in a subclass of
 `Struct` has a type other than `int`, `double`, `Array`, `Pointer`, or
 subtype of `Struct` or `Union`.
 
-For more information about FFI, see [C interop using dart:ffi][].
+For more information about FFI, see [C interop using dart:ffi][ffi].
 
 #### Example
 

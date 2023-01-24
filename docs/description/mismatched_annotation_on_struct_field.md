@@ -3,7 +3,7 @@
 The analyzer produces this diagnostic when the annotation on a field in a
 subclass of `Struct` or `Union` doesn't match the Dart type of the field.
 
-For more information about FFI, see [C interop using dart:ffi][].
+For more information about FFI, see [C interop using dart:ffi][ffi].
 
 #### Example
 

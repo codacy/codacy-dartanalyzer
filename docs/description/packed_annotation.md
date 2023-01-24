@@ -3,7 +3,7 @@
 The analyzer produces this diagnostic when a subclass of `Struct` has more
 than one `Packed` annotation.
 
-For more information about FFI, see [C interop using dart:ffi][].
+For more information about FFI, see [C interop using dart:ffi][ffi].
 
 #### Example
 

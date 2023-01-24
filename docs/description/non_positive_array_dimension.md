@@ -3,7 +3,7 @@
 The analyzer produces this diagnostic when a dimension given in an `Array`
 annotation is less than or equal to zero (`0`).
 
-For more information about FFI, see [C interop using dart:ffi][].
+For more information about FFI, see [C interop using dart:ffi][ffi].
 
 #### Example
 

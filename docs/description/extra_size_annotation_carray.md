@@ -4,7 +4,7 @@ The analyzer produces this diagnostic when a field in a subclass of
 `Struct` has more than one annotation describing the size of the native
 array.
 
-For more information about FFI, see [C interop using dart:ffi][].
+For more information about FFI, see [C interop using dart:ffi][ffi].
 
 #### Example
 

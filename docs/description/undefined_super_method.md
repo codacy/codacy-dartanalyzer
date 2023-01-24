@@ -1,7 +1,7 @@
 #### Description
 
 The analyzer produces this diagnostic when an inherited member (method,
-getter, setter, or operator) is referenced using `super`, but there’s no
+getter, setter, or operator) is referenced using `super`, but there's no
 member with that name in the superclass chain.
 
 #### Examples
@@ -36,5 +36,5 @@ make the name of the invoked member match the inherited member.
 If the member you intend to invoke is defined in the same class, then
 remove the `super.`.
 
-If the member isn’t defined, then either add the member to one of the
+If the member isn't defined, then either add the member to one of the
 superclasses or remove the invocation.

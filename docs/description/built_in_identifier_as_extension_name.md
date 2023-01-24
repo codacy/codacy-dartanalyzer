@@ -2,7 +2,7 @@
 
 The analyzer produces this diagnostic when the name used in the declaration
 of a class, extension, mixin, typedef, type parameter, or import prefix is
-a built-in identifier. Built-in identifiers can’t be used to name any of
+a built-in identifier. Built-in identifiers can't be used to name any of
 these kinds of declarations.
 
 #### Example

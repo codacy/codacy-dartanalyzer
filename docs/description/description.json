@@ -1040,11 +1040,6 @@
     "description": ""
   },
   {
-    "patternId": "analysis_option_deprecated",
-    "title": "Analysis option deprecated",
-    "description": ""
-  },
-  {
     "patternId": "included_file_warning",
     "title": "Included file warning",
     "description": ""
@@ -1595,6 +1590,11 @@
     "description": ""
   },
   {
+    "patternId": "duplicate_augmentation_import",
+    "title": "Duplicate augmentation import",
+    "description": ""
+  },
+  {
     "patternId": "duplicate_constructor_name",
     "title": "Duplicate constructor name",
     "description": ""
@@ -1610,6 +1610,11 @@
     "description": ""
   },
   {
+    "patternId": "duplicate_field_name",
+    "title": "Duplicate field name",
+    "description": ""
+  },
+  {
     "patternId": "duplicate_field_formal_parameter",
     "title": "Duplicate field formal parameter",
     "description": ""
@@ -1622,6 +1627,16 @@
   {
     "patternId": "duplicate_part",
     "title": "Duplicate part",
+    "description": ""
+  },
+  {
+    "patternId": "duplicate_record_pattern_field",
+    "title": "Duplicate record pattern field",
+    "description": ""
+  },
+  {
+    "patternId": "duplicate_variable_pattern",
+    "title": "Duplicate variable pattern",
     "description": ""
   },
   {
@@ -1662,6 +1677,11 @@
   {
     "patternId": "equal_keys_in_const_map",
     "title": "Equal keys in const map",
+    "description": ""
+  },
+  {
+    "patternId": "expected_one_list_pattern_type_arguments",
+    "title": "Expected one list pattern type arguments",
     "description": ""
   },
   {
@@ -1955,6 +1975,11 @@
     "description": ""
   },
   {
+    "patternId": "import_of_not_augmentation",
+    "title": "Import of not augmentation",
+    "description": ""
+  },
+  {
     "patternId": "inconsistent_case_expression_types",
     "title": "Inconsistent case expression types",
     "description": ""
@@ -2110,6 +2135,21 @@
     "description": ""
   },
   {
+    "patternId": "invalid_field_name_from_object",
+    "title": "Invalid field name from object",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_field_name_private",
+    "title": "Invalid field name private",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_field_name_positional",
+    "title": "Invalid field name positional",
+    "description": ""
+  },
+  {
     "patternId": "invalid_implementation_override",
     "title": "Invalid implementation override",
     "description": ""
@@ -2220,6 +2260,11 @@
     "description": ""
   },
   {
+    "patternId": "macro_execution_exception",
+    "title": "Macro execution exception",
+    "description": ""
+  },
+  {
     "patternId": "main_first_positional_parameter_type",
     "title": "Main first positional parameter type",
     "description": ""
@@ -2280,13 +2325,28 @@
     "description": ""
   },
   {
+    "patternId": "missing_default_value_for_parameter_positional",
+    "title": "Missing default value for parameter positional",
+    "description": ""
+  },
+  {
     "patternId": "missing_default_value_for_parameter_with_annotation",
     "title": "Missing default value for parameter with annotation",
     "description": ""
   },
   {
+    "patternId": "missing_object_pattern_getter_name",
+    "title": "Missing object pattern getter name",
+    "description": ""
+  },
+  {
     "patternId": "missing_required_argument",
     "title": "Missing required argument",
+    "description": ""
+  },
+  {
+    "patternId": "missing_variable_pattern",
+    "title": "Missing variable pattern",
     "description": ""
   },
   {
@@ -2515,13 +2575,33 @@
     "description": ""
   },
   {
+    "patternId": "not_consistent_variable_pattern",
+    "title": "Not consistent variable pattern",
+    "description": ""
+  },
+  {
     "patternId": "not_binary_operator",
     "title": "Not binary operator",
     "description": ""
   },
   {
-    "patternId": "not_enough_positional_arguments",
-    "title": "Not enough positional arguments",
+    "patternId": "not_enough_positional_arguments_singular",
+    "title": "Not enough positional arguments singular",
+    "description": ""
+  },
+  {
+    "patternId": "not_enough_positional_arguments_plural",
+    "title": "Not enough positional arguments plural",
+    "description": ""
+  },
+  {
+    "patternId": "not_enough_positional_arguments_name_singular",
+    "title": "Not enough positional arguments name singular",
+    "description": ""
+  },
+  {
+    "patternId": "not_enough_positional_arguments_name_plural",
+    "title": "Not enough positional arguments name plural",
     "description": ""
   },
   {
@@ -2607,6 +2687,11 @@
   {
     "patternId": "object_cannot_extend_another_class",
     "title": "Object cannot extend another class",
+    "description": ""
+  },
+  {
+    "patternId": "obsolete_colon_for_default_value",
+    "title": "Obsolete colon for default value",
     "description": ""
   },
   {
@@ -2762,6 +2847,11 @@
   {
     "patternId": "referenced_before_declaration",
     "title": "Referenced before declaration",
+    "description": ""
+  },
+  {
+    "patternId": "relational_pattern_operator_return_type_not_assignable_to_bool",
+    "title": "Relational pattern operator return type not assignable to bool",
     "description": ""
   },
   {
@@ -3475,11 +3565,6 @@
     "description": ""
   },
   {
-    "patternId": "packed_nesting_non_packed",
-    "title": "Packed nesting non packed",
-    "description": ""
-  },
-  {
     "patternId": "size_annotation_dimensions",
     "title": "Size annotation dimensions",
     "description": ""
@@ -3525,6 +3610,11 @@
     "description": ""
   },
   {
+    "patternId": "body_might_complete_normally_catch_error",
+    "title": "Body might complete normally catch error",
+    "description": ""
+  },
+  {
     "patternId": "body_might_complete_normally_nullable",
     "title": "Body might complete normally nullable",
     "description": ""
@@ -3550,8 +3640,13 @@
     "description": ""
   },
   {
-    "patternId": "deprecated_function_class_declaration",
-    "title": "Deprecated function class declaration",
+    "patternId": "deprecated_colon_for_default_value",
+    "title": "Deprecated colon for default value",
+    "description": ""
+  },
+  {
+    "patternId": "deprecated_export_use",
+    "title": "Deprecated export use",
     "description": ""
   },
   {
@@ -3602,6 +3697,11 @@
   {
     "patternId": "duplicate_hidden_name",
     "title": "Duplicate hidden name",
+    "description": ""
+  },
+  {
+    "patternId": "duplicate_export",
+    "title": "Duplicate export",
     "description": ""
   },
   {
@@ -3850,6 +3950,21 @@
     "description": ""
   },
   {
+    "patternId": "missing_override_of_must_be_overridden_one",
+    "title": "Missing override of must be overridden one",
+    "description": ""
+  },
+  {
+    "patternId": "missing_override_of_must_be_overridden_two",
+    "title": "Missing override of must be overridden two",
+    "description": ""
+  },
+  {
+    "patternId": "missing_override_of_must_be_overridden_three_plus",
+    "title": "Missing override of must be overridden three plus",
+    "description": ""
+  },
+  {
     "patternId": "missing_required_param",
     "title": "Missing required param",
     "description": ""
@@ -3912,6 +4027,16 @@
   {
     "patternId": "null_aware_in_logical_operator",
     "title": "Null aware in logical operator",
+    "description": ""
+  },
+  {
+    "patternId": "cast_from_null_always_fails",
+    "title": "Cast from null always fails",
+    "description": ""
+  },
+  {
+    "patternId": "cast_from_nullable_always_fails",
+    "title": "Cast from nullable always fails",
     "description": ""
   },
   {
@@ -4067,6 +4192,11 @@
   {
     "patternId": "unnecessary_cast",
     "title": "Unnecessary cast",
+    "description": ""
+  },
+  {
+    "patternId": "unnecessary_final",
+    "title": "Unnecessary final",
     "description": ""
   },
   {
@@ -4332,6 +4462,26 @@
   {
     "patternId": "expected_list_or_map_literal",
     "title": "Expected list or map literal",
+    "description": ""
+  },
+  {
+    "patternId": "expected_named_type_extends",
+    "title": "Expected named type extends",
+    "description": ""
+  },
+  {
+    "patternId": "expected_named_type_implements",
+    "title": "Expected named type implements",
+    "description": ""
+  },
+  {
+    "patternId": "expected_named_type_on",
+    "title": "Expected named type on",
+    "description": ""
+  },
+  {
+    "patternId": "expected_named_type_with",
+    "title": "Expected named type with",
     "description": ""
   },
   {
@@ -4757,16 +4907,6 @@
   {
     "patternId": "invalid_null_aware_operator_after_short_circuit",
     "title": "Invalid null aware operator after short circuit",
-    "description": ""
-  },
-  {
-    "patternId": "invalid_override_different_default_values_named",
-    "title": "Invalid override different default values named",
-    "description": ""
-  },
-  {
-    "patternId": "invalid_override_different_default_values_positional",
-    "title": "Invalid override different default values positional",
     "description": ""
   },
   {

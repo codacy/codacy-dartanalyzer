@@ -5,7 +5,7 @@ The analyzer produces this diagnostic when the type argument for the class
 `Double`, `Pointer`, or subtype of `Struct`, `Union`, or
 `AbiSpecificInteger`.
 
-For more information about FFI, see [C interop using dart:ffi][].
+For more information about FFI, see [C interop using dart:ffi][ffi].
 
 #### Example
 

@@ -1,6 +1,6 @@
 # This had to be changed to ubuntu:20.04, as the vulnerabilities for
 # curl were not yet fixed for debian 11 (the base image used by dart)
-FROM ubuntu:20.04
+FROM ubuntu:23.04
 
 ARG TOOL_VERSION
 ARG DEBIAN_FRONTEND=noninteractive

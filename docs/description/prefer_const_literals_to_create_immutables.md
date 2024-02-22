@@ -1,4 +1,3 @@
-
 **PREFER** using `const` for instantiating list, map and set literals used as
 parameters in immutable class instantiations.
 

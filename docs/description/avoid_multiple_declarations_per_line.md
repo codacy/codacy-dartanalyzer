@@ -1,4 +1,3 @@
-
 **DON'T** declare multiple variables on a single line.
 
 **BAD:**

@@ -1,4 +1,3 @@
-
 **AVOID** using the following asynchronous file I/O methods because they are
 much slower than their synchronous counterparts.
 

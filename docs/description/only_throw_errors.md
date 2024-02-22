@@ -1,4 +1,3 @@
-
 **DO** throw only instances of classes that extend `dart.core.Error` or
 `dart.core.Exception`.
 

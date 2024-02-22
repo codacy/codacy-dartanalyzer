@@ -1,4 +1,3 @@
-
 **PREFER** using `const` for instantiating constant constructors.
 
 If a constructor can be invoked as const to produce a canonicalized instance,

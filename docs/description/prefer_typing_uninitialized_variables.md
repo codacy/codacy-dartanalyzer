@@ -1,4 +1,3 @@
-
 **PREFER** specifying a type annotation for uninitialized variables and fields.
 
 Forgoing type annotations for uninitialized variables is a bad practice because

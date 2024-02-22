@@ -1,4 +1,3 @@
-
 **DO** prefer declaring for-each loop variables as final if they are not
 reassigned later in the code.
 

@@ -1,4 +1,3 @@
-
 **DO** override `hashCode` if overriding `==` and prefer overriding `==` if
 overriding `hashCode`.
 

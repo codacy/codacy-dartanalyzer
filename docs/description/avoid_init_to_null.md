@@ -1,5 +1,4 @@
-
-From [effective dart](https://dart.dev/guides/language/effective-dart/usage#dont-explicitly-initialize-variables-to-null):
+From [Effective Dart](https://dart.dev/guides/language/effective-dart/usage#dont-explicitly-initialize-variables-to-null):
 
 **DON'T** explicitly initialize variables to null.
 

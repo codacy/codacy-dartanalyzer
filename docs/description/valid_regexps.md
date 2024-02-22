@@ -1,4 +1,3 @@
-
 **DO** use valid regular expression syntax when creating regular expression
 instances.
 

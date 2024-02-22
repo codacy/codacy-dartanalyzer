@@ -1,4 +1,3 @@
-
 **DO** use a boolean for assert conditions.
 
 Not using booleans in assert conditions can lead to code where it isn't clear

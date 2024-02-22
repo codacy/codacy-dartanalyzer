@@ -1,4 +1,3 @@
-
 **AVOID** returning null for void.
 
 In a large variety of languages `void` as return type is used to indicate that

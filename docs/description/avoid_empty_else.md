@@ -1,4 +1,3 @@
-
 **AVOID** empty else statements.
 
 **BAD:**

@@ -1,4 +1,3 @@
-
 **DON'T** use adjacent strings in list.
 
 This can be sign of forgotten comma.

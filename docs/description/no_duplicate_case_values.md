@@ -1,4 +1,3 @@
-
 **DON'T** use more than one case with same value.
 
 This is usually a typo or changed value of constant.

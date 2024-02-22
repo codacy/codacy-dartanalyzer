@@ -1,5 +1,3 @@
-Avoid redundant argument values.
-
 **DON'T** declare arguments with values that match the defaults for the
 corresponding parameter.
 

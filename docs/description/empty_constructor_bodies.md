@@ -1,4 +1,3 @@
-
 From the [style guide](https://dart.dev/guides/language/effective-dart/style/):
 
 **DO** use `;` instead of `{}` for empty constructor bodies.

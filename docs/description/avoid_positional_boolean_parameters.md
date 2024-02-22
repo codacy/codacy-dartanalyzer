@@ -1,4 +1,3 @@
-
 **AVOID** positional boolean parameters.
 
 Positional boolean parameters are a bad practice because they are very

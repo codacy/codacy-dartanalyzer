@@ -1,4 +1,3 @@
-
 Avoid returning an awaited expression when the expression type is assignable to
 the function's return type.
 

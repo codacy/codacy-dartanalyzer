@@ -1,4 +1,3 @@
-
 A raw string can be used to avoid escaping only backslashes and dollars.
 
 **BAD:**

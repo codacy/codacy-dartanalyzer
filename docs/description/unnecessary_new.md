@@ -1,4 +1,3 @@
-
 **AVOID** new keyword to create instances.
 
 **BAD:**

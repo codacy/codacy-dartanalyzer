@@ -1,4 +1,3 @@
-
 **AVOID** shadowing type parameters.
 
 **BAD:**

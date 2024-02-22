@@ -1,4 +1,3 @@
-
 **DON'T** override a method to do a super method invocation with same parameters.
 
 **BAD:**
@@ -24,10 +23,11 @@ class A extends B {
 It's valid to override a member in the following cases:
 
 * if a type (return type or a parameter type) is not the exactly the same as the
-super method,
+  super member,
 * if the `covariant` keyword is added to one of the parameters,
 * if documentation comments are present on the member,
-* if the member has annotations other than `@override`.
+* if the member has annotations other than `@override`,
+* if the member is not annotated with `@protected`, and the super member is.
 
 `noSuchMethod` is a special method and is not checked by this rule.
 

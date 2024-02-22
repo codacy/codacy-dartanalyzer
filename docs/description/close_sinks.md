@@ -1,4 +1,3 @@
-
 **DO** invoke `close` on instances of `dart.core.Sink`.
 
 Closing instances of Sink prevents memory leaks and unexpected behavior.

@@ -1,4 +1,3 @@
-
 From the the [pub package layout doc](https://dart.dev/tools/pub/package-layout#implementation-files):
 
 **DON'T** import implementation files from another package.

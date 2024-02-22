@@ -1,4 +1,3 @@
-
 **DON'T** check for null in custom == operators.
 
 As null is a special type, no class can be equivalent to it.  Thus, it is

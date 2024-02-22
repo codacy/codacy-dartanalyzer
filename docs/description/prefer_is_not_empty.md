@@ -1,4 +1,3 @@
-
 **PREFER** `x.isNotEmpty` to `!x.isEmpty` for `Iterable` and `Map` instances.
 
 When testing whether an iterable or map is empty, prefer `isNotEmpty` over

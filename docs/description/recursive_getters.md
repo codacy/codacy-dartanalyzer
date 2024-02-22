@@ -1,4 +1,3 @@
-
 **DON'T** create recursive getters.
 
 Recursive getters are getters which return themselves as a value.  This is

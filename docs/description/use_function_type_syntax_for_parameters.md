@@ -1,4 +1,3 @@
-
 Use generic function type syntax for parameters.
 
 **BAD:**

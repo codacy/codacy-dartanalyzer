@@ -1,4 +1,3 @@
-
 **AVOID** overloading operator == and hashCode on classes not marked `@immutable`.
 
 If a class is not immutable, overloading operator == and hashCode can lead to
@@ -15,7 +14,7 @@ class A {
   @override
   operator ==(other) => other is A && other.key == key;
   @override
-  int hashCode() => key.hashCode;
+  int get hashCode => key.hashCode;
 }
 ```
 
@@ -27,7 +26,7 @@ class B {
   @override
   operator ==(other) => other is B && other.key == key;
   @override
-  int hashCode() => key.hashCode;
+  int get hashCode => key.hashCode;
 }
 ```
 
@@ -40,9 +39,9 @@ class C {
   final String key;
   const C(this.key);
   @override
-  operator ==(other) => other is B && other.key == key;
+  operator ==(other) => other is C && other.key == key;
   @override
-  int hashCode() => key.hashCode;
+  int get hashCode => key.hashCode;
 }
 ```
 

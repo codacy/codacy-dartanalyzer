@@ -1,4 +1,3 @@
-
 **DO** use `forEach` if you are only going to apply a function or a method
 to all the elements of an iterable.
 

@@ -1,4 +1,3 @@
-
 **AVOID** annotating with dynamic when not required.
 
 As `dynamic` is the assumed return value of a function or method, it is usually

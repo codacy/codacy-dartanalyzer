@@ -1,4 +1,3 @@
-
 **DO** use single quotes where they wouldn't require additional escapes.
 
 That means strings with an apostrophe may use double quotes so that the

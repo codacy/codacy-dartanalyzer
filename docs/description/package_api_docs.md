@@ -1,4 +1,3 @@
-
 **DO** provide doc comments for all public APIs.
 
 As described in the [pub package layout doc](https://dart.dev/tools/pub/package-layout#implementation-files),

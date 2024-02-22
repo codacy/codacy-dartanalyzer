@@ -1,4 +1,3 @@
-
 **DO** use `DecoratedBox` when `Container` has only a `Decoration`.
 
 A `Container` is a heavier Widget than a `DecoratedBox`, and as bonus,

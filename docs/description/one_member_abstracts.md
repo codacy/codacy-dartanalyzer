@@ -1,4 +1,3 @@
-
 From the [style guide](https://dart.dev/guides/language/effective-dart/style/):
 
 **AVOID** defining a one-member abstract class when a simple function will do.

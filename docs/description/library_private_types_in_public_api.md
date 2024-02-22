@@ -1,4 +1,3 @@
-
 **AVOID** using library private types in public APIs.
 
 For the purposes of this lint, a public API is considered to be any top-level or

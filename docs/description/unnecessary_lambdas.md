@@ -1,4 +1,3 @@
-
 **DON'T** create a lambda when a tear-off will do.
 
 **BAD:**

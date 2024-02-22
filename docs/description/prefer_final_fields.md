@@ -1,4 +1,3 @@
-
 **DO** prefer declaring private fields as final if they are not reassigned later
 in the library.
 

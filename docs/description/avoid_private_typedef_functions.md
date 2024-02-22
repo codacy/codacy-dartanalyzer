@@ -1,4 +1,3 @@
-
 **AVOID** private typedef functions used only once. Prefer inline function
 syntax.
 

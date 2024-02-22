@@ -1,4 +1,3 @@
-
 **DO** prefer declaring variables as final if they are not reassigned later in
 the code.
 

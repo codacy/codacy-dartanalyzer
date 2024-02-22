@@ -1,4 +1,3 @@
-
 **DON'T** assign new values to parameters of methods or functions.
 
 Assigning new values to parameters is generally a bad practice unless an
@@ -29,7 +28,7 @@ void badFunctionPositional(int required, [int optional = 42]) { // LINT
 **BAD:**
 ```dart
 class A {
-    void badMethod(int parameter) { // LINT
+  void badMethod(int parameter) { // LINT
     parameter = 4;
   }
 }

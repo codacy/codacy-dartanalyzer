@@ -1,4 +1,3 @@
-
 **AVOID** `null` in null-aware assignment.
 
 Using `null` on the right-hand side of a null-aware assignment effectively makes

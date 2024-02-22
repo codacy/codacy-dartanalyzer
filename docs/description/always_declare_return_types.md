@@ -1,4 +1,3 @@
-
 **DO** declare method return types.
 
 When declaring a method or function *always* specify a return type.

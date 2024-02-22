@@ -1,7 +1,6 @@
-
 **AVOID** declaring parameters as final.
 
-Declaring parameters as final can lead to unecessarily verbose code, especially
+Declaring parameters as final can lead to unnecessarily verbose code, especially
 when using the "parameter_assignments" rule.
 
 **GOOD:**

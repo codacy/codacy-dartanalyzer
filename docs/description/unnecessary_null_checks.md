@@ -1,5 +1,4 @@
-
-Don't apply a null check when a nullable value is accepted.
+**DON'T** apply a null check when a nullable value is accepted.
 
 **BAD:**
 ```dart

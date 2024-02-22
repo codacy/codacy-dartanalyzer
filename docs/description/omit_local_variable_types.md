@@ -1,5 +1,4 @@
-
-**DON’T** redundantly type annotate initialized local variables.
+**DON'T** redundantly type annotate initialized local variables.
 
 Local variables, especially in modern code where functions tend to be small,
 have very little scope. Omitting the type focuses the reader's attention on the

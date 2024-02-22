@@ -1,5 +1,4 @@
-
-**DO NOT** use the type Null where void would work.
+**DON'T** use the type Null where void would work.
 
 **BAD:**
 ```dart

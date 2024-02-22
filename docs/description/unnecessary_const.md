@@ -1,4 +1,3 @@
-
 **AVOID** repeating const keyword in a const context.
 
 **BAD:**

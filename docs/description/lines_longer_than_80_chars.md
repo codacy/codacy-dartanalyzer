@@ -1,4 +1,3 @@
-
 **AVOID** lines longer than 80 characters
 
 Readability studies show that long lines of text are harder to read because your

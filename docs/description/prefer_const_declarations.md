@@ -1,4 +1,3 @@
-
 **PREFER** using `const` for const declarations.
 
 Const declarations are more hot-reload friendly and allow to use const

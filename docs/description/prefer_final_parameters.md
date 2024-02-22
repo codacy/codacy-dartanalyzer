@@ -1,4 +1,3 @@
-
 **DO** prefer declaring parameters as final if they are not reassigned in
 the function body.
 

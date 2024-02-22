@@ -1,4 +1,3 @@
-
 **DO** use `lowercase_with_underscores` when specifying a library prefix.
 
 **GOOD:**

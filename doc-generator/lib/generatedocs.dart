@@ -69,60 +69,60 @@ void main() {
 
   //Registry.ruleRegistry.rules does not have rules, so this was the solution
   // to get all the missing rules with md documentation
-  final String sdkDir = "tempDartSdk";
-  new Directory(sdkDir).createSync();
+  // final String sdkDir = "tempDartSdk";
+  // new Directory(sdkDir).createSync();
 
-  Process.runSync('git', [
-    'clone',
-    '--depth',
-    '1',
-    '--branch',
-    sdkVersion,
-    'https://github.com/dart-lang/sdk.git',
-    sdkDir
-  ]);
+  // Process.runSync('git', [
+  //   'clone',
+  //   '--depth',
+  //   '1',
+  //   '--branch',
+  //   sdkVersion,
+  //   'https://github.com/dart-lang/sdk.git',
+  //   sdkDir
+  // ]);
 
-  final String messageFileContent =
-      File(sdkDir + "/pkg/analyzer/messages.yaml").readAsStringSync();
+  // final String messageFileContent =
+  //     File(sdkDir + "/pkg/analyzer/messages.yaml").readAsStringSync();
 
-  Map<Object, Object> yaml =
-      loadYaml(messageFileContent) as Map<Object, Object>;
+  // YamlMap yaml =
+  //     loadYaml(messageFileContent);
 
-  final Map<String, Map<String, AnalyzerErrorCodeInfo>> errorPatterns =
-      decodeAnalyzerMessagesYaml(yaml);
+  // final Map<String, Map<String, AnalyzerErrorCodeInfo>> errorPatterns =
+  //     decodeAnalyzerMessagesYaml(yaml);
 
-  errorPatterns.forEach((key, group) {
-    group.forEach((key, value) {
-      String patternId = key.toLowerCase();
+  // errorPatterns.forEach((key, group) {
+  //   group.forEach((key, value) {
+  //     String patternId = key.toLowerCase();
 
-      var pattern = PatternSpec(
-          patternId: patternId,
-          level: 'Warning',
-          category: 'ErrorProne',
-          enabled: false);
+  //     var pattern = PatternSpec(
+  //         patternId: patternId,
+  //         level: 'Warning',
+  //         category: 'ErrorProne',
+  //         enabled: false);
 
-      patternsType[pattern.patternId] = 'error';
-      patterns.add(pattern);
+  //     patternsType[pattern.patternId] = 'error';
+  //     patterns.add(pattern);
 
-      var splited = patternId.split("_").join(" ");
-      var title = splited[0].toUpperCase() + splited.substring(1);
+  //     var splited = patternId.split("_").join(" ");
+  //     var title = splited[0].toUpperCase() + splited.substring(1);
 
-      descriptions.add(
-          Description(patternId: patternId, title: title, description: ''));
+  //     descriptions.add(
+  //         Description(patternId: patternId, title: title, description: ''));
 
-      if (value.documentation != null) {
-        File(docsDescriptionDirPath + '/' + patternId + ".md")
-            .writeAsStringSync(value.documentation);
-      }
-    });
-  });
+  //     if (value.documentation.isNotEmpty) {
+  //       File(docsDescriptionDirPath + '/' + patternId + ".md")
+  //           .writeAsStringSync(value.documentation);
+  //     }
+  //   });
+  // });
 
-  new Directory(sdkDir).deleteSync(recursive: true);
+  //new Directory(sdkDir).deleteSync(recursive: true);
 
   descriptionFile.writeAsStringSync(encoder.convert(descriptions.toList()));
 
   patternsFile.writeAsStringSync(encoder.convert(PatternsFile(
-      name: "dartanalyzer", version: sdkVersion, patterns: patterns)));
+      name: "dart-analyze", version: sdkVersion, patterns: patterns)));
 
   patternsTypeFile.writeAsStringSync(encoder.convert(patternsType));
 
@@ -138,7 +138,7 @@ class PatternsFile {
   final String version;
   final Set<PatternSpec> patterns;
 
-  PatternsFile({this.name, this.patterns, this.version});
+  PatternsFile({required this.name, required this.patterns, required this.version});
 
   Map<String, dynamic> toJson() =>
       {'name': name, 'version': version, 'patterns': patterns.toList()};
@@ -149,7 +149,7 @@ class Description {
   final String title;
   final String description;
 
-  Description({this.patternId, this.title, this.description});
+  Description({required this.patternId, required this.title, required this.description});
 
   Map<String, dynamic> toJson() =>
       {'patternId': patternId, 'title': title, 'description': description};
@@ -163,7 +163,7 @@ class PatternSpec {
   //parameters: ParameterSpec[]
   final bool enabled;
 
-  PatternSpec({this.patternId, this.level, this.category, this.enabled});
+  PatternSpec({required this.patternId, required this.level, required this.category, required this.enabled});
 
   Map<String, dynamic> toJson() => {
         'patternId': patternId,
@@ -189,7 +189,7 @@ Map<String, Map<String, AnalyzerErrorCodeInfo>> decodeAnalyzerMessagesYaml(
     problem('root node is not a map');
   }
 
-  (yaml as Map<Object, Object>).forEach((key, value) {
+  (yaml).forEach((key, value) {
     var className = key;
     if (className is! String) {
       problem('non-string class key ${json.encode(className)}');
@@ -198,7 +198,7 @@ Map<String, Map<String, AnalyzerErrorCodeInfo>> decodeAnalyzerMessagesYaml(
     if (classValue is! Map<Object, Object>) {
       problem('value associated with class key $className is not a map');
     }
-    (classValue as Map<Object, Object>).forEach((key, value) {
+    (classValue).forEach((key, value) {
       var errorName = key;
       if (errorName is! String) {
         problem('in class $className, non-string error key '
@@ -224,13 +224,13 @@ Map<String, Map<String, AnalyzerErrorCodeInfo>> decodeAnalyzerMessagesYaml(
 
 class AnalyzerErrorCodeInfo extends ErrorCodeInfo {
   AnalyzerErrorCodeInfo(
-      {String comment,
-      String correctionMessage,
-      String documentation,
+      {required String comment,
+      required String correctionMessage,
+      required String documentation,
       bool hasPublishedDocs = false,
       bool isUnresolvedIdentifier = false,
-      String problemMessage,
-      String sharedName})
+      required String problemMessage,
+      required String sharedName})
       : super(
             comment: comment,
             correctionMessage: correctionMessage,
@@ -276,14 +276,14 @@ abstract class ErrorCodeInfo {
   final String previousName;
 
   ErrorCodeInfo(
-      {this.comment,
-      this.documentation,
+      {required this.comment,
+      required this.documentation,
       this.hasPublishedDocs = false,
       this.isUnresolvedIdentifier = false,
-      this.sharedName,
-      this.problemMessage,
-      this.correctionMessage,
-      this.previousName});
+      required this.sharedName,
+      required this.problemMessage,
+      required this.correctionMessage,
+      this.previousName = ""});
 
   /// Decodes an [ErrorCodeInfo] object from its YAML representation.
   ErrorCodeInfo.fromYaml(Map<Object, Object> yaml)
@@ -291,9 +291,9 @@ abstract class ErrorCodeInfo {
             comment: yaml['comment'] as String,
             correctionMessage: yaml['correctionMessage'] as String,
             documentation: yaml['documentation'] as String,
-            hasPublishedDocs: yaml['hasPublishedDocs'] as bool ?? false,
+            hasPublishedDocs: yaml['hasPublishedDocs'] as bool,
             isUnresolvedIdentifier:
-                yaml['isUnresolvedIdentifier'] as bool ?? false,
+                yaml['isUnresolvedIdentifier'] as bool,
             problemMessage: yaml['problemMessage'] as String,
             sharedName: yaml['sharedName'] as String,
             previousName: yaml['previousName'] as String);

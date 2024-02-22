@@ -1,4 +1,3 @@
-
 **DO** await functions that return a `Future` inside of an async function body.
 
 It's easy to forget await in async methods as naming conventions usually don't

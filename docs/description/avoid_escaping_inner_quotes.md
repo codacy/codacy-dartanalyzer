@@ -1,4 +1,3 @@
-
 Avoid escaping inner quotes by converting surrounding quotes.
 
 **BAD:**

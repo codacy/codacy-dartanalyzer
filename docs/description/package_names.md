@@ -1,4 +1,3 @@
-
 From the [Pubspec format description](https://dart.dev/tools/pub/pubspec):
 
 **DO** use `lowercase_with_underscores` for package names.

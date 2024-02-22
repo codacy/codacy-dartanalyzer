@@ -1,4 +1,3 @@
-
 **DO** avoid calls to <Type>.toString() in production code, since it does not
 contractually return the user-defined name of the Type (or underlying class).
 Development-mode compilers where code size is not a concern use the full name,

@@ -1,4 +1,3 @@
-
 **DO** sort constructor declarations before other members.
 
 **GOOD:**

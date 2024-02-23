@@ -14,9 +14,7 @@ COPY docs/dartanalyzer/pubspec.lock /
 COPY docs/dartanalyzer/analysis_options.yaml /
 
 #Install supported lints
-RUN dart pub add lints --dev
-RUN dart pub add flutter_lints --dev
-
+RUN dart pub add --dev flutter_lints
 
 COPY docs /docs
 COPY target/graalvm-native-image/codacy-dartanalyzer /workdir/

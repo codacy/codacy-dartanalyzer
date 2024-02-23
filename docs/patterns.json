@@ -1,5 +1,5 @@
 {
-  "name": "dart-analyze",
+  "name": "dartanalyzer",
   "version": "3.3.0",
   "patterns": [
     {

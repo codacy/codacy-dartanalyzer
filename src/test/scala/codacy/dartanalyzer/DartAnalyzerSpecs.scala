@@ -5,12 +5,12 @@ import org.scalatest.wordspec.AnyWordSpec
 
 class DartAnalyzerSpecs extends AnyWordSpec with Matchers {
 
-  "sanitizeStderr" should {
+  "sanitizeOutput" should {
 
-    "Remove first line if it contains `deprecated message`" in {
+    "Outputs same lines as input" in {
 
       val sanitized =
-        DartAnalyzer.sanitizeStderr(
+        DartAnalyzer.sanitizeOutput(
           List(
             "INFO|LINT|prefer_final_parameters|/src/lib/switch_theme/view/switch_theme_editor.dart|96|28|5|Prefer final for parameter declarations if they are not reassigned.",
             "INFO|LINT|always_specify_types|/src/lib/switch_theme/view/switch_theme_editor.dart|76|5|5|Specify type annotations."
@@ -22,14 +22,14 @@ class DartAnalyzerSpecs extends AnyWordSpec with Matchers {
 
     "Not be modified if `deprecated message` is not on output" in {
       val sanitized =
-        DartAnalyzer.sanitizeStderr(List("Issue1", "Issue2"))
+        DartAnalyzer.sanitizeOutput(List("Issue1", "Issue2"))
 
       sanitized.size shouldBe 2
     }
 
     "Remove `part` feature related message" in {
 
-      val sanitized = DartAnalyzer.sanitizeStderr(
+      val sanitized = DartAnalyzer.sanitizeOutput(
         List(
           "INFO|LINT|prefer_final_parameters|/src/lib/switch_theme/view/switch_theme_editor.dart|96|28|5|Prefer final for parameter declarations if they are not reassigned.",
           "/src/lib/app_bar_theme/cubit/app_bar_theme_state.dart " + DartAnalyzer.partMessage,
@@ -44,7 +44,7 @@ class DartAnalyzerSpecs extends AnyWordSpec with Matchers {
     }
 
     "Remove `deprecated message` and `part`" in {
-      val sanitized = DartAnalyzer.sanitizeStderr(
+      val sanitized = DartAnalyzer.sanitizeOutput(
         List(
           "INFO|LINT|prefer_final_parameters|/src/lib/switch_theme/view/switch_theme_editor.dart|96|28|5|Prefer final for parameter declarations if they are not reassigned.",
           "/src/lib/app_bar_theme/cubit/app_bar_theme_state.dart " + DartAnalyzer.partMessage,

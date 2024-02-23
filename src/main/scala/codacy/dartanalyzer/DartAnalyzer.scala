@@ -121,7 +121,7 @@ object DartAnalyzer extends Tool {
             problemMessage
           ) =>
         Result.Issue(
-          file = Source.File(file),
+          filename = Source.File(file),
           message = Result.Message(problemMessage),
           patternId = Pattern.Id(name.toLowerCase),
           line = Source.Line(lineNumber.toInt)

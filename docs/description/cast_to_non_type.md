@@ -1,0 +1,23 @@
+#### Description
+
+The analyzer produces this diagnostic when the name following the `as` in a
+cast expression is defined to be something other than a type.
+
+#### Example
+
+The following code produces this diagnostic because `x` is a variable, not
+a type:
+
+```dart
+num x = 0;
+int y = x as [!x!];
+```
+
+#### Common fixes
+
+Replace the name with the name of a type:
+
+```dart
+num x = 0;
+int y = x as int;
+```

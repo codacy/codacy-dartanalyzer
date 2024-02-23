@@ -1,0 +1,33 @@
+#### Description
+
+The analyzer produces this diagnostic when a `catch` clause is found, and
+neither the exception parameter nor the optional stack trace parameter are
+used in the `catch` block.
+
+#### Example
+
+The following code produces this diagnostic because `e` isn't referenced:
+
+```dart
+void f() {
+  try {
+    int.parse(';');
+  } on FormatException catch ([!e!]) {
+    // ignored
+  }
+}
+```
+
+#### Common fixes
+
+Remove the unused `catch` clause:
+
+```dart
+void f() {
+  try {
+    int.parse(';');
+  } on FormatException {
+    // ignored
+  }
+}
+```

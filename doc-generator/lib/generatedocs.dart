@@ -6,6 +6,7 @@ import 'package:linter/src/rules.dart';
 
 import 'dart:convert';
 import 'dart:core';
+import 'package:http/http.dart' as http;
 import 'package:yaml/yaml.dart';
 
 void main() {
@@ -82,47 +83,53 @@ void main() {
   //   sdkDir
   // ]);
 
-  // final String messageFileContent =
-  //     File(sdkDir + "/pkg/analyzer/messages.yaml").readAsStringSync();
+  void processErrorPatterns() async {
+    final url = 'https://raw.githubusercontent.com/dart-lang/sdk/${sdkVersion}/pkg/analyzer/messages.yaml';
+    final response = await http.get(Uri.parse(url));
 
-  // YamlMap yaml =
-  //     loadYaml(messageFileContent);
+    if (response.statusCode != 200) {
+      print('Failed to load file');
+      return;
+    }
 
-  // final Map<String, Map<String, AnalyzerErrorCodeInfo>> errorPatterns =
-  //     decodeAnalyzerMessagesYaml(yaml);
+    final String content = response.body;
+    final YamlMap yaml = loadYaml(content);
+    final Map<String, Map<String, AnalyzerErrorCodeInfo>> errorPatterns = decodeAnalyzerMessagesYaml(yaml);
 
-  // errorPatterns.forEach((key, group) {
-  //   group.forEach((key, value) {
-  //     String patternId = key.toLowerCase();
+    errorPatterns.forEach((key, group) {
+      group.forEach((key, value) {
+        String patternId = key.toLowerCase();
 
-  //     var pattern = PatternSpec(
-  //         patternId: patternId,
-  //         level: 'Warning',
-  //         category: 'ErrorProne',
-  //         enabled: false);
+        var pattern = PatternSpec(
+            patternId: patternId,
+            level: 'Warning',
+            category: 'ErrorProne',
+            enabled: false);
 
-  //     patternsType[pattern.patternId] = 'error';
-  //     patterns.add(pattern);
+        patternsType[pattern.patternId] = 'error';
+        patterns.add(pattern);
 
-  //     var splited = patternId.split("_").join(" ");
-  //     var title = splited[0].toUpperCase() + splited.substring(1);
+        var splited = patternId.split("_").join(" ");
+        var title = splited[0].toUpperCase() + splited.substring(1);
 
-  //     descriptions.add(
-  //         Description(patternId: patternId, title: title, description: ''));
+        descriptions.add(
+            Description(patternId: patternId, title: title, description: ''));
 
-  //     if (value.documentation.isNotEmpty) {
-  //       File(docsDescriptionDirPath + '/' + patternId + ".md")
-  //           .writeAsStringSync(value.documentation);
-  //     }
-  //   });
-  // });
+        if (value.documentation != null) {
+          File(docsDescriptionDirPath + '/' + patternId + ".md")
+              .writeAsString(value.documentation!);
+        }
+      });
+    });
+  };
 
-  //new Directory(sdkDir).deleteSync(recursive: true);
+  processErrorPatterns();
+
 
   descriptionFile.writeAsStringSync(encoder.convert(descriptions.toList()));
 
   patternsFile.writeAsStringSync(encoder.convert(PatternsFile(
-      name: "dart-analyze", version: sdkVersion, patterns: patterns)));
+      name: "dartanalyzer", version: sdkVersion, patterns: patterns)));
 
   patternsTypeFile.writeAsStringSync(encoder.convert(patternsType));
 
@@ -179,15 +186,12 @@ class PatternSpec {
 /// two-level map of [ErrorCodeInfo], indexed first by class name and then by
 /// error name.
 Map<String, Map<String, AnalyzerErrorCodeInfo>> decodeAnalyzerMessagesYaml(
-    Object yaml) {
+    YamlMap yaml) {
   Never problem(String message) {
     throw 'Problem in pkg/analyzer/messages.yaml: $message';
   }
 
   var result = <String, Map<String, AnalyzerErrorCodeInfo>>{};
-  if (yaml is! Map<Object, Object>) {
-    problem('root node is not a map');
-  }
 
   (yaml).forEach((key, value) {
     var className = key;
@@ -195,7 +199,8 @@ Map<String, Map<String, AnalyzerErrorCodeInfo>> decodeAnalyzerMessagesYaml(
       problem('non-string class key ${json.encode(className)}');
     }
     var classValue = value;
-    if (classValue is! Map<Object, Object>) {
+    if (classValue is! YamlMap) {
+      print(classValue);
       problem('value associated with class key $className is not a map');
     }
     (classValue).forEach((key, value) {
@@ -205,7 +210,7 @@ Map<String, Map<String, AnalyzerErrorCodeInfo>> decodeAnalyzerMessagesYaml(
             '${json.encode(errorName)}');
       }
       var errorValue = value;
-      if (errorValue is! Map<Object, Object>) {
+      if (errorValue is! YamlMap) {
         problem('value associated with error $className.$errorName is not a '
             'map');
       }
@@ -224,13 +229,13 @@ Map<String, Map<String, AnalyzerErrorCodeInfo>> decodeAnalyzerMessagesYaml(
 
 class AnalyzerErrorCodeInfo extends ErrorCodeInfo {
   AnalyzerErrorCodeInfo(
-      {required String comment,
-      required String correctionMessage,
-      required String documentation,
-      bool hasPublishedDocs = false,
-      bool isUnresolvedIdentifier = false,
-      required String problemMessage,
-      required String sharedName})
+      {comment,
+      correctionMessage,
+      documentation,
+      hasPublishedDocs,
+      isUnresolvedIdentifier,
+      problemMessage,
+      sharedName})
       : super(
             comment: comment,
             correctionMessage: correctionMessage,
@@ -240,63 +245,63 @@ class AnalyzerErrorCodeInfo extends ErrorCodeInfo {
             problemMessage: problemMessage,
             sharedName: sharedName);
 
-  AnalyzerErrorCodeInfo.fromYaml(Map<Object, Object> yaml)
+  AnalyzerErrorCodeInfo.fromYaml(YamlMap yaml)
       : super.fromYaml(yaml);
 }
 
 abstract class ErrorCodeInfo {
   /// If present, a documentation comment that should be associated with the
   /// error in code generated output.
-  final String comment;
+  final String? comment;
 
   /// If the error code has an associated correctionMessage, the template for
   /// it.
-  final String correctionMessage;
+  final String? correctionMessage;
 
   /// If present, user-facing documentation for the error.
-  final String documentation;
+  final String? documentation;
 
   /// `true` if diagnostics with this code have documentation for them that has
   /// been published.
-  final bool hasPublishedDocs;
+  final bool? hasPublishedDocs;
 
   /// Indicates whether this error is caused by an unresolved identifier.
-  final bool isUnresolvedIdentifier;
+  final bool? isUnresolvedIdentifier;
 
   /// The problemMessage for the error code.
-  final String problemMessage;
+  final String? problemMessage;
 
   /// If present, indicates that this error code has a special name for
   /// presentation to the user, that is potentially shared with other error
   /// codes.
-  final String sharedName;
+  final String? sharedName;
 
   /// If present, indicates that this error code has been renamed from
   /// [previousName] to its current name (or [sharedName]).
-  final String previousName;
+  final String? previousName;
 
   ErrorCodeInfo(
-      {required this.comment,
-      required this.documentation,
-      this.hasPublishedDocs = false,
-      this.isUnresolvedIdentifier = false,
-      required this.sharedName,
-      required this.problemMessage,
-      required this.correctionMessage,
-      this.previousName = ""});
+      {this.comment,
+      this.documentation,
+      this.hasPublishedDocs,
+      this.isUnresolvedIdentifier,
+      this.sharedName,
+      this.problemMessage,
+      this.correctionMessage,
+      this.previousName});
 
   /// Decodes an [ErrorCodeInfo] object from its YAML representation.
-  ErrorCodeInfo.fromYaml(Map<Object, Object> yaml)
+  ErrorCodeInfo.fromYaml(YamlMap yaml)
       : this(
-            comment: yaml['comment'] as String,
-            correctionMessage: yaml['correctionMessage'] as String,
-            documentation: yaml['documentation'] as String,
-            hasPublishedDocs: yaml['hasPublishedDocs'] as bool,
+            comment: (yaml['comment'] as String?)?.trim(),
+            correctionMessage: (yaml['correctionMessage'] as String?)?.trim(),
+            documentation: (yaml['documentation'] as String?)?.trim(),
+            hasPublishedDocs: yaml['hasPublishedDocs'] as bool? ?? false,
             isUnresolvedIdentifier:
-                yaml['isUnresolvedIdentifier'] as bool,
-            problemMessage: yaml['problemMessage'] as String,
-            sharedName: yaml['sharedName'] as String,
-            previousName: yaml['previousName'] as String);
+                yaml['isUnresolvedIdentifier'] as bool? ?? false,
+            problemMessage: (yaml['problemMessage'] as String?)?.trim(),
+            sharedName: (yaml['sharedName'] as String?)?.trim(),
+            previousName: (yaml['previousName'] as String?)?.trim());
 }
 
 void createInitialPubspecFiles(String sdkVersion){

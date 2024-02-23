@@ -1,0 +1,22 @@
+#### Description
+
+The analyzer produces this diagnostic when either the type `dynamic` or the
+type `Null` is followed by a question mark. Both of these types are
+inherently nullable so the question mark doesn't change the semantics.
+
+#### Example
+
+The following code produces this diagnostic because the question mark
+following `dynamic` isn't necessary:
+
+```dart
+dynamic[!?!] x;
+```
+
+#### Common fixes
+
+Remove the unneeded question mark:
+
+```dart
+dynamic x;
+```

@@ -2,7 +2,7 @@
 
 <checkstyle version="1.5">
     <file name="test.dart">
-        <error source="prefer_single_quotes" line="2" message="Only use double quotes for strings containing single quotes." severity="info" />
-        <error source="unused_local_variable" line="2" message="The value of the local variable 'unusedVar' isn't used." severity="warning" />
+        <error source="prefer_single_quotes" line="2" message="Unnecessary use of double quotes." severity="info" />
+        <error source="unused_local_variable" line="2" message="The value of the local variable 'unusedVar' isn't used." severity="info" />
     </file>
 </checkstyle>

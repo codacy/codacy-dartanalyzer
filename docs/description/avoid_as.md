@@ -1,4 +1,3 @@
-
 **AVOID** using `as`.
 
 If you know the type is correct, use an assertion or assign to a more

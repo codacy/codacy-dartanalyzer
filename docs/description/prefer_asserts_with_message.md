@@ -1,4 +1,3 @@
-
 When assertions fail it's not always simple to understand why. Adding a message
 to the `assert` helps the developer to understand why the AssertionError occurs.
 

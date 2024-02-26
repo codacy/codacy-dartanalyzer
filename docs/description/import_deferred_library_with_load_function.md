@@ -6,12 +6,12 @@ deferred import introduces an implicit function named `loadLibrary`. This
 function is used to load the contents of the deferred library, and the
 implicit function hides the explicit declaration in the deferred library.
 
-For more information, see the language tour's coverage of
-[deferred loading](https://dart.dev/guides/language/language-tour#lazily-loading-a-library).
+For more information, check out
+[Lazily loading a library](https://dart.dev/language/libraries#lazily-loading-a-library).
 
 #### Example
 
-Given a file (`a.dart`) that defines a function named `loadLibrary`:
+Given a file `a.dart` that defines a function named `loadLibrary`:
 
 ```dart
 %uri="lib/a.dart"
@@ -65,7 +65,3 @@ void f() {
   a.Library();
 }
 ```
-
-If type arguments shouldn't be required for the class, then mark the class
-with the `[optionalTypeArgs][meta-optionalTypeArgs]` annotation (from
-`package:meta`):

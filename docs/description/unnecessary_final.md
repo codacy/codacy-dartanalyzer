@@ -1,23 +1,46 @@
-**DON'T** use `final` for local variables.
+#### Description
 
-`var` is shorter, and `final` does not change the meaning of the code.
+The analyzer produces this diagnostic when either a field initializing
+parameter or a super parameter in a constructor has the keyword `final`.
+In both cases the keyword is unnecessary because the parameter is
+implicitly `final`.
 
-**BAD:**
+#### Examples
+
+The following code produces this diagnostic because the field initializing
+parameter has the keyword `final`:
+
 ```dart
-void badMethod() {
-  final label = 'Final or var?';
-  for (final char in ['v', 'a', 'r']) {
-    print(char);
-  }
+class A {
+  int value;
+
+  A([!final!] this.value);
 }
 ```
 
-**GOOD:**
+The following code produces this diagnostic because the super parameter in
+`B` has the keyword `final`:
+
 ```dart
-void goodMethod() {
-  var label = 'Final or var?';
-  for (var char in ['v', 'a', 'r']) {
-    print(char);
-  }
+class A {
+  A(int value);
+}
+
+class B extends A {
+  B([!final!] super.value);
+}
+```
+
+#### Common fixes
+
+Remove the unnecessary `final` keyword:
+
+```dart
+class A {
+  A(int value);
+}
+
+class B extends A {
+  B(super.value);
 }
 ```

@@ -2,7 +2,7 @@
 
 The analyzer produces this diagnostic when a constructor invocation is
 found where the type being instantiated is a type alias for one of the type
-parameters of the type alias. This isn’t allowed because the value of the
+parameters of the type alias. This isn't allowed because the value of the
 type parameter is a type rather than a class.
 
 #### Example

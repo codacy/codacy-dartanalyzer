@@ -1,4 +1,3 @@
-
 **PREFER** generic function type aliases.
 
 With the introduction of generic functions, function type aliases

@@ -17,7 +17,7 @@ void f(String? s) {
 
 #### Common fixes
 
-Add an explicit null check to the expression:
+Add an explicit null-check to the expression:
 
 ```dart
 void f(String? s) {

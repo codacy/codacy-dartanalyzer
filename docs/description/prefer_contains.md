@@ -1,4 +1,3 @@
-
 **DON'T** use `indexOf` to see if a collection contains an element.
 
 Calling `indexOf` to see if a collection contains something is difficult to read

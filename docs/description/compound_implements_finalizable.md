@@ -3,7 +3,7 @@
 The analyzer produces this diagnostic when a subclass of either `Struct`
 or `Union` implements `Finalizable`.
 
-For more information about FFI, see [C interop using dart:ffi][].
+For more information about FFI, see [C interop using dart:ffi][ffi].
 
 #### Example
 
@@ -13,7 +13,7 @@ implements `Finalizable`:
 ```dart
 import 'dart:ffi';
 
-class [!S!] extends Struct implements Finalizable {
+final class [!S!] extends Struct implements Finalizable {
   external Pointer notEmpty;
 }
 ```
@@ -25,7 +25,7 @@ Try removing the implements clause from the class:
 ```dart
 import 'dart:ffi';
 
-class S extends Struct {
+final class S extends Struct {
   external Pointer notEmpty;
 }
 ```

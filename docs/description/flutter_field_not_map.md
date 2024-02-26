@@ -11,7 +11,7 @@ top-level `flutter` key is a string:
 ```yaml
 %uri="pubspec.yaml"
 name: example
-flutter: true
+flutter: [!true!]
 ```
 
 #### Common fixes

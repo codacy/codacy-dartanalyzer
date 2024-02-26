@@ -5,7 +5,7 @@ library where it isn't visible.
 
 #### Example
 
-Given a file named `a.dart` that contains the following:
+Given a file `a.dart` that contains the following:
 
 ```dart
 %uri="lib/a.dart"

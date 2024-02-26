@@ -12,7 +12,7 @@ label a `switch` statement, is used in the `continue` statement:
 void f(int i) {
   l: switch (i) {
     case 0:
-      continue [!l!];
+      [!continue l;!]
   }
 }
 ```

@@ -12,6 +12,7 @@ The following code produces this diagnostic because the enum constant `e2`
 isn't handled:
 
 ```dart
+%language=2.19
 enum E { e1, e2 }
 
 void f(E e) {
@@ -55,5 +56,5 @@ void f(E e) {
   }
 }
 ```
-TODO(brianwilkerson) This documentation will need to be updated when NNBD
+TODO(brianwilkerson): This documentation will need to be updated when NNBD
  ships.

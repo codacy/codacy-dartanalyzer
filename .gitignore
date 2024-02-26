@@ -14,3 +14,4 @@ target
 .history
 doc-generator/.dart_tool
 doc-generator/pubspec.lock
+docs/dartanalyzer/.dart_tool

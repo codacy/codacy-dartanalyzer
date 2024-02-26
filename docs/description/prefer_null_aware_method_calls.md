@@ -1,4 +1,3 @@
-
 Instead of checking nullability of a function/method `f` before calling it you
 can use `f?.call()`.
 

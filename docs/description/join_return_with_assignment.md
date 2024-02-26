@@ -1,4 +1,3 @@
-
 **DO** join return statement with assignment when possible.
 
 **BAD:**

@@ -3,7 +3,7 @@
 The analyzer produces this diagnostic when the string literal in an
 `import`, `export`, or `part` directive contains an interpolation. The
 resolution of the URIs in directives must happen before the declarations
-are compiled, so expressions can’t be  evaluated  while determining the
+are compiled, so expressions can't be  evaluated  while determining the
 values of the URIs.
 
 #### Example

@@ -4,7 +4,7 @@ The analyzer produces this diagnostic when a subclass of `Struct` or
 `Union` doesn't have any fields. Having an empty `Struct` or `Union`
 isn't supported.
 
-For more information about FFI, see [C interop using dart:ffi][].
+For more information about FFI, see [C interop using dart:ffi][ffi].
 
 #### Example
 
@@ -14,7 +14,7 @@ extends `Struct`, doesn't declare any fields:
 ```dart
 import 'dart:ffi';
 
-class [!C!] extends Struct {}
+final class [!C!] extends Struct {}
 ```
 
 #### Common fixes
@@ -24,7 +24,7 @@ If the class is intended to be a struct, then declare one or more fields:
 ```dart
 import 'dart:ffi';
 
-class C extends Struct {
+final class C extends Struct {
   @Int32()
   external int x;
 }
@@ -36,7 +36,7 @@ make it a subclass of `Opaque`:
 ```dart
 import 'dart:ffi';
 
-class C extends Opaque {}
+final class C extends Opaque {}
 ```
 
 If the class isn't intended to be a struct, then remove or change the

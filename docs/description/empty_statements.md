@@ -1,4 +1,3 @@
-
 **AVOID** empty statements.
 
 Empty statements almost always indicate a bug.

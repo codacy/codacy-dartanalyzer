@@ -1,4 +1,3 @@
-
 Where possible, use already defined const values.
 
 **BAD:**

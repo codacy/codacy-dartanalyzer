@@ -16,7 +16,7 @@ name: example
 dependencies:
   meta: ^1.0.2
 dev_dependencies:
-  meta: ^1.0.2
+  [!meta!]: ^1.0.2
 ```
 
 #### Common fixes

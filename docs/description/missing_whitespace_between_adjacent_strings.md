@@ -1,4 +1,3 @@
-
 Add a trailing whitespace to prevent missing whitespace between adjacent
 strings.
 

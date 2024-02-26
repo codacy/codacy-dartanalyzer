@@ -1,7 +1,7 @@
 #### Description
 
 The analyzer produces this diagnostic when a sealed class (one that either
-has the `[sealed][meta-sealed]` annotation or inherits or mixes in a
+has the [`sealed`][meta-sealed] annotation or inherits or mixes in a
 sealed class) is referenced in either the `extends`, `implements`, or
 `with` clause of a class or mixin declaration if the declaration isn't in
 the same package as the sealed class.

@@ -5,14 +5,14 @@ cause the same name to be exported from multiple libraries.
 
 #### Example
 
-Given a file named `a.dart` containing
+Given a file `a.dart` containing
 
 ```dart
 %uri="lib/a.dart"
 class C {}
 ```
 
-And a file named `b.dart` containing
+And a file `b.dart` containing
 
 ```dart
 %uri="lib/b.dart"

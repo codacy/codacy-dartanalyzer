@@ -6,13 +6,13 @@ argument in an invocation of either `Pointer.asFunction` or
 returned would have a return type of `Handle`.
 
 The analyzer also produces this diagnostic when the value of the `isLeaf`
-argument in an `FfiNative` annotation is `true` and the type argument on
+argument in an `Native` annotation is `true` and the type argument on
 the annotation is a function type whose return type is `Handle`.
 
 In all of these cases, leaf calls are only supported for the types `bool`,
 `int`, `float`, `double`, and, as a return type `void`.
 
-For more information about FFI, see [C interop using dart:ffi][].
+For more information about FFI, see [C interop using dart:ffi][ffi].
 
 #### Example
 

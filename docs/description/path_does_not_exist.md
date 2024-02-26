@@ -13,7 +13,7 @@ code produces this diagnostic because it's listed as the path of a package:
 name: example
 dependencies:
   local_package:
-    path: doesNotExist
+    path: [!doesNotExist!]
 ```
 
 #### Common fixes

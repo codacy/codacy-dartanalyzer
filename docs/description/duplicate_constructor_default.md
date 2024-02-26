@@ -62,7 +62,7 @@ class C {
 ```
 
 If there are multiple named constructors and all except one of them are
-unneeded, then remove the constructorsthat aren't needed:
+unneeded, then remove the constructors that aren't needed:
 
 ```dart
 class C {

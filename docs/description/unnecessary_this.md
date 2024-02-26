@@ -1,4 +1,3 @@
-
 From the [style guide](https://dart.dev/guides/language/effective-dart/style/):
 
 **DON'T** use `this` when not needed to avoid shadowing.

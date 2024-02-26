@@ -1,4 +1,3 @@
-
 **AVOID** field initializers in const classes.
 
 Instead of `final x = const expr;`, you should write `get x => const expr;` and

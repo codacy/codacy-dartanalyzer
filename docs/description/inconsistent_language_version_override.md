@@ -10,7 +10,7 @@ Given a [part file][] named `part.dart` that contains the following:
 
 ```dart
 %uri="lib/part.dart"
-// @dart = 2.6
+// @dart = 2.14
 part of 'test.dart';
 ```
 
@@ -18,7 +18,7 @@ The following code produces this diagnostic because the parts of a library
 must have the same language version as the defining compilation unit:
 
 ```dart
-// @dart = 2.5
+// @dart = 2.15
 part [!'part.dart'!];
 ```
 
@@ -28,6 +28,7 @@ Remove the language version override from the [part file][], so that it
 implicitly uses the same version as the defining compilation unit:
 
 ```dart
+%uri="lib/part.dart"
 part of 'test.dart';
 ```
 

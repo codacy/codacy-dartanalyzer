@@ -11,7 +11,7 @@ The following code produces this diagnostic because the value following the
 ```yaml
 %uri="pubspec.yaml"
 name:
-  - example
+  [!- example!]
 ```
 
 #### Common fixes

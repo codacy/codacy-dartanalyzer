@@ -1,5 +1,4 @@
-
-**DO NOT** assign to void.
+**DON'T** assign to void.
 
 **BAD:**
 ```dart

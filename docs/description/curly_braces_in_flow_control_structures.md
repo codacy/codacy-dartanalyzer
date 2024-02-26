@@ -1,4 +1,3 @@
-
 **DO** use curly braces for all flow control structures.
 
 Doing so avoids the [dangling else](https://en.wikipedia.org/wiki/Dangling_else)

@@ -2,7 +2,7 @@
 
 The analyzer produces this diagnostic when anything other than a public
 instance member of a class is annotated with
-`[visibleForOverriding][meta-visibleForOverriding]`. Because only public
+[`visibleForOverriding`][meta-visibleForOverriding]. Because only public
 instance members can be overridden outside the defining library, there's
 no value to annotating any other declarations.
 

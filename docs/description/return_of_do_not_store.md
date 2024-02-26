@@ -1,7 +1,7 @@
 #### Description
 
 The analyzer produces this diagnostic when a value that is annotated with
-the `[doNotStore][meta-doNotStore]` annotation is returned from a method,
+the [`doNotStore`][meta-doNotStore] annotation is returned from a method,
 getter, or function that doesn't have the same annotation.
 
 #### Example
@@ -22,7 +22,7 @@ int g() => [!f()!];
 #### Common fixes
 
 If the value that shouldn't be stored is the correct value to return, then
-mark the function with the `[doNotStore][meta-doNotStore]` annotation:
+mark the function with the [`doNotStore`][meta-doNotStore] annotation:
 
 ```dart
 import 'package:meta/meta.dart';

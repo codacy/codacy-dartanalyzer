@@ -1,3 +1,5 @@
+**DEPRECATED:** This rule is unmaintained and will be removed in a future Linter
+release.
 
 **DON'T** test for conditions that can be inferred at compile time or test the
 same condition twice.

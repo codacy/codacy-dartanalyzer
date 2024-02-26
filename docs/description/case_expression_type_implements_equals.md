@@ -11,6 +11,7 @@ following the keyword `case` (`C(0)`) has the type `C`, and the class `C`
 overrides the `==` operator:
 
 ```dart
+%language=2.18
 class C {
   final int value;
 
@@ -56,6 +57,7 @@ If you can't rewrite the switch statement and the implementation of `==`
 isn't necessary, then remove it:
 
 ```dart
+%language=2.18
 class C {
   final int value;
 

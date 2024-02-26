@@ -12,7 +12,7 @@ generator and is using `return` to return a value:
 
 ```dart
 Iterable<int> f() sync* {
-  [!return 3!];
+  [!return!] 3;
 }
 ```
 

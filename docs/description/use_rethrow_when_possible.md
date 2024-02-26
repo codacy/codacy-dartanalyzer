@@ -1,4 +1,3 @@
-
 **DO** use rethrow to rethrow a caught exception.
 
 As Dart provides rethrow as a feature, it should be used to improve terseness

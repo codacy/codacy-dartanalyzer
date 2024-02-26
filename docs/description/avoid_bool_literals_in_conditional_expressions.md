@@ -1,4 +1,3 @@
-
 **AVOID** bool literals in conditional expressions.
 
 **BAD:**

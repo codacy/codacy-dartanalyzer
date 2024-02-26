@@ -1,4 +1,3 @@
-
 **AVOID** annotating types for function expression parameters.
 
 Annotating types for function expression parameters is usually unnecessary

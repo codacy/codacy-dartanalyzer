@@ -9,6 +9,7 @@ The following code produces this diagnostic because the class `B`, which
 extends `A`, is being used as a mixin by `C`:
 
 ```dart
+//@dart=2.19
 class A {}
 
 class B extends A {}
@@ -22,6 +23,7 @@ If the class being used as a mixin can be changed to extend `Object`, then
 change it:
 
 ```dart
+//@dart=2.19
 class A {}
 
 class B {}

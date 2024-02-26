@@ -1,13 +1,13 @@
 #### Description
 
 The analyzer produces this diagnostic when an instance member that is
-annotated with `[visibleForOverriding][meta-visibleForOverriding]` is
+annotated with [`visibleForOverriding`][meta-visibleForOverriding] is
 referenced outside the library in which it's declared for any reason other
 than to override it.
 
 #### Example
 
-Given a file named `a.dart` containing the following declaration:
+Given a file `a.dart` containing the following declaration:
 
 ```dart
 %uri="lib/a.dart"

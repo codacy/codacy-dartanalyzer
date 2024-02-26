@@ -1,4 +1,3 @@
-
 **CONSIDER** using => for short members whose body is a single return statement.
 
 **BAD:**

@@ -22,5 +22,5 @@ class B extends A {
 
 Remove the invocation of the abstract member, possibly replacing it with an
 invocation of a concrete member.
-TODO(brianwilkerson) This either needs to be generalized (use 'member'
+TODO(brianwilkerson): This either needs to be generalized (use 'member'
  rather than '{0}') or split into multiple codes.

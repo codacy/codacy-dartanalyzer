@@ -5,12 +5,12 @@ parameter uses a constant from a library imported using a deferred import.
 Default values need to be available at compile time, and constants from
 deferred libraries aren't available at compile time.
 
-For more information, see the language tour's coverage of
-[deferred loading](https://dart.dev/guides/language/language-tour#lazily-loading-a-library).
+For more information, check out
+[Lazily loading a library](https://dart.dev/language/libraries#lazily-loading-a-library).
 
 #### Example
 
-Given a file (`a.dart`) that defines the constant `zero`:
+Given a file `a.dart` that defines the constant `zero`:
 
 ```dart
 %uri="lib/a.dart"
@@ -23,7 +23,7 @@ library imported using a deferred import:
 ```dart
 import 'a.dart' deferred as a;
 
-void f({int x = [!a.zero!]}) {}
+void f({int x = a.[!zero!]}) {}
 ```
 
 #### Common fixes

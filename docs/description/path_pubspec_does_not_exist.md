@@ -5,7 +5,7 @@ that references a directory that doesn't contain a `pubspec.yaml` file.
 
 #### Example
 
-Assuming that the directory `local_package` doesn't contain a file named
+Assuming that the directory `local_package` doesn't contain a file
 `pubspec.yaml`, the following code produces this diagnostic because it's
 listed as the path of a package:
 
@@ -14,7 +14,7 @@ listed as the path of a package:
 name: example
 dependencies:
   local_package:
-    path: local_package
+    path: [!local_package!]
 ```
 
 #### Common fixes

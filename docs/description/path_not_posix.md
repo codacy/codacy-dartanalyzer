@@ -13,7 +13,7 @@ The following code produces this diagnostic because the path following the
 name: example
 dependencies:
   local_package:
-    path: E:\local_package
+    path: [!E:\local_package!]
 ```
 
 #### Common fixes

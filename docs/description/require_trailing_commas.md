@@ -1,4 +1,3 @@
-
 **DO** use trailing commas for all function calls and declarations unless the
 function call or definition, from the start of the function name up to the
 closing parenthesis, fits in a single line.

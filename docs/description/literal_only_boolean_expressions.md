@@ -1,4 +1,3 @@
-
 **DON'T** test for conditions composed only by literals, since the value can be
 inferred at compile time.
 
@@ -67,7 +66,7 @@ void bad() {
 ```
 
 **NOTE:** that an exception is made for the common `while (true) { }` idiom,
-which is often reasonably prefered to the equivalent `for (;;)`.
+which is often reasonably preferred to the equivalent `for (;;)`.
 
 **GOOD:**
 ```dart

@@ -14,7 +14,7 @@ assets:
 name: example
 flutter:
   assets:
-    - assets/
+    - [!assets/!]
 ```
 
 #### Common fixes

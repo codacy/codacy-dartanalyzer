@@ -29,5 +29,6 @@ Change the `part of` directive in the [part file][] to specify its library
 by URI:
 
 ```dart
+%uri="lib/part_file.dart"
 part of 'test.dart';
 ```

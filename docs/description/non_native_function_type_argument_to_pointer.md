@@ -4,7 +4,7 @@ The analyzer produces this diagnostic when the method `asFunction` is
 invoked on a pointer to a native function, but the signature of the native
 function isn't a valid C function signature.
 
-For more information about FFI, see [C interop using dart:ffi][].
+For more information about FFI, see [C interop using dart:ffi][ffi].
 
 #### Example
 

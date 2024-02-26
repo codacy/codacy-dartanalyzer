@@ -1,4 +1,3 @@
-
 **DO** invoke `cancel` on instances of `dart.async.StreamSubscription`.
 
 Cancelling instances of StreamSubscription prevents memory leaks and unexpected

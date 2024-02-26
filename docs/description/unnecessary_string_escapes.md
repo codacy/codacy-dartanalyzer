@@ -1,4 +1,3 @@
-
 Remove unnecessary backslashes in strings.
 
 **BAD:**

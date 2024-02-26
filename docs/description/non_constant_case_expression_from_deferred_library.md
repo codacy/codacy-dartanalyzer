@@ -6,12 +6,12 @@ import. In order for switch statements to be compiled efficiently, the
 constants referenced in case clauses need to be available at compile time,
 and constants from deferred libraries aren't available at compile time.
 
-For more information, see the language tour's coverage of
-[deferred loading](https://dart.dev/guides/language/language-tour#lazily-loading-a-library).
+For more information, check out
+[Lazily loading a library](https://dart.dev/language/libraries#lazily-loading-a-library).
 
 #### Example
 
-Given a file (`a.dart`) that defines the constant `zero`:
+Given a file `a.dart` that defines the constant `zero`:
 
 ```dart
 %uri="lib/a.dart"
@@ -23,11 +23,12 @@ imported using a `deferred` import, and the constant `a.zero`, declared in
 the imported library, is used in a case clause:
 
 ```dart
+%language=2.18
 import 'a.dart' deferred as a;
 
 void f(int x) {
   switch (x) {
-    case [!a.zero!]:
+    case a.[!zero!]:
       // ...
       break;
   }

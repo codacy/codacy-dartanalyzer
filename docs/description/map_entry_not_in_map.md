@@ -9,7 +9,7 @@ The following code produces this diagnostic because the literal has a map
 entry even though it's a set literal:
 
 ```dart
-const collection = <String>{[!'a' : 'b'!]};
+var collection = <String>{[!'a' : 'b'!]};
 ```
 
 #### Common fixes
@@ -19,7 +19,7 @@ that it is a map. In the previous example, you could do this by adding
 another type argument:
 
 ```dart
-const collection = <String, String>{'a' : 'b'};
+var collection = <String, String>{'a' : 'b'};
 ```
 
 In other cases, you might need to change the explicit type from `Set` to
@@ -30,5 +30,5 @@ possibly by replacing the colon with a comma if both values should be
 included in the set:
 
 ```dart
-const collection = <String>{'a', 'b'};
+var collection = <String>{'a', 'b'};
 ```

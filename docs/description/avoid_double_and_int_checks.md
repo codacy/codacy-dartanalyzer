@@ -1,4 +1,3 @@
-
 **AVOID** to check if type is double or int.
 
 When compiled to JS, integer values are represented as floats. That can lead to

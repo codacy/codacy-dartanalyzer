@@ -12,14 +12,18 @@ RUN mkdir .dart_tool
 COPY docs/dartanalyzer/.packages /
 COPY docs/dartanalyzer/pubspec.yaml /
 COPY docs/dartanalyzer/pubspec.lock /
+COPY docs/dartanalyzer/analysis_options.yaml /
 
 RUN dart pub add lints --dev
 RUN dart pub add flutter_lints --dev
 
 COPY docs /docs
 COPY target/universal/stage/ /workdir/
-RUN chmod 755 /usr/lib/dart && chmod +x /workdir/bin/codacy-dartanalyzer
+RUN chmod 755 /usr/lib/dart
+RUN chmod 755 /analysis_options.yaml
+RUN chmod +x /workdir/bin/codacy-dartanalyzer
 RUN adduser --uid 2004 --disabled-password --gecos "" docker
+RUN chown docker /analysis_options.yaml
 USER docker
 WORKDIR /src
 ENTRYPOINT ["/workdir/bin/codacy-dartanalyzer"]

@@ -2,11 +2,11 @@
 
 The analyzer produces this diagnostic when a [public library][] exports a
 top-level function  with a return type or at least one parameter type that
-is marked with the `[internal][meta-internal]` annotation.
+is marked with the [`internal`][meta-internal] annotation.
 
 #### Example
 
-Given a file named `a.dart` in the `src` directory that contains the
+Given a file `a.dart` in the `src` directory that contains the
 following:
 
 ```dart

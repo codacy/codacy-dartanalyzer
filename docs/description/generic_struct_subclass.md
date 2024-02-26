@@ -3,7 +3,7 @@
 The analyzer produces this diagnostic when a subclass of either `Struct`
 or `Union` has a type parameter.
 
-For more information about FFI, see [C interop using dart:ffi][].
+For more information about FFI, see [C interop using dart:ffi][ffi].
 
 #### Example
 
@@ -13,7 +13,7 @@ the type parameter `T`:
 ```dart
 import 'dart:ffi';
 
-class [!S!]<T> extends Struct {
+final class [!S!]<T> extends Struct {
   external Pointer notEmpty;
 }
 ```
@@ -25,7 +25,7 @@ Remove the type parameters from the class:
 ```dart
 import 'dart:ffi';
 
-class S extends Struct {
+final class S extends Struct {
   external Pointer notEmpty;
 }
 ```

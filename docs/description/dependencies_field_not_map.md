@@ -12,7 +12,7 @@ top-level `dependencies` key is a list:
 %uri="pubspec.yaml"
 name: example
 dependencies:
-  - meta
+  [!- meta!]
 ```
 
 #### Common fixes

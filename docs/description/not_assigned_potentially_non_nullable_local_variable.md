@@ -61,7 +61,7 @@ String f() {
 }
 ```
 
-If `null` isn’t a valid value, and there's a reasonable default value, then
+If `null` isn't a valid value, and there's a reasonable default value, then
 add an initializer:
 
 ```dart

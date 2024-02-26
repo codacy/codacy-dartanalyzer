@@ -1,4 +1,3 @@
-
 **DO** sort unnamed constructor declarations first, before named ones.
 
 **GOOD:**

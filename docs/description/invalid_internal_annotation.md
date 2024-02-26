@@ -1,13 +1,13 @@
 #### Description
 
 The analyzer produces this diagnostic when a declaration is annotated with
-the `[internal][meta-internal]` annotation and that declaration is either
+the [`internal`][meta-internal] annotation and that declaration is either
 in a [public library][] or has a private name.
 
 #### Example
 
 The following code, when in a [public library][], produces this diagnostic
-because the `[internal][meta-internal]` annotation can't be applied to
+because the [`internal`][meta-internal] annotation can't be applied to
 declarations in a [public library][]:
 
 ```dart
@@ -18,7 +18,7 @@ class C {}
 ```
 
 The following code, whether in a public or internal library, produces this
-diagnostic because the `[internal][meta-internal]` annotation can't be
+diagnostic because the [`internal`][meta-internal] annotation can't be
 applied to declarations with private names:
 
 ```dart

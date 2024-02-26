@@ -1,4 +1,3 @@
-
 **AVOID** integer literals that cannot be represented exactly when compiled to
 JavaScript.
 

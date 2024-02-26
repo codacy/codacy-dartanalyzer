@@ -1,7 +1,7 @@
 #### Description
 
 The analyzer produces this diagnostic when a method that is annotated with
-the `[factory][meta-factory]` annotation doesn't return a newly allocated
+the [`factory`][meta-factory] annotation doesn't return a newly allocated
 object.
 
 #### Example

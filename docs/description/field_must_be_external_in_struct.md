@@ -3,7 +3,7 @@
 The analyzer produces this diagnostic when a field in a subclass of either
 `Struct` or `Union` isn't marked as being `external`.
 
-For more information about FFI, see [C interop using dart:ffi][].
+For more information about FFI, see [C interop using dart:ffi][ffi].
 
 #### Example
 
@@ -13,7 +13,7 @@ marked as being `external`:
 ```dart
 import 'dart:ffi';
 
-class C extends Struct {
+final class C extends Struct {
   @Int16()
   int [!a!];
 }
@@ -26,7 +26,7 @@ Add the required `external` modifier:
 ```dart
 import 'dart:ffi';
 
-class C extends Struct {
+final class C extends Struct {
   @Int16()
   external int a;
 }

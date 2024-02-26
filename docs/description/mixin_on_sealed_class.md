@@ -2,7 +2,7 @@
 
 The analyzer produces this diagnostic when the superclass constraint of a
 mixin is a class from a different package that was marked as
-`[sealed][meta-sealed]`. Classes that are sealed can't be extended,
+[`sealed`][meta-sealed]. Classes that are sealed can't be extended,
 implemented, mixed in, or used as a superclass constraint.
 
 #### Example

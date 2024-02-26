@@ -1,4 +1,3 @@
-
 **DO** use a setter for operations that conceptually change a property.
 
 **BAD:**

@@ -1,4 +1,3 @@
-
 **AVOID** control flow leaving finally blocks.
 
 Using control flow in finally blocks will inevitably cause unexpected behavior

@@ -1,4 +1,3 @@
-
 Use the `throwsA` matcher instead of try-catch with `fail()`.
 
 **BAD:**

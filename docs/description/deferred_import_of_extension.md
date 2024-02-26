@@ -5,12 +5,12 @@ a deferred import declares an extension that is visible in the importing
 library. Extension methods are resolved at compile time, and extensions
 from deferred libraries aren't available at compile time.
 
-For more information, see the language tour's coverage of
-[deferred loading](https://dart.dev/guides/language/language-tour#lazily-loading-a-library).
+For more information, check out
+[Lazily loading a library](https://dart.dev/language/libraries#lazily-loading-a-library).
 
 #### Example
 
-Given a file (`a.dart`) that defines a named extension:
+Given a file `a.dart` that defines a named extension:
 
 ```dart
 %uri="lib/a.dart"

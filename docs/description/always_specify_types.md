@@ -1,4 +1,3 @@
-
 From the [flutter style guide](https://flutter.dev/style-guide/):
 
 **DO** specify type annotations.

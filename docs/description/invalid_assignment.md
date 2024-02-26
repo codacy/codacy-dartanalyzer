@@ -28,7 +28,7 @@ int i = 0;
 String s = i.toString();
 ```
 
-If you can’t change the value, then change the type of the variable to be
+If you can't change the value, then change the type of the variable to be
 compatible with the type of the value being assigned:
 
 ```dart

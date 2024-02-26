@@ -1,7 +1,7 @@
 #### Description
 
 The analyzer produces this diagnostic when a constructor that has the
-`[literal][meta-literal]` annotation is invoked without using the `const`
+[`literal`][meta-literal] annotation is invoked without using the `const`
 keyword, but all of the arguments to the constructor are constants. The
 annotation indicates that the constructor should be used to create a
 constant value whenever possible.

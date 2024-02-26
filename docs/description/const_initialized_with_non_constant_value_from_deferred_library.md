@@ -5,8 +5,8 @@ initialized using a `const` variable from a library that is imported using
 a deferred import. Constants are evaluated at compile time, and values from
 deferred libraries aren't available at compile time.
 
-For more information, see the language tour's coverage of
-[deferred loading](https://dart.dev/guides/language/language-tour#lazily-loading-a-library).
+For more information, check out
+[Lazily loading a library](https://dart.dev/language/libraries#lazily-loading-a-library).
 
 #### Example
 
@@ -17,7 +17,7 @@ being initialized using the constant `math.pi` from the library
 ```dart
 import 'dart:math' deferred as math;
 
-const pi = [!math.pi!];
+const pi = math.[!pi!];
 ```
 
 #### Common fixes

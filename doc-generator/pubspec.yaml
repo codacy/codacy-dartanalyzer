@@ -1,11 +1,11 @@
 name: dartdocgenerator
-version: 0.0.1
+version: 0.1.0
 
 description: Generates Codacy linter documentation
 
 environment:
-  sdk: '>=2.10.0 <3.0.0'
+  sdk: '>=3.3.0 <4.0.0'
 
 dependencies:
-  linter: 1.18.0
+  linter: ^1.30.0
   yaml: ^3.0.0

@@ -1,4 +1,3 @@
-
 **DO** Use the cascading style when successively invoking methods on the same
 reference.
 

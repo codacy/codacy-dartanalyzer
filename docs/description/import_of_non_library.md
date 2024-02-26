@@ -10,8 +10,6 @@ Given a [part file][] named `part.dart` containing the following:
 ```dart
 %uri="lib/part.dart"
 part of lib;
-
-class C{}
 ```
 
 The following code produces this diagnostic because imported files can't
@@ -21,8 +19,6 @@ have a part-of directive:
 library lib;
 
 import [!'part.dart'!];
-
-C c = C();
 ```
 
 #### Common fixes

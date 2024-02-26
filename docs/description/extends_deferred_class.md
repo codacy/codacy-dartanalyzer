@@ -6,12 +6,12 @@ The supertypes of a type must be compiled at the same time as the type, and
 classes from deferred libraries aren't compiled until the library is
 loaded.
 
-For more information, see the language tour's coverage of
-[deferred loading](https://dart.dev/guides/language/language-tour#lazily-loading-a-library).
+For more information, check out
+[Lazily loading a library](https://dart.dev/language/libraries#lazily-loading-a-library).
 
 #### Example
 
-Given a file (`a.dart`) that defines the class `A`:
+Given a file `a.dart` that defines the class `A`:
 
 ```dart
 %uri="lib/a.dart"

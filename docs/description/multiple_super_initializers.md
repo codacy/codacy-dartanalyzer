@@ -8,7 +8,7 @@ which can either be explicit or implicit.
 #### Example
 
 The following code produces this diagnostic because the initializer list
-for `B`’s constructor invokes both the constructor `one` and the
+for `B`'s constructor invokes both the constructor `one` and the
 constructor `two` from the superclass `A`:
 
 ```dart

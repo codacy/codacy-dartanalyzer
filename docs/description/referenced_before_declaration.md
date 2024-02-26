@@ -1,7 +1,7 @@
 #### Description
 
 The analyzer produces this diagnostic when a variable is referenced before
-it’s declared. In Dart, variables are visible everywhere in the block in
+it's declared. In Dart, variables are visible everywhere in the block in
 which they are declared, but can only be referenced after they are
 declared.
 

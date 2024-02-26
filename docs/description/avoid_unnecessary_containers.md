@@ -1,4 +1,4 @@
-Avoid wrapping widgets in unnecessary containers.
+**AVOID** wrapping widgets in unnecessary containers.
 
 Wrapping a widget in `Container` with no other parameters set has no effect 
 and makes code needlessly more complex.

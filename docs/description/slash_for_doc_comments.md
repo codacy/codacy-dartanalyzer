@@ -1,4 +1,3 @@
-
 From the [style guide](https://dart.dev/guides/language/effective-dart/style):
 
 **PREFER** using `///` for doc comments.

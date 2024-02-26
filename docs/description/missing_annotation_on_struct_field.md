@@ -6,7 +6,7 @@ The Dart types `int`, `double`, and `Array` are used to represent multiple
 C types, and the annotation specifies which of the compatible C types the
 field represents.
 
-For more information about FFI, see [C interop using dart:ffi][].
+For more information about FFI, see [C interop using dart:ffi][ffi].
 
 #### Example
 
@@ -16,7 +16,7 @@ have an annotation indicating the underlying width of the integer value:
 ```dart
 import 'dart:ffi';
 
-class C extends Struct {
+final class C extends Struct {
   external [!int!] x;
 }
 ```
@@ -28,7 +28,7 @@ Add an appropriate annotation to the field:
 ```dart
 import 'dart:ffi';
 
-class C extends Struct {
+final class C extends Struct {
   @Int64()
   external int x;
 }

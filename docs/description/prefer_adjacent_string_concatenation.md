@@ -1,4 +1,3 @@
-
 **DO** use adjacent strings to concatenate string literals.
 
 **BAD:**

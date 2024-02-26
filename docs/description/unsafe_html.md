@@ -1,9 +1,8 @@
-
 **AVOID**
 
 * assigning directly to the `href` field of an AnchorElement
-* assigning directly to the `src` field of an EmbedElement, IFrameElement,
-  ImageElement, or ScriptElement
+* assigning directly to the `src` field of an EmbedElement, IFrameElement, or
+  ScriptElement
 * assigning directly to the `srcdoc` field of an IFrameElement
 * calling the `createFragment` method of Element
 * calling the `open` method of Window

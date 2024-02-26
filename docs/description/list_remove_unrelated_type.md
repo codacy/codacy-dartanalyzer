@@ -1,4 +1,3 @@
-
 **DON'T** invoke `remove` on `List` with an instance of different type than
 the parameter type.
 

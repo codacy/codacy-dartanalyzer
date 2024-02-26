@@ -3,7 +3,7 @@
 The analyzer produces this diagnostic when a subclass of either `Struct`
 or `Union` is instantiated using a generative constructor.
 
-For more information about FFI, see [C interop using dart:ffi][].
+For more information about FFI, see [C interop using dart:ffi][ffi].
 
 #### Example
 
@@ -13,7 +13,7 @@ instantiated using a generative constructor:
 ```dart
 import 'dart:ffi';
 
-class C extends Struct {
+final class C extends Struct {
   @Int32()
   external int a;
 }
@@ -32,7 +32,7 @@ If you need to allocate the structure described by the class, then use the
 import 'dart:ffi';
 import 'package:ffi/ffi.dart';
 
-class C extends Struct {
+final class C extends Struct {
   @Int32()
   external int a;
 }

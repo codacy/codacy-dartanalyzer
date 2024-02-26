@@ -5,7 +5,7 @@ imports a library that isn't null safe.
 
 #### Example
 
-Given a file named `a.dart` that contains the following:
+Given a file `a.dart` that contains the following:
 
 ```dart
 %uri="lib/a.dart"

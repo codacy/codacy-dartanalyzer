@@ -1,4 +1,3 @@
-
 **AVOID** defining unused parameters in constructors.
 
 **BAD:**

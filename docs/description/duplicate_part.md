@@ -5,7 +5,7 @@ multiple part directives.
 
 #### Example
 
-Given a file named `part.dart` containing
+Given a file `part.dart` containing
 
 ```dart
 %uri="lib/part.dart"

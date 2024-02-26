@@ -1,7 +1,7 @@
 #### Description
 
 The analyzer produces this diagnostic when an annotation of the form
-`[UseResult][meta-UseResult].unless(parameterDefined: parameterName)`
+[`UseResult.unless(parameterDefined: parameterName)`][meta-UseResult]
 specifies a parameter name that isn't defined by the annotated function.
 
 #### Example

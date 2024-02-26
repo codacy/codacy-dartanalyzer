@@ -7,12 +7,12 @@ contains a value that is declared in a library that is imported using a
 deferred import. Constants are evaluated at compile time, and values from
 deferred libraries aren't available at compile time.
 
-For more information, see the language tour's coverage of
-[deferred loading](https://dart.dev/guides/language/language-tour#lazily-loading-a-library).
+For more information, check out
+[Lazily loading a library](https://dart.dev/language/libraries#lazily-loading-a-library).
 
 #### Example
 
-Given a file (`a.dart`) that defines the constant `zero`:
+Given a file `a.dart` that defines the constant `zero`:
 
 ```dart
 %uri="lib/a.dart"
@@ -25,7 +25,7 @@ literal contains `a.zero`, which is imported using a `deferred` import:
 ```dart
 import 'a.dart' deferred as a;
 
-var l = const [[!a.zero!]];
+var l = const [a.[!zero!]];
 ```
 
 #### Common fixes

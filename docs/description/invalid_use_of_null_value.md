@@ -10,7 +10,7 @@ The following code produces this diagnostic because `x` will always be
 
 ```dart
 int f(Null x) {
-  return [!x!].length;
+  return x.[!length!];
 }
 ```
 

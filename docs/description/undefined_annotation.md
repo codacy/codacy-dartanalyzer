@@ -15,7 +15,7 @@ void f() {}
 
 #### Common fixes
 
-If the name is correct, but it isn’t declared yet, then declare the name as
+If the name is correct, but it isn't declared yet, then declare the name as
 a constant value:
 
 ```dart

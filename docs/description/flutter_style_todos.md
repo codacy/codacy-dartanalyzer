@@ -1,5 +1,4 @@
-
-**DO** Use Flutter TODO format.
+**DO** use Flutter TODO format.
 
 From the [Flutter docs](https://github.com/flutter/flutter/wiki/Style-guide-for-Flutter-repo#comments):
 

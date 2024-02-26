@@ -1,12 +1,12 @@
 #### Description
 
 The analyzer produces this diagnostic when a method that is annotated with
-the `[factory][meta-factory]` annotation has a return type of `void`.
+the [`factory`][meta-factory] annotation has a return type of `void`.
 
 #### Example
 
 The following code produces this diagnostic because the method `createC`
-is annotated with the `[factory][meta-factory]` annotation but doesn't
+is annotated with the [`factory`][meta-factory] annotation but doesn't
 return any value:
 
 ```dart

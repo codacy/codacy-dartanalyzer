@@ -1,4 +1,3 @@
-
 **DO** test type arguments in operator ==(Object other).
 
 Not testing types might result in null pointer exceptions which will be

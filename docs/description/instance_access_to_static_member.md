@@ -6,7 +6,7 @@ access a static member through an instance of the class.
 #### Example
 
 The following code produces this diagnostic because `zero` is a static
-field, but it’s being accessed as if it were an instance field:
+field, but it's being accessed as if it were an instance field:
 
 ```dart
 void f(C c) {

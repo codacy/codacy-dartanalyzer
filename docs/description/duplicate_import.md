@@ -2,7 +2,7 @@
 
 The analyzer produces this diagnostic when an import directive is found
 that is the same as an import before it in the file. The second import
-doesn’t add value and should be removed.
+doesn't add value and should be removed.
 
 #### Example
 

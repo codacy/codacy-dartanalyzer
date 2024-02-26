@@ -5,8 +5,8 @@ is imported using a deferred import is used as an annotation. Annotations
 are evaluated at compile time, and constants from deferred libraries aren't
 available at compile time.
 
-For more information, see the language tour's coverage of
-[deferred loading](https://dart.dev/guides/language/language-tour#lazily-loading-a-library).
+For more information, check out
+[Lazily loading a library](https://dart.dev/language/libraries#lazily-loading-a-library).
 
 #### Example
 

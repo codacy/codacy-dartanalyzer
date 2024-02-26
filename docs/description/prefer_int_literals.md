@@ -1,4 +1,3 @@
-
 **DO** use int literals rather than the corresponding double literal.
 
 **BAD:**

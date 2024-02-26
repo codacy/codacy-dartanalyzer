@@ -5,7 +5,7 @@ The analyzer produces this diagnostic when a field in a subclass of
 an explicit type, and the type must either be `int`, `double`, `Pointer`,
 or a subclass of either `Struct` or `Union`.
 
-For more information about FFI, see [C interop using dart:ffi][].
+For more information about FFI, see [C interop using dart:ffi][ffi].
 
 #### Example
 
@@ -15,7 +15,7 @@ doesn't have a type annotation:
 ```dart
 import 'dart:ffi';
 
-class C extends Struct {
+final class C extends Struct {
   external var [!str!];
 
   @Int32()
@@ -31,7 +31,7 @@ Explicitly specify the type of the field:
 import 'dart:ffi';
 import 'package:ffi/ffi.dart';
 
-class C extends Struct {
+final class C extends Struct {
   external Pointer<Utf8> str;
 
   @Int32()

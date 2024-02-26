@@ -1,4 +1,3 @@
-
 **DO** name source files using `lowercase_with_underscores`.
 
 Some file systems are not case-sensitive, so many projects require filenames to

@@ -13,7 +13,7 @@ produces this diagnostic because it's listed as an asset:
 name: example
 flutter:
   assets:
-    - doesNotExist.gif
+    - [!doesNotExist.gif!]
 ```
 
 #### Common fixes

@@ -1,6 +1,6 @@
 #### Description
 
-The analyzer produces this diagnostic when the `[literal][[meta-literal]]`
+The analyzer produces this diagnostic when the [`literal`][meta-literal]
 annotation is applied to anything other than a const constructor.
 
 #### Examples

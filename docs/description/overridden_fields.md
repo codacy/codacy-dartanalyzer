@@ -1,4 +1,3 @@
-
 **DON'T** override fields.
 
 Overriding fields is almost always done unintentionally.  Regardless, it is a

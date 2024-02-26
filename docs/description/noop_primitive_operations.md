@@ -1,4 +1,3 @@
-
 Some operations on primitive types are idempotent and can be removed.
 
 **BAD:**
@@ -16,4 +15,6 @@ string.toString();
 string = 'hello\n'
     'world\n'
     ''; // useless empty string
+
+'string with ${x.toString()}';
 ```

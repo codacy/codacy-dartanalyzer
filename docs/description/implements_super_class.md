@@ -1,7 +1,8 @@
 #### Description
 
-The analyzer produces this diagnostic when one class is listed in both the
-`extends` and `implements` clauses of another class.
+The analyzer produces this diagnostic when a class is listed in the
+`extends` clause of a class declaration and also in either the
+`implements` or `with` clause of the same declaration.
 
 #### Example
 
@@ -12,6 +13,15 @@ in both the `extends` and `implements` clauses for the class `B`:
 class A {}
 
 class B extends A implements [!A!] {}
+```
+
+The following code produces this diagnostic because the class `A` is used
+in both the `extends` and `with` clauses for the class `B`:
+
+```dart
+mixin class A {}
+
+class B extends A with [!A!] {}
 ```
 
 #### Common fixes

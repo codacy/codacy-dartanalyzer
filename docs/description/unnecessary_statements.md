@@ -1,4 +1,3 @@
-
 **AVOID** using unnecessary statements.
 
 Statements which have no clear effect are usually unnecessary, or should be

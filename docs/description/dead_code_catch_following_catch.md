@@ -1,7 +1,7 @@
 #### Description
 
 The analyzer produces this diagnostic when a `catch` clause is found that
-can't be executed because it’s after a `catch` clause of the form
+can't be executed because it's after a `catch` clause of the form
 `catch (e)` or `on Object catch (e)`. The first `catch` clause that matches
 the thrown object is selected, and both of those forms will match any
 object, so no `catch` clauses that follow them will be selected.

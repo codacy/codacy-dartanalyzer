@@ -44,7 +44,7 @@ has `Enum` in the `on` clause, declares an explicit operator named `==`:
 
 ```dart
 mixin M on Enum {
-  bool operator [!==!](Object? other) => false;
+  bool operator [!==!](Object other) => false;
 }
 ```
 

@@ -5,7 +5,7 @@ argument in an invocation of either `Pointer.asFunction` or
 `DynamicLibrary.lookupFunction` is `true` and the function that would be
 returned would have a parameter of type `Handle`.
 
-For more information about FFI, see [C interop using dart:ffi][].
+For more information about FFI, see [C interop using dart:ffi][ffi].
 
 #### Example
 

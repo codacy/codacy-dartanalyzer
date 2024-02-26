@@ -2,11 +2,11 @@
 
 <checkstyle version="1.5">
     <file name="test.dart">
-        <error source="prefer_contains" line="3" message="Use contains instead of indexOf" severity="info" />
-        <error source="curly_braces_in_flow_control_structures" line="6" message="DO use curly braces for all flow control structures." severity="info" />
-        <error source="empty_statements" line="6" message="Avoid empty statements." severity="error" />
-        <error source="curly_braces_in_flow_control_structures" line="4" message="DO use curly braces for all flow control structures." severity="info" />
-        <error source="avoid_empty_else" line="6" message="Avoid empty else statements." severity="error" />
-        <error source="avoid_print" line="4" message="Avoid `print` calls in production code." severity="error" />
+        <error source="prefer_contains" line="3" message="Unnecessary use of 'indexOf' to test for containment." severity="info" />
+        <error source="curly_braces_in_flow_control_structures" line="6" message="Statements in an if should be enclosed in a block." severity="info" />
+        <error source="empty_statements" line="6" message="Unnecessary empty statement." severity="error" />
+        <error source="curly_braces_in_flow_control_structures" line="4" message="Statements in an if should be enclosed in a block." severity="info" />
+        <error source="avoid_empty_else" line="6" message="Empty statements are not allowed in an 'else' clause." severity="error" />
+        <error source="avoid_print" line="4" message="Don't invoke 'print' in production code." severity="error" />
     </file>
 </checkstyle>

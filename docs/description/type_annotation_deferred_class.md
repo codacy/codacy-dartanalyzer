@@ -5,8 +5,8 @@ variable declaration, or the type used in a cast (`as`) or type test (`is`)
 is a type declared in a library that is imported using a deferred import.
 These types are required to be available at compile time, but aren't.
 
-For more information, see the language tour's coverage of
-[deferred loading](https://dart.dev/guides/language/language-tour#lazily-loading-a-library).
+For more information, check out
+[Lazily loading a library](https://dart.dev/language/libraries#lazily-loading-a-library).
 
 #### Example
 

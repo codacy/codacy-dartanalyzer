@@ -1,4 +1,3 @@
-
 From the [design guide](https://dart.dev/guides/language/effective-dart/design):
 
 **PREFER** naming a method to___() if it copies the object's state to a new object.

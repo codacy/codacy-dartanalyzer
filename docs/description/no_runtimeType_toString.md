@@ -1,4 +1,3 @@
-
 Calling `toString` on a runtime type is a non-trivial operation that can
 negatively impact performance. It's better to avoid it.
 

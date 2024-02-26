@@ -1,4 +1,3 @@
-
 **AVOID** using a parameter name that is the same as an existing type.
 
 **BAD:**

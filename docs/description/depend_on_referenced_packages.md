@@ -1,5 +1,4 @@
-
-**DO** Depend on referenced packages.
+**DO** depend on referenced packages.
 
 When importing a package, add a dependency on it to your pubspec.
 

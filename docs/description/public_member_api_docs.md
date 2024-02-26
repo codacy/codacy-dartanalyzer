@@ -1,4 +1,3 @@
-
 **DO** document all public members.
 
 All non-overriding public members should be documented with `///` doc-style
@@ -41,7 +40,7 @@ class Sub extends Base {
 }
 ```
 
-Note that consistent with `dartdoc`, an exception to the rule is made when
+Note that consistent with `dart doc`, an exception to the rule is made when
 documented getters have corresponding undocumented setters.  In this case the
 setters inherit the docs from the getters.
 

@@ -1,5 +1,4 @@
-
-Prefer using null aware operators instead of null checks in conditional
+**PREFER** using null aware operators instead of null checks in conditional
 expressions.
 
 **BAD:**

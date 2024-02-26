@@ -1,4 +1,3 @@
-
 **DON'T** define a setter without a corresponding getter.
 
 Defining a setter without defining a corresponding getter can lead to logical

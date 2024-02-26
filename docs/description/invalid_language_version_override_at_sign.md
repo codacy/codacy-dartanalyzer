@@ -12,7 +12,7 @@ be lowercase in such a comment and because there's no equal sign between
 the word `dart` and the version number:
 
 ```dart
-[!// @Dart 2.9!]
+[!// @Dart 2.13!]
 ```
 
 #### Common fixes
@@ -21,5 +21,5 @@ If the comment is intended to be a language version override, then change
 the comment to follow the correct format:
 
 ```dart
-// @dart = 2.9
+// @dart = 2.13
 ```

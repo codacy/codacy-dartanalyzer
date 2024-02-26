@@ -1,4 +1,3 @@
-
 Use spread collections when possible.
 
 Collection literals are excellent when you want to create a new collection out 

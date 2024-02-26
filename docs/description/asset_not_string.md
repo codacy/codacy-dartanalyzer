@@ -1,24 +1,24 @@
 #### Description
 
-The analyzer produces this diagnostic when an asset list contains a value
-that isn't a string.
+The analyzer produces this diagnostic when an `assets` list contains a
+value that isn't a string.
 
 #### Example
 
-The following code produces this diagnostic because the asset list contains
-a map:
+The following code produces this diagnostic because the `assets` list
+contains a map:
 
 ```yaml
 %uri="pubspec.yaml"
 name: example
 flutter:
   assets:
-    - image.gif: true
+    - [!image.gif: true!]
 ```
 
 #### Common fixes
 
-Change the asset list so that it only contains valid POSIX-style file
+Change the `assets` list so that it only contains valid POSIX-style file
 paths:
 
 ```yaml
@@ -26,5 +26,5 @@ paths:
 name: example
 flutter:
   assets:
-    - image.gif
+    - assets/image.gif
 ```

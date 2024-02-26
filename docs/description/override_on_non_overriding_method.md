@@ -1,7 +1,7 @@
 #### Description
 
 The analyzer produces this diagnostic when a class member is annotated with
-the `@override` annotation, but the member isn’t declared in any of the
+the `@override` annotation, but the member isn't declared in any of the
 supertypes of the class.
 
 #### Example

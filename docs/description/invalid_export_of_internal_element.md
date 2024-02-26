@@ -1,12 +1,12 @@
 #### Description
 
 The analyzer produces this diagnostic when a [public library][] exports a
-declaration that is marked with the `[internal][meta-internal]`
+declaration that is marked with the [`internal`][meta-internal]
 annotation.
 
 #### Example
 
-Given a file named `a.dart` in the `src` directory that contains:
+Given a file `a.dart` in the `src` directory that contains:
 
 ```dart
 %uri="lib/src/a.dart"

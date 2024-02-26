@@ -1,4 +1,3 @@
-
 **DO** specify `required` on named parameter before other named parameters.
 
 **GOOD:**

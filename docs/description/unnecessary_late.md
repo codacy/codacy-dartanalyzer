@@ -1,4 +1,3 @@
-
 **DO** not specify the `late` modifier for top-level and static variables
 when the declaration contains an initializer. 
 

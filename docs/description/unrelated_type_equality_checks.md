@@ -1,4 +1,3 @@
-
 **DON'T** Compare references of unrelated types for equality.
 
 Comparing references of a type where neither is a subtype of the other most

@@ -5,8 +5,8 @@ imported using a deferred import is used to create a `const` object.
 Constants are evaluated at compile time, and classes from deferred
 libraries aren't available at compile time.
 
-For more information, see the language tour's coverage of
-[deferred loading](https://dart.dev/guides/language/language-tour#lazily-loading-a-library).
+For more information, check out
+[Lazily loading a library](https://dart.dev/language/libraries#lazily-loading-a-library).
 
 #### Example
 

@@ -1,4 +1,3 @@
-
 **AVOID** empty catch blocks.
 
 In general, empty catch blocks should be avoided.  In cases where they are

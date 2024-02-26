@@ -1,4 +1,3 @@
-
 Use a non-nullable type for a final variable initialized with a non-nullable
 value.
 

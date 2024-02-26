@@ -1,4 +1,3 @@
-
 **DO** annotate overridden methods and fields.
 
 This practice improves code readability and helps protect against

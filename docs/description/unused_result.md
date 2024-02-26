@@ -1,7 +1,7 @@
 #### Description
 
 The analyzer produces this diagnostic when a function annotated with
-`[useResult][meta-useResult]` is invoked, and the value returned by that
+[`useResult`][meta-useResult] is invoked, and the value returned by that
 function isn't used. The value is considered to be used if a member of the
 value is invoked, if the value is passed to another function, or if the
 value is assigned to a variable or field.
@@ -10,7 +10,7 @@ value is assigned to a variable or field.
 
 The following code produces this diagnostic because the invocation of
 `c.a()` isn't used, even though the method `a` is annotated with
-`[useResult][meta-useResult]`:
+[`useResult`][meta-useResult]:
 
 ```dart
 import 'package:meta/meta.dart';

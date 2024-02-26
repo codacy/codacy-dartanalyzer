@@ -1,4 +1,3 @@
-
 **AVOID** throwing exceptions in finally blocks.
 
 Throwing exceptions in finally blocks will inevitably cause unexpected behavior

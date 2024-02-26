@@ -1,4 +1,3 @@
-
 **DON'T** use `length` to see if a collection is empty.
 
 The `Iterable` contract does not require that a collection know its length or be

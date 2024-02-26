@@ -5,7 +5,7 @@ the referenced file doesn't have a part-of directive.
 
 #### Example
 
-Given a file (`a.dart`) containing:
+Given a file `a.dart` containing:
 
 ```dart
 %uri="lib/a.dart"

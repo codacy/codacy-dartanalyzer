@@ -3,7 +3,7 @@
 The analyzer produces this diagnostic when a subclass of `Struct` has more
 than one `Packed` annotation.
 
-For more information about FFI, see [C interop using dart:ffi][].
+For more information about FFI, see [C interop using dart:ffi][ffi].
 
 #### Example
 
@@ -15,7 +15,7 @@ import 'dart:ffi';
 
 @Packed(1)
 [!@Packed(1)!]
-class C extends Struct {
+final class C extends Struct {
   external Pointer<Uint8> notEmpty;
 }
 ```
@@ -28,7 +28,7 @@ Remove all but one of the annotations:
 import 'dart:ffi';
 
 @Packed(1)
-class C extends Struct {
+final class C extends Struct {
   external Pointer<Uint8> notEmpty;
 }
 ```

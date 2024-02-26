@@ -3,7 +3,7 @@
 The analyzer produces this diagnostic when a field in a subclass of
 `Struct` has an initializer.
 
-For more information about FFI, see [C interop using dart:ffi][].
+For more information about FFI, see [C interop using dart:ffi][ffi].
 
 #### Example
 
@@ -14,7 +14,7 @@ initializer:
 // @dart = 2.9
 import 'dart:ffi';
 
-class C extends Struct {
+final class C extends Struct {
   Pointer [!p!] = nullptr;
 }
 ```
@@ -27,7 +27,7 @@ Remove the initializer:
 // @dart = 2.9
 import 'dart:ffi';
 
-class C extends Struct {
+final class C extends Struct {
   Pointer p;
 }
 ```

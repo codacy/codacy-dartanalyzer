@@ -1,7 +1,7 @@
 #### Description
 
 The analyzer produces this diagnostic when an unnamed constructor is
-invoked on a class that defines named constructors but the class doesn’t
+invoked on a class that defines named constructors but the class doesn't
 have an unnamed constructor.
 
 #### Example

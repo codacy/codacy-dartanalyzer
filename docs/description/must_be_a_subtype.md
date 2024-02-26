@@ -1,13 +1,14 @@
 #### Description
 
 The analyzer produces this diagnostic in two cases:
-- In an invocation of `Pointer.fromFunction` where the type argument
+- In an invocation of `Pointer.fromFunction`, or a
+  `NativeCallable` constructor where the type argument
   (whether explicit or inferred) isn't a supertype of the type of the
   function passed as the first argument to the method.
 - In an invocation of `DynamicLibrary.lookupFunction` where the first type
   argument isn't a supertype of the second type argument.
 
-For more information about FFI, see [C interop using dart:ffi][].
+For more information about FFI, see [C interop using dart:ffi][ffi].
 
 #### Example
 

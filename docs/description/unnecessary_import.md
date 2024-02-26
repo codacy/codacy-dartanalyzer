@@ -6,14 +6,14 @@ library are also visible through another import.
 
 #### Example
 
-Given a file named `a.dart` that contains the following:
+Given a file `a.dart` that contains the following:
 
 ```dart
 %uri="lib/a.dart"
 class A {}
 ```
 
-And, given a file named `b.dart` that contains the following:
+And, given a file `b.dart` that contains the following:
 
 ```dart
 %uri="lib/b.dart"

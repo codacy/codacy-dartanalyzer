@@ -1,6 +1,5 @@
-
-**DO** follow the conventions in the 
-[Effective Dart Guide](https://dart.dev/guides/language/effective-dart/style#ordering)
+**DO** follow the directive ordering conventions in
+[Effective Dart](https://dart.dev/guides/language/effective-dart/style#ordering):
 
 **DO** place `dart:` imports before other imports.
 

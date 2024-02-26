@@ -1,4 +1,3 @@
-
 **PREFER** the use of intValue.isOdd/isEven to check for evenness.
 
 **BAD:**

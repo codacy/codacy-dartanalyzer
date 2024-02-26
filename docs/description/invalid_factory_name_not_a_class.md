@@ -18,14 +18,26 @@ class C {
 
 #### Common fixes
 
-If the factory returns an instance of the surrounding class, then rename
-the factory:
+If the factory returns an instance of the surrounding class, and you
+intend it to be an unnamed factory constructor, then rename the factory:
 
 ```dart
 class A {}
 
 class C {
   factory C() => throw 0;
+}
+```
+
+If the factory returns an instance of the surrounding class, and you
+intend it to be a named factory constructor, then prefix the name of the
+factory constructor with the name of the surrounding class:
+
+```dart
+class A {}
+
+class C {
+  factory C.a() => throw 0;
 }
 ```
 

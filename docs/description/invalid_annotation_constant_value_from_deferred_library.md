@@ -5,8 +5,8 @@ that is imported as a deferred library is referenced in the argument list
 of an annotation. Annotations are evaluated at compile time, and values
 from deferred libraries aren't available at compile time.
 
-For more information, see the language tour's coverage of
-[deferred loading](https://dart.dev/guides/language/language-tour#lazily-loading-a-library).
+For more information, check out
+[Lazily loading a library](https://dart.dev/language/libraries#lazily-loading-a-library).
 
 #### Example
 
@@ -21,7 +21,7 @@ class C {
   const C(double d);
 }
 
-@C([!math.pi!])
+@C(math.[!pi!])
 void f () {}
 ```
 

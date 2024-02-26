@@ -9,6 +9,7 @@ The following code produces this diagnostic because the class `A`, which
 defines a constructor, is being used as a mixin:
 
 ```dart
+//@dart=2.19
 class A {
   A();
 }
@@ -31,6 +32,7 @@ If the class can't be a mixin and it's possible to remove the constructor,
 then do so:
 
 ```dart
+//@dart=2.19
 class A {
 }
 

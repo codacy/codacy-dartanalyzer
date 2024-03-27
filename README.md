@@ -21,7 +21,7 @@ To support new packages just add them on Dockerfile after the development contex
 
 ## How to bump the tool
 
--   Update the version at __.tool_version__ file with the new SDK version.
+-   Update the version at `.tool_version` file with the new SDK version.
 -   Re-run the [doc generation](#how-to-update-the-documentation).
 
 ## Implementation Details

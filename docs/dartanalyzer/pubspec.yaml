@@ -2,4 +2,4 @@ name: "dartanalyzer"
 version: "0.0.1"
 description: "Initial pubspec.yaml to install supported includes on analysis_options.yaml files"
 environment: 
-  sdk: "3.3.1"
+  sdk: "3.3.3"

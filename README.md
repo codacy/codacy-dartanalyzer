@@ -4,6 +4,7 @@ This is the docker engine we use at Codacy to have [Dart Analyzer](https://githu
 You can also create a docker to integrate the tool and language of your choice!
 See the [codacy-engine-scala-seed](https://github.com/codacy/codacy-engine-scala-seed) repository for more information.
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/5d126a53868041e68402e7e7f188990e)](https://app.codacy.com/gh/codacy/codacy-dartanalyzer?utm_source=github.com&utm_medium=referral&utm_content=codacy/codacy-dartanalyzer&utm_campaign=Badge_Grade)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/c19f9b18251e4dc5bce89b0a70d0bc70)](https://app.codacy.com/gh/codacy/codacy-dartanalyzer?utm_source=github.com&utm_medium=referral&utm_content=codacy/codacy-dartanalyzer&utm_campaign=Badge_Grade_Settings)
 [![Build Status](https://circleci.com/gh/codacy/codacy-dartanalyzer.svg?style=svg)](https://circleci.com/gh/codacy/codacy-dartanalyzer)
 

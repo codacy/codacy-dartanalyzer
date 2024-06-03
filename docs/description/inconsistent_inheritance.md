@@ -11,13 +11,12 @@ declaration of `m` from `A`, and that implementation isn't consistent with
 the signature of `m` that's inherited from `B`:
 
 ```dart
-%language=2.9
 class A {
-  void m({int a}) {}
+  void m({int? a}) {}
 }
 
 class B {
-  void m({int b}) {}
+  void m({int? b}) {}
 }
 
 class [!C!] extends A implements B {
@@ -30,16 +29,15 @@ Add an implementation of the method that satisfies all the inherited
 signatures:
 
 ```dart
-%language=2.9
 class A {
-  void m({int a}) {}
+  void m({int? a}) {}
 }
 
 class B {
-  void m({int b}) {}
+  void m({int? b}) {}
 }
 
 class C extends A implements B {
-  void m({int a, int b}) {}
+  void m({int? a, int? b}) {}
 }
 ```

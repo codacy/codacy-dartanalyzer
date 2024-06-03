@@ -30,9 +30,8 @@ Assuming that no code in the library passes a value for `y` in any
 invocation of `_m`, the following code produces this diagnostic:
 
 ```dart
-%language=2.9
 class C {
-  void _m(int x, [int [!y!]]) {}
+  void _m(int x, [int? [!y!]]) {}
 
   void n() => _m(0);
 }

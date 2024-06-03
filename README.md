@@ -9,8 +9,8 @@ See the [codacy-engine-scala-seed](https://github.com/codacy/codacy-engine-scala
 
 ## Supported packages lints on analysis_config.yaml files
 
-* [lints](https://pub.dev/packages/lints)
-* [flutter_lints](https://pub.dev/packages/flutter_lints)
+*   [lints](https://pub.dev/packages/lints)
+*   [flutter_lints](https://pub.dev/packages/flutter_lints)
 
 ### Adding supported packages 
 

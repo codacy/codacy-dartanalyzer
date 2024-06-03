@@ -9,7 +9,6 @@ The following code produces this diagnostic because a `num` can't be
 assigned to a `String`:
 
 ```dart
-%language=2.9
 String f(String x) => x;
 String g(num y) => f([!y!]);
 ```
@@ -20,7 +19,6 @@ If possible, rewrite the code so that the static type is assignable. In the
 example above you might be able to change the type of the parameter `y`:
 
 ```dart
-%language=2.9
 String f(String x) => x;
 String g(String y) => f(y);
 ```
@@ -30,7 +28,6 @@ argument value isn't the required type. One approach is to coerce other
 types to the required type:
 
 ```dart
-%language=2.9
 String f(String x) => x;
 String g(num y) => f(y.toString());
 ```
@@ -38,9 +35,8 @@ String g(num y) => f(y.toString());
 Another approach is to add explicit type tests and fallback code:
 
 ```dart
-%language=2.9
 String f(String x) => x;
-String g(num y) => f(y is String ? y : '');
+String g(Object y) => f(y is String ? y : '');
 ```
 
 If you believe that the runtime type of the argument will always be the

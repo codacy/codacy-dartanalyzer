@@ -84,7 +84,8 @@ void main() {
   // ]);
 
   void processErrorPatterns() async {
-    final url = 'https://raw.githubusercontent.com/dart-lang/sdk/${sdkVersion}/pkg/analyzer/messages.yaml';
+    final url =
+        'https://raw.githubusercontent.com/dart-lang/sdk/${sdkVersion}/pkg/analyzer/messages.yaml';
     final response = await http.get(Uri.parse(url));
 
     if (response.statusCode != 200) {
@@ -94,7 +95,8 @@ void main() {
 
     final String content = response.body;
     final YamlMap yaml = loadYaml(content);
-    final Map<String, Map<String, AnalyzerErrorCodeInfo>> errorPatterns = decodeAnalyzerMessagesYaml(yaml);
+    final Map<String, Map<String, AnalyzerErrorCodeInfo>> errorPatterns =
+        decodeAnalyzerMessagesYaml(yaml);
 
     errorPatterns.forEach((key, group) {
       group.forEach((key, value) {
@@ -121,10 +123,11 @@ void main() {
         }
       });
     });
-  };
+  }
+
+  ;
 
   processErrorPatterns();
-
 
   descriptionFile.writeAsStringSync(encoder.convert(descriptions.toList()));
 
@@ -145,7 +148,8 @@ class PatternsFile {
   final String version;
   final Set<PatternSpec> patterns;
 
-  PatternsFile({required this.name, required this.patterns, required this.version});
+  PatternsFile(
+      {required this.name, required this.patterns, required this.version});
 
   Map<String, dynamic> toJson() =>
       {'name': name, 'version': version, 'patterns': patterns.toList()};
@@ -156,7 +160,10 @@ class Description {
   final String title;
   final String description;
 
-  Description({required this.patternId, required this.title, required this.description});
+  Description(
+      {required this.patternId,
+      required this.title,
+      required this.description});
 
   Map<String, dynamic> toJson() =>
       {'patternId': patternId, 'title': title, 'description': description};
@@ -170,7 +177,11 @@ class PatternSpec {
   //parameters: ParameterSpec[]
   final bool enabled;
 
-  PatternSpec({required this.patternId, required this.level, required this.category, required this.enabled});
+  PatternSpec(
+      {required this.patternId,
+      required this.level,
+      required this.category,
+      required this.enabled});
 
   Map<String, dynamic> toJson() => {
         'patternId': patternId,
@@ -245,8 +256,7 @@ class AnalyzerErrorCodeInfo extends ErrorCodeInfo {
             problemMessage: problemMessage,
             sharedName: sharedName);
 
-  AnalyzerErrorCodeInfo.fromYaml(YamlMap yaml)
-      : super.fromYaml(yaml);
+  AnalyzerErrorCodeInfo.fromYaml(YamlMap yaml) : super.fromYaml(yaml);
 }
 
 abstract class ErrorCodeInfo {
@@ -304,15 +314,15 @@ abstract class ErrorCodeInfo {
             previousName: (yaml['previousName'] as String?)?.trim());
 }
 
-void createInitialPubspecFiles(String sdkVersion){
+void createInitialPubspecFiles(String sdkVersion) {
   //Create necessary initial dart files (to support includes)
 
   final dartanalyzerPathStr = "docs/dartanalyzer";
   final Directory dartanalyzerDir = new Directory(dartanalyzerPathStr);
-  if(dartanalyzerDir.existsSync()){
+  if (dartanalyzerDir.existsSync()) {
     dartanalyzerDir.deleteSync(recursive: true);
     dartanalyzerDir.createSync(recursive: true);
-  }else{
+  } else {
     dartanalyzerDir.createSync(recursive: true);
   }
 
@@ -329,13 +339,15 @@ void createInitialPubspecFiles(String sdkVersion){
 
   final writer = YamlWriter();
   String pubspec = writer.write({
-    'name': 'dartanalyzer',
-    'version': '0.0.1',
-    'description': 'Initial pubspec.yaml to install supported includes on analysis_options.yaml files',
-    'environment': {
-      'sdk': sdkVersion,
-    },
-  }) + "\n";
+        'name': 'dartanalyzer',
+        'version': '0.0.1',
+        'description':
+            'Initial pubspec.yaml to install supported includes on analysis_options.yaml files',
+        'environment': {
+          'sdk': sdkVersion,
+        },
+      }) +
+      "\n";
 
   File file = File(dartanalyzerPathStr + '/pubspec.yaml');
   file.createSync();
@@ -361,7 +373,7 @@ class YamlWriter {
   }
 
   /// Write a dart structure to a YAML string. [yaml] should be a [Map] or [List].
-  String _writeInternal(dynamic yaml, { int indent = 0 }) {
+  String _writeInternal(dynamic yaml, {int indent = 0}) {
     String str = '';
 
     if (yaml is List) {
@@ -374,17 +386,17 @@ class YamlWriter {
       str += yaml.toString();
     }
 
-
     return str;
   }
 
   /// Write a list to a YAML string.
   /// Pass the list in as [yaml] and indent it to the [indent] level.
-  String _writeList(List yaml, { int indent = 0 }) {
+  String _writeList(List yaml, {int indent = 0}) {
     String str = '\n';
 
     for (var item in yaml) {
-      str += "${_indent(indent)}- ${_writeInternal(item, indent: indent + 1)}\n";
+      str +=
+          "${_indent(indent)}- ${_writeInternal(item, indent: indent + 1)}\n";
     }
 
     return str;
@@ -392,12 +404,13 @@ class YamlWriter {
 
   /// Write a map to a YAML string.
   /// Pass the map in as [yaml] and indent it to the [indent] level.
-  String _writeMap(Map yaml, { int indent = 0 }) {
+  String _writeMap(Map yaml, {int indent = 0}) {
     String str = '\n';
 
     for (var key in yaml.keys) {
       var value = yaml[key];
-      str += "${_indent(indent)}${key.toString()}: ${_writeInternal(value, indent: indent + 1)}\n";
+      str +=
+          "${_indent(indent)}${key.toString()}: ${_writeInternal(value, indent: indent + 1)}\n";
     }
 
     return str;

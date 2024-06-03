@@ -1,7 +1,8 @@
 #### Description
 
-The analyzer produces this diagnostic when a class or mixin declaration has
-an `implements` clause, and an interface is followed by a `?`.
+The analyzer produces this diagnostic when a class, mixin, or
+extension type declaration has an `implements` clause, and an
+interface is followed by a `?`.
 
 It isn't valid to specify a nullable interface because doing so would have
 no meaning; it wouldn't change the interface being inherited by the class

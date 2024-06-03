@@ -11,8 +11,7 @@ positional parameters but has a named parameter that could be used for the
 third argument:
 
 ```dart
-%language=2.9
-void f(int a, int b, {int c}) {}
+void f(int a, int b, {int? c}) {}
 void g() {
   f(1, 2, [!3!]);
 }
@@ -24,8 +23,7 @@ If some of the arguments should be values for named parameters, then add
 the names before the arguments:
 
 ```dart
-%language=2.9
-void f(int a, int b, {int c}) {}
+void f(int a, int b, {int? c}) {}
 void g() {
   f(1, 2, c: 3);
 }
@@ -35,8 +33,7 @@ Otherwise, remove the arguments that don't correspond to positional
 parameters:
 
 ```dart
-%language=2.9
-void f(int a, int b, {int c}) {}
+void f(int a, int b, {int? c}) {}
 void g() {
   f(1, 2);
 }

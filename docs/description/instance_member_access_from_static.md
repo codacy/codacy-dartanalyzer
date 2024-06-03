@@ -9,9 +9,8 @@ The following code produces this diagnostic because the instance field `x`
 is being referenced in a static method:
 
 ```dart
-%language=2.9
 class C {
-  int x;
+  int x = 0;
 
   static int m() {
     return [!x!];
@@ -25,9 +24,8 @@ If the method must reference the instance member, then it can't be static,
 so remove the keyword:
 
 ```dart
-%language=2.9
 class C {
-  int x;
+  int x = 0;
 
   int m() {
     return x;
@@ -39,9 +37,8 @@ If the method can't be made an instance method, then add a parameter so
 that an instance of the class can be passed in:
 
 ```dart
-%language=2.9
 class C {
-  int x;
+  int x = 0;
 
   static int m(C c) {
     return c.x;

@@ -10,10 +10,9 @@ The following code produces this diagnostic because the named parameter `x`
 is required:
 
 ```dart
-%language=2.9
 import 'package:meta/meta.dart';
 
-void f({@required int x}) {}
+void f({@required int? x}) {}
 
 void g() {
   [!f!]();
@@ -25,10 +24,9 @@ void g() {
 Provide the required value:
 
 ```dart
-%language=2.9
 import 'package:meta/meta.dart';
 
-void f({@required int x}) {}
+void f({@required int? x}) {}
 
 void g() {
   f(x: 2);

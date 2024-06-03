@@ -11,9 +11,8 @@ The following code produces this diagnostic because the field `x` isn't
 defined:
 
 ```dart
-%language=2.9
 class C {
-  int y;
+  int? y;
 
   C([!this.x!]);
 }
@@ -25,9 +24,8 @@ If the field name was wrong, then change it to the name of an existing
 field:
 
 ```dart
-%language=2.9
 class C {
-  int y;
+  int? y;
 
   C(this.y);
 }
@@ -37,10 +35,9 @@ If the field name is correct but hasn't yet been defined, then declare the
 field:
 
 ```dart
-%language=2.9
 class C {
-  int x;
-  int y;
+  int? x;
+  int? y;
 
   C(this.x);
 }
@@ -50,7 +47,6 @@ If the parameter is needed but shouldn't initialize a field, then convert
 it to a normal parameter and use it:
 
 ```dart
-%language=2.9
 class C {
   int y;
 
@@ -61,9 +57,8 @@ class C {
 If the parameter isn't needed, then remove it:
 
 ```dart
-%language=2.9
 class C {
-  int y;
+  int? y;
 
   C();
 }

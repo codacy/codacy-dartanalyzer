@@ -10,9 +10,8 @@ The following code produces this diagnostic because `m` doesn't declare a
 named parameter named `a`:
 
 ```dart
-%language=2.9
 class C {
-  m({int b}) {}
+  m({int? b}) {}
 }
 
 void f(C c) {
@@ -26,9 +25,8 @@ If the argument name is mistyped, then replace it with the correct name.
 The example above can be fixed by changing `a` to `b`:
 
 ```dart
-%language=2.9
 class C {
-  m({int b}) {}
+  m({int? b}) {}
 }
 
 void f(C c) {
@@ -40,13 +38,12 @@ If a subclass adds a parameter with the name in question, then cast the
 receiver to the subclass:
 
 ```dart
-%language=2.9
 class C {
-  m({int b}) {}
+  m({int? b}) {}
 }
 
 class D extends C {
-  m({int a, int b}) {}
+  m({int? a, int? b}) {}
 }
 
 void f(C c) {
@@ -57,9 +54,8 @@ void f(C c) {
 If the parameter should be added to the function, then add it:
 
 ```dart
-%language=2.9
 class C {
-  m({int a, int b}) {}
+  m({int? a, int? b}) {}
 }
 
 void f(C c) {

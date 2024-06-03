@@ -9,13 +9,12 @@ The following code produces this diagnostic because there are two arguments
 with the name `a`:
 
 ```dart
-%language=2.9
 void f(C c) {
   c.m(a: 0, [!a!]: 1);
 }
 
 class C {
-  void m({int a, int b}) {}
+  void m({int? a, int? b}) {}
 }
 ```
 
@@ -24,25 +23,23 @@ class C {
 If one of the arguments should have a different name, then change the name:
 
 ```dart
-%language=2.9
 void f(C c) {
   c.m(a: 0, b: 1);
 }
 
 class C {
-  void m({int a, int b}) {}
+  void m({int? a, int? b}) {}
 }
 ```
 
 If one of the arguments is wrong, then remove it:
 
 ```dart
-%language=2.9
 void f(C c) {
   c.m(a: 1);
 }
 
 class C {
-  void m({int a, int b}) {}
+  void m({int? a, int? b}) {}
 }
 ```

@@ -10,7 +10,7 @@ The following code produces this diagnostic because the result of dividing
 `x` and `y` is converted to an integer using `toInt`:
 
 ```dart
-int divide(num x, num y) => [!(x / y).toInt()!];
+int divide(int x, int y) => [!(x / y).toInt()!];
 ```
 
 #### Common fixes
@@ -18,5 +18,5 @@ int divide(num x, num y) => [!(x / y).toInt()!];
 Use the integer division operator (`~/`):
 
 ```dart
-int divide(num x, num y) => x ~/ y;
+int divide(int x, int y) => x ~/ y;
 ```

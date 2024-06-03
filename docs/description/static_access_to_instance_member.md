@@ -10,11 +10,10 @@ The following code produces this diagnostic because `x` is an instance
 field:
 
 ```dart
-%language=2.9
 class C {
-  static int a;
+  static int a = 0;
 
-  int b;
+  int b = 0;
 }
 
 int f() => C.[!b!];
@@ -26,11 +25,10 @@ If you intend to access a static field, then change the name of the field
 to an existing static field:
 
 ```dart
-%language=2.9
 class C {
-  static int a;
+  static int a = 0;
 
-  int b;
+  int b = 0;
 }
 
 int f() => C.a;
@@ -40,11 +38,10 @@ If you intend to access the instance field, then use an instance of the
 class to access the field:
 
 ```dart
-%language=2.9
 class C {
-  static int a;
+  static int a = 0;
 
-  int b;
+  int b = 0;
 }
 
 int f(C c) => c.b;

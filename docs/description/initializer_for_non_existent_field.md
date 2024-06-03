@@ -11,9 +11,8 @@ The following code produces this diagnostic because the initializer is
 initializing `x`, but `x` isn't a field in the class:
 
 ```dart
-%language=2.9
 class C {
-  int y;
+  int? y;
 
   C() : [!x = 0!];
 }
@@ -25,9 +24,8 @@ If a different field should be initialized, then change the name to the
 name of the field:
 
 ```dart
-%language=2.9
 class C {
-  int y;
+  int? y;
 
   C() : y = 0;
 }
@@ -36,10 +34,9 @@ class C {
 If the field must be declared, then add a declaration:
 
 ```dart
-%language=2.9
 class C {
-  int x;
-  int y;
+  int? x;
+  int? y;
 
   C() : x = 0;
 }

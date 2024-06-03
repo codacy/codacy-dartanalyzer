@@ -10,8 +10,7 @@ The following code produces this diagnostic because the value of `list1` is
 `null`, which is neither a list nor a set:
 
 ```dart
-%language=2.9
-const List<int> list1 = null;
+const dynamic list1 = 42;
 const List<int> list2 = [...[!list1!]];
 ```
 
@@ -21,7 +20,6 @@ Change the expression to something that evaluates to either a constant list
 or a constant set:
 
 ```dart
-%language=2.9
-const List<int> list1 = [];
+const dynamic list1 = [42];
 const List<int> list2 = [...list1];
 ```

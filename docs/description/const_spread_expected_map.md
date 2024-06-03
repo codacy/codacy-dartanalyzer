@@ -9,8 +9,7 @@ The following code produces this diagnostic because the value of `map1` is
 `null`, which isn't a map:
 
 ```dart
-%language=2.9
-const Map<String, int> map1 = null;
+const dynamic map1 = 42;
 const Map<String, int> map2 = {...[!map1!]};
 ```
 
@@ -19,7 +18,6 @@ const Map<String, int> map2 = {...[!map1!]};
 Change the expression to something that evaluates to a constant map:
 
 ```dart
-%language=2.9
-const Map<String, int> map1 = {};
+const dynamic map1 = {'answer': 42};
 const Map<String, int> map2 = {...map1};
 ```

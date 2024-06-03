@@ -9,7 +9,6 @@ The following code produces this diagnostic because `f` is a function, not
 a type:
 
 ```dart
-%language=2.9
 void f() {
   try {
     // ...
@@ -24,7 +23,6 @@ void f() {
 Change the name to the type of object that should be caught:
 
 ```dart
-%language=2.9
 void f() {
   try {
     // ...

@@ -8,7 +8,7 @@ must be handled.
 
 #### Example
 
-The following code produces this diagnostic because the enum constant `e2`
+The following code produces this diagnostic because the enum value `e2`
 isn't handled:
 
 ```dart

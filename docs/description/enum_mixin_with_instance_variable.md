@@ -2,8 +2,8 @@
 
 The analyzer produces this diagnostic when a mixin that's applied to an
 enum declares one or more instance variables. This isn't allowed because
-the enum constants are constant, and there isn't any way for the
-constructor in the enum to initialize any of the mixin's fields.
+the enum values are constant, and there isn't any way for the constructor
+in the enum to initialize any of the mixin's fields.
 
 #### Example
 

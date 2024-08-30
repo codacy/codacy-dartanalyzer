@@ -1,13 +1,13 @@
 #### Description
 
-The analyzer produces this diagnostic when an enum constant is being
-created using either a factory constructor or a generative constructor
-that isn't marked as being `const`.
+The analyzer produces this diagnostic when an enum value is being created
+using either a factory constructor or a generative constructor that isn't
+marked as being `const`.
 
 #### Example
 
-The following code produces this diagnostic because the enum constant `e`
-is being initialized by a factory constructor:
+The following code produces this diagnostic because the enum value `e` is
+being initialized by a factory constructor:
 
 ```dart
 enum E {

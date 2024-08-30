@@ -1,7 +1,7 @@
 #### Description
 
 The analyzer produces this diagnostic when an enum declaration defines a
-member named `values`, whether the member is an enum constant, an instance
+member named `values`, whether the member is an enum value, an instance
 member, or a static member.
 
 Any such member conflicts with the implicit declaration of the static

@@ -12,7 +12,7 @@ a `const` constructor:
 import 'package:meta/meta.dart';
 
 class C {
-  [!@literal!]
+  @[!literal!]
   C();
 }
 ```
@@ -23,7 +23,7 @@ constructor:
 ```dart
 import 'package:meta/meta.dart';
 
-[!@literal!]
+@[!literal!]
 var x;
 ```
 

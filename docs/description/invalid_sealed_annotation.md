@@ -12,7 +12,7 @@ annotation is on a method declaration:
 import 'package:meta/meta.dart';
 
 class A {
-  [!@sealed!]
+  @[!sealed!]
   void m() {}
 }
 ```

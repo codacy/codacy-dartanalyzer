@@ -13,7 +13,7 @@ declarations in a [public library][]:
 ```dart
 import 'package:meta/meta.dart';
 
-[!@internal!]
+@[!internal!]
 class C {}
 ```
 
@@ -24,7 +24,7 @@ applied to declarations with private names:
 ```dart
 import 'package:meta/meta.dart';
 
-[!@internal!]
+@[!internal!]
 class _C {}
 
 void f(_C c) {}

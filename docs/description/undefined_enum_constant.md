@@ -1,7 +1,7 @@
 #### Description
 
-The analyzer produces this diagnostic when it encounters an identifier that
-appears to be the name of an enum constant, and the name either isn't
+The analyzer produces this diagnostic when it encounters an identifier
+that appears to be the name of an enum value, and the name either isn't
 defined or isn't visible in the scope in which it's being referenced.
 
 #### Example

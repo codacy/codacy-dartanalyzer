@@ -12,7 +12,7 @@ class declaration rather than a member inside the class:
 ```dart
 import 'package:meta/meta.dart';
 
-[!@nonVirtual!]
+@[!nonVirtual!]
 class C {}
 ```
 
@@ -23,7 +23,7 @@ abstract method:
 import 'package:meta/meta.dart';
 
 abstract class C {
-  [!@nonVirtual!]
+  @[!nonVirtual!]
   void m();
 }
 ```
@@ -35,7 +35,7 @@ static method:
 import 'package:meta/meta.dart';
 
 abstract class C {
-  [!@nonVirtual!]
+  @[!nonVirtual!]
   static void m() {}
 }
 ```

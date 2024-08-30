@@ -22,7 +22,7 @@ E f() => const [!E!](2);
 
 #### Common fixes
 
-If there's an enum constant with the same value, or if you add such a
+If there's an enum value with the same value, or if you add such a
 constant, then reference the constant directly:
 
 ```dart

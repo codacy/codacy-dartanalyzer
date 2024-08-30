@@ -1,13 +1,13 @@
 #### Description
 
-The analyzer produces this diagnostic when an enum constant in an enum
-that has type parameters is instantiated and type arguments are provided,
-but the number of type arguments isn't the same as the number of type
+The analyzer produces this diagnostic when an enum value in an enum that
+has type parameters is instantiated and type arguments are provided, but
+the number of type arguments isn't the same as the number of type
 parameters.
 
 #### Example
 
-The following code produces this diagnostic because the enum constant `c`
+The following code produces this diagnostic because the enum value `c`
 provides one type argument even though the enum `E` is declared to have
 two type parameters:
 

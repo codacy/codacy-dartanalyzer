@@ -14,7 +14,7 @@ class, and classes can't be overridden:
 ```dart
 import 'package:meta/meta.dart';
 
-[!@visibleForOverriding!]
+@[!visibleForOverriding!]
 class C {}
 ```
 

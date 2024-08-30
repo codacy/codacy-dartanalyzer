@@ -11,7 +11,7 @@ The following code produces this diagnostic:
 ```dart
 import 'package:meta/meta.dart';
 
-[!@visibleForTesting!]
+@[!visibleForTesting!]
 void _someFunction() {}
 
 void f() => _someFunction();

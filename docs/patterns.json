@@ -1,6 +1,6 @@
 {
   "name": "dartanalyzer",
-  "version": "3.5.2",
+  "version": "3.5.4",
   "patterns": [
     {
       "patternId": "always_declare_return_types",

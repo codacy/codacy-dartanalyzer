@@ -31,3 +31,14 @@ final class MyStruct extends Struct {
   external Array<Uint8> a0;
 }
 ```
+
+If this is a variable length inline array, change the annotation to `Array.variable()`:
+
+```dart
+import 'dart:ffi';
+
+final class MyStruct extends Struct {
+  @Array.variable()
+  external Array<Uint8> a0;
+}
+```

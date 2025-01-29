@@ -1,7 +1,7 @@
 #### Description
 
-The analyzer produces this diagnostic when an import, export, or part
-directive is found where the URI refers to a file that doesn't exist.
+The analyzer produces this diagnostic when a doc-import is found where
+the URI refers to a file that doesn't exist.
 
 #### Examples
 
@@ -9,7 +9,8 @@ If the file `lib.dart` doesn't exist, the following code produces this
 diagnostic:
 
 ```dart
-import [!'lib.dart'!];
+/// @docImport [!'lib.dart'!];
+library;
 ```
 
 #### Common fixes

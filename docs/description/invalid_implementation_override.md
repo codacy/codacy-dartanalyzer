@@ -8,7 +8,8 @@ The analyzer produces this diagnostic when all of the following are true:
   method.
 
 The concrete implementation can be invalid because of incompatibilities in
-either the return type, the types of parameters, or the type variables.
+either the return type, the types of the method's parameters, or the type
+parameters.
 
 #### Example
 

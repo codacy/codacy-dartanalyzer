@@ -11,6 +11,7 @@ Given a [part file][] named `part_file.dart` containing the following
 code:
 
 ```dart
+%language=3.4
 %uri="lib/part_file.dart"
 part of lib;
 ```
@@ -20,6 +21,7 @@ the [part file][] doesn't have a name even though the [part file][] uses a
 name to specify which library it's a part of:
 
 ```dart
+%language=3.4
 part [!'part_file.dart'!];
 ```
 
@@ -29,6 +31,7 @@ Change the `part of` directive in the [part file][] to specify its library
 by URI:
 
 ```dart
+%language=3.4
 %uri="lib/part_file.dart"
 part of 'test.dart';
 ```

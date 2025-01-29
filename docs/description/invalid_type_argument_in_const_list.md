@@ -1,6 +1,6 @@
 #### Description
 
-The analyzer produces this diagnostic when a type parameter is used as a
+The analyzer produces this diagnostic when a type parameter is used in a
 type argument in a list, map, or set literal that is prefixed by `const`.
 This isn't allowed because the value of the type parameter (the actual type
 that will be used at runtime) can't be known at compile time.

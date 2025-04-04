@@ -53,6 +53,14 @@ because of the cast to `String`, which is a non-nullable type. If `o` ever
 has the value `null`, the cast will fail and the invocation of `length`
 will not happen.
 
+The following code produces this diagnostic because `s` can't be `null`:
+
+```dart
+List<String> makeSingletonList(String s) {
+  return <String>[[!?!]s];
+}
+```
+
 #### Common fixes
 
 Replace the null-aware operator with a non-null-aware equivalent; for

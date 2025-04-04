@@ -8,7 +8,7 @@ For more information about FFI, see [C interop using dart:ffi][ffi].
 #### Example
 
 The following code produces this diagnostic because an array dimension of
-`-1` was provided:
+`-8` was provided:
 
 ```dart
 import 'dart:ffi';
@@ -32,7 +32,8 @@ final class MyStruct extends Struct {
 }
 ```
 
-If this is a variable length inline array, change the annotation to `Array.variable()`:
+If this is a variable length inline array, change the annotation to
+`Array.variable()`:
 
 ```dart
 import 'dart:ffi';

@@ -9,7 +9,7 @@ import 'dart:core';
 import 'package:http/http.dart' as http;
 import 'package:yaml/yaml.dart';
 
-void main() {
+void main() async {
   File dartanalyzerVersionFile = new File('.tool_version');
 
   final sdkVersion = dartanalyzerVersionFile.readAsStringSync();
@@ -83,7 +83,7 @@ void main() {
   //   sdkDir
   // ]);
 
-  void processErrorPatterns() async {
+  Future<void> processErrorPatterns() async {
     final url =
         'https://raw.githubusercontent.com/dart-lang/sdk/${sdkVersion}/pkg/analyzer/messages.yaml';
     final response = await http.get(Uri.parse(url));
@@ -100,34 +100,33 @@ void main() {
 
     errorPatterns.forEach((key, group) {
       group.forEach((key, value) {
-        String patternId = key.toLowerCase();
+        if (!patterns.any((p) => p.patternId == key.toLowerCase())) {
+          String patternId = key.toLowerCase();
+          var pattern = PatternSpec(
+              patternId: patternId,
+              level: 'Warning',
+              category: 'ErrorProne',
+              enabled: false);
 
-        var pattern = PatternSpec(
-            patternId: patternId,
-            level: 'Warning',
-            category: 'ErrorProne',
-            enabled: false);
+          patternsType[pattern.patternId] = 'error';
+          patterns.add(pattern);
 
-        patternsType[pattern.patternId] = 'error';
-        patterns.add(pattern);
+          var splited = patternId.split("_").join(" ");
+          var title = splited[0].toUpperCase() + splited.substring(1);
 
-        var splited = patternId.split("_").join(" ");
-        var title = splited[0].toUpperCase() + splited.substring(1);
+          descriptions.add(
+              Description(patternId: patternId, title: title, description: ''));
 
-        descriptions.add(
-            Description(patternId: patternId, title: title, description: ''));
-
-        if (value.documentation != null) {
-          File(docsDescriptionDirPath + '/' + patternId + ".md")
-              .writeAsString(value.documentation!);
+          if (value.documentation != null) {
+            File(docsDescriptionDirPath + '/' + patternId + ".md")
+                .writeAsString(value.documentation!);
+          }
         }
       });
     });
   }
 
-  ;
-
-  processErrorPatterns();
+  await processErrorPatterns();
 
   descriptionFile.writeAsStringSync(encoder.convert(descriptions.toList()));
 

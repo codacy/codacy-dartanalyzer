@@ -1309,6 +1309,5514 @@
       "level": "Info",
       "category": "CodeStyle",
       "enabled": true
+    },
+    {
+      "patternId": "included_file_parse_error",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "parse_error",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "deprecated_lint",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "deprecated_lint_with_replacement",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "duplicate_rule",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "analysis_option_deprecated",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "analysis_option_deprecated_with_replacement",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "included_file_warning",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "include_file_not_found",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "incompatible_lint",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_option",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_section_format",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "multiple_plugins",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "recursive_include_file",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "removed_lint",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "replaced_lint",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "undefined_lint",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "unrecognized_error_code",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "unsupported_option_without_values",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "unsupported_option_with_legal_value",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "unsupported_option_with_legal_values",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "unsupported_value",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "abstract_field_constructor_initializer",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "abstract_field_initializer",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "abstract_super_member_reference",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "ambiguous_export",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "ambiguous_extension_member_access_two",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "ambiguous_extension_member_access_three_or_more",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "ambiguous_import",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "ambiguous_set_or_map_literal_both",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "ambiguous_set_or_map_literal_either",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "argument_type_not_assignable",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "assert_in_redirecting_constructor",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "assignment_to_const",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "assignment_to_final",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "assignment_to_final_local",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "assignment_to_final_no_setter",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "assignment_to_function",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "assignment_to_method",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "assignment_to_type",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "async_for_in_wrong_context",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "augmentation_extends_clause_already_present",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "augmentation_modifier_extra",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "augmentation_modifier_missing",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "augmentation_of_different_declaration_kind",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "augmentation_type_parameter_bound",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "augmentation_type_parameter_count",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "augmentation_type_parameter_name",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "augmentation_without_declaration",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "augmented_expression_is_not_setter",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "augmented_expression_is_setter",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "augmented_expression_not_operator",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "await_in_late_local_variable_initializer",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "await_in_wrong_context",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "await_of_incompatible_type",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "base_class_implemented_outside_of_library",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "base_mixin_implemented_outside_of_library",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "body_might_complete_normally",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "break_label_on_switch_member",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "built_in_identifier_as_type",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "built_in_identifier_as_extension_name",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "built_in_identifier_as_extension_type_name",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "built_in_identifier_as_prefix_name",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "built_in_identifier_as_type_name",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "built_in_identifier_as_type_parameter_name",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "built_in_identifier_as_typedef_name",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "case_block_not_terminated",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "case_expression_type_implements_equals",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "case_expression_type_is_not_switch_expression_subtype",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "cast_to_non_type",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "class_used_as_mixin",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "class_instantiation_access_to_instance_member",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "class_instantiation_access_to_unknown_member",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "class_instantiation_access_to_static_member",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "non_const_generative_enum_constructor",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "non_constant_list_element_from_deferred_library",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "non_constant_map_key_from_deferred_library",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "non_constant_map_value_from_deferred_library",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "non_constant_record_field_from_deferred_library",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "pattern_constant_from_deferred_library",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "record_literal_one_positional_no_trailing_comma",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "set_element_from_deferred_library",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "concrete_class_has_enum_superinterface",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "concrete_class_with_abstract_member",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "conflicting_constructor_and_static_field",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "conflicting_constructor_and_static_getter",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "conflicting_constructor_and_static_method",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "conflicting_constructor_and_static_setter",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "conflicting_field_and_method",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "conflicting_generic_interfaces",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "conflicting_inherited_method_and_setter",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "conflicting_method_and_field",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "conflicting_static_and_instance",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "conflicting_type_variable_and_class",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "conflicting_type_variable_and_enum",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "conflicting_type_variable_and_extension",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "conflicting_type_variable_and_extension_type",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "conflicting_type_variable_and_mixin",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "conflicting_type_variable_and_member_class",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "conflicting_type_variable_and_member_mixin",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "conflicting_type_variable_and_member_enum",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "conflicting_type_variable_and_member_extension",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "conflicting_type_variable_and_member_extension_type",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "const_constructor_field_type_mismatch",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "const_constructor_constant_from_deferred_library",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "const_constructor_param_type_mismatch",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "const_constructor_throws_exception",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "const_constructor_with_field_initialized_by_non_const",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "const_constructor_with_mixin_with_field",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "const_constructor_with_mixin_with_fields",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "const_constructor_with_non_const_super",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "const_constructor_with_non_final_field",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "const_deferred_class",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "const_eval_assertion_failure",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "const_eval_assertion_failure_with_message",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "const_eval_extension_method",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "const_eval_extension_type_method",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "const_eval_for_element",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "const_eval_property_access",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "const_eval_method_invocation",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "const_eval_throws_exception",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "const_eval_throws_idbze",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "const_eval_type_bool",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "const_eval_type_bool_int",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "const_eval_type_bool_num_string",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "const_eval_primitive_equality",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "const_eval_type_int",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "const_eval_type_num",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "const_eval_type_num_string",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "const_eval_type_string",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "const_eval_type_type",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "const_initialized_with_non_constant_value",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "const_initialized_with_non_constant_value_from_deferred_library",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "const_instance_field",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "const_map_key_not_primitive_equality",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "const_not_initialized",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "const_set_element_not_primitive_equality",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "const_spread_expected_list_or_set",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "const_spread_expected_map",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "const_type_parameter",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "const_with_non_const",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "const_with_non_constant_argument",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "const_with_type_parameters",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "const_with_type_parameters_constructor_tearoff",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "const_with_type_parameters_function_tearoff",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "const_with_undefined_constructor",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "const_with_undefined_constructor_default",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "constant_pattern_with_non_constant_expression",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "continue_label_invalid",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "could_not_infer",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "new_with_non_type",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "const_with_non_type",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "default_list_constructor",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "default_value_in_redirecting_factory_constructor",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "default_value_on_required_parameter",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "deferred_import_of_extension",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "definitely_unassigned_late_local_variable",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "disallowed_type_instantiation_expression",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "duplicate_constructor_name",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "duplicate_constructor_default",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "duplicate_definition",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "duplicate_field_name",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "duplicate_field_formal_parameter",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "duplicate_named_argument",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "duplicate_part",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "duplicate_pattern_assignment_variable",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "duplicate_pattern_field",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "duplicate_rest_element_in_pattern",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "duplicate_variable_pattern",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "empty_map_pattern",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "enum_constant_invokes_factory_constructor",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "enum_constant_same_name_as_enclosing",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "enum_constant_with_non_const_constructor",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "enum_instantiated_to_bounds_is_not_well_bounded",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "enum_mixin_with_instance_variable",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "enum_with_abstract_member",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "enum_with_name_values",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "enum_without_constants",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "equal_elements_in_const_set",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "equal_keys_in_const_map",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "equal_keys_in_map_pattern",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "expected_one_list_pattern_type_arguments",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "expected_one_list_type_arguments",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "expected_one_set_type_arguments",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "expected_two_map_type_arguments",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "expected_two_map_pattern_type_arguments",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "export_internal_library",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "export_legacy_symbol",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "export_of_non_library",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "expression_in_map",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "extends_non_class",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "extension_as_expression",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "extension_conflicting_static_and_instance",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "extension_declares_member_of_object",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "extension_override_access_to_static_member",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "extension_override_argument_not_assignable",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "extension_override_without_access",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "extension_override_with_cascade",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "extension_type_constructor_with_super_formal_parameter",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "extension_type_constructor_with_super_invocation",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "extension_type_declares_instance_field",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "extension_type_declares_member_of_object",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "extension_type_implements_disallowed_type",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "extension_type_implements_itself",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "extension_type_implements_not_supertype",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "extension_type_implements_representation_not_supertype",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "extension_type_inherited_member_conflict",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "extension_type_representation_depends_on_itself",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "extension_type_representation_type_bottom",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "extension_type_with_abstract_member",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "external_field_constructor_initializer",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "external_field_initializer",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "external_variable_initializer",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "extra_positional_arguments",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "extra_positional_arguments_could_be_named",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "field_initialized_by_multiple_initializers",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "field_initialized_in_initializer_and_declaration",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "field_initialized_in_parameter_and_initializer",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "field_initializer_factory_constructor",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "field_initializer_not_assignable",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "const_field_initializer_not_assignable",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "field_initializer_outside_constructor",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "field_initializer_redirecting_constructor",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "field_initializing_formal_not_assignable",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "final_class_extended_outside_of_library",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "final_class_implemented_outside_of_library",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "final_class_used_as_mixin_constraint_outside_of_library",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "final_initialized_in_declaration_and_constructor",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "final_not_initialized",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "final_not_initialized_constructor_1",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "final_not_initialized_constructor_2",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "final_not_initialized_constructor_3_plus",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "for_in_of_invalid_element_type",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "for_in_of_invalid_type",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "for_in_with_const_variable",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "generic_function_type_cannot_be_bound",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "generic_function_type_cannot_be_type_argument",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "generic_method_type_instantiation_on_dynamic",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "getter_not_assignable_setter_types",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "getter_not_subtype_setter_types",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "if_element_condition_from_deferred_library",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "illegal_async_generator_return_type",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "illegal_async_return_type",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "illegal_enum_values_declaration",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "illegal_enum_values_inheritance",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "illegal_language_version_override",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "illegal_concrete_enum_member_declaration",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "illegal_concrete_enum_member_inheritance",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "illegal_sync_generator_return_type",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "implements_non_class",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "implements_repeated",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "implements_super_class",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "implicit_this_reference_in_initializer",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "implicit_super_initializer_missing_arguments",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "import_internal_library",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "import_of_non_library",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "inconsistent_case_expression_types",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "inconsistent_inheritance",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "inconsistent_inheritance_getter_and_method",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "inconsistent_language_version_override",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "inconsistent_pattern_variable_logical_or",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "initializer_for_non_existent_field",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "initializer_for_static_field",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "initializing_formal_for_non_existent_field",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "instance_access_to_static_member",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "instance_access_to_static_member_of_unnamed_extension",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "instance_member_access_from_factory",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "instance_member_access_from_static",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "instantiate_abstract_class",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "instantiate_enum",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "instantiate_type_alias_expands_to_type_parameter",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "integer_literal_imprecise_as_double",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "integer_literal_out_of_range",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "interface_class_extended_outside_of_library",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_annotation",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_annotation_constant_value_from_deferred_library",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_annotation_from_deferred_library",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_assignment",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_cast_function",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_cast_function_expr",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_cast_literal",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_cast_literal_list",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_cast_literal_map",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_cast_literal_set",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_cast_method",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_cast_new_expr",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_constant",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_extension_argument_count",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_factory_name_not_a_class",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_field_name_from_object",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_field_name_private",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_field_name_positional",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_implementation_override",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_implementation_override_setter",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_inline_function_type",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_macro_application_target",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_modifier_on_constructor",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_modifier_on_setter",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_override",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_override_setter",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_reference_to_generative_enum_constructor",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_reference_to_this",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_super_formal_parameter_location",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_type_argument_in_const_list",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_type_argument_in_const_map",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_type_argument_in_const_set",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_uri",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_use_of_covariant",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_use_of_null_value",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invocation_of_extension_without_call",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invocation_of_non_function",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invocation_of_non_function_expression",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "label_in_outer_scope",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "label_undefined",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "late_final_field_with_const_constructor",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "late_final_local_already_assigned",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "list_element_type_not_assignable",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "macro_application_argument_error",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "macro_error",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "macro_internal_exception",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "macro_not_allowed_declaration",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "macro_declarations_phase_introspection_cycle",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "macro_definition_application_same_library_cycle",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "main_first_positional_parameter_type",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "main_has_required_named_parameters",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "main_has_too_many_required_positional_parameters",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "main_is_not_function",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "map_entry_not_in_map",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "map_key_type_not_assignable",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "map_value_type_not_assignable",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "missing_const_in_list_literal",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "missing_const_in_map_literal",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "missing_const_in_set_literal",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "missing_dart_library",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "missing_default_value_for_parameter",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "missing_default_value_for_parameter_positional",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "missing_default_value_for_parameter_with_annotation",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "missing_named_pattern_field_name",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "missing_required_argument",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "missing_variable_pattern",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "mixins_super_class",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "mixin_application_concrete_super_invoked_member_type",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "mixin_application_not_implemented_interface",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "mixin_application_no_concrete_super_invoked_setter",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "mixin_application_no_concrete_super_invoked_member",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "mixin_class_declaration_extends_not_object",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "mixin_class_declares_constructor",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "mixin_inherits_from_not_object",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "mixin_instantiate",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "mixin_of_non_class",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "mixin_subtype_of_base_is_not_base",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "mixin_subtype_of_final_is_not_base",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "mixin_super_class_constraint_deferred_class",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "mixin_super_class_constraint_non_interface",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "mixin_with_non_class_superclass",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "multiple_redirecting_constructor_invocations",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "multiple_super_initializers",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "new_with_undefined_constructor",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "new_with_undefined_constructor_default",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "non_abstract_class_inherits_abstract_member_five_plus",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "non_abstract_class_inherits_abstract_member_four",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "non_abstract_class_inherits_abstract_member_one",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "non_abstract_class_inherits_abstract_member_three",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "non_abstract_class_inherits_abstract_member_two",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "non_bool_condition",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "non_bool_expression",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "non_bool_negation_expression",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "non_bool_operand",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "non_constant_annotation_constructor",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "non_constant_case_expression",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "non_constant_case_expression_from_deferred_library",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "non_constant_default_value",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "non_constant_default_value_from_deferred_library",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "non_constant_list_element",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "non_constant_map_element",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "non_constant_map_key",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "non_constant_map_pattern_key",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "non_constant_map_value",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "non_constant_record_field",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "non_constant_relational_pattern_expression",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "non_constant_set_element",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "non_const_map_as_expression_statement",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "non_covariant_type_parameter_position_in_representation_type",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "non_exhaustive_switch_expression",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "non_exhaustive_switch_statement",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "non_final_field_in_enum",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "non_generative_constructor",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "non_generative_implicit_constructor",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "non_sync_factory",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "non_type_as_type_argument",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "non_type_in_catch_clause",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "non_void_return_for_operator",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "non_void_return_for_setter",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "not_assigned_potentially_non_nullable_local_variable",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "not_a_type",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "not_binary_operator",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "not_enough_positional_arguments_singular",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "not_enough_positional_arguments_plural",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "not_enough_positional_arguments_name_singular",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "not_enough_positional_arguments_name_plural",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "not_initialized_non_nullable_instance_field",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "not_initialized_non_nullable_instance_field_constructor",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "not_initialized_non_nullable_variable",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "not_instantiated_bound",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "not_iterable_spread",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "not_map_spread",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "not_null_aware_null_spread",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "no_annotation_constructor_arguments",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "no_combined_super_signature",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "no_default_super_constructor_explicit",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "no_default_super_constructor_implicit",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "no_generative_constructors_in_superclass",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "nullable_type_in_extends_clause",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "nullable_type_in_implements_clause",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "nullable_type_in_on_clause",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "nullable_type_in_with_clause",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "object_cannot_extend_another_class",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "obsolete_colon_for_default_value",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "on_repeated",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "optional_parameter_in_operator",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "part_of_different_library",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "part_of_non_part",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "part_of_unnamed_library",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "pattern_assignment_not_local_variable",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "pattern_type_mismatch_in_irrefutable_context",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "pattern_variable_assignment_inside_guard",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "pattern_variable_shared_case_scope_different_finality_or_type",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "pattern_variable_shared_case_scope_has_label",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "pattern_variable_shared_case_scope_not_all_cases",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "positional_field_in_object_pattern",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "positional_super_formal_parameter_with_positional_argument",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "prefix_collides_with_top_level_member",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "prefix_identifier_not_followed_by_dot",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "prefix_shadowed_by_local_declaration",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "private_collision_in_mixin_application",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "private_optional_parameter",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "private_setter",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "read_potentially_unassigned_final",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "recursive_compile_time_constant",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "recursive_constant_constructor",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "recursive_constructor_redirect",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "recursive_factory_redirect",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "recursive_interface_inheritance",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "recursive_interface_inheritance_extends",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "recursive_interface_inheritance_implements",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "recursive_interface_inheritance_on",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "recursive_interface_inheritance_with",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "redirect_generative_to_missing_constructor",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "redirect_generative_to_non_generative_constructor",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "redirect_to_abstract_class_constructor",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "redirect_to_invalid_function_type",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "redirect_to_invalid_return_type",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "redirect_to_missing_constructor",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "redirect_to_non_class",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "redirect_to_non_const_constructor",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "redirect_to_type_alias_expands_to_type_parameter",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "referenced_before_declaration",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "refutable_pattern_in_irrefutable_context",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "relational_pattern_operand_type_not_assignable",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "relational_pattern_operator_return_type_not_assignable_to_bool",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "rest_element_in_map_pattern",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "rethrow_outside_catch",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "return_in_generative_constructor",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "return_in_generator",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "return_of_invalid_type_from_constructor",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "return_of_invalid_type_from_function",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "return_of_invalid_type_from_method",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "return_of_invalid_type_from_closure",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "return_without_value",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "sealed_class_subtype_outside_of_library",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "set_element_type_not_assignable",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "shared_deferred_prefix",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "spread_expression_from_deferred_library",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "static_access_to_instance_member",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "subtype_of_base_is_not_base_final_or_sealed",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "subtype_of_final_is_not_base_final_or_sealed",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "super_formal_parameter_type_is_not_subtype_of_associated",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "super_formal_parameter_without_associated_named",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "super_formal_parameter_without_associated_positional",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "implements_deferred_class",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "mixin_deferred_class",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "extends_deferred_class",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "extends_disallowed_class",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "mixin_of_disallowed_class",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "mixin_super_class_constraint_disallowed_class",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "implements_disallowed_class",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "extends_type_alias_expands_to_type_parameter",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "mixin_on_type_alias_expands_to_type_parameter",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "mixin_of_type_alias_expands_to_type_parameter",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "implements_type_alias_expands_to_type_parameter",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "super_initializer_in_object",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "super_invocation_not_last",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "super_in_enum_constructor",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "super_in_extension",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "super_in_extension_type",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "super_in_invalid_context",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "super_in_redirecting_constructor",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "switch_case_completes_normally",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "switch_expression_not_assignable",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "tearoff_of_generative_constructor_of_abstract_class",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "throw_of_invalid_type",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "top_level_cycle",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "type_alias_cannot_reference_itself",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "type_annotation_deferred_class",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "type_argument_not_matching_bounds",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "type_parameter_referenced_by_static",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "type_parameter_supertype_of_its_bound",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "type_test_with_non_type",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "type_test_with_undefined_name",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "unchecked_use_of_nullable_value_in_spread",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "unchecked_invocation_of_nullable_value",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "unchecked_method_invocation_of_nullable_value",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "unchecked_operator_invocation_of_nullable_value",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "unchecked_use_of_nullable_value_in_yield_each",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "unchecked_use_of_nullable_value_as_condition",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "unchecked_use_of_nullable_value_as_iterator",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "unchecked_property_access_of_nullable_value",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "undefined_annotation",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "undefined_class",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "undefined_class_boolean",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "undefined_constructor_in_initializer",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "undefined_constructor_in_initializer_default",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "undefined_enum_constant",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "undefined_enum_constructor_named",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "undefined_enum_constructor_unnamed",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "undefined_extension_getter",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "undefined_extension_method",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "undefined_extension_operator",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "undefined_extension_setter",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "undefined_function",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "undefined_getter",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "undefined_getter_on_function_type",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "undefined_identifier",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "undefined_identifier_await",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "undefined_method",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "undefined_method_on_function_type",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "undefined_named_parameter",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "undefined_operator",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "undefined_prefixed_name",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "undefined_setter",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "undefined_setter_on_function_type",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "undefined_super_getter",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "undefined_super_method",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "undefined_super_operator",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "undefined_super_setter",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "unqualified_reference_to_non_local_static_member",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "unqualified_reference_to_static_member_of_extended_type",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "uri_does_not_exist",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "uri_has_not_been_generated",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "uri_with_interpolation",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "use_of_native_extension",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "use_of_void_result",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "values_declaration_in_enum",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "variable_type_mismatch",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "wrong_explicit_type_parameter_variance_in_superinterface",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "wrong_number_of_parameters_for_operator",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "wrong_number_of_parameters_for_operator_minus",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "wrong_number_of_parameters_for_setter",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "wrong_number_of_type_arguments",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "wrong_number_of_type_arguments_constructor",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "wrong_number_of_type_arguments_enum",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "wrong_number_of_type_arguments_extension",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "wrong_number_of_type_arguments_anonymous_function",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "wrong_number_of_type_arguments_function",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "wrong_number_of_type_arguments_method",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "wrong_type_parameter_variance_in_superinterface",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "wrong_type_parameter_variance_position",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "yield_each_in_non_generator",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "yield_in_non_generator",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "yield_each_of_invalid_type",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "yield_of_invalid_type",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "abi_specific_integer_invalid",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "abi_specific_integer_mapping_extra",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "abi_specific_integer_mapping_missing",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "abi_specific_integer_mapping_unsupported",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "address_position",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "address_receiver",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "annotation_on_pointer_field",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "argument_must_be_a_constant",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "argument_must_be_native",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "native_field_invalid_type",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "native_field_missing_type",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "native_field_not_static",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "native_function_missing_type",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "compound_implements_finalizable",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "creation_of_struct_or_union",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "empty_struct",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "extra_annotation_on_struct_field",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "extra_size_annotation_carray",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "ffi_native_must_be_external",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "ffi_native_only_classes_extending_nativefieldwrapperclass1_can_be_pointer",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "ffi_native_unexpected_number_of_parameters",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "ffi_native_unexpected_number_of_parameters_with_receiver",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "ffi_native_invalid_duplicate_default_asset",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "ffi_native_invalid_multiple_annotations",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "field_initializer_in_struct",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "field_in_struct_with_initializer",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "field_must_be_external_in_struct",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "generic_struct_subclass",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_exception_value",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_field_type_in_struct",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "leaf_call_must_not_return_handle",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "leaf_call_must_not_take_handle",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "mismatched_annotation_on_struct_field",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "missing_annotation_on_struct_field",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "missing_exception_value",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "missing_field_type_in_struct",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "missing_size_annotation_carray",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "must_be_a_native_function_type",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "must_be_a_subtype",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "must_return_void",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "negative_variable_dimension",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "non_constant_type_argument",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "non_native_function_type_argument_to_pointer",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "non_positive_array_dimension",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "non_sized_type_argument",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "packed_annotation",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "packed_annotation_alignment",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "variable_length_array_not_last",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "size_annotation_dimensions",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "subtype_of_ffi_class_in_extends",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "subtype_of_ffi_class_in_implements",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "subtype_of_ffi_class_in_with",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "subtype_of_struct_class_in_extends",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "subtype_of_struct_class_in_implements",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "subtype_of_struct_class_in_with",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "deprecated_colon_for_default_value",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "deprecated_member_use",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "deprecated_member_use_with_message",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "deprecated_member_use_from_same_package",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "deprecated_member_use_from_same_package_with_message",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "division_optimization",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "import_deferred_library_with_load_function",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "import_of_legacy_library_into_null_safe",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "macro_info",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "unnecessary_import",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "camera_permissions_incompatible",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "non_resizable_activity",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "no_touchscreen_feature",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "permission_implies_unsupported_hardware",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "setting_orientation_on_activity",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "unsupported_chrome_os_feature",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "unsupported_chrome_os_hardware",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "abstract_static_method",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "async_keyword_used_as_identifier",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "const_constructor_with_body",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "covariant_constructor",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "declaration_named_augmented_inside_augmentation",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "default_value_in_function_type",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "empty_enum_body",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "expected_case_or_default",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "expected_class_member",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "expected_executable",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "expected_list_or_map_literal",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "expected_named_type_extends",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "expected_named_type_implements",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "expected_named_type_on",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "expected_named_type_with",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "expected_representation_field",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "expected_representation_type",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "expected_string_literal",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "expected_token",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "expected_type_name",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "external_getter_with_body",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "external_operator_with_body",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "external_setter_with_body",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "factory_without_body",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "factory_with_initializers",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "final_constructor",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "final_method",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "getter_in_function",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "getter_with_parameters",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_code_point",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_comment_reference",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_generic_function_type",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_literal_in_configuration",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_operator_for_super",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_star_after_async",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_sync",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_use_of_identifier_augmented",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "local_function_declaration_modifier",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "missing_closing_parenthesis",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "missing_enum_body",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "missing_expression_in_initializer",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "missing_function_body",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "missing_function_keyword",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "missing_function_parameters",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "missing_get",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "missing_identifier",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "missing_method_parameters",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "missing_name_for_named_parameter",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "missing_name_in_library_directive",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "missing_name_in_part_of_directive",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "missing_star_after_sync",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "missing_terminator_for_parameter_group",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "missing_typedef_parameters",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "missing_variable_in_for_each",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "mixed_parameter_groups",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "multiple_implements_clauses",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "multiple_named_parameter_groups",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "multiple_positional_parameter_groups",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "multiple_representation_fields",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "multiple_variables_in_for_each",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "named_function_expression",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "named_function_type",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "named_parameter_outside_group",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "native_clause_in_non_sdk_code",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "native_function_body_in_non_sdk_code",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "non_constructor_factory",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "non_identifier_library_name",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "non_part_of_directive_in_part",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "non_string_literal_as_uri",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "non_user_definable_operator",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "normal_before_optional_parameters",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "part_of_name",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "positional_after_named_argument",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "positional_parameter_outside_group",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "representation_field_modifier",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "representation_field_trailing_comma",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "setter_in_function",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "static_getter_without_body",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "static_setter_without_body",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "unexpected_terminator_for_parameter_group",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "unexpected_token",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "var_class",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "var_enum",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "var_typedef",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "wrong_separator_for_positional_parameter",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "wrong_terminator_for_parameter_group",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "asset_directory_does_not_exist",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "asset_does_not_exist",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "asset_field_not_list",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "asset_missing_path",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "asset_not_string",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "asset_not_string_or_map",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "asset_path_not_string",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "dependencies_field_not_map",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "deprecated_field",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "flutter_field_not_map",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_dependency",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_platforms_field",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "unknown_platform",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "platform_value_disallowed",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "missing_name",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "missing_dependency",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "name_not_string",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "path_does_not_exist",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "path_not_posix",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "path_pubspec_does_not_exist",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "unnecessary_dev_dependency",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "workspace_field_not_list",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "workspace_value_not_string",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "workspace_value_not_subdirectory",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "dead_null_aware_expression",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_null_aware_operator",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_null_aware_operator_after_short_circuit",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_null_aware_element",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_null_aware_map_entry_key",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_null_aware_map_entry_value",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "missing_enum_constant_in_switch",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "unnecessary_non_null_assertion",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "unnecessary_null_assert_pattern",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "unnecessary_null_check_pattern",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "argument_type_not_assignable_to_error_handler",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "assignment_of_do_not_store",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "body_might_complete_normally_catch_error",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "body_might_complete_normally_nullable",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "cast_from_null_always_fails",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "cast_from_nullable_always_fails",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "constant_pattern_never_matches_value_type",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "dead_code",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "dead_code_catch_following_catch",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "dead_code_late_wildcard_variable_initializer",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "dead_code_on_catch_subtype",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "deprecated_export_use",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "deprecated_extends_function",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "deprecated_implements_function",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "deprecated_mixin_function",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "deprecated_new_in_comment_reference",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "doc_directive_has_extra_arguments",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "doc_directive_has_unexpected_named_argument",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "doc_directive_missing_closing_brace",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "doc_directive_missing_closing_tag",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "doc_directive_missing_one_argument",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "doc_directive_argument_wrong_format",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "doc_directive_missing_opening_tag",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "doc_directive_missing_three_arguments",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "doc_directive_missing_two_arguments",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "doc_directive_unknown",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "doc_import_cannot_be_deferred",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "doc_import_cannot_have_configurations",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "duplicate_export",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "duplicate_hidden_name",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "duplicate_ignore",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "duplicate_import",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "duplicate_shown_name",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "equal_elements_in_set",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "equal_keys_in_map",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "inference_failure_on_collection_literal",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "inference_failure_on_function_invocation",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "inference_failure_on_function_return_type",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "inference_failure_on_generic_invocation",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "inference_failure_on_instance_creation",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "inference_failure_on_uninitialized_variable",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "inference_failure_on_untyped_parameter",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_annotation_target",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_export_of_internal_element",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_export_of_internal_element_indirectly",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_factory_method_decl",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_factory_method_impl",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_internal_annotation",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_language_version_override_greater",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_language_version_override_at_sign",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_language_version_override_location",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_language_version_override_lower_case",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_language_version_override_number",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_language_version_override_prefix",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_language_version_override_trailing_characters",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_language_version_override_two_slashes",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_language_version_override_equals",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_literal_annotation",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_non_virtual_annotation",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_override_of_non_virtual_member",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_required_named_param",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_required_optional_positional_param",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_required_positional_param",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_use_of_do_not_submit_member",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_use_of_internal_member",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_use_of_protected_member",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_use_of_visible_for_overriding_member",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_use_of_visible_for_template_member",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_use_of_visible_for_testing_member",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_visibility_annotation",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_visible_for_overriding_annotation",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_visible_outside_template_annotation",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "return_type_invalid_for_catch_error",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "return_of_invalid_type_from_catch_error",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_reopen_annotation",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_sealed_annotation",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "macro_warning",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "missing_override_of_must_be_overridden_one",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "missing_override_of_must_be_overridden_two",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "missing_override_of_must_be_overridden_three_plus",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "missing_required_param",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "missing_required_param_with_details",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "missing_return",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "mixin_on_sealed_class",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "must_be_immutable",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "must_call_super",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "non_const_argument_for_const_parameter",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "non_const_call_to_literal_constructor_using_new",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "non_const_call_to_literal_constructor",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "non_nullable_equals_parameter",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "nullable_type_in_catch_clause",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "null_argument_to_non_null_type",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "null_check_always_fails",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "override_on_non_overriding_field",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "override_on_non_overriding_getter",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "override_on_non_overriding_method",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "override_on_non_overriding_setter",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "pattern_never_matches_value_type",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "receiver_of_type_never",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "redeclare_on_non_redeclaring_member",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "removed_lint_use",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "replaced_lint_use",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "return_of_do_not_store",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "sdk_version_async_exported_from_core",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "sdk_version_as_expression_in_const_context",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "sdk_version_bool_operator_in_const_context",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "sdk_version_constructor_tearoffs",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "sdk_version_eq_eq_operator_in_const_context",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "sdk_version_extension_methods",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "sdk_version_gt_gt_gt_operator",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "sdk_version_is_expression_in_const_context",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "sdk_version_never",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "sdk_version_set_literal",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "sdk_version_since",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "sdk_version_ui_as_code",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "sdk_version_ui_as_code_in_const_context",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "strict_raw_type",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "subtype_of_sealed_class",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "text_direction_code_point_in_comment",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "text_direction_code_point_in_literal",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "type_check_is_not_null",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "type_check_is_null",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "undefined_hidden_name",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "undefined_referenced_parameter",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "undefined_shown_name",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "unignorable_ignore",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "unnecessary_cast",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "unnecessary_cast_pattern",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "unnecessary_ignore",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "unnecessary_nan_comparison_false",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "unnecessary_nan_comparison_true",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "unnecessary_no_such_method",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "unnecessary_null_comparison_always_null_false",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "unnecessary_null_comparison_always_null_true",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "unnecessary_null_comparison_never_null_false",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "unnecessary_null_comparison_never_null_true",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "unnecessary_question_mark",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "unnecessary_set_literal",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "unnecessary_type_check_false",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "unnecessary_type_check_true",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "unnecessary_wildcard_pattern",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "unreachable_switch_case",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "unreachable_switch_default",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "unused_catch_clause",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "unused_catch_stack",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "unused_element",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "unused_element_parameter",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "unused_field",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "unused_import",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "unused_label",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "unused_local_variable",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "unused_result",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "unused_result_with_message",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "unused_shown_name",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "uri_does_not_exist_in_doc_import",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
     }
   ]
 }

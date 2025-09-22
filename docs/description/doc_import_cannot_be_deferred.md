@@ -1,0 +1,27 @@
+#### Description
+
+The analyzer produces this diagnostic when a documentation import uses the
+`deferred` keyword.
+
+Documentation imports can't be deferred because deferring them wouldn't
+impact the size of the compiled code.
+
+#### Example
+
+The following code produces this diagnostic because the documentation
+import has a `deferred` keyword:
+
+```dart
+// ignore:missing_prefix_in_deferred_import
+/// @docImport 'package:meta/meta.dart' [!deferred!];
+library;
+```
+
+#### Common fixes
+
+Remove the `deferred` keyword:
+
+```dart
+/// @docImport 'package:meta/meta.dart';
+library;
+```

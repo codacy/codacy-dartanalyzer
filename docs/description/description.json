@@ -1100,6 +1100,16 @@
     "description": ""
   },
   {
+    "patternId": "analysis_option_deprecated",
+    "title": "Analysis option deprecated",
+    "description": ""
+  },
+  {
+    "patternId": "analysis_option_deprecated_with_replacement",
+    "title": "Analysis option deprecated with replacement",
+    "description": ""
+  },
+  {
     "patternId": "deprecated_lint",
     "title": "Deprecated lint",
     "description": ""
@@ -1112,16 +1122,6 @@
   {
     "patternId": "duplicate_rule",
     "title": "Duplicate rule",
-    "description": ""
-  },
-  {
-    "patternId": "analysis_option_deprecated",
-    "title": "Analysis option deprecated",
-    "description": ""
-  },
-  {
-    "patternId": "analysis_option_deprecated_with_replacement",
-    "title": "Analysis option deprecated with replacement",
     "description": ""
   },
   {
@@ -1885,6 +1885,21 @@
     "description": ""
   },
   {
+    "patternId": "dot_shorthand_missing_context",
+    "title": "Dot shorthand missing context",
+    "description": ""
+  },
+  {
+    "patternId": "dot_shorthand_undefined_getter",
+    "title": "Dot shorthand undefined getter",
+    "description": ""
+  },
+  {
+    "patternId": "dot_shorthand_undefined_invocation",
+    "title": "Dot shorthand undefined invocation",
+    "description": ""
+  },
+  {
     "patternId": "duplicate_constructor_default",
     "title": "Duplicate constructor default",
     "description": ""
@@ -2052,6 +2067,11 @@
   {
     "patternId": "extension_conflicting_static_and_instance",
     "title": "Extension conflicting static and instance",
+    "description": ""
+  },
+  {
+    "patternId": "extension_declares_instance_field",
+    "title": "Extension declares instance field",
     "description": ""
   },
   {
@@ -2565,11 +2585,6 @@
     "description": ""
   },
   {
-    "patternId": "invalid_macro_application_target",
-    "title": "Invalid macro application target",
-    "description": ""
-  },
-  {
     "patternId": "invalid_modifier_on_constructor",
     "title": "Invalid modifier on constructor",
     "description": ""
@@ -2670,38 +2685,13 @@
     "description": ""
   },
   {
+    "patternId": "list_element_type_not_assignable_nullability",
+    "title": "List element type not assignable nullability",
+    "description": ""
+  },
+  {
     "patternId": "list_element_type_not_assignable",
     "title": "List element type not assignable",
-    "description": ""
-  },
-  {
-    "patternId": "macro_application_argument_error",
-    "title": "Macro application argument error",
-    "description": ""
-  },
-  {
-    "patternId": "macro_error",
-    "title": "Macro error",
-    "description": ""
-  },
-  {
-    "patternId": "macro_internal_exception",
-    "title": "Macro internal exception",
-    "description": ""
-  },
-  {
-    "patternId": "macro_not_allowed_declaration",
-    "title": "Macro not allowed declaration",
-    "description": ""
-  },
-  {
-    "patternId": "macro_declarations_phase_introspection_cycle",
-    "title": "Macro declarations phase introspection cycle",
-    "description": ""
-  },
-  {
-    "patternId": "macro_definition_application_same_library_cycle",
-    "title": "Macro definition application same library cycle",
     "description": ""
   },
   {
@@ -2730,8 +2720,18 @@
     "description": ""
   },
   {
+    "patternId": "map_key_type_not_assignable_nullability",
+    "title": "Map key type not assignable nullability",
+    "description": ""
+  },
+  {
     "patternId": "map_key_type_not_assignable",
     "title": "Map key type not assignable",
+    "description": ""
+  },
+  {
+    "patternId": "map_value_type_not_assignable_nullability",
+    "title": "Map value type not assignable nullability",
     "description": ""
   },
   {
@@ -3440,6 +3440,11 @@
     "description": ""
   },
   {
+    "patternId": "set_element_type_not_assignable_nullability",
+    "title": "Set element type not assignable nullability",
+    "description": ""
+  },
+  {
     "patternId": "set_element_type_not_assignable",
     "title": "Set element type not assignable",
     "description": ""
@@ -3890,6 +3895,11 @@
     "description": ""
   },
   {
+    "patternId": "wrong_number_of_type_arguments_dot_shorthand_constructor",
+    "title": "Wrong number of type arguments dot shorthand constructor",
+    "description": ""
+  },
+  {
     "patternId": "wrong_number_of_type_arguments_enum",
     "title": "Wrong number of type arguments enum",
     "description": ""
@@ -4260,11 +4270,6 @@
     "description": ""
   },
   {
-    "patternId": "macro_info",
-    "title": "Macro info",
-    "description": ""
-  },
-  {
     "patternId": "unnecessary_import",
     "title": "Unnecessary import",
     "description": ""
@@ -4322,11 +4327,6 @@
   {
     "patternId": "covariant_constructor",
     "title": "Covariant constructor",
-    "description": ""
-  },
-  {
-    "patternId": "declaration_named_augmented_inside_augmentation",
-    "title": "Declaration named augmented inside augmentation",
     "description": ""
   },
   {
@@ -4855,6 +4855,56 @@
     "description": ""
   },
   {
+    "patternId": "illegal_character",
+    "title": "Illegal character",
+    "description": ""
+  },
+  {
+    "patternId": "missing_digit",
+    "title": "Missing digit",
+    "description": ""
+  },
+  {
+    "patternId": "missing_hex_digit",
+    "title": "Missing hex digit",
+    "description": ""
+  },
+  {
+    "patternId": "missing_quote",
+    "title": "Missing quote",
+    "description": ""
+  },
+  {
+    "patternId": "unable_get_content",
+    "title": "Unable get content",
+    "description": ""
+  },
+  {
+    "patternId": "unexpected_dollar_in_string",
+    "title": "Unexpected dollar in string",
+    "description": ""
+  },
+  {
+    "patternId": "unexpected_separator_in_number",
+    "title": "Unexpected separator in number",
+    "description": ""
+  },
+  {
+    "patternId": "unsupported_operator",
+    "title": "Unsupported operator",
+    "description": ""
+  },
+  {
+    "patternId": "unterminated_multi_line_comment",
+    "title": "Unterminated multi line comment",
+    "description": ""
+  },
+  {
+    "patternId": "unterminated_string_literal",
+    "title": "Unterminated string literal",
+    "description": ""
+  },
+  {
     "patternId": "dead_null_aware_expression",
     "title": "Dead null aware expression",
     "description": ""
@@ -5040,8 +5090,18 @@
     "description": ""
   },
   {
+    "patternId": "doc_import_cannot_have_combinators",
+    "title": "Doc import cannot have combinators",
+    "description": ""
+  },
+  {
     "patternId": "doc_import_cannot_have_configurations",
     "title": "Doc import cannot have configurations",
+    "description": ""
+  },
+  {
+    "patternId": "doc_import_cannot_have_prefix",
+    "title": "Doc import cannot have prefix",
     "description": ""
   },
   {
@@ -5117,6 +5177,11 @@
   {
     "patternId": "invalid_annotation_target",
     "title": "Invalid annotation target",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_await_not_required_annotation",
+    "title": "Invalid await not required annotation",
     "description": ""
   },
   {
@@ -5285,8 +5350,13 @@
     "description": ""
   },
   {
-    "patternId": "macro_warning",
-    "title": "Macro warning",
+    "patternId": "invalid_widget_preview_application",
+    "title": "Invalid widget preview application",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_widget_preview_private_argument",
+    "title": "Invalid widget preview private argument",
     "description": ""
   },
   {
@@ -5545,11 +5615,6 @@
     "description": ""
   },
   {
-    "patternId": "unnecessary_ignore",
-    "title": "Unnecessary ignore",
-    "description": ""
-  },
-  {
     "patternId": "unnecessary_nan_comparison_false",
     "title": "Unnecessary nan comparison false",
     "description": ""
@@ -5652,6 +5717,11 @@
   {
     "patternId": "unused_label",
     "title": "Unused label",
+    "description": ""
+  },
+  {
+    "patternId": "multiple_combinators",
+    "title": "Multiple combinators",
     "description": ""
   },
   {

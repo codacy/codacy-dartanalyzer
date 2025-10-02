@@ -2,7 +2,7 @@ organization := "com.codacy"
 
 name := "codacy-dartanalyzer"
 
-scalaVersion := "2.13.12"
+scalaVersion := "2.13.17"
 
 ThisBuild / libraryDependencySchemes += "org.scala-lang.modules" %% "scala-xml" % "always"
 

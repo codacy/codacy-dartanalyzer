@@ -109,7 +109,8 @@ object DartAnalyzer extends Tool {
   }
 
   def parseMachineFormat(outputLine: String): Result = {
-    outputLine.split('|') match {
+    val parts = outputLine.split("""(?<!\\)\|""", -1)
+    parts match {
       case Array(
             severity,
             _type,

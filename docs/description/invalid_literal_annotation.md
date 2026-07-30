@@ -17,16 +17,6 @@ class C {
 }
 ```
 
-The following code produces this diagnostic because `x` isn't a
-constructor:
-
-```dart
-import 'package:meta/meta.dart';
-
-@[!literal!]
-var x;
-```
-
 #### Common fixes
 
 If the annotation is on a constructor and the constructor should always be

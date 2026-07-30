@@ -6,16 +6,6 @@ if the member isn't a concrete instance member.
 
 #### Examples
 
-The following code produces this diagnostic because the annotation is on a
-class declaration rather than a member inside the class:
-
-```dart
-import 'package:meta/meta.dart';
-
-@[!nonVirtual!]
-class C {}
-```
-
 The following code produces this diagnostic because the method `m` is an
 abstract method:
 
@@ -28,26 +18,7 @@ abstract class C {
 }
 ```
 
-The following code produces this diagnostic because the method `m` is a
-static method:
-
-```dart
-import 'package:meta/meta.dart';
-
-abstract class C {
-  @[!nonVirtual!]
-  static void m() {}
-}
-```
-
 #### Common fixes
-
-If the declaration isn't a member of a class, mixin, or enum, then remove
-the annotation:
-
-```dart
-class C {}
-```
 
 If the member is intended to be a concrete instance member, then make it
 so:
@@ -58,14 +29,5 @@ import 'package:meta/meta.dart';
 abstract class C {
   @nonVirtual
   void m() {}
-}
-```
-
-If the member is not intended to be a concrete instance member, then
-remove the annotation:
-
-```dart
-abstract class C {
-  static void m() {}
 }
 ```

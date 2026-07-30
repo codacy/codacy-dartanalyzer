@@ -1,6 +1,6 @@
 {
   "name": "dartanalyzer",
-  "version": "3.9.3",
+  "version": "3.12.2",
   "patterns": [
     {
       "patternId": "always_declare_return_types",
@@ -1371,6 +1371,18 @@
       "enabled": false
     },
     {
+      "patternId": "incompatible_lint_files",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "incompatible_lint_included",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
       "patternId": "invalid_option",
       "level": "Warning",
       "category": "ErrorProne",
@@ -1384,6 +1396,12 @@
     },
     {
       "patternId": "multiple_plugins",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "plugins_in_inner_options",
       "level": "Warning",
       "category": "ErrorProne",
       "enabled": false
@@ -1492,6 +1510,12 @@
     },
     {
       "patternId": "ambiguous_set_or_map_literal_either",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "anonymous_method_wrong_parameter_type",
       "level": "Warning",
       "category": "ErrorProne",
       "enabled": false
@@ -1737,6 +1761,12 @@
       "enabled": false
     },
     {
+      "patternId": "class_used_as_mixin_declares_generative_constructor",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
       "patternId": "class_instantiation_access_to_instance_member",
       "level": "Warning",
       "category": "ErrorProne",
@@ -1791,7 +1821,7 @@
       "enabled": false
     },
     {
-      "patternId": "record_literal_one_positional_no_trailing_comma",
+      "patternId": "record_literal_one_positional_no_trailing_comma_by_type",
       "level": "Warning",
       "category": "ErrorProne",
       "enabled": false
@@ -2661,12 +2691,6 @@
       "enabled": false
     },
     {
-      "patternId": "field_initializer_outside_constructor",
-      "level": "Warning",
-      "category": "ErrorProne",
-      "enabled": false
-    },
-    {
       "patternId": "field_initializer_redirecting_constructor",
       "level": "Warning",
       "category": "ErrorProne",
@@ -3135,6 +3159,12 @@
       "enabled": false
     },
     {
+      "patternId": "invalid_reference_to_generative_enum_constructor_tearoff",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
       "patternId": "invalid_reference_to_this",
       "level": "Warning",
       "category": "ErrorProne",
@@ -3393,6 +3423,12 @@
       "enabled": false
     },
     {
+      "patternId": "mixin_class_declares_non_trivial_generative_constructor",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
       "patternId": "mixin_inherits_from_not_object",
       "level": "Warning",
       "category": "ErrorProne",
@@ -3615,7 +3651,19 @@
       "enabled": false
     },
     {
+      "patternId": "non_exhaustive_switch_expression_private",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
       "patternId": "non_exhaustive_switch_statement",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "non_exhaustive_switch_statement_private",
       "level": "Warning",
       "category": "ErrorProne",
       "enabled": false
@@ -3915,13 +3963,31 @@
       "enabled": false
     },
     {
+      "patternId": "primary_constructor_body_with_expression_body",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "primary_constructor_cannot_redirect",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
       "patternId": "private_collision_in_mixin_application",
       "level": "Warning",
       "category": "ErrorProne",
       "enabled": false
     },
     {
-      "patternId": "private_optional_parameter",
+      "patternId": "private_named_parameter_duplicate_public_name",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "private_named_parameter_without_public_name",
       "level": "Warning",
       "category": "ErrorProne",
       "enabled": false
@@ -3994,12 +4060,6 @@
     },
     {
       "patternId": "redirect_generative_to_missing_constructor",
-      "level": "Warning",
-      "category": "ErrorProne",
-      "enabled": false
-    },
-    {
-      "patternId": "redirect_generative_to_non_generative_constructor",
       "level": "Warning",
       "category": "ErrorProne",
       "enabled": false
@@ -4623,6 +4683,12 @@
       "enabled": false
     },
     {
+      "patternId": "use_of_private_parameter_name",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
       "patternId": "use_of_void_result",
       "level": "Warning",
       "category": "ErrorProne",
@@ -4659,12 +4725,6 @@
       "enabled": false
     },
     {
-      "patternId": "wrong_number_of_parameters_for_setter",
-      "level": "Warning",
-      "category": "ErrorProne",
-      "enabled": false
-    },
-    {
       "patternId": "wrong_number_of_type_arguments",
       "level": "Warning",
       "category": "ErrorProne",
@@ -4695,19 +4755,13 @@
       "enabled": false
     },
     {
-      "patternId": "wrong_number_of_type_arguments_anonymous_function",
-      "level": "Warning",
-      "category": "ErrorProne",
-      "enabled": false
-    },
-    {
       "patternId": "wrong_number_of_type_arguments_function",
       "level": "Warning",
       "category": "ErrorProne",
       "enabled": false
     },
     {
-      "patternId": "wrong_number_of_type_arguments_method",
+      "patternId": "wrong_number_of_type_arguments_element",
       "level": "Warning",
       "category": "ErrorProne",
       "enabled": false
@@ -4863,7 +4917,7 @@
       "enabled": false
     },
     {
-      "patternId": "ffi_native_only_classes_extending_nativefieldwrapperclass1_can_be_pointer",
+      "patternId": "ffi_native_only_classes_extending_nativefieldwrapperclass_1_can_be_pointer",
       "level": "Warning",
       "category": "ErrorProne",
       "enabled": false
@@ -5097,18 +5151,6 @@
       "enabled": false
     },
     {
-      "patternId": "deprecated_member_use_from_same_package",
-      "level": "Warning",
-      "category": "ErrorProne",
-      "enabled": false
-    },
-    {
-      "patternId": "deprecated_member_use_from_same_package_with_message",
-      "level": "Warning",
-      "category": "ErrorProne",
-      "enabled": false
-    },
-    {
       "patternId": "division_optimization",
       "level": "Warning",
       "category": "ErrorProne",
@@ -5188,6 +5230,18 @@
     },
     {
       "patternId": "const_constructor_with_body",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "const_primary_constructor_with_block_body",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "const_primary_constructor_with_expression_body",
       "level": "Warning",
       "category": "ErrorProne",
       "enabled": false
@@ -5613,6 +5667,18 @@
       "enabled": false
     },
     {
+      "patternId": "private_optional_parameter",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "private_named_non_field_parameter",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
       "patternId": "representation_field_modifier",
       "level": "Warning",
       "category": "ErrorProne",
@@ -5668,6 +5734,12 @@
     },
     {
       "patternId": "var_typedef",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "wrong_number_of_parameters_for_setter",
       "level": "Warning",
       "category": "ErrorProne",
       "enabled": false
@@ -5829,6 +5901,12 @@
       "enabled": false
     },
     {
+      "patternId": "encoding",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
       "patternId": "illegal_character",
       "level": "Warning",
       "category": "ErrorProne",
@@ -5949,6 +6027,30 @@
       "enabled": false
     },
     {
+      "patternId": "fixme",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "hack",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "todo",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "undone",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
       "patternId": "argument_type_not_assignable_to_error_handler",
       "level": "Warning",
       "category": "ErrorProne",
@@ -6021,7 +6123,25 @@
       "enabled": false
     },
     {
+      "patternId": "deprecated_extend",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
       "patternId": "deprecated_extends_function",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "deprecated_factory_method",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "deprecated_implement",
       "level": "Warning",
       "category": "ErrorProne",
       "enabled": false
@@ -6033,13 +6153,37 @@
       "enabled": false
     },
     {
+      "patternId": "deprecated_instantiate",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "deprecated_mixin",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
       "patternId": "deprecated_mixin_function",
       "level": "Warning",
       "category": "ErrorProne",
       "enabled": false
     },
     {
+      "patternId": "deprecated_optional",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
       "patternId": "deprecated_new_in_comment_reference",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "deprecated_subclass",
       "level": "Warning",
       "category": "ErrorProne",
       "enabled": false
@@ -6171,6 +6315,12 @@
       "enabled": false
     },
     {
+      "patternId": "experimental_member_use",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
       "patternId": "inference_failure_on_collection_literal",
       "level": "Warning",
       "category": "ErrorProne",
@@ -6220,6 +6370,42 @@
     },
     {
       "patternId": "invalid_await_not_required_annotation",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_deprecated_extend_annotation",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_deprecated_implement_annotation",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_deprecated_instantiate_annotation",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_deprecated_mixin_annotation",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_deprecated_optional_annotation",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "invalid_deprecated_subclass_annotation",
       "level": "Warning",
       "category": "ErrorProne",
       "enabled": false
@@ -6322,24 +6508,6 @@
     },
     {
       "patternId": "invalid_override_of_non_virtual_member",
-      "level": "Warning",
-      "category": "ErrorProne",
-      "enabled": false
-    },
-    {
-      "patternId": "invalid_required_named_param",
-      "level": "Warning",
-      "category": "ErrorProne",
-      "enabled": false
-    },
-    {
-      "patternId": "invalid_required_optional_positional_param",
-      "level": "Warning",
-      "category": "ErrorProne",
-      "enabled": false
-    },
-    {
-      "patternId": "invalid_required_positional_param",
       "level": "Warning",
       "category": "ErrorProne",
       "enabled": false
@@ -6490,6 +6658,12 @@
     },
     {
       "patternId": "non_const_argument_for_const_parameter",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "tearoff_with_must_be_const_parameter",
       "level": "Warning",
       "category": "ErrorProne",
       "enabled": false
@@ -6850,6 +7024,12 @@
     },
     {
       "patternId": "unused_field",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "unused_field_from_primary_constructor",
       "level": "Warning",
       "category": "ErrorProne",
       "enabled": false

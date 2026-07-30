@@ -1,0 +1,32 @@
+#### Description
+
+The analyzer produces this diagnostic when the object's type can't be
+matched by the pattern.
+
+#### Example
+
+The following code produces this diagnostic because a `double` is matched
+by an `int` pattern, which can never succeed:
+
+```dart
+void f(String? s) {
+  if (s case [!int!] _) {}
+}
+```
+
+#### Common fixes
+
+If one of the types is wrong, then change one or both so the pattern match
+can succeed:
+
+```dart
+void f(String? s) {
+  if (s case String _) {}
+}
+```
+
+If the types are correct, then remove the pattern match:
+
+```dart
+void f(double x) {}
+```

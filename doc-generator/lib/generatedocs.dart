@@ -100,8 +100,16 @@ void main() async {
 
     errorPatterns.forEach((key, group) {
       group.forEach((key, value) {
-        if (!patterns.any((p) => p.patternId == key.toLowerCase())) {
-          String patternId = key.toLowerCase();
+        // messages.yaml historically used SCREAMING_SNAKE_CASE error names,
+        // but newer SDKs switched to camelCase. `dart analyze --format=machine`
+        // still reports the original SCREAMING_SNAKE_CASE name at runtime, so
+        // camelCase keys must be converted back to snake_case to keep
+        // patternId matching what the analyzer actually emits.
+        final bool isCamelCase = key != key.toUpperCase();
+        final String snakeCaseKey =
+            isCamelCase ? camelToSnakeCase(key) : key;
+        if (!patterns.any((p) => p.patternId == snakeCaseKey.toLowerCase())) {
+          String patternId = snakeCaseKey.toLowerCase();
           var pattern = PatternSpec(
               patternId: patternId,
               level: 'Warning',
@@ -138,6 +146,38 @@ void main() async {
   createInitialPubspecFiles(sdkVersion);
 
   print("Happy ending: Docs generated for SDK version $sdkVersion");
+}
+
+/// Converts a camelCase error name (e.g. `unusedLocalVariable`) into the
+/// SCREAMING_SNAKE_CASE-derived form the analyzer actually reports at
+/// runtime (e.g. `UNUSED_LOCAL_VARIABLE`, here lowercased to
+/// `unused_local_variable`), splitting on lower-to-upper transitions,
+/// acronym-to-word boundaries, and letter-to-digit transitions.
+String camelToSnakeCase(String key) {
+  final buffer = StringBuffer();
+  for (var i = 0; i < key.length; i++) {
+    final c = key[i];
+    if (i > 0) {
+      final prev = key[i - 1];
+      final isUpper = c.toUpperCase() == c && c.toLowerCase() != c;
+      final isDigit = RegExp(r'[0-9]').hasMatch(c);
+      final prevIsLower = prev.toLowerCase() == prev && prev.toUpperCase() != prev;
+      final prevIsUpper = prev.toUpperCase() == prev && prev.toLowerCase() != prev;
+      final prevIsDigit = RegExp(r'[0-9]').hasMatch(prev);
+      final nextIsLower =
+          i + 1 < key.length && key[i + 1].toLowerCase() == key[i + 1];
+
+      if (isUpper && (prevIsLower || prevIsDigit)) {
+        buffer.write('_');
+      } else if (isUpper && prevIsUpper && nextIsLower) {
+        buffer.write('_');
+      } else if (isDigit && !prevIsDigit && prev != '_') {
+        buffer.write('_');
+      }
+    }
+    buffer.write(c);
+  }
+  return buffer.toString();
 }
 
 // Models

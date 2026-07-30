@@ -12,6 +12,7 @@ is required:
 ```dart
 import 'package:meta/meta.dart';
 
+// ignore: deprecated_member_use
 void f({@required int? x}) {}
 
 void g() {
@@ -26,6 +27,7 @@ Provide the required value:
 ```dart
 import 'package:meta/meta.dart';
 
+// ignore: deprecated_member_use
 void f({@required int? x}) {}
 
 void g() {

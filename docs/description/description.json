@@ -1140,6 +1140,16 @@
     "description": ""
   },
   {
+    "patternId": "incompatible_lint_files",
+    "title": "Incompatible lint files",
+    "description": ""
+  },
+  {
+    "patternId": "incompatible_lint_included",
+    "title": "Incompatible lint included",
+    "description": ""
+  },
+  {
     "patternId": "invalid_option",
     "title": "Invalid option",
     "description": ""
@@ -1152,6 +1162,11 @@
   {
     "patternId": "multiple_plugins",
     "title": "Multiple plugins",
+    "description": ""
+  },
+  {
+    "patternId": "plugins_in_inner_options",
+    "title": "Plugins in inner options",
     "description": ""
   },
   {
@@ -1242,6 +1257,11 @@
   {
     "patternId": "ambiguous_set_or_map_literal_either",
     "title": "Ambiguous set or map literal either",
+    "description": ""
+  },
+  {
+    "patternId": "anonymous_method_wrong_parameter_type",
+    "title": "Anonymous method wrong parameter type",
     "description": ""
   },
   {
@@ -1445,6 +1465,11 @@
     "description": ""
   },
   {
+    "patternId": "class_used_as_mixin_declares_generative_constructor",
+    "title": "Class used as mixin declares generative constructor",
+    "description": ""
+  },
+  {
     "patternId": "class_instantiation_access_to_instance_member",
     "title": "Class instantiation access to instance member",
     "description": ""
@@ -1490,8 +1515,8 @@
     "description": ""
   },
   {
-    "patternId": "record_literal_one_positional_no_trailing_comma",
-    "title": "Record literal one positional no trailing comma",
+    "patternId": "record_literal_one_positional_no_trailing_comma_by_type",
+    "title": "Record literal one positional no trailing comma by type",
     "description": ""
   },
   {
@@ -2215,11 +2240,6 @@
     "description": ""
   },
   {
-    "patternId": "field_initializer_outside_constructor",
-    "title": "Field initializer outside constructor",
-    "description": ""
-  },
-  {
     "patternId": "field_initializer_redirecting_constructor",
     "title": "Field initializer redirecting constructor",
     "description": ""
@@ -2610,6 +2630,11 @@
     "description": ""
   },
   {
+    "patternId": "invalid_reference_to_generative_enum_constructor_tearoff",
+    "title": "Invalid reference to generative enum constructor tearoff",
+    "description": ""
+  },
+  {
     "patternId": "invalid_reference_to_this",
     "title": "Invalid reference to this",
     "description": ""
@@ -2825,6 +2850,11 @@
     "description": ""
   },
   {
+    "patternId": "mixin_class_declares_non_trivial_generative_constructor",
+    "title": "Mixin class declares non trivial generative constructor",
+    "description": ""
+  },
+  {
     "patternId": "mixin_inherits_from_not_object",
     "title": "Mixin inherits from not object",
     "description": ""
@@ -3010,8 +3040,18 @@
     "description": ""
   },
   {
+    "patternId": "non_exhaustive_switch_expression_private",
+    "title": "Non exhaustive switch expression private",
+    "description": ""
+  },
+  {
     "patternId": "non_exhaustive_switch_statement",
     "title": "Non exhaustive switch statement",
+    "description": ""
+  },
+  {
+    "patternId": "non_exhaustive_switch_statement_private",
+    "title": "Non exhaustive switch statement private",
     "description": ""
   },
   {
@@ -3260,13 +3300,28 @@
     "description": ""
   },
   {
+    "patternId": "primary_constructor_body_with_expression_body",
+    "title": "Primary constructor body with expression body",
+    "description": ""
+  },
+  {
+    "patternId": "primary_constructor_cannot_redirect",
+    "title": "Primary constructor cannot redirect",
+    "description": ""
+  },
+  {
     "patternId": "private_collision_in_mixin_application",
     "title": "Private collision in mixin application",
     "description": ""
   },
   {
-    "patternId": "private_optional_parameter",
-    "title": "Private optional parameter",
+    "patternId": "private_named_parameter_duplicate_public_name",
+    "title": "Private named parameter duplicate public name",
+    "description": ""
+  },
+  {
+    "patternId": "private_named_parameter_without_public_name",
+    "title": "Private named parameter without public name",
     "description": ""
   },
   {
@@ -3327,11 +3382,6 @@
   {
     "patternId": "redirect_generative_to_missing_constructor",
     "title": "Redirect generative to missing constructor",
-    "description": ""
-  },
-  {
-    "patternId": "redirect_generative_to_non_generative_constructor",
-    "title": "Redirect generative to non generative constructor",
     "description": ""
   },
   {
@@ -3850,6 +3900,11 @@
     "description": ""
   },
   {
+    "patternId": "use_of_private_parameter_name",
+    "title": "Use of private parameter name",
+    "description": ""
+  },
+  {
     "patternId": "use_of_void_result",
     "title": "Use of void result",
     "description": ""
@@ -3880,11 +3935,6 @@
     "description": ""
   },
   {
-    "patternId": "wrong_number_of_parameters_for_setter",
-    "title": "Wrong number of parameters for setter",
-    "description": ""
-  },
-  {
     "patternId": "wrong_number_of_type_arguments",
     "title": "Wrong number of type arguments",
     "description": ""
@@ -3910,18 +3960,13 @@
     "description": ""
   },
   {
-    "patternId": "wrong_number_of_type_arguments_anonymous_function",
-    "title": "Wrong number of type arguments anonymous function",
-    "description": ""
-  },
-  {
     "patternId": "wrong_number_of_type_arguments_function",
     "title": "Wrong number of type arguments function",
     "description": ""
   },
   {
-    "patternId": "wrong_number_of_type_arguments_method",
-    "title": "Wrong number of type arguments method",
+    "patternId": "wrong_number_of_type_arguments_element",
+    "title": "Wrong number of type arguments element",
     "description": ""
   },
   {
@@ -4050,8 +4095,8 @@
     "description": ""
   },
   {
-    "patternId": "ffi_native_only_classes_extending_nativefieldwrapperclass1_can_be_pointer",
-    "title": "Ffi native only classes extending nativefieldwrapperclass1 can be pointer",
+    "patternId": "ffi_native_only_classes_extending_nativefieldwrapperclass_1_can_be_pointer",
+    "title": "Ffi native only classes extending nativefieldwrapperclass 1 can be pointer",
     "description": ""
   },
   {
@@ -4245,16 +4290,6 @@
     "description": ""
   },
   {
-    "patternId": "deprecated_member_use_from_same_package",
-    "title": "Deprecated member use from same package",
-    "description": ""
-  },
-  {
-    "patternId": "deprecated_member_use_from_same_package_with_message",
-    "title": "Deprecated member use from same package with message",
-    "description": ""
-  },
-  {
     "patternId": "division_optimization",
     "title": "Division optimization",
     "description": ""
@@ -4322,6 +4357,16 @@
   {
     "patternId": "const_constructor_with_body",
     "title": "Const constructor with body",
+    "description": ""
+  },
+  {
+    "patternId": "const_primary_constructor_with_block_body",
+    "title": "Const primary constructor with block body",
+    "description": ""
+  },
+  {
+    "patternId": "const_primary_constructor_with_expression_body",
+    "title": "Const primary constructor with expression body",
     "description": ""
   },
   {
@@ -4675,6 +4720,16 @@
     "description": ""
   },
   {
+    "patternId": "private_optional_parameter",
+    "title": "Private optional parameter",
+    "description": ""
+  },
+  {
+    "patternId": "private_named_non_field_parameter",
+    "title": "Private named non field parameter",
+    "description": ""
+  },
+  {
     "patternId": "representation_field_modifier",
     "title": "Representation field modifier",
     "description": ""
@@ -4722,6 +4777,11 @@
   {
     "patternId": "var_typedef",
     "title": "Var typedef",
+    "description": ""
+  },
+  {
+    "patternId": "wrong_number_of_parameters_for_setter",
+    "title": "Wrong number of parameters for setter",
     "description": ""
   },
   {
@@ -4855,6 +4915,11 @@
     "description": ""
   },
   {
+    "patternId": "encoding",
+    "title": "Encoding",
+    "description": ""
+  },
+  {
     "patternId": "illegal_character",
     "title": "Illegal character",
     "description": ""
@@ -4955,6 +5020,26 @@
     "description": ""
   },
   {
+    "patternId": "fixme",
+    "title": "Fixme",
+    "description": ""
+  },
+  {
+    "patternId": "hack",
+    "title": "Hack",
+    "description": ""
+  },
+  {
+    "patternId": "todo",
+    "title": "Todo",
+    "description": ""
+  },
+  {
+    "patternId": "undone",
+    "title": "Undone",
+    "description": ""
+  },
+  {
     "patternId": "argument_type_not_assignable_to_error_handler",
     "title": "Argument type not assignable to error handler",
     "description": ""
@@ -5015,8 +5100,23 @@
     "description": ""
   },
   {
+    "patternId": "deprecated_extend",
+    "title": "Deprecated extend",
+    "description": ""
+  },
+  {
     "patternId": "deprecated_extends_function",
     "title": "Deprecated extends function",
+    "description": ""
+  },
+  {
+    "patternId": "deprecated_factory_method",
+    "title": "Deprecated factory method",
+    "description": ""
+  },
+  {
+    "patternId": "deprecated_implement",
+    "title": "Deprecated implement",
     "description": ""
   },
   {
@@ -5025,13 +5125,33 @@
     "description": ""
   },
   {
+    "patternId": "deprecated_instantiate",
+    "title": "Deprecated instantiate",
+    "description": ""
+  },
+  {
+    "patternId": "deprecated_mixin",
+    "title": "Deprecated mixin",
+    "description": ""
+  },
+  {
     "patternId": "deprecated_mixin_function",
     "title": "Deprecated mixin function",
     "description": ""
   },
   {
+    "patternId": "deprecated_optional",
+    "title": "Deprecated optional",
+    "description": ""
+  },
+  {
     "patternId": "deprecated_new_in_comment_reference",
     "title": "Deprecated new in comment reference",
+    "description": ""
+  },
+  {
+    "patternId": "deprecated_subclass",
+    "title": "Deprecated subclass",
     "description": ""
   },
   {
@@ -5140,6 +5260,11 @@
     "description": ""
   },
   {
+    "patternId": "experimental_member_use",
+    "title": "Experimental member use",
+    "description": ""
+  },
+  {
     "patternId": "inference_failure_on_collection_literal",
     "title": "Inference failure on collection literal",
     "description": ""
@@ -5182,6 +5307,36 @@
   {
     "patternId": "invalid_await_not_required_annotation",
     "title": "Invalid await not required annotation",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_deprecated_extend_annotation",
+    "title": "Invalid deprecated extend annotation",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_deprecated_implement_annotation",
+    "title": "Invalid deprecated implement annotation",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_deprecated_instantiate_annotation",
+    "title": "Invalid deprecated instantiate annotation",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_deprecated_mixin_annotation",
+    "title": "Invalid deprecated mixin annotation",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_deprecated_optional_annotation",
+    "title": "Invalid deprecated optional annotation",
+    "description": ""
+  },
+  {
+    "patternId": "invalid_deprecated_subclass_annotation",
+    "title": "Invalid deprecated subclass annotation",
     "description": ""
   },
   {
@@ -5267,21 +5422,6 @@
   {
     "patternId": "invalid_override_of_non_virtual_member",
     "title": "Invalid override of non virtual member",
-    "description": ""
-  },
-  {
-    "patternId": "invalid_required_named_param",
-    "title": "Invalid required named param",
-    "description": ""
-  },
-  {
-    "patternId": "invalid_required_optional_positional_param",
-    "title": "Invalid required optional positional param",
-    "description": ""
-  },
-  {
-    "patternId": "invalid_required_positional_param",
-    "title": "Invalid required positional param",
     "description": ""
   },
   {
@@ -5407,6 +5547,11 @@
   {
     "patternId": "non_const_argument_for_const_parameter",
     "title": "Non const argument for const parameter",
+    "description": ""
+  },
+  {
+    "patternId": "tearoff_with_must_be_const_parameter",
+    "title": "Tearoff with must be const parameter",
     "description": ""
   },
   {
@@ -5707,6 +5852,11 @@
   {
     "patternId": "unused_field",
     "title": "Unused field",
+    "description": ""
+  },
+  {
+    "patternId": "unused_field_from_primary_constructor",
+    "title": "Unused field from primary constructor",
     "description": ""
   },
   {

@@ -1,0 +1,34 @@
+#### Description
+
+The analyzer produces this diagnostic when:
+- the language option `strict-inference` is enabled in the analysis
+  options file,
+- the declaration of a variable has no type, and
+- the type of the variable can't be inferred.
+
+#### Example
+
+Given an analysis options file containing the following:
+
+```yaml
+%uri="analysis_options.yaml"
+analyzer:
+  language:
+    strict-inference: true
+```
+
+The following code produces this diagnostic because the variable `s`
+doesn't have an explicit type and the type can't be inferred because
+there's no initializer:
+
+```dart
+var [!s!];
+```
+
+#### Common fixes
+
+Add an explicit type:
+
+```dart
+String? s;
+```

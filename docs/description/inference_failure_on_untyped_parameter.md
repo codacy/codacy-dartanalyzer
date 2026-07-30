@@ -1,0 +1,36 @@
+#### Description
+
+The analyzer produces this diagnostic when:
+- the language option `strict-inference` is enabled in the analysis
+  options file,
+- the declaration of a formal parameter has no type, and
+- the type of the parameter can't be inferred.
+
+The type of a method's parameter can be inferred if it overrides an
+inherited method.
+
+#### Example
+
+Given an analysis options file containing the following:
+
+```yaml
+%uri="analysis_options.yaml"
+analyzer:
+  language:
+    strict-inference: true
+```
+
+The following code produces this diagnostic because the formal parameter
+`p` doesn't have an explicit type and the type can't be inferred:
+
+```dart
+void f([!p!]) => print(p);
+```
+
+#### Common fixes
+
+Add an explicit type:
+
+```dart
+void f(int p) => print(p);
+```

@@ -10,9 +10,7 @@ The following code produces this diagnostic because there's an enum
 declaration that has the name `values`:
 
 ```dart
-enum [!values!] {
-  c
-}
+enum [!values!] { c }
 ```
 
 #### Common fixes

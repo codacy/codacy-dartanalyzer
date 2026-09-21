@@ -16,6 +16,7 @@ class:
 class C<T> {
   C.named();
 }
+
 C f() => C.named[!<String>!]();
 ```
 
@@ -28,6 +29,7 @@ type arguments to follow the class name:
 class C<T> {
   C.named();
 }
+
 C f() => C<String>.named();
 ```
 
@@ -38,5 +40,6 @@ them:
 class C<T> {
   C.named();
 }
+
 C f() => C.named();
 ```

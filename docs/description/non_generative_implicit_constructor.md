@@ -16,6 +16,7 @@ is required:
 ```dart
 class A {
   factory A() => throw 0;
+
   A.named();
 }
 
@@ -30,10 +31,11 @@ constructor, then change it to be a generative constructor:
 ```dart
 class A {
   A();
+
   A.named();
 }
 
-class B extends A { }
+class B extends A {}
 ```
 
 If the unnamed constructor can't be a generative constructor and there are
@@ -43,6 +45,7 @@ one of them:
 ```dart
 class A {
   factory A() => throw 0;
+
   A.named();
 }
 
@@ -57,6 +60,7 @@ added, then implement the superclass rather than extending it:
 ```dart
 class A {
   factory A() => throw 0;
+
   A.named();
 }
 

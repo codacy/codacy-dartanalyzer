@@ -41,8 +41,7 @@ required:
 ```dart
 import 'dart:ffi';
 
-class C {
-}
+class C {}
 
 @Native<Int>()
 external int f;

@@ -22,6 +22,7 @@ class A {
   @override
   dynamic noSuchMethod(x) => super.noSuchMethod(x);
 }
+
 class B extends A {
   @override
   dynamic [!noSuchMethod!](y) {
@@ -39,5 +40,6 @@ class A {
   @override
   dynamic noSuchMethod(x) => super.noSuchMethod(x);
 }
+
 class B extends A {}
 ```

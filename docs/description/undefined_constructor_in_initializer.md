@@ -13,6 +13,7 @@ unnamed constructor:
 class A {
   A.n();
 }
+
 class B extends A {
   B() : [!super()!];
 }
@@ -25,6 +26,7 @@ constructor named `m`:
 class A {
   A.n();
 }
+
 class B extends A {
   B() : [!super.m()!];
 }
@@ -39,6 +41,7 @@ the constructor being invoked:
 class A {
   A.n();
 }
+
 class B extends A {
   B() : super.n();
 }
@@ -52,6 +55,7 @@ class A {
   A.m();
   A.n();
 }
+
 class B extends A {
   B() : super.m();
 }

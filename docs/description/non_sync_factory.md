@@ -11,10 +11,12 @@ The following code produces this diagnostic because the body of the factory
 constructor is marked with `async`:
 
 ```dart
+%ignore=invalid_modifier_on_constructor
 class C {
   factory C() [!async!] {
     return C._();
   }
+
   C._();
 }
 ```
@@ -29,6 +31,7 @@ class C {
   factory C() {
     return C._();
   }
+
   C._();
 }
 ```
@@ -41,6 +44,7 @@ class C {
   static Future<C> m() async {
     return C._();
   }
+
   C._();
 }
 ```

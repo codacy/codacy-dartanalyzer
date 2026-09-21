@@ -12,6 +12,7 @@ subtype of `A`, and `A` is a `base` class, but `B` is neither `base`,
 
 ```dart
 base class A {}
+
 class [!B!] extends A {}
 ```
 
@@ -21,5 +22,6 @@ Add either `base`, `final` or `sealed` to the class or mixin declaration:
 
 ```dart
 base class A {}
+
 final class B extends A {}
 ```

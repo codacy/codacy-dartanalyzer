@@ -17,6 +17,7 @@ be `null`, the right-hand side is never evaluated.
 The following code produces this diagnostic because `x` can't be `null`:
 
 ```dart
+%ignore=dead_code
 int f(int x) {
   return x ?? [!0!];
 }
@@ -25,6 +26,7 @@ int f(int x) {
 The following code produces this diagnostic because `f` can't be `null`:
 
 ```dart
+%ignore=dead_code
 class C {
   int f = -1;
 
@@ -52,8 +54,7 @@ needed, then remove the assignment:
 class C {
   int f = -1;
 
-  void m(int x) {
-  }
+  void m(int x) {}
 }
 ```
 

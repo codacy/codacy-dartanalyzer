@@ -17,6 +17,7 @@ type, and nullable types can't be used in a `with` clause:
 
 ```dart
 mixin M {}
+
 class C with [!M?!] {}
 ```
 
@@ -26,5 +27,6 @@ Remove the question mark from the type:
 
 ```dart
 mixin M {}
+
 class C with M {}
 ```

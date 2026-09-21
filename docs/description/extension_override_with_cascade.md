@@ -14,6 +14,7 @@ expression:
 extension E on int {
   void m() {}
 }
+
 f() {
   [!E!](3)..m();
 }
@@ -27,6 +28,7 @@ Use `.` rather than `..`:
 extension E on int {
   void m() {}
 }
+
 f() {
   E(3).m();
 }

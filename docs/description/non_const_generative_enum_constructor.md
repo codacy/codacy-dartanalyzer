@@ -9,6 +9,7 @@ The following code produces this diagnostic because the constructor in `E`
 isn't marked as being `const`:
 
 ```dart
+%language=3.10
 enum E {
   e;
 

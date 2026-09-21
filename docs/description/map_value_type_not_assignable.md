@@ -10,7 +10,7 @@ The following code produces this diagnostic because `2` is an `int`, but/
 the values of the map are required to be `String`s:
 
 ```dart
-var m = <String, String>{'a' : [!2!]};
+var m = <String, String>{'a': [!2!]};
 ```
 
 #### Common fixes
@@ -19,11 +19,11 @@ If the type of the map is correct, then change the value to have the
 correct type:
 
 ```dart
-var m = <String, String>{'a' : '2'};
+var m = <String, String>{'a': '2'};
 ```
 
 If the type of the value is correct, then change the value type of the map:
 
 ```dart
-var m = <String, int>{'a' : 2};
+var m = <String, int>{'a': 2};
 ```

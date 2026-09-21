@@ -22,7 +22,7 @@ class C {
 }
 
 @C(math.[!pi!])
-void f () {}
+void f() {}
 ```
 
 #### Common fixes
@@ -38,7 +38,7 @@ class C {
 }
 
 @C(math.pi)
-void f () {}
+void f() {}
 ```
 
 If the import is required to be deferred and there's another constant that

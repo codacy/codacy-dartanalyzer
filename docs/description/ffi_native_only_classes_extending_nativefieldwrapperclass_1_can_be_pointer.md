@@ -14,7 +14,8 @@ extend `NativeFieldWrapperClass1`, but the `@Native` signature for its
 ```dart
 import 'dart:ffi';
 
-class MyService { // MyService does not extend NativeFieldWrapperClass1
+// MyService does not extend NativeFieldWrapperClass1
+class MyService {
   @Native<Void Function(Pointer<Void>, Int8)>(symbol: 'MyService_process')
   external void [!process!](int data);
 }

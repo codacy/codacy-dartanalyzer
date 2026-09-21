@@ -16,6 +16,7 @@ an instance member named `values`:
 ```dart
 enum E {
   v;
+
   void [!values!]() {}
 }
 ```
@@ -27,6 +28,7 @@ Change the name of the conflicting member:
 ```dart
 enum E {
   v;
+
   void getValues() {}
 }
 ```

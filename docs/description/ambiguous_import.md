@@ -27,7 +27,7 @@ The following code produces this diagnostic:
 import 'a.dart';
 import 'b.dart';
 
-void f([!C!] c1, [!C!] c2) {}
+void f(A a, [!C!] c1, [!C!] c2) {}
 ```
 
 #### Common fixes
@@ -38,7 +38,7 @@ for them:
 ```dart
 import 'a.dart';
 
-void f(C c1, C c2) {}
+void f(A a, C c1, C c2) {}
 ```
 
 If the name is still defined by more than one library, then add a `hide`
@@ -48,7 +48,7 @@ clause to the import directives for all except one library:
 import 'a.dart' hide C;
 import 'b.dart';
 
-void f(C c1, C c2) {}
+void f(A a, C c1, C c2) {}
 ```
 
 If you must be able to reference more than one of these types, then add a
@@ -59,5 +59,5 @@ the appropriate prefix:
 import 'a.dart' as a;
 import 'b.dart' as b;
 
-void f(a.C c1, b.C c2) {}
+void f(a.A a, a.C c1, b.C c2) {}
 ```

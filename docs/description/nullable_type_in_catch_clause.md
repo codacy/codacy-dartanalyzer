@@ -15,6 +15,7 @@ void f() {
   try {
     // ...
   } on [!FormatException?!] {
+    // ...
   }
 }
 ```
@@ -28,6 +29,7 @@ void f() {
   try {
     // ...
   } on FormatException {
+    // ...
   }
 }
 ```

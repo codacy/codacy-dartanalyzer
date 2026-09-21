@@ -39,7 +39,7 @@ making the optional parameter a required parameter in the factory method:
 
 ```dart
 class A {
- factory A(int x) = B;
+  factory A(int x) = B;
 }
 
 class B implements A {

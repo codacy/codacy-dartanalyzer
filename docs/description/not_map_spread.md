@@ -9,7 +9,8 @@ implement the type `Map`.
 The following code produces this diagnostic because `l` isn't a `Map`:
 
 ```dart
-var l =  <String>['a', 'b'];
+var l = <String>['a', 'b'];
+
 var m = <int, String>{...[!l!]};
 ```
 
@@ -19,6 +20,7 @@ The most common fix is to replace the expression with one that produces a
 map:
 
 ```dart
-var l =  <String>['a', 'b'];
+var l = <String>['a', 'b'];
+
 var m = <int, String>{...l.asMap()};
 ```

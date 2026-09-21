@@ -20,8 +20,9 @@ in a function whose body has the `async` modifier rather than the `async*`
 modifier:
 
 ```dart
+%ignore=illegal_async_return_type
 Stream<int> get digits async {
-  yield* [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+  [!yield* [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];!]
 }
 ```
 

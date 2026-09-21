@@ -1105,6 +1105,11 @@
     "description": ""
   },
   {
+    "patternId": "analysis_options_deprecated_plugins",
+    "title": "Analysis options deprecated plugins",
+    "description": ""
+  },
+  {
     "patternId": "analysis_option_deprecated_with_replacement",
     "title": "Analysis option deprecated with replacement",
     "description": ""
@@ -1330,6 +1335,41 @@
     "description": ""
   },
   {
+    "patternId": "augmentation_named_formal_parameter_extra",
+    "title": "Augmentation named formal parameter extra",
+    "description": ""
+  },
+  {
+    "patternId": "augmentation_named_formal_parameter_missing",
+    "title": "Augmentation named formal parameter missing",
+    "description": ""
+  },
+  {
+    "patternId": "augmentation_optional_positional_formal_parameter_count",
+    "title": "Augmentation optional positional formal parameter count",
+    "description": ""
+  },
+  {
+    "patternId": "augmentation_formal_parameter_modifier_extra",
+    "title": "Augmentation formal parameter modifier extra",
+    "description": ""
+  },
+  {
+    "patternId": "augmentation_formal_parameter_modifier_missing",
+    "title": "Augmentation formal parameter modifier missing",
+    "description": ""
+  },
+  {
+    "patternId": "augmentation_formal_parameter_type_mismatch",
+    "title": "Augmentation formal parameter type mismatch",
+    "description": ""
+  },
+  {
+    "patternId": "augmentation_positional_formal_parameter_name",
+    "title": "Augmentation positional formal parameter name",
+    "description": ""
+  },
+  {
     "patternId": "augmentation_of_different_declaration_kind",
     "title": "Augmentation of different declaration kind",
     "description": ""
@@ -1355,6 +1395,46 @@
     "description": ""
   },
   {
+    "patternId": "augmentation_without_getter_declaration",
+    "title": "Augmentation without getter declaration",
+    "description": ""
+  },
+  {
+    "patternId": "augmentation_without_setter_declaration",
+    "title": "Augmentation without setter declaration",
+    "description": ""
+  },
+  {
+    "patternId": "augmentation_of_mixin_application_class",
+    "title": "Augmentation of mixin application class",
+    "description": ""
+  },
+  {
+    "patternId": "augmentation_required_positional_formal_parameter_count",
+    "title": "Augmentation required positional formal parameter count",
+    "description": ""
+  },
+  {
+    "patternId": "augmentation_induced_getter_return_type_mismatch",
+    "title": "Augmentation induced getter return type mismatch",
+    "description": ""
+  },
+  {
+    "patternId": "augmentation_induced_getter_already_complete",
+    "title": "Augmentation induced getter already complete",
+    "description": ""
+  },
+  {
+    "patternId": "augmentation_induced_setter_already_complete",
+    "title": "Augmentation induced setter already complete",
+    "description": ""
+  },
+  {
+    "patternId": "augmentation_return_type_mismatch",
+    "title": "Augmentation return type mismatch",
+    "description": ""
+  },
+  {
     "patternId": "augmented_expression_is_not_setter",
     "title": "Augmented expression is not setter",
     "description": ""
@@ -1367,6 +1447,11 @@
   {
     "patternId": "augmented_expression_not_operator",
     "title": "Augmented expression not operator",
+    "description": ""
+  },
+  {
+    "patternId": "augments_constant_variable",
+    "title": "Augments constant variable",
     "description": ""
   },
   {
@@ -1815,6 +1900,11 @@
     "description": ""
   },
   {
+    "patternId": "constant_variable_augmentation",
+    "title": "Constant variable augmentation",
+    "description": ""
+  },
+  {
     "patternId": "const_with_non_const",
     "title": "Const with non const",
     "description": ""
@@ -1872,6 +1962,11 @@
   {
     "patternId": "const_with_non_type",
     "title": "Const with non type",
+    "description": ""
+  },
+  {
+    "patternId": "constructor_already_complete",
+    "title": "Constructor already complete",
     "description": ""
   },
   {
@@ -1942,6 +2037,46 @@
   {
     "patternId": "duplicate_field_formal_parameter",
     "title": "Duplicate field formal parameter",
+    "description": ""
+  },
+  {
+    "patternId": "function_already_complete",
+    "title": "Function already complete",
+    "description": ""
+  },
+  {
+    "patternId": "function_not_complete_after_augmentations",
+    "title": "Function not complete after augmentations",
+    "description": ""
+  },
+  {
+    "patternId": "induced_getter_without_body",
+    "title": "Induced getter without body",
+    "description": ""
+  },
+  {
+    "patternId": "induced_setter_without_body",
+    "title": "Induced setter without body",
+    "description": ""
+  },
+  {
+    "patternId": "induced_getter_not_complete_after_augmentations",
+    "title": "Induced getter not complete after augmentations",
+    "description": ""
+  },
+  {
+    "patternId": "induced_setter_not_complete_after_augmentations",
+    "title": "Induced setter not complete after augmentations",
+    "description": ""
+  },
+  {
+    "patternId": "factory_not_complete_after_augmentations",
+    "title": "Factory not complete after augmentations",
+    "description": ""
+  },
+  {
+    "patternId": "default_value_already_specified_in_augmentation_chain",
+    "title": "Default value already specified in augmentation chain",
     "description": ""
   },
   {
@@ -2387,6 +2522,11 @@
   {
     "patternId": "implements_super_class",
     "title": "Implements super class",
+    "description": ""
+  },
+  {
+    "patternId": "implements_super_class_constraint",
+    "title": "Implements super class constraint",
     "description": ""
   },
   {
@@ -2842,6 +2982,16 @@
   {
     "patternId": "mixin_class_declaration_extends_not_object",
     "title": "Mixin class declaration extends not object",
+    "description": ""
+  },
+  {
+    "patternId": "mixin_class_declaration_with_clause",
+    "title": "Mixin class declaration with clause",
+    "description": ""
+  },
+  {
+    "patternId": "mixin_modifier_mixin_application_class_with_multiple_mixins",
+    "title": "Mixin modifier mixin application class with multiple mixins",
     "description": ""
   },
   {
@@ -4945,6 +5095,11 @@
     "description": ""
   },
   {
+    "patternId": "unawaited_return_in_try_block",
+    "title": "Unawaited return in try block",
+    "description": ""
+  },
+  {
     "patternId": "unexpected_dollar_in_string",
     "title": "Unexpected dollar in string",
     "description": ""
@@ -5477,6 +5632,16 @@
   {
     "patternId": "return_of_invalid_type_from_catch_error",
     "title": "Return of invalid type from catch error",
+    "description": ""
+  },
+  {
+    "patternId": "return_of_invalid_type_from_then",
+    "title": "Return of invalid type from then",
+    "description": ""
+  },
+  {
+    "patternId": "return_type_invalid_for_then",
+    "title": "Return type invalid for then",
     "description": ""
   },
   {

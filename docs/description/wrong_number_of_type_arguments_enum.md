@@ -12,9 +12,7 @@ provides one type argument even though the enum `E` is declared to have
 two type parameters:
 
 ```dart
-enum E<T, U> {
-  c[!<int>!]()
-}
+enum E<T, U> { c[!<int>!]() }
 ```
 
 #### Common fixes
@@ -23,16 +21,12 @@ If the number of type parameters is correct, then change the number of
 type arguments to match the number of type parameters:
 
 ```dart
-enum E<T, U> {
-  c<int, String>()
-}
+enum E<T, U> { c<int, String>() }
 ```
 
 If the number of type arguments is correct, then change the number of type
 parameters to match the number of type arguments:
 
 ```dart
-enum E<T> {
-  c<int>()
-}
+enum E<T> { c<int>() }
 ```

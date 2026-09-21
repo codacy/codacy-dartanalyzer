@@ -14,7 +14,7 @@ void f() {
   print(e);
 }
 
-enum E {a, b}
+enum E { a, b }
 ```
 
 #### Common fixes
@@ -28,7 +28,7 @@ void f() {
   print(e);
 }
 
-enum E {a, b}
+enum E { a, b }
 ```
 
 If you don't want to add a context type, then specify the name of the
@@ -40,5 +40,5 @@ void f() {
   print(e);
 }
 
-enum E {a, b}
+enum E { a, b }
 ```

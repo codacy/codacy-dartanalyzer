@@ -1,6 +1,6 @@
 #### Description
 
-The analyzer produces this diagnostic when a class, mixin, or
+The analyzer produces this diagnostic when a class, enum, mixin, or
 extension type declaration has an `implements` clause, and an
 interface is followed by a `?`.
 
@@ -19,6 +19,7 @@ type, and nullable types can't be used in an `implements` clause:
 
 ```dart
 class A {}
+
 class B implements [!A?!] {}
 ```
 
@@ -28,5 +29,6 @@ Remove the question mark from the type:
 
 ```dart
 class A {}
+
 class B implements A {}
 ```

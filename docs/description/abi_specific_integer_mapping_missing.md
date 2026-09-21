@@ -24,7 +24,7 @@ Add an `AbiSpecificIntegerMapping` annotation to the class:
 ```dart
 import 'dart:ffi';
 
-@AbiSpecificIntegerMapping({Abi.macosX64 : Int8()})
+@AbiSpecificIntegerMapping({Abi.macosX64: Int8()})
 final class C extends AbiSpecificInteger {
   const C();
 }

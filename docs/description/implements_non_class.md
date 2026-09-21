@@ -11,6 +11,7 @@ rather than a class or mixin:
 
 ```dart
 var x;
+
 class C implements [!x!] {}
 ```
 

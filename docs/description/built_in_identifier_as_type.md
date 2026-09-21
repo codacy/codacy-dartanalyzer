@@ -9,7 +9,8 @@ The following code produces this diagnostic because `import` can't be used
 as a type because it's a built-in identifier:
 
 ```dart
-[!import!]<int> x;
+%ignore=undefined_class
+[!import!]<int> x = [];
 ```
 
 #### Common fixes
@@ -17,5 +18,5 @@ as a type because it's a built-in identifier:
 Replace the built-in identifier with the name of a valid type:
 
 ```dart
-List<int> x;
+List<int> x = [];
 ```

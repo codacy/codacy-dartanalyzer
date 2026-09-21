@@ -15,16 +15,14 @@ a `const` variable:
 var v = 0;
 
 [!@v!]
-void f() {
-}
+void f() {}
 ```
 
 The following code produces this diagnostic because `f` isn't a variable:
 
 ```dart
 [!@f!]
-void f() {
-}
+void f() {}
 ```
 
 The following code produces this diagnostic because `f` isn't a
@@ -32,8 +30,7 @@ constructor:
 
 ```dart
 [!@f()!]
-void f() {
-}
+void f() {}
 ```
 
 The following code produces this diagnostic because `g` is a getter:
@@ -52,8 +49,7 @@ constructor, add the keyword `const` to the variable's declaration:
 const v = 0;
 
 @v
-void f() {
-}
+void f() {}
 ```
 
 If the annotation isn't referencing a variable, then remove it:
@@ -61,6 +57,5 @@ If the annotation isn't referencing a variable, then remove it:
 ```dart
 int v = 0;
 
-void f() {
-}
+void f() {}
 ```

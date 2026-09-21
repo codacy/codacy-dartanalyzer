@@ -12,7 +12,10 @@ used in the body of `f` even though the body of `f` isn't marked with the
 `async` keyword:
 
 ```dart
-void f(p) { [!await!] p; }
+%ignore=unused_local_variable
+void f(p) {
+  [!await!] p;
+}
 ```
 
 #### Common fixes
@@ -20,5 +23,7 @@ void f(p) { [!await!] p; }
 Add the keyword `async` to the function body:
 
 ```dart
-void f(p) async { await p; }
+void f(p) async {
+  await p;
+}
 ```

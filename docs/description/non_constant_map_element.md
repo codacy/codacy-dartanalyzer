@@ -18,7 +18,7 @@ condition in the `if` element isn't a constant expression:
 
 ```dart
 bool notConst = true;
-var map = const <int, int>{if ([!notConst!]) 1 : 2};
+var map = const <int, int>{if ([!notConst!]) 1: 2};
 ```
 
 #### Common fixes
@@ -37,5 +37,5 @@ keyword:
 
 ```dart
 bool notConst = true;
-var map = <int, int>{if (notConst) 1 : 2};
+var map = <int, int>{if (notConst) 1: 2};
 ```

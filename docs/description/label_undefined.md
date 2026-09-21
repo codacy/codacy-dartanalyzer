@@ -42,7 +42,8 @@ If the label should be on some other statement, then add the label:
 
 ```dart
 void f() {
-  loop: for (int i = 0; i < 10; i++) {
+  loop:
+  for (int i = 0; i < 10; i++) {
     for (int j = 0; j < 10; j++) {
       if (j != 0) {
         break loop;

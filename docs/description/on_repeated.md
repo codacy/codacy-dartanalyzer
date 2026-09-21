@@ -9,10 +9,10 @@ The following code produces this diagnostic because `A` is included twice
 in the superclass constraints for `M`:
 
 ```dart
-mixin M on A, [!A!] {
-}
+mixin M on A, [!A!] {}
 
 class A {}
+
 class B {}
 ```
 
@@ -22,19 +22,19 @@ If a different type should be included in the superclass constraints, then
 replace one of the occurrences with the other type:
 
 ```dart
-mixin M on A, B {
-}
+mixin M on A, B {}
 
 class A {}
+
 class B {}
 ```
 
 If no other type was intended, then remove the repeated type name:
 
 ```dart
-mixin M on A {
-}
+mixin M on A {}
 
 class A {}
+
 class B {}
 ```

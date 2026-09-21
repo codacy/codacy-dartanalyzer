@@ -15,9 +15,7 @@ mixin M {
   int x = 0;
 }
 
-enum E with [!M!] {
-  a
-}
+enum E with [!M!] { a }
 ```
 
 #### Common fixes
@@ -30,15 +28,11 @@ mixin M {
   int get x => 0;
 }
 
-enum E with M {
-  a
-}
+enum E with M { a }
 ```
 
 If you don't need to apply the mixin, then remove it:
 
 ```dart
-enum E {
-  a
-}
+enum E { a }
 ```

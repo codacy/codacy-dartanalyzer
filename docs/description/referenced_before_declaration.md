@@ -15,6 +15,7 @@ is declared:
 
 ```dart
 %language=2.9
+%ignore=not_assigned_potentially_non_nullable_local_variable
 void f() {
   print([!i!]);
   int i = 5;

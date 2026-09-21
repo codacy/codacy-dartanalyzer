@@ -22,6 +22,7 @@ The following code produces this diagnostic because `x` can never be
 `null`, so the comparison always evaluates to `false`:
 
 ```dart
+%ignore=dead_code
 void f(int x) {
   if (x [!== null!]) {
     throw ArgumentError("x can't be null");

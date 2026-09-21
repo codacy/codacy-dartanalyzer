@@ -10,7 +10,7 @@ The following code produces this diagnostic because `E` doesn't define a
 constant named `c`:
 
 ```dart
-enum E {a, b}
+enum E { a, b }
 
 var e = E.[!c!];
 ```
@@ -21,7 +21,7 @@ If the constant should be defined, then add it to the declaration of the
 enum:
 
 ```dart
-enum E {a, b, c}
+enum E { a, b, c }
 
 var e = E.c;
 ```
@@ -30,7 +30,7 @@ If the constant shouldn't be defined, then change the name to the name of
 an existing constant:
 
 ```dart
-enum E {a, b}
+enum E { a, b }
 
 var e = E.b;
 ```

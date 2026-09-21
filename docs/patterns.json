@@ -1,6 +1,6 @@
 {
   "name": "dartanalyzer",
-  "version": "3.12.2",
+  "version": "3.13.4",
   "patterns": [
     {
       "patternId": "always_declare_return_types",
@@ -1329,6 +1329,12 @@
       "enabled": false
     },
     {
+      "patternId": "analysis_options_deprecated_plugins",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
       "patternId": "analysis_option_deprecated_with_replacement",
       "level": "Warning",
       "category": "ErrorProne",
@@ -1599,6 +1605,48 @@
       "enabled": false
     },
     {
+      "patternId": "augmentation_named_formal_parameter_extra",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "augmentation_named_formal_parameter_missing",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "augmentation_optional_positional_formal_parameter_count",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "augmentation_formal_parameter_modifier_extra",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "augmentation_formal_parameter_modifier_missing",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "augmentation_formal_parameter_type_mismatch",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "augmentation_positional_formal_parameter_name",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
       "patternId": "augmentation_of_different_declaration_kind",
       "level": "Warning",
       "category": "ErrorProne",
@@ -1629,6 +1677,54 @@
       "enabled": false
     },
     {
+      "patternId": "augmentation_without_getter_declaration",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "augmentation_without_setter_declaration",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "augmentation_of_mixin_application_class",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "augmentation_required_positional_formal_parameter_count",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "augmentation_induced_getter_return_type_mismatch",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "augmentation_induced_getter_already_complete",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "augmentation_induced_setter_already_complete",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "augmentation_return_type_mismatch",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
       "patternId": "augmented_expression_is_not_setter",
       "level": "Warning",
       "category": "ErrorProne",
@@ -1642,6 +1738,12 @@
     },
     {
       "patternId": "augmented_expression_not_operator",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "augments_constant_variable",
       "level": "Warning",
       "category": "ErrorProne",
       "enabled": false
@@ -2181,6 +2283,12 @@
       "enabled": false
     },
     {
+      "patternId": "constant_variable_augmentation",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
       "patternId": "const_with_non_const",
       "level": "Warning",
       "category": "ErrorProne",
@@ -2248,6 +2356,12 @@
     },
     {
       "patternId": "const_with_non_type",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "constructor_already_complete",
       "level": "Warning",
       "category": "ErrorProne",
       "enabled": false
@@ -2332,6 +2446,54 @@
     },
     {
       "patternId": "duplicate_field_formal_parameter",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "function_already_complete",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "function_not_complete_after_augmentations",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "induced_getter_without_body",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "induced_setter_without_body",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "induced_getter_not_complete_after_augmentations",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "induced_setter_not_complete_after_augmentations",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "factory_not_complete_after_augmentations",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "default_value_already_specified_in_augmentation_chain",
       "level": "Warning",
       "category": "ErrorProne",
       "enabled": false
@@ -2866,6 +3028,12 @@
     },
     {
       "patternId": "implements_super_class",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "implements_super_class_constraint",
       "level": "Warning",
       "category": "ErrorProne",
       "enabled": false
@@ -3412,6 +3580,18 @@
     },
     {
       "patternId": "mixin_class_declaration_extends_not_object",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "mixin_class_declaration_with_clause",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "mixin_modifier_mixin_application_class_with_multiple_mixins",
       "level": "Warning",
       "category": "ErrorProne",
       "enabled": false
@@ -5937,6 +6117,12 @@
       "enabled": false
     },
     {
+      "patternId": "unawaited_return_in_try_block",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
       "patternId": "unexpected_dollar_in_string",
       "level": "Warning",
       "category": "ErrorProne",
@@ -6574,6 +6760,18 @@
     },
     {
       "patternId": "return_of_invalid_type_from_catch_error",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "return_of_invalid_type_from_then",
+      "level": "Warning",
+      "category": "ErrorProne",
+      "enabled": false
+    },
+    {
+      "patternId": "return_type_invalid_for_then",
       "level": "Warning",
       "category": "ErrorProne",
       "enabled": false

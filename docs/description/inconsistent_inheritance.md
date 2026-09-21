@@ -19,8 +19,7 @@ class B {
   void m({int? b}) {}
 }
 
-class [!C!] extends A implements B {
-}
+class [!C!] extends A implements B {}
 ```
 
 #### Common fixes

@@ -13,9 +13,9 @@ doesn't have a case for the value `E.three`:
 enum E { one, two, three }
 
 String f(E e) => [!switch!] (e) {
-    E.one => 'one',
-    E.two => 'two',
-  };
+  E.one => 'one',
+  E.two => 'two',
+};
 ```
 
 #### Common fixes
@@ -27,10 +27,10 @@ then add a case for each of the values missing a match:
 enum E { one, two, three }
 
 String f(E e) => switch (e) {
-    E.one => 'one',
-    E.two => 'two',
-    E.three => 'three',
-  };
+  E.one => 'one',
+  E.two => 'two',
+  E.three => 'three',
+};
 ```
 
 If the missing values don't need to be matched, then add a wildcard
@@ -40,10 +40,10 @@ pattern that returns a simple default:
 enum E { one, two, three }
 
 String f(E e) => switch (e) {
-    E.one => 'one',
-    E.two => 'two',
-    _ => 'unknown',
-  };
+  E.one => 'one',
+  E.two => 'two',
+  _ => 'unknown',
+};
 ```
 
 Be aware that a wildcard pattern will handle any values added to the type

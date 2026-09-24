@@ -19,7 +19,9 @@ The following code produces this diagnostic because the value of the
 import 'dart:ffi';
 
 int Function(int) fromPointer(
-    Pointer<NativeFunction<Int8 Function(Int8)>> p, bool isLeaf) {
+  Pointer<NativeFunction<Int8 Function(Int8)>> p,
+  bool isLeaf,
+) {
   return p.asFunction(isLeaf: [!isLeaf!]);
 }
 ```

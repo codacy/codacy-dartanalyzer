@@ -27,7 +27,8 @@ constant, then reference the constant directly:
 
 ```dart
 enum E {
-  a(0), b(2);
+  a(0),
+  b(2);
 
   const E(int x);
 }

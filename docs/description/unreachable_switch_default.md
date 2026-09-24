@@ -30,6 +30,7 @@ Remove the unnecessary `default` clause:
 
 ```dart
 enum E { e1, e2 }
+
 void f(E x) {
   switch (x) {
     case E.e1:

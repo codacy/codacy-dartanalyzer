@@ -9,9 +9,10 @@ The following code produces this diagnostic because `f` is used as both an
 import prefix and the name of a function:
 
 ```dart
-import 'dart:math' as f;
+%ignore=undefined_method,unused_import
+import 'dart:math' as [!f!];
 
-int [!f!]() => f.min(0, 1);
+int f() => f.min(0, 1);
 ```
 
 #### Common fixes

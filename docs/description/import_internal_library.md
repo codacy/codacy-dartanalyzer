@@ -9,6 +9,7 @@ The following code produces this diagnostic because `_interceptors` is an
 internal library:
 
 ```dart
+%ignore=uri_does_not_exist
 import [!'dart:_interceptors'!];
 ```
 

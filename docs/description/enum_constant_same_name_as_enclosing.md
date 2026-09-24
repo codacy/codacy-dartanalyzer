@@ -9,9 +9,7 @@ The following code produces this diagnostic because the enum value `E` has
 the same name as the enclosing enum `E`:
 
 ```dart
-enum E {
-  [!E!]
-}
+enum E { [!E!] }
 ```
 
 #### Common fixes
@@ -19,15 +17,11 @@ enum E {
 If the name of the enum is correct, then rename the constant:
 
 ```dart
-enum E {
-  e
-}
+enum E { e }
 ```
 
 If the name of the constant is correct, then rename the enum:
 
 ```dart
-enum F {
-  E
-}
+enum F { E }
 ```

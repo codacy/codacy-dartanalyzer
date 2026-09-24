@@ -13,6 +13,7 @@ concrete implementation of `a`:
 abstract class A {
   int get a;
 }
+
 class B extends A {
   int get a => super.[!a!];
 }

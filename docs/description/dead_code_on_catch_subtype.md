@@ -14,8 +14,11 @@ The following code produces this diagnostic:
 ```dart
 void f() {
   try {
+    // ...
   } on num {
+    // ...
   } [!on int {
+    // ...
   }!]
 }
 ```
@@ -28,8 +31,11 @@ clause:
 ```dart
 void f() {
   try {
+    // ...
   } on int {
+    // ...
   } on num {
+    // ...
   }
 }
 ```
@@ -39,7 +45,9 @@ If the clause doesn't need to be selectable, then remove it:
 ```dart
 void f() {
   try {
+    // ...
   } on num {
+    // ...
   }
 }
 ```

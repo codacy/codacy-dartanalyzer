@@ -14,7 +14,7 @@ void f() {
   print(e);
 }
 
-enum E {a, b}
+enum E { a, b }
 ```
 
 #### Common fixes
@@ -28,7 +28,7 @@ void f() {
   print(e);
 }
 
-enum E {a, b, c}
+enum E { a, b, c }
 ```
 
 If the name is not correct, then replace the name with the name of an
@@ -40,5 +40,5 @@ void f() {
   print(e);
 }
 
-enum E {a, b}
+enum E { a, b }
 ```

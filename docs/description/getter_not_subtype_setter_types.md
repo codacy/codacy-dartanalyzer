@@ -14,6 +14,7 @@ getter `x` is `num`, the parameter type of the setter `x` is `int`, and
 `num` isn't a subtype of `int`:
 
 ```dart
+// @dart = 3.8
 class C {
   num get [!x!] => 0;
 

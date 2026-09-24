@@ -34,6 +34,6 @@ class A {
   A() {}
 }
 
-mixin class AM { // A separate mixin for mixing in behavior
-}
+// A separate mixin for mixing in behavior
+mixin class AM {}
 ```

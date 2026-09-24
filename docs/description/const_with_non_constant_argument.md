@@ -10,8 +10,10 @@ The following code produces this diagnostic because `i` isn't a constant:
 ```dart
 class C {
   final int i;
+
   const C(this.i);
 }
+
 C f(int i) => const C([!i!]);
 ```
 
@@ -23,7 +25,9 @@ Either make all of the arguments constant expressions, or remove the
 ```dart
 class C {
   final int i;
+
   const C(this.i);
 }
+
 C f(int i) => C(i);
 ```

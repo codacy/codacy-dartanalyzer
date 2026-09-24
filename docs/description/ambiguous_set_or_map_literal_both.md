@@ -19,8 +19,11 @@ determine whether you are writing a map literal or a set literal.
 The following code produces this diagnostic:
 
 ```dart
-union(Map<String, String> a, List<String> b, Map<String, String> c) =>
-    [!{...a, ...b, ...c}!];
+union(Map<String, String> a, List<String> b, Map<String, String> c) => [!{
+  ...a,
+  ...b,
+  ...c,
+}!];
 ```
 
 The list `b` can only be spread into a set, and the maps `a` and `c` can
@@ -34,8 +37,10 @@ consistent. In this case, that likely means removing the list and deciding
 what to do about the now unused parameter:
 
 ```dart
-union(Map<String, String> a, List<String> b, Map<String, String> c) =>
-    {...a, ...c};
+union(Map<String, String> a, List<String> b, Map<String, String> c) => {
+  ...a,
+  ...c,
+};
 ```
 
 The second fix is to change the elements of one kind into elements that are
@@ -43,6 +48,9 @@ consistent with the other elements. For example, you can add the elements
 of the list as keys that map to themselves:
 
 ```dart
-union(Map<String, String> a, List<String> b, Map<String, String> c) =>
-    {...a, for (String s in b) s: s, ...c};
+union(Map<String, String> a, List<String> b, Map<String, String> c) => {
+  ...a,
+  for (String s in b) s: s,
+  ...c,
+};
 ```

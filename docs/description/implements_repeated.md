@@ -10,6 +10,7 @@ twice:
 
 ```dart
 class A {}
+
 class B implements A, [!A!] {}
 ```
 
@@ -19,5 +20,6 @@ Remove all except one occurrence of the class name:
 
 ```dart
 class A {}
+
 class B implements A {}
 ```

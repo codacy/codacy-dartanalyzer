@@ -13,8 +13,10 @@ The following code produces this diagnostic:
 ```dart
 void f() {
   try {
+    // ...
   } catch (e) {
   } [!on String {
+    // ...
   }!]
 }
 ```
@@ -27,8 +29,11 @@ clause:
 ```dart
 void f() {
   try {
+    // ...
   } on String {
+    // ...
   } catch (e) {
+    // ...
   }
 }
 ```
@@ -38,7 +43,9 @@ If the clause doesn't need to be selectable, then remove it:
 ```dart
 void f() {
   try {
+    // ...
   } catch (e) {
+    // ...
   }
 }
 ```

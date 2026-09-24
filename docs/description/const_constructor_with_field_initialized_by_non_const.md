@@ -10,6 +10,7 @@ initialized to a non-constant value:
 
 ```dart
 String x = '3';
+
 class C {
   final String s = x;
   [!const!] C();
@@ -33,6 +34,7 @@ keyword `const` from the constructor:
 
 ```dart
 String x = '3';
+
 class C {
   final String s = x;
   C();

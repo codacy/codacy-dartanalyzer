@@ -12,7 +12,8 @@ The following code produces this diagnostic:
 import 'package:meta/meta.dart';
 import [!'package:meta/meta.dart'!];
 
-@sealed class C {}
+@sealed
+class C {}
 ```
 
 #### Common fixes
@@ -22,5 +23,6 @@ Remove the unnecessary import:
 ```dart
 import 'package:meta/meta.dart';
 
-@sealed class C {}
+@sealed
+class C {}
 ```

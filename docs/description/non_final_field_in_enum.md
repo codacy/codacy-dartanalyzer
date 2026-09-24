@@ -32,7 +32,5 @@ enum E {
 If the field can be removed, then remove it:
 
 ```dart
-enum E {
-  c
-}
+enum E { c }
 ```

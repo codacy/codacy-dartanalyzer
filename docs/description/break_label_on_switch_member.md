@@ -12,7 +12,8 @@ associated with the case clause for `0`:
 %language=2.18
 void f(int i) {
   switch (i) {
-    l: case 0:
+    l:
+    case 0:
       break;
     case 1:
       break [!l!];
@@ -43,7 +44,8 @@ If the intent is to transfer control to a different case block, then use
 %language=2.18
 void f(int i) {
   switch (i) {
-    l: case 0:
+    l:
+    case 0:
       break;
     case 1:
       continue l;

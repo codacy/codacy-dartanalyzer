@@ -10,9 +10,8 @@ The following code produces this diagnostic because `s` is an instance
 field:
 
 ```dart
-%language=2.9
 extension E on String {
-  String [!s!];
+  String [!s!] = '';
 }
 ```
 
@@ -24,8 +23,6 @@ using a getter or a method:
 ```dart
 extension E on String {
   String get s => '';
-
-  void s(String value) => print(s);
 }
 ```
 
@@ -42,7 +39,7 @@ If each instance needs to have its own value stored, then try
 using a getter and setter pair backed by a static `Expando`:
 
 ```dart
-extension E on SomeType {
+extension E on String {
   static final _s = Expando<String>();
 
   String get s => _s[this] ?? '';

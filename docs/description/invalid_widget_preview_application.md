@@ -27,7 +27,6 @@ is `external`:
 import 'package:flutter/widgets.dart';
 import 'package:flutter/widget_previews.dart';
 
-
 // Invalid application to an external function.
 @[!Preview!]()
 external Widget myExternalPreview();

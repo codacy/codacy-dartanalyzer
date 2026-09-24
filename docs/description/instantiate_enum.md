@@ -11,7 +11,7 @@ instantiated:
 
 ```dart
 // @dart = 2.16
-enum E {a}
+enum E { a }
 
 var e = [!E!]();
 ```
@@ -23,7 +23,7 @@ constants defined in the enum:
 
 ```dart
 // @dart = 2.16
-enum E {a}
+enum E { a }
 
 var e = E.a;
 ```

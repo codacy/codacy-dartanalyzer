@@ -11,6 +11,7 @@ the function `f` because the value of the argument passed to the
 function `g` isn't a constant:
 
 ```dart
+%ignore=experimental_member_use
 import 'package:meta/meta.dart' show mustBeConst;
 
 int f(int value) => g([!value!]);
@@ -24,6 +25,7 @@ If a suitable constant is available to use, then replace the argument
 with a constant:
 
 ```dart
+%ignore=experimental_member_use
 import 'package:meta/meta.dart' show mustBeConst;
 
 const v = 3;

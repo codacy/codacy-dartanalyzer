@@ -18,6 +18,7 @@ type, and nullable types can't be used in an `extends` clause:
 
 ```dart
 class A {}
+
 class B extends [!A?!] {}
 ```
 
@@ -27,5 +28,6 @@ Remove the question mark from the type:
 
 ```dart
 class A {}
+
 class B extends A {}
 ```

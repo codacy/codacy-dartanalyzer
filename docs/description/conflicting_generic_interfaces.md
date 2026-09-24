@@ -8,12 +8,15 @@ aren't the same.
 
 The following code produces this diagnostic because `C` is defined to
 implement both `I<int>` (because it extends `A`) and `I<String>` (because
-it implements`B`), but `int` and `String` aren't the same type:
+it implements `B`), but `int` and `String` aren't the same type:
 
 ```dart
 class I<T> {}
+
 class A implements I<int> {}
+
 class B implements I<String> {}
+
 class [!C!] extends A implements B {}
 ```
 
@@ -25,7 +28,10 @@ same type for both type arguments:
 
 ```dart
 class I<T> {}
+
 class A<S> implements I<S> {}
+
 class B implements I<String> {}
+
 class C extends A<String> implements B {}
 ```

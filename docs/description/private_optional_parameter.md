@@ -9,6 +9,7 @@ The following code produces this diagnostic because the named parameter
 `_x` starts with an underscore:
 
 ```dart
+// @dart=3.11
 class C {
   void m({int [!_x!] = 0}) {}
 }

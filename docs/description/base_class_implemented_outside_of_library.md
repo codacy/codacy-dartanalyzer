@@ -34,6 +34,7 @@ functionality, then replace the type:
 
 ```dart
 class B implements C {}
+
 class C {}
 ```
 

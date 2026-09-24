@@ -11,8 +11,7 @@ isn't a const constructor:
 
 ```dart
 [!@C()!]
-void f() {
-}
+void f() {}
 
 class C {
   C();
@@ -26,8 +25,7 @@ const constructor that can be used for the annotation:
 
 ```dart
 @C()
-void f() {
-}
+void f() {}
 
 class C {
   const C();

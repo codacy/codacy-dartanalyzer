@@ -5,8 +5,8 @@ the mixed-in class defines a generative constructor.
 
 #### Example
 
-The following code produces this diagnostic because the class `A`, which
-defines a generative constructor, is being used as a mixin:
+The following code produces the diagnostic because class `A`
+defines a generative constructor and is used as a mixin:
 
 ```dart
 //@dart=2.19
@@ -22,8 +22,7 @@ class B with [!A!] {}
 If it's possible to convert the class to a mixin, then do so:
 
 ```dart
-mixin A {
-}
+mixin A {}
 
 class B with A {}
 ```
@@ -33,8 +32,7 @@ then do so:
 
 ```dart
 //@dart=2.19
-class A {
-}
+class A {}
 
 class B with A {}
 ```

@@ -11,6 +11,7 @@ The following code produces this diagnostic because the method `m` in the
 extension type `E` is abstract:
 
 ```dart
+%language=3.5
 extension type E(String s) {
   [!void m();!]
 }

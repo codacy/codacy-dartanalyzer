@@ -28,6 +28,7 @@ void f(Object o) {
       return;
   }
 }
+
 class C {
   int? f;
 }

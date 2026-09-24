@@ -15,9 +15,8 @@ define a const constructor:
 ```dart
 import 'dart:ffi';
 
-@AbiSpecificIntegerMapping({Abi.macosX64 : Int8()})
-final class [!C!] extends AbiSpecificInteger {
-}
+@AbiSpecificIntegerMapping({Abi.macosX64: Int8()})
+final class [!C!] extends AbiSpecificInteger {}
 ```
 
 The following code produces this diagnostic because the constructor isn't
@@ -26,7 +25,7 @@ a `const` constructor:
 ```dart
 import 'dart:ffi';
 
-@AbiSpecificIntegerMapping({Abi.macosX64 : Int8()})
+@AbiSpecificIntegerMapping({Abi.macosX64: Int8()})
 final class [!C!] extends AbiSpecificInteger {
   C();
 }
@@ -38,7 +37,7 @@ multiple constructors:
 ```dart
 import 'dart:ffi';
 
-@AbiSpecificIntegerMapping({Abi.macosX64 : Int8()})
+@AbiSpecificIntegerMapping({Abi.macosX64: Int8()})
 final class [!C!] extends AbiSpecificInteger {
   const C.zero();
   const C.one();
@@ -51,7 +50,7 @@ a field:
 ```dart
 import 'dart:ffi';
 
-@AbiSpecificIntegerMapping({Abi.macosX64 : Int8()})
+@AbiSpecificIntegerMapping({Abi.macosX64: Int8()})
 final class [!C!] extends AbiSpecificInteger {
   final int i;
 
@@ -65,8 +64,9 @@ type parameter:
 ```dart
 import 'dart:ffi';
 
-@AbiSpecificIntegerMapping({Abi.macosX64 : Int8()})
-final class [!C!]<T> extends AbiSpecificInteger { // type parameters
+@AbiSpecificIntegerMapping({Abi.macosX64: Int8()})
+// type parameters
+final class [!C!]<T> extends AbiSpecificInteger {
   const C();
 }
 ```
@@ -79,7 +79,7 @@ parameters and a single member that is a `const` constructor:
 ```dart
 import 'dart:ffi';
 
-@AbiSpecificIntegerMapping({Abi.macosX64 : Int8()})
+@AbiSpecificIntegerMapping({Abi.macosX64: Int8()})
 final class C extends AbiSpecificInteger {
   const C();
 }

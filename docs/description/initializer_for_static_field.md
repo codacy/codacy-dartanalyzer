@@ -12,7 +12,7 @@ is being initialized by the initializing formal parameter `this.a`:
 ```dart
 class C {
   static int? a;
-  C([!this.a!]);
+  C([!this!].a);
 }
 ```
 

@@ -10,7 +10,8 @@ referenced anywhere in the method:
 
 ```dart
 void f(int limit) {
-  [!loop:!] for (int i = 0; i < limit; i++) {
+  [!loop:!]
+  for (int i = 0; i < limit; i++) {
     print(i);
   }
 }
@@ -32,7 +33,8 @@ If the label is needed, then use it:
 
 ```dart
 void f(int limit) {
-  loop: for (int i = 0; i < limit; i++) {
+  loop:
+  for (int i = 0; i < limit; i++) {
     print(i);
     if (i != 0) {
       break loop;

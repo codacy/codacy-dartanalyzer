@@ -7,8 +7,8 @@ clause.
 
 #### Example
 
-The following code produces this diagnostic because the`rethrow` statement
-is outside of a `catch` clause:
+The following code produces this diagnostic because the
+`rethrow` statement is outside of a `catch` clause:
 
 ```dart
 void f() {

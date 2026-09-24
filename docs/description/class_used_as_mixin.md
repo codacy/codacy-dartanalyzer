@@ -10,6 +10,7 @@ used as a mixin, but it isn't defined as a `mixin class`:
 
 ```dart
 class M {}
+
 class C with [!M!] {}
 ```
 
@@ -19,6 +20,7 @@ If the class can be a pure mixin, then change `class` to `mixin`:
 
 ```dart
 mixin M {}
+
 class C with M {}
 ```
 
@@ -26,5 +28,6 @@ If the class needs to be both a class and a mixin, then add `mixin`:
 
 ```dart
 mixin class M {}
+
 class C with M {}
 ```

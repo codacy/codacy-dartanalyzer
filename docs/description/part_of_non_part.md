@@ -34,5 +34,6 @@ If the referenced file is intended to be a library, then replace the part
 directive with an import directive:
 
 ```dart
+%ignore=unused_import
 import 'a.dart';
 ```

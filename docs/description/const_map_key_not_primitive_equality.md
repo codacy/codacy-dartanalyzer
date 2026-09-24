@@ -20,7 +20,7 @@ class C {
   bool operator ==(Object other) => true;
 }
 
-const map = {[!C()!] : 0};
+const map = {[!C()!]: 0};
 ```
 
 The following code produces this diagnostic because the constant map
@@ -34,7 +34,7 @@ class C {
   int get hashCode => 3;
 }
 
-const map = {[!C()!] : 0};
+const map = {[!C()!]: 0};
 ```
 
 #### Common fixes
@@ -47,7 +47,7 @@ class C {
   const C();
 }
 
-const map = {C() : 0};
+const map = {C(): 0};
 ```
 
 If you can't remove the implementation of `==` and `hashCode` from the
@@ -60,5 +60,5 @@ class C {
   bool operator ==(Object other) => true;
 }
 
-final map = {C() : 0};
+final map = {C(): 0};
 ```

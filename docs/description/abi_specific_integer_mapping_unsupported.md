@@ -20,7 +20,7 @@ entry is `Array<Uint8>`, which isn't a valid integer type:
 ```dart
 import 'dart:ffi';
 
-@AbiSpecificIntegerMapping({Abi.macosX64 : [!Array<Uint8>(4)!]})
+@AbiSpecificIntegerMapping({Abi.macosX64: [!Array<Uint8>(4)!]})
 final class C extends AbiSpecificInteger {
   const C();
 }
@@ -33,7 +33,7 @@ Use one of the valid types as a value in the map:
 ```dart
 import 'dart:ffi';
 
-@AbiSpecificIntegerMapping({Abi.macosX64 : Int8()})
+@AbiSpecificIntegerMapping({Abi.macosX64: Int8()})
 final class C extends AbiSpecificInteger {
   const C();
 }

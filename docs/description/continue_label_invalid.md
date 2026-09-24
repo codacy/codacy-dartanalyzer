@@ -10,7 +10,8 @@ label a `switch` statement, is used in the `continue` statement:
 
 ```dart
 void f(int i) {
-  l: switch (i) {
+  l:
+  switch (i) {
     case 0:
       [!continue l;!]
   }

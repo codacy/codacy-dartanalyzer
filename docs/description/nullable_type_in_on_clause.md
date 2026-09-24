@@ -19,6 +19,7 @@ and nullable types can't be used in an `on` clause:
 
 ```dart
 class C {}
+
 mixin M on [!C?!] {}
 ```
 
@@ -28,5 +29,6 @@ Remove the question mark from the type:
 
 ```dart
 class C {}
+
 mixin M on C {}
 ```
